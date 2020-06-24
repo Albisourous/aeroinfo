@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
 import { Aircrafts } from "./Aircrafts";
-import { Airlines } from "./Airlines";
+import { Flights } from "./Flights";
 import { Airports } from "./Airports";
 import { About } from "./About";
 import { Layout } from "./Component/Layout";
@@ -23,8 +23,8 @@ class App extends Component {
                 <Route path="/aircrafts">
                   <Aircrafts />
                 </Route>
-                <Route path="/airlines">
-                  <Airlines />
+                <Route path="/flights">
+                  <Flights />
                 </Route>
                 <Route path="/airports">
                   <Airports />

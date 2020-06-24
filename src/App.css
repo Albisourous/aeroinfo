@@ -26,6 +26,7 @@ body {
 }
 .navbar .link {
   margin-right: 30px;
+  font-family: "Homenaje", sans-serif;
   font-size: 30px;
   color: #fff !important;
 }
@@ -36,7 +37,7 @@ body {
 
 /*----------------------Grids----------------------*/
 .SpacingGrid {
-  padding-top: 500px;
+  padding-top: 1000px;
 }
 
 /*----------------------Home Page----------------------*/
@@ -50,7 +51,7 @@ body {
     background-attachment: fixed;
 }
 .Home h1{
-    
+    font-family: "Homenaje", sans-serif;
     color: #fff;
     font-size: 70px;
     font-weight: bold;

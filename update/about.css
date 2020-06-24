@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman";
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.member {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: 0;
+    display: marker;
+    padding: 10px;
+}
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}

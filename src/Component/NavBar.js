@@ -12,26 +12,11 @@ export const NavBar = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link className="link" href="/">
-          {" "}
-          Home{" "}
-        </Nav.Link>
-        <Nav.Link className="link" href="/aircrafts">
-          {" "}
-          Aircrafts{" "}
-        </Nav.Link>
-        <Nav.Link className="link" href="/airlines">
-          {" "}
-          Airlines{" "}
-        </Nav.Link>
-        <Nav.Link className="link" href="/airports">
-          {" "}
-          Airports{" "}
-        </Nav.Link>
-        <Nav.Link className="link" href="/about">
-          {" "}
-          About{" "}
-        </Nav.Link>
+        <Nav.Link className="link" href="/">Home</Nav.Link>
+        <Nav.Link className="link" href="/aircrafts">Aircraft</Nav.Link>
+        <Nav.Link className="link" href="/flights">Flights</Nav.Link>
+        <Nav.Link className="link" href="/airports">Airports</Nav.Link>
+        <Nav.Link className="link" href="/about">About</Nav.Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />

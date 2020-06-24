@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(14, 25, 47);
+  font-family: "Homenaje", sans-serif;
+}
+
+/*----------------------NavBar----------------------*/
+.navbar {
+  top: 0;
+  margin-bottom: -15px;
+  position: -webkit-sticky;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.navbar .fa-plane {
+  font-size: 50px;
+  color: #fff;
+}
+
+.navbar .title {
+  font-family: "Homenaje", sans-serif;
+  color: white;
+}
+.navbar .link {
+  margin-right: 30px;
+  font-size: 30px;
+  color: #fff !important;
+}
+
+.navbar .Form{
+    margin-right: 30px;
+}
+
+/*----------------------Grids----------------------*/
+.SpacingGrid {
+  padding-top: 500px;
+}
+
+/*----------------------Home Page----------------------*/
+.Home {
+    height: 120vh;
+    width: auto;
+    margin: auto;
+    background: Linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url(./Images/img1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Home h1{
+    
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 10px;
+}

@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-const InfoCard = props => {
+const FlightCard = props => {
     const info = props.info;
     const classes = useStyles();
     return (
@@ -31,11 +31,11 @@ const InfoCard = props => {
                     title="lol"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                    {info.name}
+                <Typography gutterBottom variant="h6" component="h2"><span>Arrival - Departure: </span>
+                    {info.departure.airport}<span> - </span> {info.arrival.airport}
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    {info.description}
+                <Typography variant="h6"  component="h2"><span>Date:  </span>  
+                {info.flight_date}
                 </Typography>
                 </CardContent>
             </CardActionArea>
@@ -43,8 +43,8 @@ const InfoCard = props => {
     );
 };
 
-InfoCard.propTypes = {
+FlightCard.propTypes = {
     
 };
 
-export default InfoCard;
+export default FlightCard;

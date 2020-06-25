@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
-import {Aircrafts} from "./Aircrafts";
-import { Flights } from "./Flights";
+import Airplanes  from "./Airplanes";
+import Flights from "./Flights";
 import { Airports } from "./Airports";
 import { About } from "./About";
 import { Layout } from "./Component/Layout";
@@ -22,8 +22,8 @@ class App extends Component {
           
             <Router>
               <Switch>
-                <Route path="/aircrafts">
-                  <Aircrafts />
+                <Route path="/airplanes">
+                  <Airplanes />
                 </Route>
                 <Route path="/flights" exact>
                   <Flights />

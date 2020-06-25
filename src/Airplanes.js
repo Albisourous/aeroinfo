@@ -8,6 +8,11 @@ const Airplanes = props => {
   const airplanesData = data["data"];
   return (
     <div>
+        <li>
+            <button>Owner</button>
+            <button>Plane Name</button>
+            <button className="disabled">Sort:</button>
+        </li>
       <InfoGrid infoData={airplanesData} infoCardType={INFO_TYPES.AIRPLANES}/>
     </div>
   );

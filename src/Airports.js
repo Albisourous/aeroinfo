@@ -21,7 +21,6 @@ function Airports() {
                             <Card.Title>{data.airport_name}</Card.Title>
                             <Card.Text>Country of origin: {data.country_name}</Card.Text>
                             <Card.Text>Timezone: {data.timezone}</Card.Text>
-                            <Card.Text>GMT: {data.gmt}</Card.Text>
                         </Card.Body>
                     </ButtonBase>
                 </Card>
@@ -38,7 +37,6 @@ function Airports() {
     return (
         <div>
             <li>
-                <button>GMT</button>
                 <button>Timezone</button>
                 <button>Country of origin</button>
                 <button>Airport name</button>

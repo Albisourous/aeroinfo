@@ -51,6 +51,21 @@ export const About = () => (
                 </p>
             </div>
 
+            <div className="member">
+                <div><br/></div>
+                <h2>Xiaofei Li</h2>
+                <div className="pic">
+
+                </div>
+                <p className="role">Database</p>
+                <p>I am a UTCS senior student. Having interests in programming, I transfered to CS in my junior year. I am trying to catch up with my peers, honing my skills to become a professional programmer.</p>
+                <p>xiaofeili@utexas.edu</p>
+                <p>
+                    <button className="contact"><a href="SOMETHING">Contact</a></button>
+                </p>
+            </div>
+
+
         </div>
     </div>
 )

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<link rel="stylesheet" href="table.css">
+
+<script>
+
+    let sortDirection = false;
+    let tableData = [
+        {name: 'United', numPlane: 1000},
+        {name: 'American', numPlane: 100}
+    ];
+
+    window.onload = () =>  {
+        loadTableData(tableData)
+    };
+
+
+    function loadTableData(tableData)
+    {
+        const tableBody = document.getElementById('tableData');
+        let dataHTML = '';
+
+        for(let data of tableData)
+        {
+            dataHTML += `<tr><td>${data.name}</td><td>${data.numPlane}</td></tr>`;
+        }
+        console.log(dataHTML)
+
+        tableBody.innerHTML = dataHTML;
+    }
+
+    function sortColumn(colNum)
+    {
+        const dataType = typeof tableData[1][colNum];
+        sortDirection = !sortDirection;
+
+        switch(dataType)
+        {
+            case 'number':
+            sortNum(sortDirection, colNum)
+            break;
+        }
+
+        loadTableData(tableData);
+    }
+
+    function sortNum(sort, colName)
+    {
+        tableData = tableData.sort((p1, p2) => {
+            return sort ? p1[colName] - p2[colName] : p2[colName] - p1[colName]
+        });
+    }
+</script>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th onclick="sortColumn('numPlane')">Number of planes</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableData"></tbody>
+    </table>
+</body>
+</html>

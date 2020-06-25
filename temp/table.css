@@ -1,0 +1,23 @@
+td, th {
+    font-family: "Times New Roman";
+    border: 1px solid lightblue;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: pink;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}

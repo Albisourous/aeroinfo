@@ -7,13 +7,15 @@ function ItemDetail({ match }) {
     const[airport, setairport] = useState({});
 
     const getairport = async () => {
-        const fetchInfo = await fetch();
+        const fetchInfo = await fetch('./Data/${match.params.id}');
         const airport = await fetchInfo.json();
+
+        console.log(airport);
     }
 
     return (
         <div>
-            <h1>Item</h1>
+            <h1>Hi</h1>
         </div>
     )
 }

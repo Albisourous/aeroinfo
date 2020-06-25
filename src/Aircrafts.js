@@ -1,10 +1,20 @@
-import React from "react";
-import SpacingGrid from "./Component/Grids";
+import React from 'react';
+import PropTypes from 'prop-types';
+import data from "./Data/data.json";
+import InfoGrid from "./Component/InfoGrid";
 
-export const Aircrafts = () => (
-  <SpacingGrid>
+const Aircrafts = props => {
+  const aircarftsData = data["airplanes"];
+  console.log(aircarftsData);
+  return (
     <div>
-      <h2>Aircrafts page</h2>
+      <InfoGrid infoData={aircarftsData}/>
     </div>
-  </SpacingGrid>
-);
+  );
+};
+
+Aircrafts.propTypes = {
+  
+};
+
+export default Aircrafts;

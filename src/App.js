@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
-import { Aircrafts } from "./Aircrafts";
+import  Aircrafts  from "./Aircrafts";
 import { Flights } from "./Flights";
 import { Airports } from "./Airports";
 import { About } from "./About";
 import { Layout } from "./Component/Layout";
 import { NavBar } from "./Component/NavBar";
 import  {ColorLine}  from "./Component/ColorLine";
+import ItemDetail from "./AirportInfo";
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
                   <Airports />
                 </Route>
                   <Route path="/airports/:id">
+                      <ItemDetail />
                   </Route>
                 <Route path="/about">
                   <About />

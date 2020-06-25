@@ -41,3 +41,34 @@ button {
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+.card {
+    transition: 0.2s;
+    width: 600px;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: center;
+    transform: translate(+50%, 0%);
+}
+
+.card:hover {
+    box-shadow: 0 4px 5px 0 white;
+}
+
+.card-list {
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+    display: block;
+}
+
+.card-list ul {
+    text-align: center;
+    margin: auto 0;
+}
+
+.card-list li {
+    list-style-type: none;
+    padding: .5em .5em .5em .5em;
+    text-align: left;
+}

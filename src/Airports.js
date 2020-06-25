@@ -18,9 +18,11 @@ function Airports() {
                         onClick={event => window.location.href="/airports/" + data.airport_name}
                     >
                         <Card.Body>
+                            <li className="card-list">
                             <Card.Title>{data.airport_name}</Card.Title>
                             <Card.Text>Country of origin: {data.country_name}</Card.Text>
                             <Card.Text>Timezone: {data.timezone}</Card.Text>
+                            </li>
                         </Card.Body>
                     </ButtonBase>
                 </Card>

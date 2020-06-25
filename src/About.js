@@ -1,5 +1,9 @@
 import React from 'react'
 import albin from './Images/albin.jpg'
+import yijing from './Images/yijing.jpeg'
+import noah from './Images/noah.jpg'
+import li from './Images/li.jpg'
+import kevin from './Images/kevin.jpg'
 import './about.css'
 
 console.log(albin);
@@ -12,7 +16,7 @@ export const About = () => (
                 <div><br/></div>
                 <h2>Albin Shrestha</h2>
                 <div class="pic">
-
+                    <img src={albin} alt="Logo"/>
                 </div>
                 <p className="role">Frontend</p>
                 <p>Albin Shrestha connects tech and project management companies with the information and resources they need in order to properly train their employees. At the University of Texas, Albin has learned how to appropriately communicate with peers and co-workers creating a productive workflow. His personal projects including his UT CS website and Unity games help distinguish him from his peers. Albin is currently pursuing a degree in Computer Science in hopes of working in business management or game design.</p>
@@ -20,25 +24,29 @@ export const About = () => (
                 <p>
                     <button className="contact"><a href="tel:1-817-713-6090">Contact</a></button>
                 </p>
+                <div><br/></div>
             </div>
 
             <div className="member">
                 <div><br /></div>
                 <h2>Yijing Chen</h2>
-                <div className="pic"></div>
+                <div className="pic">
+                    <img src={yijing} alt="Me"/>
+                </div>
                 <p className="role">Frontend</p>
                 <p>I have 3 cats.</p>
                 <p>a1024507613@gmail.com</p>
                 <p>
                     <button className="contact"><a href="www.cs.utexas.edu/~yijing">Contact</a></button>
                 </p>
+                <div><br/></div>
             </div>
 
             <div className="member">
                 <div><br/></div>
                 <h2>Noah Lindley</h2>
                 <div className="pic">
-
+                    <img src={noah} alt="Me"/>
                 </div>
                 <p className="role">Backend</p>
                 <p>I'm Noah Lindley, a Computer Science student at The University of Texas at Austin.
@@ -47,13 +55,14 @@ export const About = () => (
                 <p>
                     <button className="contact"><a href="mailto: lindleywnoah@gmail.com">Contact</a></button>
                 </p>
+                <div><br/></div>
             </div>
 
             <div className="member">
                 <div><br/></div>
                 <h2>Kevin Lu</h2>
                 <div className="pic">
-
+                    <img src={kevin} alt="Me"/>
                 </div>
                 <p className="role">Backend</p>
                 <p>I am a third year computer science student at UT Austin. I am interested in machine learning.</p>
@@ -61,13 +70,14 @@ export const About = () => (
                 <p>
                     <button className="contact"><a href="mainto: a1024507613@gmail.com">Contact</a></button>
                 </p>
+                <div><br/></div>
             </div>
 
             <div className="member">
                 <div><br/></div>
                 <h2>Xiaofei Li</h2>
                 <div className="pic">
-
+                    <img src={li} alt="Me"/>
                 </div>
                 <p className="role">Database</p>
                 <p>I am a UTCS senior student. Having interests in programming, I transfered to CS in my junior year. I am trying to catch up with my peers, honing my skills to become a professional programmer.</p>
@@ -75,6 +85,7 @@ export const About = () => (
                 <p>
                     <button className="contact"><a href="mainto: xiaofeili@utexas.edu">Contact</a></button>
                 </p>
+                <div><br/></div>
             </div>
 
 

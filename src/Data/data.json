@@ -1,0 +1,30 @@
+{
+    "airplanes": [
+        {
+            "id": 1,
+            "name": "ujkhikdfjhnvikda",
+            "type": "aa",
+            "size": "large",
+            "description": "This is a big airplane!!!",
+            "image_url": "https://www.aircraftcompare.com/wp-content/uploads/2019/12/airplane-sunset.jpg"
+        },
+        {
+            "id": 2,
+            "name": "b",
+            "type": "bb",
+            "size": "medium",
+            "description": "This is a smaller :/ airplane!!!",
+            "image_url": "../Images/img1.jpeg"
+        },      
+        {
+            "id": 3,
+            "name": "cv",
+            "type": "vde",
+            "size": "tiny",
+            "description": "This is a tiny airplane!!!",
+            "image_url": "../Images/img1.jpeg"
+        }
+    ],
+    "flights": [],
+    "airports": []
+}

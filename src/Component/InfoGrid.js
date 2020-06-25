@@ -1,36 +1,37 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+import InfoCard from "./InfoCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-  },
-  paper: {
-    height: 400,
-    width: 300,
+    margin: 2,
   },
   control: {
-    padding: theme.spacing(12),
+    padding: theme.spacing(1),
   },
 }));
 
-export default function SpacingGrid() {
+const InfoGrid = props => {
   const [spacing, setSpacing] = React.useState(10);
   const classes = useStyles();
+  const infoData = props.infoData;
 
   return (
     <Grid container className={classes.root} spacing={spacing}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {[0, 1, 2].map((value) => (
-            <Grid key={value} item>
-              <Paper className={classes.paper} />
-            </Grid>
-          ))}
+        {infoData.map((info, index) => (
+          <Grid key={index} item xs={4}>
+            <InfoCard info={info}></InfoCard>
+          </Grid>
+        ))}
         </Grid>
       </Grid>
     </Grid>
   );
 }
+
+
+export default InfoGrid;

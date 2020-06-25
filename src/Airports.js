@@ -79,7 +79,6 @@ window.onload = () =>  {
     loadTableData(tableData)
 };
 
-
 function loadTableData(tableData)
 {
     const tableBody = document.getElementById('tableData');
@@ -87,16 +86,12 @@ function loadTableData(tableData)
 
     for(let data of tableData)
     {
-        dataHTML += `<tr><td>${data.airport_name}</td>
-                             <td>${data.country_name}</td>
-                             <td>${data.timezone}</td>
-                             <td>${data.gmt}</td>
-                             <td>${data.iata_code}</td>
-                             <td>${data.geoname_id}</td></tr>`;
+        dataHTML += `<tr><td>${data.airport_name}</td><td>${data.country_name}</td><td>${data.timezone}</td><td>${data.gmt}</td><td>${data.iata_code}</td><td>${data.geoname_id}</td></tr>`;
     }
-    console.log(dataHTML)
-
-    tableBody.innerHTML = dataHTML;
+    if(tableBody != null)
+    {
+        tableBody.innerHTML = dataHTML;
+    }
 }
 
 export const Airports = () => (

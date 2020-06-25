@@ -5,7 +5,7 @@
         "count": 100,
         "total": 182034
     },
-    "data": [
+    "aircraft": [
         {
             "flight_date": "2020-06-26",
             "flight_status": "scheduled",

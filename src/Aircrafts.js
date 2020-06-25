@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import air from './Data/airplanes.json'
+import air from './Data/data.json'
 
 function Aircrafts() {
-
   return (
       <div>
         <li>

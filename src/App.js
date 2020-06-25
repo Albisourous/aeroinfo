@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
-import  Aircrafts  from "./Aircrafts";
+import {Aircrafts} from "./Aircrafts";
 import { Flights } from "./Flights";
 import { Airports } from "./Airports";
 import { About } from "./About";
 import { Layout } from "./Component/Layout";
 import { NavBar } from "./Component/NavBar";
 import  {ColorLine}  from "./Component/ColorLine";
-import {AirportInfo} from "./AirportInfo";
+import { AirportInfo } from "./AirportInfo";
+import { FlightInfo } from "./FlightInfo";
 
 class App extends Component {
   render() {
@@ -24,9 +25,12 @@ class App extends Component {
                 <Route path="/aircrafts">
                   <Aircrafts />
                 </Route>
-                <Route path="/flights">
+                <Route path="/flights" exact>
                   <Flights />
                 </Route>
+                  <Route path="/flights/:id">
+                      <FlightInfo />
+                  </Route>
                 <Route path="/airports" exact>
                   <Airports />
                 </Route>

@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import data from './Data/airports.json';
+import port from './Data/airports.json';
 import {Card} from "react-bootstrap";
-import './airports.css'
+import './setup.css'
 import ButtonBase from "@material-ui/core/ButtonBase";
 import divWithClassName from "react-bootstrap/cjs/divWithClassName";
 
 function Airports() {
-    const airportData = data.data.map( (data, index, airport_name) => {
+    const airportData = port.data.map( (data, index) => {
         return (
             <div>
                 <div>
@@ -28,29 +28,18 @@ function Airports() {
         )
     });
 
-    const test = async () => {
-        const fetch = data.data.map((data) => data.airport_name);
-        console.log(fetch);
-    }
-
-
     return (
         <div>
             <li>
                 <button>Timezone</button>
                 <button>Country of origin</button>
                 <button>Airport name</button>
-                <button clasds="disabled">Sort:</button>
+                <button class="disabled">Sort:</button>
             </li>
             <div><br/></div>
-            {test}
             {airportData}
         </div>
     )
 }
 
 export {Airports};
-
-
-
-

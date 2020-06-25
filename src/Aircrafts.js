@@ -1,20 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import data from "./Data/data.json";
-import InfoGrid from "./Component/InfoGrid";
+import React, {useState, useEffect} from 'react';
+import air from './Data/airplanes.json'
 
-const Aircrafts = props => {
-  const aircarftsData = data["airplanes"];
-  console.log(aircarftsData);
+function Aircrafts() {
+
   return (
-    <div>
-      <InfoGrid infoData={aircarftsData}/>
-    </div>
-  );
-};
+      <div>
+        <li>
+          <button class="disabled">Sort:</button>
+        </li>
+        <div><br/></div>
+      </div>
+  )
+}
 
-Aircrafts.propTypes = {
-  
-};
-
-export default Aircrafts;
+export {Aircrafts};

@@ -14,6 +14,37 @@ export const About = () => (
 
             <div className="member">
                 <div><br/></div>
+                <h2>About us</h2>
+                <div><br/></div>
+                <h4>Our team is here to help you find out information about Airplanes, Flights, Airports from across the world.</h4>
+                <div><br/></div>
+                <div><br/></div>
+                <h5>Total number of commits: </h5>
+                <div><br/></div>
+                <h5>Total number of issues: </h5>
+                <div><br/></div>
+                <h5>Total number of Unit tests: </h5>
+                <div><br/></div>
+                <div><br/></div>
+                <h5>Link to API: </h5>
+                <div><br/></div>
+                <h5>Gitlab Issues: </h5>
+                <div><br/></div>
+                <h5>GitLab Repo: </h5>
+                <div><br/></div>
+                <h5>GitLab Wiki: </h5>
+                <div><br/></div>
+                <h5>Other Sources: </h5>
+                <h5>About Source: </h5>
+                <div><br/></div>
+                <h5>Other Tools: </h5>
+                <h5>About Tools: </h5>
+                <div><br/></div>
+                <div><br/></div>
+            </div>
+
+            <div className="member">
+                <div><br/></div>
                 <h2>Albin Shrestha</h2>
                 <div class="pic">
                     <img src={albin} alt="Logo"/>

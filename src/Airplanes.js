@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import data from "./Data/airplanes.json";
 import InfoGrid from "./Component/InfoGrid";
 import INFO_TYPES from './Constants/enum';
+import './setup.css';
 
 const Airplanes = props => {
   const airplanesData = data["data"];

@@ -26,19 +26,20 @@ export const About = () => (
                 <h5>Total number of Unit tests: </h5>
                 <div><br/></div>
                 <div><br/></div>
-                <h5>Link to API: </h5>
+                <h5>Link to API: <a href = "https://documenter.getpostman.com/view/11816121/SzzrXZCS?version=latest"> AeroInfo API</a></h5>
                 <div><br/></div>
-                <h5>Gitlab Issues: </h5>
+                <h5>Gitlab Issues: <a href = "https://gitlab.com/Albisourous/naviaero/-/issues">GitLab Issues</a></h5>
                 <div><br/></div>
-                <h5>GitLab Repo: </h5>
+                <h5>GitLab Repo: <a href = "https://gitlab.com/Albisourous/naviaero">Project Repository</a></h5>
                 <div><br/></div>
-                <h5>GitLab Wiki: </h5>
+                <h5>GitLab Wiki: <a href = "https://docs.gitlab.com/ee/user/project/wiki/">GitLab Wiki</a></h5>
                 <div><br/></div>
-                <h5>Other Sources: </h5>
-                <h5>About Source: </h5>
+                <h5>Other Sources: <a href = "https://aviationstack.com/">AviationStack</a></h5>
+                <h5>About Source: The Aviation stack API was built to provide a simple way of using information from global aviation data for real-time data.</h5>
                 <div><br/></div>
                 <h5>Other Tools: </h5>
                 <h5>About Tools: </h5>
+                <div><br/></div>
                 <div><br/></div>
                 <div><br/></div>
             </div>

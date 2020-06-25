@@ -1,0 +1,28 @@
+td, th {
+    font-family: "Times New Roman";
+    border: 1px solid lightblue;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    align-self: center;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}

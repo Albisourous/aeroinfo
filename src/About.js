@@ -23,16 +23,29 @@ export const About = () => (
             </div>
 
             <div className="member">
+                <div><br /></div>
+                <h2>Yijing Chen</h2>
+                <div className="pic"></div>
+                <p className="role">Frontend</p>
+                <p>I have 3 cats.</p>
+                <p>a1024507613@gmail.com</p>
+                <p>
+                    <button className="contact"><a href="www.cs.utexas.edu/~yijing">Contact</a></button>
+                </p>
+            </div>
+
+
+            <div className="member">
                 <div><br/></div>
-                <h2>Name</h2>
+                <h2>Kevin Lu</h2>
                 <div className="pic">
 
                 </div>
-                <p className="role">Frontend</p>
-                <p>About</p>
-                <p>email</p>
+                <p className="role">Backend</p>
+                <p>I am a third year computer science student at UT Austin. I am interested in machine learning.</p>
+                <p>luluwen2000@gmail.com</p>
                 <p>
-                    <button className="contact"><a href="link to something">Contact</a></button>
+                    <button className="contact"><a href="mainto: a1024507613@gmail.com">Contact</a></button>
                 </p>
             </div>
 
@@ -61,7 +74,7 @@ export const About = () => (
                 <p>I am a UTCS senior student. Having interests in programming, I transfered to CS in my junior year. I am trying to catch up with my peers, honing my skills to become a professional programmer.</p>
                 <p>xiaofeili@utexas.edu</p>
                 <p>
-                    <button className="contact"><a href="SOMETHING">Contact</a></button>
+                    <button className="contact"><a href="mainto: xiaofeili@utexas.edu">Contact</a></button>
                 </p>
             </div>
 

@@ -34,21 +34,6 @@ export const About = () => (
                 </p>
             </div>
 
-
-            <div className="member">
-                <div><br/></div>
-                <h2>Kevin Lu</h2>
-                <div className="pic">
-
-                </div>
-                <p className="role">Backend</p>
-                <p>I am a third year computer science student at UT Austin. I am interested in machine learning.</p>
-                <p>luluwen2000@gmail.com</p>
-                <p>
-                    <button className="contact"><a href="mainto: a1024507613@gmail.com">Contact</a></button>
-                </p>
-            </div>
-
             <div className="member">
                 <div><br/></div>
                 <h2>Noah Lindley</h2>
@@ -61,6 +46,20 @@ export const About = () => (
                 <p>lindleywnoah@gmail.com</p>
                 <p>
                     <button className="contact"><a href="mailto: lindleywnoah@gmail.com">Contact</a></button>
+                </p>
+            </div>
+
+            <div className="member">
+                <div><br/></div>
+                <h2>Kevin Lu</h2>
+                <div className="pic">
+
+                </div>
+                <p className="role">Backend</p>
+                <p>I am a third year computer science student at UT Austin. I am interested in machine learning.</p>
+                <p>luluwen2000@gmail.com</p>
+                <p>
+                    <button className="contact"><a href="mainto: a1024507613@gmail.com">Contact</a></button>
                 </p>
             </div>
 

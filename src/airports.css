@@ -17,6 +17,7 @@ th {
     text-transform: uppercase;
 }
 
+
 tr:nth-child(odd) {
     background-color: white;
     color: black;
@@ -25,4 +26,8 @@ tr:nth-child(odd) {
 tr:hover {
     background-color: black;
     color: white;
+}
+
+a {
+    color: inherit;
 }

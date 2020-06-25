@@ -26,9 +26,11 @@ class App extends Component {
                 <Route path="/flights">
                   <Flights />
                 </Route>
-                <Route path="/airports">
+                <Route path="/airports" exact>
                   <Airports />
                 </Route>
+                  <Route path="/airports/:id">
+                  </Route>
                 <Route path="/about">
                   <About />
                 </Route>

@@ -1,114 +1,54 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import data from './Data/airports.json';
+import {Card} from "react-bootstrap";
 import './airports.css'
+import ButtonBase from "@material-ui/core/ButtonBase";
+import divWithClassName from "react-bootstrap/cjs/divWithClassName";
 
-let sortDirection = false;
-let tableData = [
-    {
-        gmt: -10,
-        iata_code: 'AAA',
-        city_iata_code: 'AAA',
-        icao_code: 'NTGA',
-        country_iso2: 'PF',
-        geoname_id: 6947726,
-        latitude: -17.05,
-        longitude: -145.41667,
-        airport_name: 'Anaa',
-        country_name: 'French Polynesia',
-        phone_number: null,
-        timezone: 'Pacific/Tahiti'
-    },
-    {
-        gmt: 10,
-        iata_code: 'AAB',
-        city_iata_code: 'AAB',
-        icao_code: 'YARY',
-        country_iso2: 'AU',
-        geoname_id: 7730796,
-        latitude: -26.7,
-        longitude: 141.04167,
-        airport_name: 'Arrabury',
-        country_name: 'Australia',
-        phone_number: null,
-        timezone: 'Australia/Brisbane'
-    },
-    {
-        gmt: 2,
-        iata_code: 'AAC',
-        city_iata_code: 'AAC',
-        icao_code: 'HEAR',
-        country_iso2: 'EG',
-        geoname_id: 6297289,
-        latitude: 31.133333,
-        longitude: 33.75,
-        airport_name: 'El Arish International Airport',
-        country_name: 'Egypt',
-        phone_number: null,
-        timezone: 'Africa/Cairo'
-    },
-    {
-        gmt: 1,
-        iata_code: 'AAE',
-        city_iata_code: 'AAE',
-        icao_code: 'DABB',
-        country_iso2: 'DZ',
-        geoname_id: 2570559,
-        latitude: 36.821392,
-        longitude: 7.811857,
-        airport_name: 'Les Salines',
-        country_name: 'null',
-        phone_number: 'null',
-        timezone: 'Africa/Algiers'
-    },
-    {
-        gmt: -5,
-        iata_code: 'AAF',
-        city_iata_code: 'AAF',
-        icao_code: 'KAAF',
-        country_iso2: 'US',
-        geoname_id: 4146153,
-        latitude: 29.733334,
-        longitude: -84.98333,
-        airport_name: 'Apalachicola Regional',
-        country_name: 'United States',
-        phone_number: null,
-        timezone: 'America/New_York'
+function Airports() {
+    const airportData = data.data.map( (data, index, airport_name) => {
+        return (
+            <div>
+                <div>
+                    <br/>
+                </div>
+                <Card key = {index}>
+                    <ButtonBase
+                        className={data.airport_name}
+                        onClick={event => window.location.href="/airports/" + data.airport_name}
+                    >
+                        <Card.Body>
+                            <Card.Title>{data.airport_name}</Card.Title>
+                            <Card.Text>Country of origin: {data.country_name}</Card.Text>
+                            <Card.Text>Timezone: {data.timezone}</Card.Text>
+                            <Card.Text>GMT: {data.gmt}</Card.Text>
+                        </Card.Body>
+                    </ButtonBase>
+                </Card>
+            </div>
+        )
+    });
+
+    const test = async () => {
+        const fetch = data.data.map((data) => data.airport_name);
+        console.log(fetch);
     }
-];
 
-window.onload = () =>  {
-    loadTableData(tableData)
-};
 
-function loadTableData(tableData)
-{
-    const tableBody = document.getElementById('tableData');
-    let dataHTML = '';
-
-    for(let data of tableData)
-    {
-        dataHTML += `<tr><td><a href="/airports/${data.airport_name}" >${data.airport_name}</a></td><td>${data.country_name}</td><td>${data.timezone}</td><td>${data.gmt}</td></tr>`;
-    }
-    if(tableBody != null)
-    {
-        tableBody.innerHTML = dataHTML;
-    }
+    return (
+        <div>
+            <button>Sort by airport name</button>
+            <button>Sort by country of origin</button>
+            <button>Timezone</button>
+            <button>GMT</button>
+            {test}
+            {airportData}
+        </div>
+    )
 }
 
-export const Airports = () => (
-    <div>
-        <div><br/></div>
-        <div><br/></div>
-        <table>
-            <thead>
-            <tr>
-                <th>Airport Name</th>
-                <th>Country Location</th>
-                <th>Timezone</th>
-                <th>GMT</th>
-            </tr>
-            </thead>
-            <tbody id="tableData"></tbody>
-        </table>
-    </div>
-)
+export {Airports};
+
+
+
 

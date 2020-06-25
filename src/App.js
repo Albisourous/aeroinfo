@@ -31,7 +31,6 @@ class App extends Component {
                   <Airports />
                 </Route>
                   <Route path="/airports/:id">
-                      <ItemDetail />
                   </Route>
                 <Route path="/about">
                   <About />

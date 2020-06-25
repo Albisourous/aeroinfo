@@ -3,25 +3,23 @@ import data from './Data/airports.json';
 import {Card} from "react-bootstrap";
 import './airports.css';
 
-function ItemDetail({ match }) {
+var init = {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    mode: 'cors',
+    cache: 'default'
+};
 
-    const airportData = data.data.map( (data) => {
-        return (
-            <Card key = {data.airport_name}>
-                <Card.Body>
-                    <Card.Title> {data.airport_name} </Card.Title>
-                    <Card.Text>{data.country_name}</Card.Text>
-                </Card.Body>
-            </Card>
-        )
+let myRequest = new Request(data.data, init);
+
+fetch(myRequest)
+    .then(function (resp) {
+        return resp.json();
+    })
+    .then(function (data) {
+        console.log(data.airport_name);
     })
 
-    return (
-        <div>
-            {airportData}
-        </div>
-    )
-}
-
-export default ItemDetail;
 

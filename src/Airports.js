@@ -86,7 +86,7 @@ function loadTableData(tableData)
 
     for(let data of tableData)
     {
-        dataHTML += `<tr><td><a href="/airports/${data.airport_name}" >${data.airport_name}</a></td><td>${data.country_name}</td><td>${data.timezone}</td><td>${data.gmt}</td><td>${data.iata_code}</td><td>${data.geoname_id}</td></tr>`;
+        dataHTML += `<tr><td><a href="/airports/${data.airport_name}" >${data.airport_name}</a></td><td>${data.country_name}</td><td>${data.timezone}</td><td>${data.gmt}</td></tr>`;
     }
     if(tableBody != null)
     {
@@ -105,8 +105,6 @@ export const Airports = () => (
                 <th>Country Location</th>
                 <th>Timezone</th>
                 <th>GMT</th>
-                <th>IATA Code</th>
-                <th>GeoName ID</th>
             </tr>
             </thead>
             <tbody id="tableData"></tbody>

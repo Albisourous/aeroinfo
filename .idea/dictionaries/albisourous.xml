@@ -3,8 +3,10 @@
     <words>
       <w>albin</w>
       <w>geoname</w>
+      <w>getairport</w>
       <w>iata</w>
       <w>icao</w>
+      <w>setairport</w>
       <w>shrestha</w>
     </words>
   </dictionary>

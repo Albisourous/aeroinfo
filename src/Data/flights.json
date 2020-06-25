@@ -1,0 +1,331 @@
+{
+    "pagination": {
+        "limit": 100,
+        "offset": 0,
+        "count": 100,
+        "total": 182034
+    },
+    "data": [
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Marcillac",
+                "timezone": "Europe/Paris",
+                "iata": "RDZ",
+                "icao": "LFCR",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T06:45:00+00:00",
+                "estimated": "2020-06-26T06:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Orly",
+                "timezone": "Europe/Paris",
+                "iata": "ORY",
+                "icao": "LFPO",
+                "terminal": "3",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T08:00:00+00:00",
+                "estimated": "2020-06-26T08:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Amelia International",
+                "iata": "AEH",
+                "icao": "AEH"
+            },
+            "flight": {
+                "number": "1220",
+                "iata": "AEH1220",
+                "icao": "AEH1220",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Dnepropetrovsk",
+                "timezone": "Europe/Kiev",
+                "iata": "DNK",
+                "icao": "UKDD",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T07:40:00+00:00",
+                "estimated": "2020-06-26T07:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Boryspil (Borispol)",
+                "timezone": "Europe/Kiev",
+                "iata": "KBP",
+                "icao": "UKBB",
+                "terminal": "D",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T09:05:00+00:00",
+                "estimated": "2020-06-26T09:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Wind Rose Aviation Company",
+                "iata": "7W",
+                "icao": "WRC"
+            },
+            "flight": {
+                "number": "106",
+                "iata": "7W106",
+                "icao": "WRC106",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tanga",
+                "timezone": "Africa/Dar_es_Salaam",
+                "iata": "TGT",
+                "icao": "HTTG",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T07:15:00+00:00",
+                "estimated": "2020-06-26T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Kisauni",
+                "timezone": "Africa/Dar_es_Salaam",
+                "iata": "ZNZ",
+                "icao": "HTZA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T07:45:00+00:00",
+                "estimated": "2020-06-26T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Coastal Aviation",
+                "iata": "CQ",
+                "icao": "CSV"
+            },
+            "flight": {
+                "number": "146",
+                "iata": "CQ146",
+                "icao": "CSV146",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sanandaj",
+                "timezone": "Asia/Tehran",
+                "iata": "SDG",
+                "icao": "OICS",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T09:55:00+00:00",
+                "estimated": "2020-06-26T09:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Mehrabad (Qualeh Morgeh)",
+                "timezone": "Asia/Tehran",
+                "iata": "THR",
+                "icao": "OIII",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T10:50:00+00:00",
+                "estimated": "2020-06-26T10:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qeshm Air",
+                "iata": "QB",
+                "icao": "IRQ"
+            },
+            "flight": {
+                "number": "1292",
+                "iata": "QB1292",
+                "icao": "IRQ1292",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Kallax",
+                "timezone": "Europe/Stockholm",
+                "iata": "LLA",
+                "icao": "ESPA",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T07:00:00+00:00",
+                "estimated": "2020-06-26T07:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Arlanda",
+                "timezone": "Europe/Stockholm",
+                "iata": "ARN",
+                "icao": "ESSA",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T08:20:00+00:00",
+                "estimated": "2020-06-26T08:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SAS",
+                "iata": "SK",
+                "icao": "SAS"
+            },
+            "flight": {
+                "number": "1",
+                "iata": "SK1",
+                "icao": "SAS1",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Arusha",
+                "timezone": "Africa/Dar_es_Salaam",
+                "iata": "ARK",
+                "icao": "HTAR",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T08:00:00+00:00",
+                "estimated": "2020-06-26T08:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Lake Manyara",
+                "timezone": "Africa/Dar_es_Salaam",
+                "iata": "LKY",
+                "icao": "HTLM",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T08:25:00+00:00",
+                "estimated": "2020-06-26T08:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Regional Air",
+                "iata": "8N",
+                "icao": "REG"
+            },
+            "flight": {
+                "number": "101",
+                "iata": "8N101",
+                "icao": "REG101",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2020-06-26",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Vilnius",
+                "timezone": "Europe/Vilnius",
+                "iata": "VNO",
+                "icao": "EYVI",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2020-06-26T07:50:00+00:00",
+                "estimated": "2020-06-26T07:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Schiphol",
+                "timezone": "Europe/Amsterdam",
+                "iata": "AMS",
+                "icao": "EHAM",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "delay": null,
+                "scheduled": "2020-06-26T09:20:00+00:00",
+                "estimated": "2020-06-26T09:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Baltic",
+                "iata": "BT",
+                "icao": "BTI"
+            },
+            "flight": {
+                "number": "609",
+                "iata": "BT609",
+                "icao": "BTI609",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        }
+}

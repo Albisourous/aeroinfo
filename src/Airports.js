@@ -37,10 +37,14 @@ function Airports() {
 
     return (
         <div>
-            <button>Sort by airport name</button>
-            <button>Sort by country of origin</button>
-            <button>Timezone</button>
-            <button>GMT</button>
+            <li>
+                <button>GMT</button>
+                <button>Timezone</button>
+                <button>Country of origin</button>
+                <button>Airport name</button>
+                <button clasds="disabled">Sort:</button>
+            </li>
+            <div><br/></div>
             {test}
             {airportData}
         </div>

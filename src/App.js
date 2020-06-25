@@ -9,7 +9,7 @@ import { About } from "./About";
 import { Layout } from "./Component/Layout";
 import { NavBar } from "./Component/NavBar";
 import  {ColorLine}  from "./Component/ColorLine";
-import ItemDetail from "./AirportInfo";
+import {AirportInfo} from "./AirportInfo";
 
 class App extends Component {
   render() {
@@ -31,6 +31,7 @@ class App extends Component {
                   <Airports />
                 </Route>
                   <Route path="/airports/:id">
+                      <AirportInfo />
                   </Route>
                 <Route path="/about">
                   <About />

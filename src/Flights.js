@@ -1,18 +1,20 @@
-import React, {useState, useEffect} from 'react';
-import fInfo from './Data/flights.json';
-import {Card} from "react-bootstrap";
-import ButtonBase from "@material-ui/core/ButtonBase";
+import React from 'react';
+import PropTypes from 'prop-types';
+import data from "./Data/flights.json";
+import InfoGrid from "./Component/InfoGrid";
+import INFO_TYPES from './Constants/enum';
 
+const Flights = props => {
+  const flightsData = data["data"];
+  return (
+    <div>
+      <InfoGrid infoData={flightsData} infoCardType={INFO_TYPES.FLIGHTS}/>
+    </div>
+  );
+};
 
-function Flights() {
-    return (
-        <div>
-            <li>
-                <button> IH</button>
-            </li>
-            <div><br/></div>
-        </div>
-    )
-}
+Flights.propTypes = {
+  
+};
 
-export {Flights};
+export default Flights;

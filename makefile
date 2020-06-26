@@ -2,8 +2,8 @@ versions:
 	which		$(PYTHON)
 	$(PYTHON)	--version
 
-models.html: models.py
-	$(PYDOC) -w models.p > models.html
+models.html: main.py
+	$(PYDOC) -w main.py > models.html
 
 data.log:
 	git log > data.log

@@ -1,0 +1,410 @@
+commit 49f1c596117847f799dd93d0825d420ba4a2bda5
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jun 26 15:48:41 2020 -0700
+
+    make link between flights and airlane
+
+commit d5f0ac3302d4f6f51ac682ea94e21e2c05ad085c
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:42:21 2020 -0500
+
+    change log in makefile
+
+commit 0851b312e8115908d2e31081d2287d34ff70cfbf
+Merge: 5a52eacd d8f5b52e
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:30:51 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit 5a52eacd3fad0de06b3a28b364183db461e9f801
+Merge: 11cbc732 5fbcc524
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:30:29 2020 -0500
+
+    final
+
+commit d8f5b52ed35fb2504679877c42362a195223da33
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 19:29:27 2020 +0000
+
+    Update app.yaml
+
+commit 11cbc732ea5e65691528c8c99c2723b4595300e3
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:28:27 2020 -0500
+
+    added app.yml
+
+commit 5fbcc524215022ee3538fa89713f801204dd47be
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jun 26 02:36:45 2020 +0000
+
+    Update app.yaml
+
+commit 0e5bac3c13a5d81dc91f877a01e9cab54b8a26e2
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 20:10:50 2020 -0500
+
+    final commit for phase 1 (hopefully) with updated page links
+
+commit f940bc44f336327ab0821c2c8a119b3e08edca6f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 18:37:14 2020 -0500
+
+    updated cards
+
+commit 4edf190f4c310ab33a7138d6d22034c407251cee
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 18:22:32 2020 -0500
+
+    about.css hotpink
+
+commit 204f529d2522efb5815aa33496a832173eaca6c6
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 17:54:46 2020 -0500
+
+    fixed links on about
+
+commit 74287cd25fbe8f887f8c394a8f1161914f734d4d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 17:34:23 2020 -0500
+
+    added more formating to about page
+
+commit ded95123c8794e0e4367c0f42b6407486c623673
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 17:01:46 2020 -0500
+
+    add main.py and requirements
+
+commit 26e1bf26ca171f81ee89db74b2d296720422813d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:57:43 2020 -0500
+
+    added pics to cards
+
+commit fcfc6960ccb2439f8ced9043cfa4e006674504bf
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:43:47 2020 -0500
+
+    added sort
+
+commit 6f3b953f1505977b47002888b7512ce57b06597a
+Merge: 6221f938 1a1321af
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:14:18 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit 6221f9380d46067b0cee95594e41e7c921a8b3b3
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:14:00 2020 -0500
+
+    more updates to about page
+
+commit 1a1321afc4192db1837273ff8bb8525d486339a7
+Merge: 205c67ce 4b903e54
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jun 25 21:12:29 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    add grid for airplane and flight
+    
+    See merge request Albisourous/naviaero!10
+
+commit 4b903e5423f4b70f95d48fbd74cfcd78bd33e726
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jun 25 14:05:21 2020 -0700
+
+    add necessary files for airplane and flights
+
+commit 205c67ceacce294884f15d76d4129a7225b6a1d5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:04:42 2020 -0500
+
+    made changed to look of website
+
+commit 35be64745cda13bfa87a6578ed12aed61eeb0b1b
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 15:44:43 2020 -0500
+
+    added pics to about page
+
+commit 5832c89fbeaaf18c9eb86c23d45816b9af84d105
+Merge: e14a8d89 dcbc2f4d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 14:11:11 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit e14a8d89ce26edbb0c8b2d2e2c87a7692ddda4cd
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 14:10:54 2020 -0500
+
+    changed fount on homepage
+
+commit dcbc2f4d12e760b5c2950710d6fd01b773dc098f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 19:03:36 2020 +0000
+
+    Add CHANGELOG
+
+commit 8b56720d32e8498e820ad6b305ed85109e9c6d38
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 13:49:25 2020 -0500
+
+    fixed a few buggs
+
+commit b04f5321c3793ea1a684f860a56b7508e2c219c7
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 12:24:58 2020 -0500
+
+    removed gmt from airport
+
+commit fd219fd21558e13847f8a5ff670040aedf88d4d0
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 12:01:24 2020 -0500
+
+    added working pages to sub pages for airports
+
+commit bc664bf25ccfe7aa6ae1edf9c9fdf141c09289a5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 10:23:31 2020 -0500
+
+    updated to add cards on airport
+
+commit 19c61d61463a9899e055e9969dea9ca82e3ef456
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 02:12:17 2020 -0500
+
+    added detain/cards to individual pages on airportinfo
+
+commit 08164893bd91eb48e19dd39fb958d3b676eba334
+Merge: fb0d32a7 9294a9bb
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 00:43:00 2020 -0500
+
+    Added linking pages on airports
+
+commit fb0d32a7cc60af6114096182486f1772a9b97368
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 00:27:25 2020 -0500
+
+    added linking pages on airports
+
+commit 9294a9bbc9d7051f5efaf8824a9a792165878b1d
+Merge: 59795ddf e5632f31
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jun 25 05:24:11 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Add 3 .json files
+    
+    See merge request Albisourous/naviaero!9
+
+commit e5632f313f4fa7dafe2de18d778b559c7b322997
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jun 24 22:22:19 2020 -0700
+
+    Add 3 json files
+
+commit 59795ddf08929c803a780650bb3a9e54ae9ed847
+Merge: 8e930fbb 672d4ba4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jun 25 05:20:20 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    build info card
+    
+    See merge request Albisourous/naviaero!8
+
+commit 672d4ba446ba6fac2b8953d2f8caefee361395a9
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jun 24 22:02:48 2020 -0700
+
+    update airports info on data.json
+
+commit b4e0f5443b8f57d42de9cc8a673c24f47140bb03
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jun 24 21:50:46 2020 -0700
+
+    build info card
+
+commit 8e930fbbde835c4be0c275a303e79710ac24ca89
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 03:29:33 2020 +0000
+
+    Update .gitignore
+
+commit cc1626fd78af96510c3c66e83d17179676576d10
+Merge: 4fc30683 9285d92a
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 22:27:00 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit 4fc30683a3322da6e297cb6c10432ac2d544a913
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 22:26:51 2020 -0500
+
+    fixed error with airports page window.onload
+
+commit 9285d92a69c12cbc4243ccafa7c5698261619f8c
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 03:25:59 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit df8c142f8d0c77b4a01a4e06514653db9e5927de
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 03:25:49 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit db2b596e821d3479979530e88940bc58cca62ce7
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 22:01:11 2020 -0500
+
+    updated airports to have a table of information and a css to work with it
+
+commit 0fcc8462184d5c452d721d2d1bbbdc9e9f2ccc22
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 01:56:42 2020 +0000
+
+    Update .gitignore spelling
+
+commit ad4ba848685ef9fecb398f0f9dd825615f5200e5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 01:50:55 2020 +0000
+
+    Added ignore for node_modules
+
+commit 401449b37ec5bfb0576cbd1e7c9aab478c9cb1ab
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 19:30:40 2020 -0500
+
+    added a temp file which allows for tables  to be sorted
+
+commit e2d34cadea52e96390f8b498f72ce962807dd279
+Merge: f49f56f6 1a9bba73
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 18:35:38 2020 -0500
+
+    new update: fixed founts
+
+commit f49f56f6fcd9a596527c547a3ac50c1b66142d1e
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 18:33:26 2020 -0500
+
+    added noah's information in the about
+
+commit 1a9bba73dcac404f4e76d4fc6ef5973dfc80876b
+Merge: 770a4ed8 e3cb0e5a
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 21:17:39 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change font family
+    
+    See merge request Albisourous/naviaero!2
+
+commit e3cb0e5ac3a3f0cb00e68633582e00ee7833a9c4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 14:13:54 2020 -0700
+
+    change font family
+
+commit 770a4ed8f96d1d103f44ea3bffe6925bd3aaa047
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 18:07:16 2020 +0000
+
+    Update app.yaml
+
+commit 8628c299b98574238054427cd19af93c05c36b4d
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 17:54:11 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit ebd9a10a32b18605733eae612381867d3c0949a4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 17:42:15 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit dbecd4e5869622e828a37b3ef3fc8a7abc66794e
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 00:20:13 2020 -0500
+
+    added a better about page with an example of myself with a css to fomat it. Also added some tester files in temp and update which can be used to run tests on code
+
+commit a116f01e7438b598483a5d16ce8e95214bd29fab
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 21:11:59 2020 -0500
+
+    Update to readme
+
+commit 782a006a93adccef3d0445962096e9e46e028eff
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 01:42:06 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit b0ed20be1e99d73c065d772e7d82039bff8c3ec7
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 20:33:34 2020 -0500
+
+    first commit adding website template that Yijing made most of
+
+commit 5a1ec7f05b4f5492cd9adff80c0d88453a64f3fb
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 01:01:44 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit 443583e5f682f7e22da8a7760fef87dede623c26
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 23:21:25 2020 +0000
+
+    Delete index.html
+
+commit 550018928c88d00a22d16ce20010879d84cb1e54
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:38:22 2020 +0000
+
+    added config.yml file
+
+commit 3c0016a75eb1ac0c1828ab93d7c00d05c002b73d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:32:51 2020 +0000
+
+    Added CNAME to domain
+
+commit bc824fb819e5edcf396e69b21ab4a0355cd8d55f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:32:18 2020 +0000
+
+    Added index.html as temp
+
+commit 2498f7219acc94d155e8a6a8f759a81ea51d39ea
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:27:12 2020 +0000
+
+    Add .gitlab-ci.yml
+
+commit 2074a1c68fd155a94e2768b56de8b400ed9cdc78
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:25:30 2020 +0000
+
+    Update README.md - added caps
+
+commit 7ca7a8b641005e08c1550c11f12194591e8a3115
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:25:08 2020 +0000
+
+    Initial commit

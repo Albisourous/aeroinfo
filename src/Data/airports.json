@@ -65,12 +65,12 @@
             "latitude": "36.821392",
             "longitude": "7.811857",
             "airport_name": "Les Salines",
-            "country_name": null,
+            "country_name": "Algeria",
             "phone_number": null,
             "timezone": "Africa/Algiers"
         },
         {
-            "image_url": "https://lh3.googleusercontent.com/proxy/zWhLnT3BvCecLZW2wkShQjhSrRIwjZWA_wCZnRLeS7JdF-ddGGWaWl-SuCRckK7lt3K3cv3pL2lXs0EDvbde2ApCJe_yZxeu-d9V1-Q-YCKr7O-UbM_IbQ",
+            "image_url": "https://i1.wp.com/www.fs2000.org/wp-content/uploads/2017/12/KAAF-3.jpg",
 
             "gmt": "-5",
             "iata_code": "AAF",

@@ -6,6 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import './info.css';
 
+
 const num = window.location.pathname.substring(9).replace(/%20/gi, " ");
 const info = port.data.filter(data => data["flight"].number == num);
 const flightData = info.map( (data, index, airport_name) => {
@@ -16,8 +17,8 @@ const flightData = info.map( (data, index, airport_name) => {
             </div>
             <Card key = {index}>
                 <ButtonBase
-                    className={data["flight"].number}
-                    onClick={event => window.location.href="/flights/" + data["flight"].number}
+                    className={data["aircraft"].construction_number}
+                    onClick={event => window.location.href="/airplanes/" + data["aircraft"].construction_number}
                 >
                     <Card.Body>
                         <Card.Title>Flight: {data["flight"].number}</Card.Title>

@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import INFO_TYPES from "../Constants/enum";
 import AirplaneCard from "./AirplaneCard";
 import FlightCard from "./FlightCard";
+import AirportCard from "./AirportCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +28,7 @@ const _getInfoCard = (type, info) => {
       );
     case INFO_TYPES.AIRPORTS:
       return (
-        <AirplaneCard info={info}></AirplaneCard>
+        <AirportCard info={info}></AirportCard>
       );
     default:
       return (<div></div>);

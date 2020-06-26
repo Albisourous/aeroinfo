@@ -14,23 +14,21 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        height: 440,
+        height: 430,
     },
-
     media: {
         height: 300,
         width: 330,
     },
-
 });
 
-const AirplaneCard = props => {
+const AirportCard = props => {
     const info = props.info;
     const classes = useStyles();
     return (
         <Card className={classes.root}>
-            <ButtonBase className="{info.registration_number}"
-                onClick={event => window.location.href = "/airplanes/" + info.construction_number}>
+            <ButtonBase className="{info.airport_name}"
+                        onClick={event => window.location.href = "/airports/" + info.airport_name}>
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}
@@ -38,11 +36,11 @@ const AirplaneCard = props => {
                         title="lol"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h6" component="h2"><span>Plane Name:  </span>
-                            {info.iata_type}
+                        <Typography gutterBottom variant="h6" component="h2"><span>Name:  </span>
+                            {info.airport_name}
                         </Typography>
-                        <Typography variant="h6" component="h2"><span>Plane Owner:  </span>
-                            {info.plane_owner}
+                        <Typography variant="h6"  component="h2"><span>Country of origin:  </span>
+                            {info.country_name}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -51,8 +49,8 @@ const AirplaneCard = props => {
     );
 };
 
-AirplaneCard.propTypes = {
+AirportCard.propTypes = {
 
 };
 
-export default AirplaneCard;
+export default AirportCard;

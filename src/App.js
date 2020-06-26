@@ -4,7 +4,7 @@ import "./App.css";
 import { Home } from "./Home";
 import Airplanes  from "./Airplanes";
 import Flights from "./Flights";
-import { Airports } from "./Airports";
+import  Airports  from "./Airports";
 import { About } from "./About";
 import { Layout } from "./Component/Layout";
 import { NavBar } from "./Component/NavBar";

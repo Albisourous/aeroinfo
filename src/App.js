@@ -11,45 +11,49 @@ import { NavBar } from "./Component/NavBar";
 import  {ColorLine}  from "./Component/ColorLine";
 import { AirportInfo } from "./AirportInfo";
 import { FlightInfo } from "./FlightInfo";
+import { AirplaneInfo } from "./AirplaneInfo";
 
 class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <NavBar />
-        <ColorLine />
-        <Layout>
-          
-            <Router>
-              <Switch>
-                <Route path="/airplanes">
-                  <Airplanes />
-                </Route>
-                <Route path="/flights" exact>
-                  <Flights />
-                </Route>
-                  <Route path="/flights/:id">
-                      <FlightInfo />
-                  </Route>
-                <Route path="/airports" exact>
-                  <Airports />
-                </Route>
-                  <Route path="/airports/:id">
-                      <AirportInfo />
-                  </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/">
-                  <Home />
-                </Route>
-              </Switch>
-            </Router>
-          
-        </Layout>
-      </React.Fragment>
-    );
-  }
+    render() {
+        return (
+            <React.Fragment>
+                <NavBar />
+                <ColorLine />
+                <Layout>
+
+                    <Router>
+                        <Switch>
+                            <Route path="/airplanes" exact>
+                                <Airplanes />
+                            </Route>
+                            <Route path="/airplanes/:id">
+                                <AirplaneInfo />
+                            </Route>
+                            <Route path="/flights" exact>
+                                <Flights />
+                            </Route>
+                            <Route path="/flights/:id">
+                                <FlightInfo />
+                            </Route>
+                            <Route path="/airports" exact>
+                                <Airports />
+                            </Route>
+                            <Route path="/airports/:id">
+                                <AirportInfo />
+                            </Route>
+                            <Route path="/about">
+                                <About />
+                            </Route>
+                            <Route path="/">
+                                <Home />
+                            </Route>
+                        </Switch>
+                    </Router>
+
+                </Layout>
+            </React.Fragment>
+        );
+    }
 }
 
 export default App;

@@ -2,6 +2,7 @@ import React, {useState, useEffect, Component} from 'react';
 import port from './Data/airports.json';
 import {Card} from "react-bootstrap";
 import './setup.css';
+import './info.css';
 import ButtonBase from "@material-ui/core/ButtonBase";
 
 const currentLocation = window.location.pathname.substring(10).replace(/%20/gi, " ");
@@ -29,6 +30,11 @@ const airportData = info.map( (data, index, airport_name) => {
                     </Card.Body>
                 </ButtonBase>
             </Card>
+            <br/>
+            <img className="center"
+                 src={data.image_url}
+                 alt="new"
+            />
         </div>
     )
 });

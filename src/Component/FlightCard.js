@@ -24,7 +24,7 @@ const FlightCard = props => {
     const classes = useStyles();
     return (
         <Card className={classes.root}>
-            <ButtonBase className={info.flight.number}
+            <ButtonBase className="flight"
                         onClick={event => window.location.href = "/flights/" + info.flight.number}>
                 <CardActionArea>
                     <CardMedia

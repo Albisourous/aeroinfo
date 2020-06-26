@@ -1,0 +1,96 @@
+openapi: 3.0.0
+info:
+  description: This is a simple API to get data about airplanes, airlines, and flights
+  version: “1.0.0”
+  title: AeroInfo API
+paths:
+  flights:
+    get:
+      summary: lists all current and upcoming flights
+      parameters:
+        – in: query
+        name: searchString
+        description: Query about the origin of the flight
+        required: false
+        schema:
+          type: string
+      responses:
+        ‘200’:
+          description: search results matching criteria
+        ‘400’:
+          description: bad input parameter
+  flights/flight_number:
+    get:
+      summary: lists flights of a flight number
+      parameters:
+        – in: query
+        name: flight_number
+        description: query about flights based on flight number
+        required: false
+        schema:
+          type: string
+      responses:
+        ‘200’:
+          description: search results matching criteria
+        ‘400’:
+          description: bad input parameter
+  flights/flight_date:
+    get:
+      summary: lists flights on a date
+      parameters:
+        – in: query
+        name: flight_date
+        description: Query about the origin of the flight
+        required: false
+        schema:
+          type: string
+      responses:
+        ‘200’:
+          description: search results matching criteria
+        ‘400’:
+          description: bad input parameter
+  airlines:
+    get:
+      summary: lists airlines that have flights
+      parameters:
+        – in: query
+        name: searchString
+        description: Query about the airlines that are offering flights
+        required: false
+        schema:
+          type: string
+      responses:
+        ‘200’:
+          description: search results matching criteria
+        ‘400’:
+          description: bad input parameter
+  airlines:
+    get:
+      summary: lists the airlines that are being used for flights
+      parameters:
+        – in: query
+        name: searchString
+        description: query about the airlines being used
+        required: false
+        schema:
+          type: string
+      responses:
+        ‘200’:
+          description: search results matching criteria
+        ‘400’:
+          description: bad input parameter
+  aircraft_types:
+    get:
+      summary: lists all of the types of airlines being used for current and upcoming flights
+      parameters:
+        – in: query
+        name: searchString
+        description: query about the airlines being used
+        required: false
+        schema:
+          type: string
+      responses:
+        ‘200’:
+          description: search results matching criteria
+        ‘400’:
+          description: bad input parameter

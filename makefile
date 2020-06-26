@@ -5,5 +5,5 @@ versions:
 models.html: models.py
 	$(PYDOC) -w models.p > models.html
 
-IDB1.log:
-	git log > IDB1.log
+data.log:
+	git log > data.log

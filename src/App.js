@@ -20,7 +20,6 @@ class App extends Component {
                 <NavBar />
                 <ColorLine />
                 <Layout>
-
                     <Router>
                         <Switch>
                             <Route path="/airplanes" exact>
@@ -49,7 +48,6 @@ class App extends Component {
                             </Route>
                         </Switch>
                     </Router>
-
                 </Layout>
             </React.Fragment>
         );

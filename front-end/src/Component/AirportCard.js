@@ -28,12 +28,12 @@ const AirportCard = props => {
     return (
         <Card className={classes.root}>
             <ButtonBase className="{info.airport_name}"
-                        aonClick={event => window.location.href = "/airports/" + info.airport_name}>
+                        onClick={event => window.location.href = "/airports/" + info.airport_name}>
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}
                         image={info.image_url}
-                        title=""
+                        title="lol"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h6" component="h2"><span>Name:  </span>

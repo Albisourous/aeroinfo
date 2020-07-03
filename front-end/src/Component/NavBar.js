@@ -3,7 +3,7 @@ import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import "../App.css";
 
 export const NavBar = () => (
-  <Navbar className="navbar" expand="lg">
+  <Navbar className="navbar" fixed="top" expand="lg">
     <Navbar.Brand href="/">
       <i className="fa fa-plane">
         <span className="title"> AeroInfo</span>
@@ -23,6 +23,6 @@ export const NavBar = () => (
         <Button variant="outline-light">Search</Button>
       </Form>
     </Navbar.Collapse>
-    
+
   </Navbar>
 );

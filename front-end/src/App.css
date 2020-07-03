@@ -1,5 +1,6 @@
 body {
-    padding-top: 10px;
+
+    padding-top: 200px;
     background-color: rgb(14, 25, 47);
     font-family: "Homenaje", sans-serif;
 }
@@ -10,7 +11,7 @@ body {
 .navbar {
     top: 0;
     margin-bottom: -15px;
-    position: -webkit-sticky;
+    border-bottom: 3px solid white;
     background: rgb(14, 25, 47);
     color: #fff;
     width: 100%;
@@ -39,6 +40,11 @@ body {
     margin-right: 45px;
 }
 
+/* .colorline{
+    margin-top: 153px;
+    
+} */
+
 
 /*----------------------Grids----------------------*/
 
@@ -50,6 +56,7 @@ body {
 /*----------------------Home Page----------------------*/
 
 .Home {
+    
     padding-left: 0;
     padding-right: 0;
     top: 0;
@@ -76,11 +83,6 @@ body {
     font-family: "Homenaje", sans-serif;
     color: rgba(255, 255, 255, 0.849);
     padding-top: 250px;
-
-    /* position: fixed;
-    top: 30%;
-    display: inline-block;
-    width: 50%; */
 }
 
 .Home .text h1 {
@@ -103,5 +105,10 @@ body {
     min-width: 100%;
     min-height: 100vh;
     z-index: -99;
-    filter: brightness(70%)
+    filter: brightness(70%);
+    
+}
+
+.Home .bg-below-video{
+    padding-top: 1000px;
 }

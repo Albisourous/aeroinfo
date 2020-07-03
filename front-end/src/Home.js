@@ -13,11 +13,13 @@ export const Home = () => {
                     <source src={Video} type="video/mp4" />
                     <source src={Video} type="video/ogg" />
 			    Your browser does not support the video tag.
-			    </video>
+			</video>
             </div>
 
-            <div className="text text-center">
-                <div class="square center">
+
+            <div class="square">
+
+                <div className="text text-center">
                     <br />
                     <h1 > Welcome! </h1>
 

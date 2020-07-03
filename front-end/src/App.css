@@ -1,67 +1,94 @@
 body {
-  background-color: rgb(14, 25, 47);
-  font-family: "Homenaje", sans-serif;
+    padding-top: 10px;
+    background-color: rgb(14, 25, 47);
+    font-family: "Homenaje", sans-serif;
 }
 
+
 /*----------------------NavBar----------------------*/
+
 .navbar {
-  top: 0;
-  margin-bottom: -15px;
-  position: -webkit-sticky;
-  background: transparent;
-  color: #fff;
-  width: 100%;
-  z-index: 2;
-  flex-direction: column;
+    top: 0;
+    margin-bottom: -15px;
+    position: -webkit-sticky;
+    background: rgb(14, 25, 47);
+    color: #fff;
+    width: 100%;
+    z-index: 2;
+    flex-direction: column;
 }
 
 .navbar .fa-plane {
-  font-size: 50px;
-  color: #fff;
+    font-size: 60px;
+    color: #fff;
 }
 
 .navbar .title {
-  font-family: "Homenaje", sans-serif;
-  color: white;
-}
-.navbar .link {
-  margin-right: 30px;
-  font-family: "Homenaje", sans-serif;
-  font-size: 30px;
-  color: #fff !important;
+    font-family: "Homenaje", sans-serif;
+    color: white;
 }
 
-.navbar .Form{
+.navbar .link {
+    margin-right: 45px;
+    font-family: "Homenaje", sans-serif;
+    font-size: 40px;
+    color: #fff !important;
+}
+
+.navbar .Form {
     margin-right: 30px;
 }
 
+
 /*----------------------Grids----------------------*/
+
 .SpacingGrid {
-  padding-top: 1000px;
+    padding-top: 1000px;
 }
+
 
 /*----------------------Home Page----------------------*/
+
 .Home {
-    height: 120vh;
-    width: auto;
-    margin: auto;
-    background: Linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url(./Images/img1.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.Home h1{
-    font-family: "Homenaje", sans-serif;
-    color: #fff;
-    font-size: 100px;
-    font-weight: bold;
-    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
-.Home p{
+.Home .video{
+    padding-top: 13px;
+}
+
+.Home .text{
     font-family: "Homenaje", sans-serif;
-    color: #fff;
-    font-size: 40px;
+    color: rgba(255, 255, 255, 0.849);
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+
+.Home .text h1 {
+    font-size: 70px;
     font-weight: bold;
     margin: 10px;
+    left: 50%;
 }
+
+.Home .text p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px;
+}
+
+
+
+#background-video {
+    position: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -99;
+    filter: brightness(70%)
+}
+

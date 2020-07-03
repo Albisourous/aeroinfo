@@ -36,7 +36,7 @@ body {
 }
 
 .navbar .Form {
-    margin-right: 30px;
+    margin-right: 45px;
 }
 
 
@@ -50,29 +50,43 @@ body {
 /*----------------------Home Page----------------------*/
 
 .Home {
-    position: absolute;
+    padding-left: 0;
+    padding-right: 0;
     top: 0;
     left: 0;
-
+    right:0;
 }
 
-.Home .video{
-    padding-top: 13px;
+.Home .video {
+    margin-top: -155px;
 }
 
-.Home .text{
+
+
+.Home .text .square {
+    background-color: rgba(255, 255, 255, 0.287);
+    width: 930px;
+    height: 425px;
+    display: inline-block;
+    
+    
+}
+
+.Home .text {
     font-family: "Homenaje", sans-serif;
     color: rgba(255, 255, 255, 0.849);
-    position: fixed;
+    padding-top: 250px;
+
+    /* position: fixed;
     top: 30%;
-    left: 30%;
+    display: inline-block;
+    width: 50%; */
 }
 
 .Home .text h1 {
     font-size: 70px;
     font-weight: bold;
-    margin: 10px;
-    left: 50%;
+    margin: 20px;
 }
 
 .Home .text p {
@@ -81,15 +95,7 @@ body {
     margin: 25px;
 }
 
-.Home .square {
-    background-color: rgba(255, 255, 255, 0.287);
-    width: 930px;
-    height: 400px;
-    display: inline-block;
-    position: fixed;
-    top: 30%;
-    left: 30%;
-}
+
 
 #background-video {
     position: fixed;
@@ -99,4 +105,3 @@ body {
     z-index: -99;
     filter: brightness(70%)
 }
-

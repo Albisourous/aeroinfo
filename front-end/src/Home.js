@@ -17,17 +17,19 @@ export const Home = () => {
             </div>
 
 
-            <div class="square">
 
-                <div className="text text-center">
+
+            <div className="text text-center">
+                <div class="square center">
                     <br />
                     <h1 > Welcome! </h1>
 
                     <p> Feel like to know more about the aircraft ? </p>
                     <p> Or you want to look for a flight for your trip ? </p>
-                    <p>We have got all you want to know about airplanes, flights, and airports!</p>
+                    <p>We have got all you want to know about airplanes,  flights,  and airports!</p>
                 </div>
             </div>
+
         </div >
     );
 };

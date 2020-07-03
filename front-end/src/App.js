@@ -19,36 +19,34 @@ class App extends Component {
             <React.Fragment>
                 <NavBar />
                 <ColorLine />
-                <Layout>
                     <Router>
                         <Switch>
                             <Route path="/airplanes" exact>
-                                <Airplanes />
+                                <Layout><Airplanes /></Layout>
+                                
                             </Route>
                             <Route path="/airplanes/:id">
-                                <AirplaneInfo />
+                            <Layout><AirplaneInfo /></Layout>
                             </Route>
                             <Route path="/flights" exact>
-                                <Flights />
+                            <Layout> <Flights /></Layout>
                             </Route>
                             <Route path="/flights/:id">
-                                <FlightInfo />
+                            <Layout> <FlightInfo /></Layout>
                             </Route>
                             <Route path="/airports" exact>
-                                <Airports />
+                            <Layout>  <Airports /></Layout>
                             </Route>
                             <Route path="/airports/:id">
-                                <AirportInfo />
+                            <Layout>   <AirportInfo /></Layout>
                             </Route>
                             <Route path="/about">
-                                <About />
+                            <Layout>  <About /></Layout>
                             </Route>
-                            <Route path="/">
-                                <Home />
+                            <Route path="/"> <Home />
                             </Route>
                         </Switch>
                     </Router>
-                </Layout>
             </React.Fragment>
         );
     }

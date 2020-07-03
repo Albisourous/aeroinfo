@@ -18,7 +18,6 @@ export const Home = () => {
 
 
             <div class="square">
-
                 <div className="text text-center">
                     <br />
                     <h1 > Welcome! </h1>

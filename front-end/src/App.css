@@ -40,7 +40,10 @@ body {
     margin-right: 45px;
 }
 
-
+/* .colorline{
+    margin-top: 153px;
+    
+} */
 
 
 /*----------------------Grids----------------------*/
@@ -135,15 +138,6 @@ body {
     margin-right: 90px;
 }
 
-.Home .square {
-    background-color: rgba(255, 255, 255, 0.287);
-    width: 930px;
-    height: 400px;
-    display: inline-block;
-    position: fixed;
-    top: 30%;
-    left: 30%;
-}
 
 .Home .roundedCorner {
 

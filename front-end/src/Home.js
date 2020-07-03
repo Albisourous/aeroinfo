@@ -27,10 +27,21 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className="bg-below-video">
+            <div className="row">
+                <div className="roundedCorner">
+                    <p>Airplane</p>
+                </div>
 
+                <div className="roundedCorner">
+                    <p>Airplane</p>
+                </div>
 
+                <div className="roundedCorner">
+                    <p>Airplane</p>
+                </div>
+                
             </div>
+            <div className="background"> </div>
 
 
         </div >

@@ -56,27 +56,35 @@ body {
 /*----------------------Home Page----------------------*/
 
 .Home {
-    
+
     padding-left: 0;
     padding-right: 0;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
 }
 
 .Home .video {
     margin-top: -155px;
 }
 
+#background-video {
+    position: fixed;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -99;
+    filter: brightness(70%);
 
+}
 
 .Home .text .square {
     background-color: rgba(255, 255, 255, 0.287);
     width: 930px;
     height: 425px;
     display: inline-block;
-    
-    
+
+
 }
 
 .Home .text {
@@ -98,17 +106,29 @@ body {
 }
 
 
-
-#background-video {
-    position: fixed;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100vh;
-    z-index: -99;
-    filter: brightness(70%);
+.Home .roundedCorner {
+    margin-left: 150px;
+    margin-right: 130px;
+    margin-top: 500px;
+    border: 5px solid rgba(255, 255, 255, 0.739);
+    border-radius: 10px 90px;
+    padding: 50px;
     
 }
 
-.Home .bg-below-video{
-    padding-top: 1000px;
+.Home .roundedCorner:hover {
+    
+    
+}
+
+.Home .roundedCorner p{
+    font-family: "Homenaje", sans-serif;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.918);
+    
+    text-align: center;
+}
+
+.Home .background {
+    padding-top: 400px;
 }

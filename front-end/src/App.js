@@ -8,7 +8,6 @@ import  Airports  from "./Airports";
 import { About } from "./About";
 import { Layout } from "./Component/Layout";
 import { NavBar } from "./Component/NavBar";
-import  {ColorLine}  from "./Component/ColorLine";
 import { AirportInfo } from "./AirportInfo";
 import { FlightInfo } from "./FlightInfo";
 import { AirplaneInfo } from "./AirplaneInfo";
@@ -18,7 +17,7 @@ class App extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <ColorLine />
+                
                     <Router>
                         <Switch>
                             <Route path="/airplanes" exact>

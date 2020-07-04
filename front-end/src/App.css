@@ -107,10 +107,10 @@ body {
 
 
 .Home .roundedCorner {
-    margin-left: 150px;
-    margin-right: 130px;
+    margin-left: 170px;
+    margin-right: 100px;
     margin-top: 500px;
-    border: 5px solid rgba(255, 255, 255, 0.739);
+    border: 3px solid rgba(255, 255, 255, 0.739);
     border-radius: 10px 90px;
     padding: 50px;
     

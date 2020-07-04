@@ -91,6 +91,7 @@ body {
     font-family: "Homenaje", sans-serif;
     color: rgba(255, 255, 255, 0.849);
     padding-top: 250px;
+    margin-bottom: 500px;
 }
 
 .Home .text h1 {
@@ -105,11 +106,15 @@ body {
     margin: 25px;
 }
 
+.Home .link{
+    margin-left: 150px;
+    margin-right: 90px;
+}
+
 
 .Home .roundedCorner {
-    margin-left: 170px;
-    margin-right: 100px;
-    margin-top: 500px;
+    
+
     border: 3px solid rgba(255, 255, 255, 0.739);
     border-radius: 10px 90px;
     padding: 50px;
@@ -125,7 +130,6 @@ body {
     font-family: "Homenaje", sans-serif;
     font-size: 50px;
     color: rgba(255, 255, 255, 0.918);
-    
     text-align: center;
 }
 

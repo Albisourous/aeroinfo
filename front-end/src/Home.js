@@ -25,9 +25,10 @@ export const Home = () => {
                     <p> Or you want to look for a flight for your trip ? </p>
                     <p>We have got all you want to know about airplanes,  flights,  and airports!</p>
                 </div>
-            </div>
+            </div> 
 
-            <div className="row">
+
+            <div className="row" id="pillars">
                 <Nav.Link className="link" href="/airplanes">
                     <div className="roundedCorner">
                         <p>Airplanes</p>

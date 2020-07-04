@@ -113,7 +113,6 @@ body {
 
 
 .Home .roundedCorner {
-    
 
     border: 3px solid rgba(255, 255, 255, 0.739);
     border-radius: 10px 90px;
@@ -122,8 +121,9 @@ body {
 }
 
 .Home .roundedCorner:hover {
-    
-    
+    background: rgba(20, 19, 19, 0.555);
+    border-radius: 90px 10px;
+    transition: 0.75s;
 }
 
 .Home .roundedCorner p{

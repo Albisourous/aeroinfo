@@ -40,10 +40,6 @@ body {
     margin-right: 45px;
 }
 
-/* .colorline{
-    margin-top: 153px;
-    
-} */
 
 
 /*----------------------Grids----------------------*/
@@ -56,7 +52,6 @@ body {
 /*----------------------Home Page----------------------*/
 
 .Home {
-
     padding-left: 0;
     padding-right: 0;
     top: 0;
@@ -64,8 +59,9 @@ body {
     right: 0;
 }
 
+/*Video*/
 .Home .video {
-    margin-top: -155px;
+    margin-top: -9.8%;
 }
 
 #background-video {
@@ -78,15 +74,38 @@ body {
 
 }
 
+/*Welcome text*/
 .Home .text .square {
     background-color: rgba(255, 255, 255, 0.287);
+    margin-top: 15%;
+    margin-bottom: 15%;
     width: 930px;
     height: 425px;
     display: inline-block;
 }
 
+
+.Home .text {
+    font-family: "Homenaje", sans-serif;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.Home .text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.Home .text p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px;
+}
+
+/*Scroll button*/
 .Home .scroll-button {
-    bottom: 30px;
+    margin-top: -7%;
+    margin-bottom: 10%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -114,36 +133,19 @@ body {
     border-radius: 30px;
 }
 
-.Home .text {
-    font-family: "Homenaje", sans-serif;
-    color: rgba(255, 255, 255, 0.849);
-    padding-top: 250px;
-    margin-bottom: 500px;
-}
-
-.Home .text h1 {
-    font-size: 70px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.Home .text p {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 25px;
-}
-
+/*three links*/
 .Home .link {
-    margin-left: 150px;
-    margin-right: 90px;
+    margin-top: 25%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
-
 
 .Home .roundedCorner {
-
     border: 3px solid rgba(255, 255, 255, 0.739);
     border-radius: 10px 90px;
     padding: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }
 

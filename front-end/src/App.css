@@ -40,10 +40,6 @@ body {
     margin-right: 45px;
 }
 
-/* .colorline{
-    margin-top: 153px;
-    
-} */
 
 
 /*----------------------Grids----------------------*/
@@ -80,10 +76,32 @@ body {
 
 .Home .text .square {
     background-color: rgba(255, 255, 255, 0.287);
+    margin-top: 250px;
     width: 930px;
     height: 425px;
     display: inline-block;
 }
+
+
+.Home .text {
+    font-family: "Homenaje", sans-serif;
+    color: rgba(255, 255, 255, 0.849);
+    
+    margin-bottom: 500px;
+}
+
+.Home .text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.Home .text p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px;
+}
+
 
 .Home .scroll-button {
     bottom: 30px;
@@ -112,25 +130,6 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.945);
     font-size: 10px;
     border-radius: 30px;
-}
-
-.Home .text {
-    font-family: "Homenaje", sans-serif;
-    color: rgba(255, 255, 255, 0.849);
-    padding-top: 250px;
-    margin-bottom: 500px;
-}
-
-.Home .text h1 {
-    font-size: 70px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.Home .text p {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 25px;
 }
 
 .Home .link {

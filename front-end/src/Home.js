@@ -17,8 +17,8 @@ export const Home = () => {
             </div>
 
 
-            <div class="square">
-                <div className="text text-center">
+            <div class="text text-center">
+                <div className="square center">
                     <br />
                     <h1 > Welcome! </h1>
 

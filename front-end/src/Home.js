@@ -35,25 +35,26 @@ export const Home = () => {
                     </a>
                 </div>
             </div>
+            <div className="container">
+                <div className="row row-cols-3 align-items-center justify-content-center" id="boxes">
+                    <Nav.Link className="link col-9 col-sm-3" href="/airplanes">
+                        <div className="roundedCorner">
+                            <p>Airplanes</p>
+                        </div>
+                    </Nav.Link>
 
-            <div className="row" id="boxes">
-                <Nav.Link className="link" href="/airplanes">
-                    <div className="roundedCorner">
-                        <p>Airplanes</p>
-                    </div>
-                </Nav.Link>
+                    <Nav.Link className="link col-9 col-sm-3" href="/flights">
+                        <div className="roundedCorner">
+                            <p>Flights</p>
+                        </div>
+                    </Nav.Link>
+                    <Nav.Link className="link col-9 col-sm-3" href="/airports">
+                        <div className="roundedCorner">
+                            <p>Airports</p>
+                        </div>
+                    </Nav.Link>
 
-                <Nav.Link className="link" href="/flights">
-                    <div className="roundedCorner">
-                        <p>Flights</p>
-                    </div>
-                </Nav.Link>
-                <Nav.Link className="link" href="/airports">
-                    <div className="roundedCorner">
-                        <p>Airports</p>
-                    </div>
-                </Nav.Link>
-
+                </div>
             </div>
             <div className="background"> </div>
 

@@ -8,19 +8,20 @@ import './setup.css';
 const Airplanes = props => {
   const airplanesData = data["data"];
   return (
-    <div>
-        <li>
-            <button>Owner</button>
-            <button>Plane Name</button>
-            <button className="disabled">Sort:</button>
-        </li>
-      <InfoGrid infoData={airplanesData} infoCardType={INFO_TYPES.AIRPLANES}/>
+    <div className="Airplanes">
+      <div className="sort">
+        <div className="row justify-content-end">
+          <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+          <button type="button" class="btn btn-outline-light">Plane Owner</button>
+        </div>
+      </div>
+      <InfoGrid infoData={airplanesData} infoCardType={INFO_TYPES.AIRPLANES} />
     </div>
   );
 };
 
 Airplanes.propTypes = {
-  
+
 };
 
 export default Airplanes;

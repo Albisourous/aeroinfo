@@ -163,3 +163,16 @@ body {
 .Home .background {
     padding-top: 400px;
 }
+
+/*----------------------Flights----------------------*/
+.Airplanes .sort{
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.Airplanes .sort .fa{
+    color: white;
+    font-size: 35px;
+    padding-left: 30%;
+}

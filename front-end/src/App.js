@@ -12,8 +12,8 @@ import { AirportInfo } from "./AirportInfo";
 import { FlightInfo } from "./FlightInfo";
 import { AirplaneInfo } from "./AirplaneInfo";
 
-class App extends Component {
-    render() {
+function App() {
+    
         return (
             <React.Fragment>
                 <NavBar />
@@ -48,7 +48,7 @@ class App extends Component {
                     </Router>
             </React.Fragment>
         );
-    }
+    
 }
 
 export default App;

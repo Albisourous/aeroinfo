@@ -24,14 +24,20 @@ const useStyles = makeStyles({
 
 });
 
+
 const AirplaneCard = props => {
     const info = props.info;
     const classes = useStyles();
+
+    
+
     return (
+        
         <Card className={classes.root}>
             <ButtonBase className="{info.registration_number}"
                 onClick={event => window.location.href = "/airplanes/" + info.construction_number}>
                 <CardActionArea>
+                    
                     <CardMedia
                         className={classes.media}
                         image={info.image_url}

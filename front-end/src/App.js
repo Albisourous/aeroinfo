@@ -12,8 +12,8 @@ import { AirportInfo } from "./AirportInfo";
 import { FlightInfo } from "./FlightInfo";
 import { AirplaneInfo } from "./AirplaneInfo";
 
-class App extends Component {
-    render() {
+function App() {
+    
         return (
             <React.Fragment>
                 <NavBar />
@@ -21,8 +21,7 @@ class App extends Component {
                     <Router>
                         <Switch>
                             <Route path="/airplanes" exact>
-                                <Layout><Airplanes /></Layout>
-                                
+                                <Layout><Airplanes /></Layout>  
                             </Route>
                             <Route path="/airplanes/:id">
                             <Layout><AirplaneInfo /></Layout>
@@ -41,6 +40,7 @@ class App extends Component {
                             </Route>
                             <Route path="/about">
                             <Layout>  <About /></Layout>
+                            <Route path="/api"></Route>
                             </Route>
                             <Route path="/"> <Home />
                             </Route>
@@ -48,7 +48,7 @@ class App extends Component {
                     </Router>
             </React.Fragment>
         );
-    }
+    
 }
 
 export default App;

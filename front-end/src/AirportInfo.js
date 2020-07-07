@@ -45,12 +45,6 @@ const airportData = info.map((data, index, airport_name) => {
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     )
 });
 class AirportInfo extends Component {

@@ -104,7 +104,7 @@ body {
 
 /*Scroll button*/
 .Home .scroll-button {
-    margin-top: -7%;
+    margin-top: -10%;
     margin-bottom: 10%;
     position: absolute;
     left: 50%;
@@ -135,7 +135,8 @@ body {
 
 /*three links*/
 .Home .link {
-    margin-top: 25%;
+    margin-top: 27%;
+    margin-bottom: 30%;
 }
 
 .Home .roundedCorner {
@@ -160,11 +161,8 @@ body {
     text-align: center;
 }
 
-.Home .background {
-    padding-top: 400px;
-}
 
-/*----------------------Flights----------------------*/
+/*----------------------Airplane.js----------------------*/
 .Airplanes .sort{
     margin-left: 5%;
     margin-right: 5%;
@@ -181,4 +179,24 @@ body {
 .gif{
     margin-top: 10%;
     margin-left: 37%;
+}
+
+/*----------------------AirplaneInfo----------------------*/
+
+.AirplaneInfo{
+    margin-bottom: 10%;
+    margin-left: -16%;
+}
+
+.AirplaneInfo .card{
+    width: 30rem;
+    height: 20rem;
+}
+
+.AirplaneInfo .link .card{
+    height: 42rem !important;
+}
+
+.AirplaneInfo .description .card{
+    margin-top: -60%;
 }

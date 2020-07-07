@@ -37,6 +37,7 @@ const AirplaneCard = props => {
             <ButtonBase className="{info.registration_number}"
                 onClick={event => window.location.href = "/airplanes/" + info.construction_number}>
                 <CardActionArea>
+                    
                     <CardMedia
                         className={classes.media}
                         image={info.image_url}

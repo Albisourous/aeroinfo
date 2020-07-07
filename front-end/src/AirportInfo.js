@@ -30,16 +30,16 @@ const airportData = info.map((data, index, airport_name) => {
                 <div className="description">
                     <div className="card text-center mr-5">
                         <div className="card-body">
-                        <Card.Body>
-                <Card.Title>{data.airport_name}</Card.Title>
-                <Card.Text>Country of origin: {data.country_name}</Card.Text>
-                <Card.Text>Timezone: {data.timezone}</Card.Text>
-                <Card.Text>GMT: {data.gmt}</Card.Text>
-                <Card.Text>Iata Code: {data.iata_code}</Card.Text>
-                <Card.Text>GeoName ID: {data.geoname_id}</Card.Text>
-                <Card.Text>Latitude: {data.latitude}</Card.Text>
-                <Card.Text>Longitude: {data.longitude}</Card.Text>
-            </Card.Body>
+                            
+                                <Card.Title>{data.airport_name}</Card.Title>
+                                <Card.Text>Country of origin: {data.country_name}</Card.Text>
+                                <Card.Text>Timezone: {data.timezone}</Card.Text>
+                                <Card.Text>GMT: {data.gmt}</Card.Text>
+                                <Card.Text>Iata Code: {data.iata_code}</Card.Text>
+                                <Card.Text>GeoName ID: {data.geoname_id}</Card.Text>
+                                <Card.Text>Latitude: {data.latitude}</Card.Text>
+                                <Card.Text>Longitude: {data.longitude}</Card.Text>
+                            
                         </div>
                     </div>
                 </div>

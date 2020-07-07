@@ -200,3 +200,27 @@ body {
 .AirplaneInfo .description .card{
     margin-top: -60%;
 }
+
+/*----------------------AirportInfo----------------------*/
+
+.AirportInfo{
+    margin-bottom: 10%;
+    margin-left: -16%;
+}
+
+.AirportInfo .card{
+    width: 30rem;
+    height: 20rem;
+}
+
+.AirportInfo .image .card{
+    width:30rem;
+    height: auto;
+}
+.AirportInfo .link .card{
+    height: 42rem !important;
+}
+
+.AirportInfo .description .card{
+    margin-top: -60%;
+}

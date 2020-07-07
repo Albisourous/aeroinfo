@@ -21,9 +21,9 @@ const Airplanes = props => {
     setLoading({ isLoading: true });
     fetch(API + DEFAULT_QUERY)
       .then(response => {
-        if(response.ok){
+        if (response.ok) {
           return response.json()
-        }else{
+        } else {
           throw new Error('Something went wrong...');
         }
       })
@@ -32,7 +32,11 @@ const Airplanes = props => {
   });
 
   if (isLoading) {
-    return <img src={loading} alt="loading..." />
+    return (
+      <div className="gif">
+        <img src={loading} alt="loading..." width="300" height="300" />
+      </div>
+    )
   }
   if (error) {
     return <p>{error.message}</p>;

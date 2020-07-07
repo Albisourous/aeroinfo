@@ -166,7 +166,8 @@ body {
 
 /*----------------------Flights----------------------*/
 .Airplanes .sort{
-    margin-left: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 2%;
     margin-bottom: 3%;
 }

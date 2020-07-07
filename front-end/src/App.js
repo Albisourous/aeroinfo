@@ -21,8 +21,7 @@ function App() {
                     <Router>
                         <Switch>
                             <Route path="/airplanes" exact>
-                                <Layout><Airplanes /></Layout>
-                                
+                                <Layout><Airplanes /></Layout>  
                             </Route>
                             <Route path="/airplanes/:id">
                             <Layout><AirplaneInfo /></Layout>
@@ -41,6 +40,7 @@ function App() {
                             </Route>
                             <Route path="/about">
                             <Layout>  <About /></Layout>
+                            <Route path="/api"></Route>
                             </Route>
                             <Route path="/"> <Home />
                             </Route>

@@ -17,9 +17,7 @@ const Airplanes = props => {
   const [hits, setHits] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [m, setM] = useState(airplanesData);
-
-  console.log(m);
+  const [Data, setData] = useState(airplanesData);
 
 
   useState(() => {
@@ -90,21 +88,21 @@ const Airplanes = props => {
             }}>Name</button>
 
             <button type="button" className="btn btn-outline-light" onClick={() => {
-              let newM = [...m];
-              newM.sort(GetSortOrder("iata_type", order));
+              let newData = [...Data];
+              newData.sort(GetSortOrder("iata_type", order));
               order = order * -1;
-              setM(newM);
+              setData(newData);
             }}>Name</button>
 
             <button type="button" className="btn btn-outline-light" onClick={() => {
-              let newM = [...m];
-              newM.sort(GetSortOrder("plane_owner", order));
+              let newData = [...Data];
+              newData.sort(GetSortOrder("plane_owner", order));
               order = order * -1;
-              setM(newM);
+              setData(newData);
             }}>Owner</button>
           </div>
         </div>
-        <InfoGrid infoData={m} infoCardType={INFO_TYPES.AIRPLANES} />
+        <InfoGrid infoData={Data} infoCardType={INFO_TYPES.AIRPLANES} />
       </div>
     </div>
 

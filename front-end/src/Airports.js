@@ -9,6 +9,7 @@ let order = 1;
 const airportsData = data["data"];
 
 function GetSortOrder(prop, ord) {
+    
     return function (a, b) {
         if (ord === 1) {
             if (a[prop] > b[prop]) {
@@ -29,7 +30,7 @@ function GetSortOrder(prop, ord) {
 }
 
 const Airports = props => {
-    const [m, setM] = useState(airportsData);
+    const [Data, setData] = useState(airportsData);
     return (
         <div>
             <div className="sort">
@@ -37,24 +38,24 @@ const Airports = props => {
                     <i className="fa fa-sort-alpha-asc" aria-hidden="true"></i>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("airport_name", order));
+                        let newData = [...Data];
+                        newData.sort(GetSortOrder("airport_name", order));
                         order = order * -1;
-                        setM(newM);
+                        setData(newData);
                     }}>Name
                     </button>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("country_name", order));
+                        let newData = [...Data];
+                        newData.sort(GetSortOrder("country_name", order));
                         order = order * -1;
-                        setM(newM);
+                        setData(newData);
                     }}>Country of Origin
                     </button>
                 </div>
             </div>
             <div><br/></div>
-            <InfoGrid infoData={m} infoCardType={INFO_TYPES.AIRPORTS}/>
+            <InfoGrid infoData={Data} infoCardType={INFO_TYPES.AIRPORTS}/>
         </div>
     );
 };

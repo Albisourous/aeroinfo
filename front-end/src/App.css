@@ -12,7 +12,7 @@ body {
     top: 0;
     margin-bottom: -15px;
     border-bottom: 3px solid white;
-    background: rgb(30, 36, 73);
+    background: rgb(30, 49, 73);
     color: #fff;
     width: 100%;
     z-index: 2;
@@ -199,16 +199,24 @@ body {
     height: auto;
 }
 
-.AirplaneInfo .link .card{
-    height: 42rem !important;
+.AirplaneInfo .link-1 .card{
+    background-image: url('./Images/giphy3.gif');
+    background-size: cover;
+}
+
+.AirplaneInfo .link-2 .card{
+    height: 26rem;
+    background-image: url('./Images/giphy3.gif');
+    background-size: cover;
+    
 }
 
 .AirplaneInfo .description .card{
+    height: 26rem;
+    padding-top: 14%;
     background-image: url('./Images/loading.gif');
     background-size: cover;
-    font-size: 19px;
     font-family: "Homenaje", sans-serif;
-    margin-top: -60%;
 }
 
 /*----------------------AirportInfo----------------------*/
@@ -229,14 +237,25 @@ body {
     height: auto;
 }
 
-.AirportInfo .link .card{
-    height: 42rem !important;
+.AirportInfo .link-1 .card{
+    background-image: url('./Images/giphy3.gif');
+    background-size: cover;
+    font-family: "Homenaje", sans-serif;
+}
+
+.AirportInfo .link-2 .card{
+    height: 26rem;
+    background-image: url('./Images/giphy3.gif');
+    background-size: cover;
+    font-family: "Homenaje", sans-serif;
 }
 
 .AirportInfo .description .card{
-    margin-top: -60%;
-    font-size: 19px;
+    height: 26rem;
+    background-image: url('./Images/loading.gif');
+    background-size: cover;
     font-family: "Homenaje", sans-serif;
+    padding-top: 10%;
 }
 
 /*----------------------FlightInfo----------------------*/
@@ -257,12 +276,21 @@ body {
     height: 20rem;
 }
 
-.FlightInfo .link .card{
-    height: 42rem !important;
+.FlightInfo .link-1 .card{
+    background-image: url('./Images/giphy3.gif');
+    background-size: cover;
+}
+
+.FlightInfo .link-2 .card{
+    height: 26rem;
+    background-image: url('./Images/giphy3.gif');
+    background-size: cover;
 }
 
 .FlightInfo .description .card{
-    margin-top: -60%;
-    font-size: 19px;
+    height: 26rem;
+    background-image: url('./Images/loading.gif');
+    background-size: cover;
     font-family: "Homenaje", sans-serif;
+    padding-top: 14%;
 }

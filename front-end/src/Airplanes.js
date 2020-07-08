@@ -17,6 +17,8 @@ const Airplanes = props => {
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+
+
   useState(() => {
     setLoading({ isLoading: true });
     fetch(API + DEFAULT_QUERY)
@@ -42,8 +44,26 @@ const Airplanes = props => {
     return <p>{error.message}</p>;
   }
 
-  console.log(hits)
-  console.log(isLoading)
+
+  // const sorted = hits.sort((a, b) => {
+  //   const isReversed = (sortType === 'asc') ? 1 : -1;
+  //   return isReversed * a.objectID.localeCompare(b.objectID)
+  // });
+
+  // onSort = sortType => {
+  //   setSortType('asc')
+  // }
+
+  function GetSortOrder(prop) {
+    return function (a, b) {
+      if (a[prop] > b[prop]) {
+        return 1;
+      } else if (a[prop] < b[prop]) {
+        return -1;
+      }
+      return 0;
+    }
+  }
 
   return (
 
@@ -60,7 +80,14 @@ const Airplanes = props => {
         <div className="sort">
           <div className="row justify-content-end">
             <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
-            <button type="button" class="btn btn-outline-light">Plane Owner</button>
+
+            <button type="button" class="btn btn-outline-light" onClick={() => {
+              let newHits = [...hits];
+              newHits.sort(GetSortOrder("title"));
+              setHits(newHits);
+            }}>Plane Owner</button>
+
+
           </div>
         </div>
         <InfoGrid infoData={airplanesData} infoCardType={INFO_TYPES.AIRPLANES} />

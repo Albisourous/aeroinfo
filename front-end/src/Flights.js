@@ -51,6 +51,14 @@ const Flights = props => {
                         setM(newM);
                     }}>Arrival
                     </button>
+
+                    <button type="button" className="btn btn-outline-light" onClick={() => {
+                        let newM = [...m];
+                        newM.sort(GetSortOrder("flight_date", order)); //TODO
+                        order = order * -1;
+                        setM(newM);
+                    }}>Date
+                    </button>
                 </div>
             </div>
             <div><br/></div>

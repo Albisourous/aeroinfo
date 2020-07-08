@@ -20,7 +20,7 @@ export const Home = () => {
             <div class="text text-center">
                 <div className="square center">
                     <br />
-                    <h1 > Welcome! </h1>
+                    <h1> Welcome! </h1>
 
                     <p> Do you want to know more about airplanes? </p>
                     <p> Or do you want to look up flight information for your trip? </p>

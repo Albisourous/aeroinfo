@@ -1,10 +1,13 @@
 import requests
 import pprint
 from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
 from flask import Flask
+from marshmallow import fields
 import json
 import sys
 from sqlalchemy import create_engine
+from flask_cors import CORS, cross_origin
 import random
 import os
 
@@ -12,6 +15,9 @@ application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
+ma = Marshmallow(application)
+CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 class Flight(db.Model):
     __tablename__ = 'Flight'
@@ -62,6 +68,54 @@ class Airport(db.Model):
     country_iso2 = db.Column(db.Text)
     city_iata_code = db.Column(db.Text)
     
+class AirportSchema(ma.Schema):
+    airport_id = fields.Int(required = True)
+    gmt = fields.Str(required = False)
+    airport_name = fields.Str(required = False)
+    iata_code = fields.Str(required = False)
+    icao_code = fields.Str(required = False)
+    latitude = fields.Str(required = False)
+    longitude = fields.Str(required = False)
+    timezone = fields.Str(required = False)
+    country_name = fields.Str(required = False)
+    country_iso2 = fields.Str(required = False)
+    city_iata_code = fields.Str(required = False)
+    
+class AirplaneSchema(ma.Schema):
+    airplane_id = fields.Int(required = True)
+    registration_number = fields.Str(required = False)
+    production_line = fields.Str(required = False)
+    iata_type = fields.Str(required = False)
+    model_name = fields.Str(required = False)
+    model_code = fields.Str(required = False)
+    icao_code_hex = fields.Str(required = False)
+    first_flight_date = fields.Str(required = False)
+    delivery_date = fields.Str(required = False)
+    plane_owner = fields.Str(required = False)
+    engines_type = fields.Str(required = False)
+    plane_age = fields.Str(required = False)
+    plane_status = fields.Str(required = False)
+    
+class FlightSchema(ma.Schema):    
+    flight_id = fields.Int(required = True)
+    flight_date = fields.Str(required = False)
+    flight_status = fields.Str(required = False)
+    departure_airport = fields.Str(required = False)
+    departure_timezone = fields.Str(required = False)
+    departure_scheduled = fields.Str(required = False)
+    departure_estimated = fields.Str(required = False)
+    arrival_airport = fields.Str(required = False)
+    arrival_timezone = fields.Str(required = False)
+    arrival_scheduled = fields.Str(required = False)
+    arrival_estimated = fields.Str(required = False)
+    airline = fields.Str(required = False)
+    flight_number = fields.Str(required = False)
+    flight_iata = fields.Str(required = False)
+    flgith_icao = fields.Str(required = False)
+
+airport_schema = AirportSchema(many = True)
+airplane_schema = AirplaneSchema(many = True)
+flight_schema = FlightSchema(many = True)
     
 db.drop_all()
 db.create_all()

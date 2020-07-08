@@ -7,15 +7,20 @@ import loading from './Images/loading.gif';
 import Loader from 'react-loader-spinner';
 import './setup.css';
 
+let order = 1;
+const airplanesData = data["data"];
+const API = 'https://hn.algolia.com/api/v1/search?query=';
+const DEFAULT_QUERY = 'redux';
+
 
 const Airplanes = props => {
-  const airplanesData = data["data"];
-  const API = 'https://hn.algolia.com/api/v1/search?query=';
-  const DEFAULT_QUERY = 'redux';
-
   const [hits, setHits] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [m, setM] = useState(airplanesData);
+
+  console.log(m);
+
 
   useState(() => {
     setLoading({ isLoading: true });
@@ -42,12 +47,29 @@ const Airplanes = props => {
     return <p>{error.message}</p>;
   }
 
-  console.log(hits)
-  console.log(isLoading)
+  function GetSortOrder(prop, ord) {
+    return function (a, b) {
+      if (ord === 1) {
+        if (a[prop] > b[prop]) {
+          return 1;
+        } else if (a[prop] < b[prop]) {
+          return -1;
+        }
+        return 0;
+      }
+      else {
+        if (a[prop] < b[prop]) {
+          return 1;
+        } else if (a[prop] > b[prop]) {
+          return -1;
+        }
+        return 0;
+      }
+    }
+  }
+
 
   return (
-
-
     <div>
       <ul>
         {hits.map(hit =>
@@ -60,11 +82,31 @@ const Airplanes = props => {
         <div className="sort">
           <div className="row justify-content-end">
             <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
-            <button type="button" class="btn btn-outline-light">Plane Owner</button>
+            <button type="button" class="btn btn-outline-light" onClick={() => {
+              let newHits = [...hits];
+              newHits.sort(GetSortOrder("title", order));
+              order = order * -1;
+              setHits(newHits);
+            }}>Name</button>
+
+            <button type="button" className="btn btn-outline-light" onClick={() => {
+              let newM = [...m];
+              newM.sort(GetSortOrder("iata_type", order));
+              order = order * -1;
+              setM(newM);
+            }}>Name</button>
+
+            <button type="button" className="btn btn-outline-light" onClick={() => {
+              let newM = [...m];
+              newM.sort(GetSortOrder("plane_owner", order));
+              order = order * -1;
+              setM(newM);
+            }}>Owner</button>
           </div>
         </div>
-        <InfoGrid infoData={airplanesData} infoCardType={INFO_TYPES.AIRPLANES} />
 
+
+        <InfoGrid infoData={m} infoCardType={INFO_TYPES.AIRPLANES} />
       </div>
 
 

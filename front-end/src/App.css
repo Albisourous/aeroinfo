@@ -1,5 +1,4 @@
 body {
-
     padding-top: 200px;
     background-color: rgb(30, 49, 73);
     font-family: "Homenaje", sans-serif;
@@ -63,7 +62,7 @@ body {
 .Home .video {
     position: absolute;
     background-size: 100% 100%;
-    top: 70px;
+    top: 0px;
     left: 0px; /* fixed to left. Replace it by right if you want.*/
     min-width: 100%;
     min-height: 100%;
@@ -74,6 +73,7 @@ body {
     object-fit: fill;
     background-color: rgb(30, 49, 73);
     color: rgb(30, 49, 73);
+    zoom: 115%;
 }
 
 #background-video {

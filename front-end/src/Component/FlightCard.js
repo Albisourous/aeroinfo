@@ -35,8 +35,11 @@ const FlightCard = props => {
                         title="lol"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h6" component="h2"><span>Arrival - Departure: </span>
-                            {info.departure.airport}<span> - </span> {info.arrival.airport}
+                        <Typography gutterBottom variant="h6" component="h2"><span>Departure: </span>
+                            {info.departure.airport}
+                        </Typography>
+                        <Typography gutterBottom variant="h6" component="h2"><span>Arrival: </span>
+                            {info.arrival.airport}
                         </Typography>
                         <Typography variant="h6" component="h2"><span>Date:  </span>
                             {info.flight_date}

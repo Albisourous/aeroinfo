@@ -104,12 +104,8 @@ const Airplanes = props => {
             }}>Owner</button>
           </div>
         </div>
-
-
         <InfoGrid infoData={m} infoCardType={INFO_TYPES.AIRPLANES} />
       </div>
-
-
     </div>
 
   );

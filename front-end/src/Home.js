@@ -22,9 +22,10 @@ export const Home = () => {
                     <br />
                     <h1 > Welcome! </h1>
 
-                    <p> Feel like to know more about the aircraft ? </p>
-                    <p> Or you want to look for a flight for your trip ? </p>
-                    <p>We have got all you want to know about airplanes,  flights,  and airports!</p>
+                    <p> Do you want to know more about airplanes? </p>
+                    <p> Or do you want to look up flight information for your trip? </p>
+                    <p> We have all you want to know about airplanes, flights, and airports! </p>
+                    <p> Press the button below to begin. </p>
                 </div>
             </div>
 

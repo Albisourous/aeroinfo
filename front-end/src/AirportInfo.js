@@ -19,28 +19,35 @@ const airportData = info.map((data, index, airport_name) => {
                     </div>
                 </div>
 
-                <div className="link">
-                    <div className="card">
-                        <h4>Flights: </h4>
-                        <h4>Airports:</h4>
+                <div className="link-1">
+                    
+                    <div className="card mb-5 text-center text-white">
+                        <h4>Airplanes: </h4>
+                        
                     </div>
                 </div>
+
                 <div class="w-100 "></div>
 
                 <div className="description">
-                    <div className="card text-center mr-5">
+                    <div className="card bg-dark text-center text-white">
                         <div className="card-body">
-                        <Card.Body>
-                <Card.Title>{data.airport_name}</Card.Title>
-                <Card.Text>Country of origin: {data.country_name}</Card.Text>
-                <Card.Text>Timezone: {data.timezone}</Card.Text>
-                <Card.Text>GMT: {data.gmt}</Card.Text>
-                <Card.Text>Iata Code: {data.iata_code}</Card.Text>
-                <Card.Text>GeoName ID: {data.geoname_id}</Card.Text>
-                <Card.Text>Latitude: {data.latitude}</Card.Text>
-                <Card.Text>Longitude: {data.longitude}</Card.Text>
-            </Card.Body>
+                                <Card.Title>{data.airport_name}</Card.Title>
+                                <Card.Title>Country of origin: {data.country_name}</Card.Title>
+                                <Card.Title>Timezone: {data.timezone}</Card.Title>
+                                <Card.Title>GMT: {data.gmt}</Card.Title>
+                                <Card.Title>Iata Code: {data.iata_code}</Card.Title>
+                                <Card.Title>GeoName ID: {data.geoname_id}</Card.Title>
+                                <Card.Title>Latitude: {data.latitude}</Card.Title>
+                                <Card.Title>Longitude: {data.longitude}</Card.Title>
+                            
                         </div>
+                    </div>
+                </div>
+                <div className="link-2">
+                    
+                    <div className="card text-center text-white">
+                        <h4>Flights:</h4>
                     </div>
                 </div>
             </div>

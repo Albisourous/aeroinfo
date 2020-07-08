@@ -25,26 +25,30 @@ const flightData = info.map((data, index, airport_name) => {
                     </div>
                 </div>
 
-                <div className="link">
-                    <div className="card">
-                        <h4>Flights: </h4>
-                        <h4>Airports:</h4>
+                <div className="link-1 mb-5">
+                    <div className="card bg-dark text-center text-white">
+                        <h4>Airplanes:</h4>
                     </div>
                 </div>
+                
                 <div class="w-100 "></div>
 
                 <div className="description">
-                    <div className="card text-center mr-5">
+                    <div className="card bg-dark text-center text-white">
                         <div className="card-body">
-                            <Card.Body>
                                 <Card.Title>Flight: {data["flight"].number}</Card.Title>
-                                <Card.Text>Airport: {data["departure"].airport}</Card.Text>
-                                <Card.Text>Date: {data.flight_date}</Card.Text>
-                                <Card.Text>Timezone: {data["departure"].timezone}</Card.Text>
-                                <Card.Text>Status: {data.flight_status}</Card.Text>
-                                <Card.Text>Iata: {data["departure"].iata}</Card.Text>
-                            </Card.Body>
+                                <Card.Title>Airport: {data["departure"].airport}</Card.Title>
+                                <Card.Title>Date: {data.flight_date}</Card.Title>
+                                <Card.Title>Timezone: {data["departure"].timezone}</Card.Title>
+                                <Card.Title>Status: {data.flight_status}</Card.Title>
+                                <Card.Title>Iata: {data["departure"].iata}</Card.Title>
                         </div>
+                    </div>
+                </div>
+
+                <div className="link-2">
+                    <div className="card bg-dark text-center text-white">
+                        <h4>Airports:</h4>
                     </div>
                 </div>
             </div>

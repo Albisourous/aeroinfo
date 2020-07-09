@@ -63,7 +63,8 @@ body {
     position: absolute;
     background-size: 100% 100%;
     top: 0px;
-    left: 0px; /* fixed to left. Replace it by right if you want.*/
+    left: 0px;
+    /* fixed to left. Replace it by right if you want.*/
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -134,6 +135,7 @@ body {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(10px);
     }
@@ -175,91 +177,92 @@ body {
 
 
 /*----------------------Airplane.js----------------------*/
-.Airplanes .sort{
+.Airplanes .sort {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
     margin-bottom: 3%;
 }
 
-.Airplanes .sort .fa{
+.Airplanes .sort .fa {
     color: white;
     font-size: 35px;
     padding-left: 30%;
 }
 
-.gif{
+.gif {
     margin-top: 10%;
     margin-left: 37%;
 }
 
 /*----------------------AirlineInfo----------------------*/
 
-.AirlineInfo{
+.AirlineInfo {
     margin-bottom: 10%;
     margin-left: -16%;
 }
 
-.AirlineInfo .card{
+.AirlineInfo .card {
     margin-right: 50px;
     width: 30rem;
     height: 20rem;
 }
 
-.AirlineInfo .image .card{
-    width:30rem;
+.AirlineInfo .image .card {
+    width: 30rem;
     height: auto;
 }
 
-.AirlineInfo .link-1 .card{
+.AirlineInfo .link-1 .card {
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
 }
 
-.AirlineInfo .link-2 .card{
+.AirlineInfo .link-2 .card {
     height: 26rem;
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
-    
+
 }
 
-.AirlineInfo .description .card{
+.AirlineInfo .description .card {
     height: 26rem;
     padding-top: 14%;
     background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
     background-size: cover;
     font-family: "Homenaje", sans-serif;
 }
+
 /*----------------------FlightInfo----------------------*/
 
-.FlightInfo{
+.FlightInfo {
     margin-bottom: 10%;
     margin-left: -16%;
 }
 
-.FlightInfo .card{
+.FlightInfo .card {
     margin-right: 50px;
     width: 30rem;
     height: 20rem;
 }
 
-.FlightInfo .image .card{
-    width:30rem;
+.FlightInfo .image .card {
+    width: 30rem;
     height: 20rem;
 }
 
-.FlightInfo .link-1 .card{
+.FlightInfo .link-1 .card {
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
 }
 
-.FlightInfo .link-2 .card{
+.FlightInfo .link-2 .card {
     height: 26rem;
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
 }
 
-.FlightInfo .description .card{
+.FlightInfo .description .card {
     height: 26rem;
     background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
     background-size: cover;
@@ -270,36 +273,36 @@ body {
 
 /*----------------------AirportInfo----------------------*/
 
-.AirportInfo{
+.AirportInfo {
     margin-bottom: 10%;
     margin-left: -16%;
 }
 
-.AirportInfo .card{
+.AirportInfo .card {
     margin-right: 50px;
     width: 30rem;
     height: 20rem;
 }
 
-.AirportInfo .image .card{
-    width:30rem;
+.AirportInfo .image .card {
+    width: 30rem;
     height: auto;
 }
 
-.AirportInfo .link-1 .card{
+.AirportInfo .link-1 .card {
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
     font-family: "Homenaje", sans-serif;
 }
 
-.AirportInfo .link-2 .card{
+.AirportInfo .link-2 .card {
     height: 26rem;
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
     font-family: "Homenaje", sans-serif;
 }
 
-.AirportInfo .description .card{
+.AirportInfo .description .card {
     height: 26rem;
     background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
     background-size: cover;
@@ -310,7 +313,7 @@ body {
 
 /*----------------------listInCard----------------------*/
 /*AirlineCard FlightCard AirportCard use this*/
-.list-group-flush{
+.list-group-flush {
     display: flex;
     flex-direction: column;
     font-family: "Homenaje", sans-serif;
@@ -320,8 +323,31 @@ body {
     margin-bottom: 0;
 }
 
-.list-group-flush .list-group-item{
+.list-group-flush .list-group-item {
     position: relative;
     display: block;
 }
 
+/*----------------------AirlineCard----------------------*/
+
+.AirlineCard:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
+    box-shadow: 0 0 20px rgb(241, 241, 241);
+}
+
+/*----------------------FlightCard----------------------*/
+
+.FlightCard:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
+    box-shadow: 0 0 20px rgb(241, 241, 241);
+}
+
+/*----------------------AirportCard----------------------*/
+
+.AirportCard:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
+    box-shadow: 0 0 20px rgb(241, 241, 241);
+}

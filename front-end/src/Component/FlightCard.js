@@ -33,7 +33,6 @@ const FlightCard = props => {
                         <CardMedia
                             className={classes.media}
                             image={info.image_url}
-                            title="lol"
                         />
                         <ul class="list-group-flush">
                             <li class="list-group-item">Departure: {info.departure.airport}</li>

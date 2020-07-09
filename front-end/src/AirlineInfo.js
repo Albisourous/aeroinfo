@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Component } from 'react';
 import port from './Data/airplanes.json';
 import { Card } from "react-bootstrap";
-import bg from './Images/giphy5.gif';
 import './info.css';
 import Airlines from './Airlines';
 

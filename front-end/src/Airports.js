@@ -4,6 +4,8 @@ import data from "./Data/airports.json";
 import InfoGrid from "./Component/InfoGrid";
 import INFO_TYPES from './Constants/enum';
 import './setup.css';
+import './Component/load.scss'
+import './Component/loader.css'
 
 let order = 1;
 const airportsData = data["data"];

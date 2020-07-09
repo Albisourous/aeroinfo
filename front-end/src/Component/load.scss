@@ -10,7 +10,7 @@
   animation: .9s linear infinite loader-spin;
 }
 
-.cal-loader__plane { fill: black; }
+.cal-loader__plane { fill: white; }
 .cal-loader__path { stroke: white; animation: 1.5s ease-in-out infinite loader-path; }
 
 @keyframes loader-spin {

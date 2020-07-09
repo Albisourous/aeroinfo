@@ -51,7 +51,7 @@ const airplaneData = info.map((data, index, airport_name) => {
         </div>
     )
 });
-class AirplaneInfo extends Component {
+class AirlineInfo extends Component {
 
 
     render() {
@@ -64,6 +64,6 @@ class AirplaneInfo extends Component {
     }
 }
 
-export { AirplaneInfo };
+export { AirlineInfo };
 
 

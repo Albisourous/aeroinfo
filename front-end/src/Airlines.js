@@ -13,7 +13,7 @@ const API = 'https://hn.algolia.com/api/v1/search?query=';
 const DEFAULT_QUERY = 'redux';
 
 
-const Airplanes = props => {
+const Airlines = props => {
   const [hits, setHits] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -109,9 +109,9 @@ const Airplanes = props => {
   );
 };
 
-Airplanes.propTypes = {
+Airlines.propTypes = {
 
 };
 
-export default Airplanes;
+export default Airlines;
 

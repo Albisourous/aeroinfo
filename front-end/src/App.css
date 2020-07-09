@@ -306,3 +306,22 @@ body {
     font-family: "Homenaje", sans-serif;
     padding-top: 14%;
 }
+
+
+/*----------------------listInCard----------------------*/
+/*AirlineCard FlightCard AirportCard use this*/
+.list-group-flush{
+    display: flex;
+    flex-direction: column;
+    font-family: "Homenaje", sans-serif;
+    font-size: 20px;
+    padding-left: 15%;
+    padding-right: 12%;
+    margin-bottom: 0;
+}
+
+.list-group-flush .list-group-item{
+    position: relative;
+    display: block;
+}
+

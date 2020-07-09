@@ -30,33 +30,32 @@ const AirlineCard = props => {
     const classes = useStyles();
 
     return (
-        
-        <Card className={classes.root}>
-            <ButtonBase className="{info.registration_number}"
-                onClick={event => window.location.href = "/airlines/" + info.construction_number}>
-                <CardActionArea>
-                    
-                    <CardMedia
-                        className={classes.media}
-                        image={info.image_url}
-                        title="lol"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="h2"><span>Plane Name:  </span>
-                            {info.iata_type}
-                        </Typography>
-                        <Typography variant="h6" component="h2"><span>Plane Owner:  </span>
-                            {info.plane_owner}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </ButtonBase>
-        </Card>
+
+        <div className="AirlineCard">
+            <Card className={classes.root}>
+                <ButtonBase className="{info.registration_number}"
+                    onClick={event => window.location.href = "/airlines/" + info.construction_number}>
+                    <CardActionArea>
+
+                        <CardMedia
+                            className={classes.media}
+                            image={info.image_url}
+                            title="lol"
+                        />
+
+                        <ul class="list-group-flush">
+                            <li class="list-group-item">Plane Name: {info.iata_type}</li>
+                            <li class="list-group-item">Plane Owner: {info.plane_owner}</li>
+                        </ul>
+                    </CardActionArea>
+                </ButtonBase>
+            </Card>
+            </div>
     );
 };
 
 AirlineCard.propTypes = {
 
-};
+            };
 
 export default AirlineCard;

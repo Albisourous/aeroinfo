@@ -14,7 +14,7 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        height: 430,
+        height: 433,
     },
     media: {
         height: 300,
@@ -26,26 +26,24 @@ const AirportCard = props => {
     const info = props.info;
     const classes = useStyles();
     return (
-        <Card className={classes.root}>
-            <ButtonBase className="{info.airport_name}"
-                        onClick={event => window.location.href = "/airports/" + info.airport_name}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image={info.image_url}
-                        title="lol"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="h2"><span>Name:  </span>
-                            {info.airport_name}
-                        </Typography>
-                        <Typography variant="h6"  component="h2"><span>Country of origin:  </span>
-                            {info.country_name}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </ButtonBase>
-        </Card>
+        <div className="AirportCard">
+            <Card className={classes.root}>
+                <ButtonBase className="{info.airport_name}"
+                    onClick={event => window.location.href = "/airports/" + info.airport_name}>
+                    <CardActionArea>
+                        <CardMedia
+                            className={classes.media}
+                            image={info.image_url}
+                            title="lol"
+                        />
+                        <ul class="list-group-flush">
+                            <li class="list-group-item">Name: {info.airport_name}</li>
+                            <li class="list-group-item">Country of origin:  {info.country_name}</li>
+                        </ul>
+                    </CardActionArea>
+                </ButtonBase>
+            </Card>
+        </div>
     );
 };
 

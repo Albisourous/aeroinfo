@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+
 import data from "./Data/airplanes.json";
 import InfoGrid from "./Component/InfoGrid";
 import INFO_TYPES from './Constants/enum';
@@ -102,16 +102,13 @@ const Airlines = props => {
             }}>Owner</button>
           </div>
         </div>
-        <InfoGrid infoData={Data} infoCardType={INFO_TYPES.AIRPLANES} />
+        <InfoGrid infoData={Data} infoCardType={INFO_TYPES.AIRLINES} />
       </div>
     </div>
 
   );
 };
 
-Airlines.propTypes = {
-
-};
 
 export default Airlines;
 

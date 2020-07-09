@@ -25,17 +25,15 @@ const useStyles = makeStyles({
 });
 
 
-const AirplaneCard = props => {
+const AirlineCard = props => {
     const info = props.info;
     const classes = useStyles();
-
-    
 
     return (
         
         <Card className={classes.root}>
             <ButtonBase className="{info.registration_number}"
-                onClick={event => window.location.href = "/airplanes/" + info.construction_number}>
+                onClick={event => window.location.href = "/airlines/" + info.construction_number}>
                 <CardActionArea>
                     
                     <CardMedia
@@ -57,8 +55,8 @@ const AirplaneCard = props => {
     );
 };
 
-AirplaneCard.propTypes = {
+AirlineCard.propTypes = {
 
 };
 
-export default AirplaneCard;
+export default AirlineCard;

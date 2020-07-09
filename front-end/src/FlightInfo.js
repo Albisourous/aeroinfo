@@ -12,9 +12,6 @@ const info = port.data.filter(data => data["flight"].number == num);
 const flightData = info.map((data, index, airport_name) => {
     return (
 
-
-
-
         <div className="FlightInfo container">
 
             <div className="row">

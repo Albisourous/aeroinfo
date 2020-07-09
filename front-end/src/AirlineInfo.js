@@ -3,12 +3,13 @@ import port from './Data/airplanes.json';
 import { Card } from "react-bootstrap";
 import bg from './Images/giphy5.gif';
 import './info.css';
+import Airlines from './Airlines';
 
-const num = window.location.pathname.substring(11).replace(/%20/gi, " ");
+const num = window.location.pathname.substring(10).replace(/%20/gi, " ");
 const info = port.data.filter(data => data.construction_number == num);
 const airplaneData = info.map((data, index, airport_name) => {
     return (
-        <div className="AirplaneInfo container">
+        <div className="AirlineInfo container">
 
             <div className="row">
 

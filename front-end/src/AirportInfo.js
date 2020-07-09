@@ -40,8 +40,9 @@ const airportData = info.map((data, index, airport_name) => {
                                 <Card.Title>GeoName ID: {data.geoname_id}</Card.Title>
                                 <Card.Title>Latitude: {data.latitude}</Card.Title>
                                 <Card.Title>Longitude: {data.longitude}</Card.Title>
-                            
+                                
                         </div>
+
                     </div>
                 </div>
                 <div className="link-2">

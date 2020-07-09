@@ -38,9 +38,9 @@ export const Home = () => {
             </div>
             <div className="container">
                 <div className="row row-cols-3 align-items-center justify-content-center" id="boxes">
-                    <Nav.Link className="link col-9 col-sm-3" href="/airplanes">
+                    <Nav.Link className="link col-9 col-sm-3" href="/airlines">
                         <div className="roundedCorner">
-                            <p>Airplanes</p>
+                            <p>Airlines</p>
                         </div>
                     </Nav.Link>
 

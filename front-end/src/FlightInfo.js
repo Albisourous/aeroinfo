@@ -24,7 +24,7 @@ const flightData = info.map((data, index, airport_name) => {
 
                 <div className="link-1 mb-5">
                     <div className="card bg-dark text-center text-white">
-                        <h4>Airplanes:</h4>
+                        <h1>Airlines:</h1>
                     </div>
                 </div>
                 
@@ -45,7 +45,7 @@ const flightData = info.map((data, index, airport_name) => {
 
                 <div className="link-2">
                     <div className="card bg-dark text-center text-white">
-                        <h4>Airports:</h4>
+                        <h1>Airports:</h1>
                     </div>
                 </div>
             </div>

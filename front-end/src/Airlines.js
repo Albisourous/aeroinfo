@@ -16,20 +16,20 @@ const DEFAULT_QUERY = 'redux';
 
 
 const Airlines = props => {
-    const [hits, setHits] = useState([]);
     const [isLoading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [Data, setData] = useState(airplanesData);
+    const [airlines, setAirlines] = useState([])
 
 
     useState(() => {
 
         setLoading({isLoading: true});
         timeout();
+        setTimeout(function () {
+            setLoading(false);
+        }, 1500)
 
-        setLoading({isLoading: true});
-
-        fetch(API + DEFAULT_QUERY)
+        fetch('http://localhost:8080/api/airlines')
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -37,12 +37,9 @@ const Airlines = props => {
                     throw new Error('Something went wrong...');
                 }
             })
-            .then(data => setHits(data.hits), setTimeout(function () {
-                setLoading(false);
-            }, 1500))
+            .then(data => setAirlines(data.airlines))
             .catch(error => this.setState({error, isLoading: false}));
     });
-
     function timeout() {
         if (isLoading) {
             return (
@@ -106,43 +103,37 @@ const Airlines = props => {
 
     return (
         <div>
-            <ul>
-                {hits.map(hit =>
-                    <li key={hit.objectID}>
-                        <a href={hit.url}>{hit.title}</a>
+            {/* <ul>
+                {airlines.map(airplane =>
+                    <li key={airplane.airline_id}>
+                        {airplane.airline_id}
                     </li>
                 )}
-            </ul>
+            </ul> */}
+
             <div className="Airplanes">
                 <div className="sort">
                     <div className="row justify-content-end">
                         <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
-                        <button type="button" class="btn btn-outline-light" onClick={() => {
-                            let newHits = [...hits];
-                            newHits.sort(GetSortOrder("title", order));
+
+                        <button type="button" className="btn btn-outline-light" onClick={() => {
+                            let newAirlines = [...airlines];
+                            newAirlines.sort(GetSortOrder("airline_name", order));
                             order = order * -1;
-                            setHits(newHits);
-                        }}>Name
+                            setAirlines(newAirlines);
+                        }}>Airplane Name
                         </button>
 
                         <button type="button" className="btn btn-outline-light" onClick={() => {
-                            let newData = [...Data];
-                            newData.sort(GetSortOrder("iata_type", order));
+                            let newAirlines = [...airlines];
+                            newAirlines.sort(GetSortOrder("country_name", order));
                             order = order * -1;
-                            setData(newData);
-                        }}>Name
-                        </button>
-
-                        <button type="button" className="btn btn-outline-light" onClick={() => {
-                            let newData = [...Data];
-                            newData.sort(GetSortOrder("plane_owner", order));
-                            order = order * -1;
-                            setData(newData);
-                        }}>Owner
+                            setAirlines(newAirlines);
+                        }}>Country Name
                         </button>
                     </div>
                 </div>
-                <InfoGrid infoData={Data} infoCardType={INFO_TYPES.AIRLINES}/>
+                <InfoGrid infoData={airlines} infoCardType={INFO_TYPES.AIRLINES}/>
             </div>
         </div>
 

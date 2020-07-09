@@ -233,6 +233,16 @@ body {
     font-family: "Homenaje", sans-serif;
 }
 
+.AirlineInfo .link-1 .card h1{
+    margin-top: 10px;
+    font-family: "Homenaje", sans-serif;
+}
+
+.AirlineInfo .link-2 .card h1{
+    margin-top: 10px;
+    font-family: "Homenaje", sans-serif;
+}
+
 /*----------------------FlightInfo----------------------*/
 
 .FlightInfo {
@@ -270,6 +280,15 @@ body {
     padding-top: 14%;
 }
 
+.FlightInfo .link-1 .card h1{
+    margin-top: 10px;
+    font-family: "Homenaje", sans-serif;
+}
+
+.FlightInfo .link-2 .card h1{
+    margin-top: 10px;
+    font-family: "Homenaje", sans-serif;
+}
 
 /*----------------------AirportInfo----------------------*/
 
@@ -308,6 +327,14 @@ body {
     background-size: cover;
     font-family: "Homenaje", sans-serif;
     padding-top: 10%;
+}
+
+.AirportInfo .link-1 .card h1{
+    margin-top: 10px;
+}
+
+.AirportInfo .link-2 .card h1{
+    margin-top: 10px;
 }
 
 

@@ -21,7 +21,7 @@ const airplaneData = info.map((data, index, airport_name) => {
                 <div className="link-1 mb-5">
 
                     <div className="card bg-dark text-center text-white">
-                        <h4>Flights: </h4>
+                        <h1>Flights: </h1>
                     </div>
                 </div>
 
@@ -30,13 +30,11 @@ const airplaneData = info.map((data, index, airport_name) => {
                 <div className="description">
                     <div className="card bg-dark text-center text-white">
                         <div className="card-body">
-                            <h5 class="card-title">{data.iata_type}</h5>
-                            <Card.Title>Owner: {data.plane_owner}</Card.Title>
-                            <Card.Title>Age: {data.plane_age}</Card.Title>
-                            <Card.Title>Model Name: {data.model_name}</Card.Title>
-                            <Card.Title>Engine Count: {data.engines_count}</Card.Title>
-                            <Card.Title>Construction Number: {data.construction_number}</Card.Title>
-                            <Card.Title>Iata Type: {data.iata_type}</Card.Title>
+                            <h5 class="card-title">{data.airline_name}</h5>
+                            <Card.Title>Country: {data.country_name}</Card.Title>
+                            <Card.Title>Data Found: {data.date_founded}</Card.Title>
+                            <Card.Title>Average Age of Fleet: {data.fleet_average_age}</Card.Title>
+                            <Card.Title>Iata Code: {data.iata_code}</Card.Title>
                         </div>
                     </div>
                 </div>
@@ -44,7 +42,7 @@ const airplaneData = info.map((data, index, airport_name) => {
                 <div className="link-2">
 
                     <div className="card text-center text-white">
-                        <h4>Airports:</h4>
+                        <h1>Airports:</h1>
                     </div>
                 </div>
             </div>

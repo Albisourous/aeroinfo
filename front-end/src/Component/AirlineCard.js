@@ -40,7 +40,6 @@ const AirlineCard = props => {
                         <CardMedia
                             className={classes.media}
                             image={info.image_url}
-                            title="lol"
                         />
 
                         <ul class="list-group-flush">

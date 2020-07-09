@@ -29,7 +29,7 @@ function GetSortOrder(prop, ord) {
 }
 
 const Flights = props => {
-    const [m, setM] = useState(flightsData);
+    const [Data, setData] = useState(flightsData);
     return (
         <div className="Flights">
             <div className="sort">
@@ -37,32 +37,32 @@ const Flights = props => {
                     <i className="fa fa-sort-alpha-asc" aria-hidden="true"></i>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("arrival[x].airport", order)); //TODO
+                        let newData = [...Data];
+                        newData.sort(GetSortOrder("departure.airport", order)); //TODO
                         order = order * -1;
-                        setM(newM);
+                        setData(newData);
                     }}>Departure
                     </button>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("plane_owner", order)); //TODO
+                        let newData = [...Data];
+                        newData.sort(GetSortOrder("plane_owner", order)); //TODO
                         order = order * -1;
-                        setM(newM);
+                        setData(newData);
                     }}>Arrival
                     </button>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("flight_date", order)); //TODO
+                        let newData = [...Data];
+                        newData.sort(GetSortOrder("flight_date", order)); //TODO
                         order = order * -1;
-                        setM(newM);
+                        newData(newData);
                     }}>Date
                     </button>
                 </div>
             </div>
             <div><br/></div>
-            <InfoGrid infoData={m} infoCardType={INFO_TYPES.FLIGHTS}/>
+            <InfoGrid infoData={Data} infoCardType={INFO_TYPES.FLIGHTS}/>
         </div>
     );
 };

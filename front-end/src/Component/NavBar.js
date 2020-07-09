@@ -1,28 +1,32 @@
 import React from "react";
-import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
+import {Nav, Navbar, Form, FormControl, Button} from "react-bootstrap";
 import "../App.css";
+import "../search.css";
 
 export const NavBar = () => (
-  <Navbar className="navbar" fixed="top" expand="lg">
-    <Navbar.Brand href="/">
-      <i className="fa fa-plane">
-        <span className="title"> AeroInfo</span>
-      </i>
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
-        <Nav.Link className="link" href="/">Home</Nav.Link>
-        <Nav.Link className="link" href="/airlines">Airlines</Nav.Link>
-        <Nav.Link className="link" href="/flights">Flights</Nav.Link>
-        <Nav.Link className="link" href="/airports">Airports</Nav.Link>
-        <Nav.Link className="link" href="/about">About</Nav.Link>
-      </Nav>
-      <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-light">Search</Button>
-      </Form>
-    </Navbar.Collapse>
 
-  </Navbar>
+    <Navbar className="navbar" fixed="top" expand="lg">
+        <Navbar.Brand href="/">
+            <i className="fa fa-plane">
+                <span className="title"> AeroInfo</span>
+            </i>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+                <Nav.Link className="link" href="/">Home</Nav.Link>
+                <Nav.Link className="link" href="/airlines">Airlines</Nav.Link>
+                <Nav.Link className="link" href="/flights">Flights</Nav.Link>
+                <Nav.Link className="link" href="/airports">Airports</Nav.Link>
+                <Nav.Link className="link" href="/about">About</Nav.Link>
+            </Nav>
+            <div>
+                <Form inline action="https://www.google.com/search" method="GET">
+                    <input type="text" name="q" placeholder="Search" className="mr-sm-2"/>
+                    <Button variant="outline-light" type="submit" value="Google Search">Search</Button>
+                </Form>
+            </div>
+        </Navbar.Collapse>
+
+    </Navbar>
 );

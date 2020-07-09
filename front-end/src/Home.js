@@ -22,7 +22,7 @@ export const Home = () => {
                     <br />
                     <h1> Welcome! </h1>
 
-                    <p>&#9992; Do you want to know more about airplanes? </p>
+                    <p>&#9992; Do you want to know more about airlines? </p>
                     <p>&#9992; Or do you want to look up flight information for your trip? </p>
                     <p>&#9992; We have all you want to know about airplanes, flights, and airports! </p>
                     <p>&#9992; Press the button below to begin. </p>

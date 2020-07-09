@@ -53,7 +53,7 @@ const flightData = flight.data.map((data) => {
 const AirlinesLink =
     <div className="link-1">
         <div className="card mb-5 text-center text-white">
-            <h4>Airlines: </h4>
+            <h1>Airlines: </h1>
             <div className="cardLink flex-column">
                 <br></br>
                 {airData}
@@ -64,7 +64,7 @@ const AirlinesLink =
 const FlightsLink =
     <div className="link-2">
         <div className="card mb-5 text-center text-white">
-            <h4>Flights: </h4>
+            <h1>Flights: </h1>
             <div className="cardLink flex-column">
                 <br></br>
                 {flightData}

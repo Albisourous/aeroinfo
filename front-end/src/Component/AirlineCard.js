@@ -33,8 +33,8 @@ const AirlineCard = props => {
 
         <div className="AirlineCard">
             <Card className={classes.root}>
-                <ButtonBase className="{info.registration_number}"
-                    onClick={event => window.location.href = "/airlines/" + info.construction_number}>
+                {/* <ButtonBase className="{info.registration_number}"
+                    onClick={event => window.location.href = "/airlines/" + info.construction_number}> */}
                     <CardActionArea>
 
                         <CardMedia
@@ -43,11 +43,11 @@ const AirlineCard = props => {
                         />
 
                         <ul class="list-group-flush">
-                            <li class="list-group-item">Plane Name: {info.iata_type}</li>
-                            <li class="list-group-item">Plane Owner: {info.plane_owner}</li>
+                            <li class="list-group-item">Airline Name: {info.airline_name}</li>
+                            <li class="list-group-item">Country: {info.country_name}</li>
                         </ul>
                     </CardActionArea>
-                </ButtonBase>
+                {/* </ButtonBase> */}
             </Card>
             </div>
     );

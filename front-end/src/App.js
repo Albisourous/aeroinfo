@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
-import Airplanes  from "./Airplanes";
+import Airlines  from "./Airlines";
 import Flights from "./Flights";
 import  Airports  from "./Airports";
 import { About } from "./About";
@@ -10,7 +10,7 @@ import { Layout } from "./Component/Layout";
 import { NavBar } from "./Component/NavBar";
 import { AirportInfo } from "./AirportInfo";
 import { FlightInfo } from "./FlightInfo";
-import { AirplaneInfo } from "./AirplaneInfo";
+import { AirlineInfo } from "./AirlineInfo";
 
 function App() {
     
@@ -20,11 +20,11 @@ function App() {
                 
                     <Router>
                         <Switch>
-                            <Route path="/airplanes" exact>
-                                <Layout><Airplanes /></Layout>  
+                            <Route path="/airlines" exact>
+                                <Layout><Airlines /></Layout>  
                             </Route>
-                            <Route path="/airplanes/:id">
-                            <Layout><AirplaneInfo /></Layout>
+                            <Route path="/airlines/:id">
+                            <Layout><AirlineInfo /></Layout>
                             </Route>
                             <Route path="/flights" exact>
                             <Layout> <Flights /></Layout>

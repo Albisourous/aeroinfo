@@ -1,5 +1,7 @@
 import React, {useState, useEffect, Component} from 'react';
 import port from './Data/airports.json';
+import air from './Data/airplanes.json';
+import flight from './Data/flights.json';
 import {Card} from "react-bootstrap";
 import './setup.css';
 import './info.css';
@@ -9,30 +11,63 @@ import {Link} from "react-router-dom";
 
 const currentLocation = window.location.pathname.substring(10).replace(/%20/gi, " ");
 const info = port.data.filter(data => data.airport_name == currentLocation);
-
-const airData = port.data.map((data) => {
+function refreshPage() {
+    window.location.reload(false);
+  }
+const airData = air.data.map((data) => {
     return (
         <InfiniteScroll dataLength={1000}
                         style={{display: 'inline-flex', maxHeight: '400px', overflow: 'auto', height: 'auto'}}
                         height={400}>
             <div>
-                <Link to={"/airports/" + data.airport_name}
-                      onClick={event => window.location.href = "/airports/" + data.airport_name}>
+                <p onClick={refreshPage} to={"/airlines/" + data.construction_number}
+                      onClick={event => window.location.href = "/airlines/" + data.construction_number}
+                >
                     {data != null && data.length != 0 ? (
-                        data.airport_name
+                        data.construction_number
                     ) : "No Information found"}
-                </Link>
+                </p>
             </div>
         </InfiniteScroll>
     )
 });
-const inf =
+
+const flightData = flight.data.map((data) => {
+    return (
+        <InfiniteScroll dataLength={1000}
+                        style={{display: 'inline-flex', maxHeight: '400px', overflow: 'auto', height: 'auto'}}
+                        height={400}>
+            <div>
+                <p onClick={refreshPage} to={"/flights/" + data.flight.number}
+                      onClick={event => window.location.href = "/flights/" + data.flight.number}
+                >
+                    {data != null && data.flight != null && data.length != 0 ? (
+                        data.flight.number
+                    ) : "No Information found"}
+                </p>
+            </div>
+        </InfiniteScroll>
+    )
+});
+
+const AirlinesLink =
     <div className="link-1">
         <div className="card mb-5 text-center text-white">
             <h4>Airlines: </h4>
             <div className="cardLink flex-column">
                 <br></br>
                 {airData}
+            </div>
+        </div>
+    </div>;
+
+const FlightsLink =
+    <div className="link-2">
+        <div className="card mb-5 text-center text-white">
+            <h4>Flights: </h4>
+            <div className="cardLink flex-column">
+                <br></br>
+                {flightData}
             </div>
         </div>
     </div>;
@@ -49,7 +84,7 @@ const airportData = info.map((data, allData, index, airport_name) => {
                 </div>
 
                 <div>
-                    {inf}
+                    {AirlinesLink}
                 </div>
 
                 <div class="w-100 "></div>
@@ -68,12 +103,11 @@ const airportData = info.map((data, allData, index, airport_name) => {
 
                     </div>
                 </div>
-                <div className="link-2">
 
-                    <div className="card text-center text-white">
-                        <h4>Flights:</h4>
-                    </div>
+                <div>
+                    {FlightsLink}
                 </div>
+
             </div>
         </div>)
 });

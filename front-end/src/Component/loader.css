@@ -11,9 +11,6 @@
 }
 
 .loader.hidden {
-<<<<<<< HEAD
-=======
     animation: 10s;
->>>>>>> 110b0e4a9dd89ede07285c66dede0671282e7bed
     animation-fill-mode: forwards;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import INFO_TYPES from "../Constants/enum";
-import AirplaneCard from "./AirplaneCard";
+import AirlineCard from "./AirlineCard";
 import FlightCard from "./FlightCard";
 import AirportCard from "./AirportCard";
 
@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
 
 const _getInfoCard = (type, info) => {
   switch (type) {
-    case INFO_TYPES.AIRPLANES:
+    case INFO_TYPES.AIRLINES:
       return (
-        <AirplaneCard info={info}></AirplaneCard>);
+        <AirlineCard info={info}></AirlineCard>);
     case INFO_TYPES.FLIGHTS:
       return (
         <FlightCard info={info}></FlightCard>

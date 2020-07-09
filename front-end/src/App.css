@@ -193,37 +193,37 @@ body {
     margin-left: 37%;
 }
 
-/*----------------------AirplaneInfo----------------------*/
+/*----------------------AirlineInfo----------------------*/
 
-.AirplaneInfo{
+.AirlineInfo{
     margin-bottom: 10%;
     margin-left: -16%;
 }
 
-.AirplaneInfo .card{
+.AirlineInfo .card{
     margin-right: 50px;
     width: 30rem;
     height: 20rem;
 }
 
-.AirportInfo .image .card{
+.AirlineInfo .image .card{
     width:30rem;
     height: auto;
 }
 
-.AirplaneInfo .link-1 .card{
+.AirlineInfo .link-1 .card{
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
 }
 
-.AirplaneInfo .link-2 .card{
+.AirlineInfo .link-2 .card{
     height: 26rem;
     background-image: url('./Images/giphy3.gif');
     background-size: cover;
     
 }
 
-.AirplaneInfo .description .card{
+.AirlineInfo .description .card{
     height: 26rem;
     padding-top: 14%;
     background-image: url('./Images/loading.gif');

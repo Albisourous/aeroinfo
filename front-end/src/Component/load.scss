@@ -1,0 +1,31 @@
+// SCSS code modified from https://codepen.io/webduke/pen/RydqXg
+
+
+%boxShadow { box-shadow: 0 0 10rem 0 #000000; }
+%boxShadow--in { box-shadow: 0 0 10rem 0 #000000 inset; }
+
+.svg-calLoader {
+  width: 230px; height: 230px;
+  transform-origin: 115px 115px;
+  animation: .9s linear infinite loader-spin;
+}
+
+.cal-loader__plane { fill: white; }
+.cal-loader__path { stroke: white; animation: 1.5s ease-in-out infinite loader-path; }
+
+@keyframes loader-spin {
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-path {
+  0%{
+    stroke-dasharray:  0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+  50%{
+    stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+  }
+  100%{
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+}

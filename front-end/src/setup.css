@@ -43,7 +43,7 @@ button {
 }
 
 .card {
-    transition: 0.2s;
+    transition: .2s;
     width: 600px;
     overflow: hidden;
     word-wrap: break-word;
@@ -60,6 +60,7 @@ button {
     height: auto;
     margin: auto 0;
     display: block;
+    position: center;
 }
 
 .card-list ul {

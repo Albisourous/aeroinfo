@@ -20,11 +20,12 @@ export const Home = () => {
             <div class="text text-center">
                 <div className="square center">
                     <br />
-                    <h1 > Welcome! </h1>
+                    <h1> Welcome! </h1>
 
-                    <p> Feel like to know more about the aircraft ? </p>
-                    <p> Or you want to look for a flight for your trip ? </p>
-                    <p>We have got all you want to know about airplanes,  flights,  and airports!</p>
+                    <p>&#9992; Do you want to know more about airlines? </p>
+                    <p>&#9992; Or do you want to look up flight information for your trip? </p>
+                    <p>&#9992; We have all you want to know about airplanes, flights, and airports! </p>
+                    <p>&#9992; Press the button below to begin. </p>
                 </div>
             </div>
 
@@ -37,9 +38,9 @@ export const Home = () => {
             </div>
             <div className="container">
                 <div className="row row-cols-3 align-items-center justify-content-center" id="boxes">
-                    <Nav.Link className="link col-9 col-sm-3" href="/airplanes">
+                    <Nav.Link className="link col-9 col-sm-3" href="/airlines">
                         <div className="roundedCorner">
-                            <p>Airplanes</p>
+                            <p>Airlines</p>
                         </div>
                     </Nav.Link>
 

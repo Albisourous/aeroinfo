@@ -1,0 +1,1842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cluluw%5Cdesktop%5Ccs373-idb%5Cback-end%5Cmain.py">c:\users\luluw\desktop\cs373-idb\back-end\main.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;---------------------------<br>
+#&nbsp;projects/IDB3/main.py<br>
+#&nbsp;Fares&nbsp;Fraij<br>
+#&nbsp;---------------------------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="marshmallow.fields.html">marshmallow.fields</a><br>
+<a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="pprint.html">pprint</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>(<a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#AirlineSchema">AirlineSchema</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#OneAirlineSchema">OneAirlineSchema</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="main.html#AirportSchema">AirportSchema</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#OneAirportSchema">OneAirportSchema</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="main.html#FlightSchema">FlightSchema</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#OneFlightSchema">OneFlightSchema</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial">sqlalchemy.ext.declarative.api.Model(<a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#Airline">Airline</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Airport">Airport</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Flight">Flight</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Airline">class <strong>Airline</strong></a>(sqlalchemy.ext.declarative.api.Model)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Airline-__tablename__">Airline</a>(**kwargs)<br>
+&nbsp;<br>
+Base&nbsp;class&nbsp;for&nbsp;SQLAlchemy&nbsp;declarative&nbsp;base&nbsp;model.<br>
+&nbsp;<br>
+To&nbsp;define&nbsp;models,&nbsp;subclass&nbsp;:attr:`db.Model&nbsp;&lt;SQLAlchemy.Model&gt;`,&nbsp;not&nbsp;this<br>
+class.&nbsp;To&nbsp;customize&nbsp;``db.Model``,&nbsp;subclass&nbsp;this&nbsp;and&nbsp;pass&nbsp;it&nbsp;as<br>
+``model_class``&nbsp;to&nbsp;:class:`SQLAlchemy`.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Airline">Airline</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Model</dd>
+<dd><a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Airline-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>airline_id</strong></dt>
+</dl>
+<dl><dt><strong>airline_name</strong></dt>
+</dl>
+<dl><dt><strong>callsign</strong></dt>
+</dl>
+<dl><dt><strong>country_iso2</strong></dt>
+</dl>
+<dl><dt><strong>country_name</strong></dt>
+</dl>
+<dl><dt><strong>date_founded</strong></dt>
+</dl>
+<dl><dt><strong>fleet_average_age</strong></dt>
+</dl>
+<dl><dt><strong>fleet_size</strong></dt>
+</dl>
+<dl><dt><strong>flights</strong></dt>
+</dl>
+<dl><dt><strong>hub_code</strong></dt>
+</dl>
+<dl><dt><strong>iata_code</strong></dt>
+</dl>
+<dl><dt><strong>iata_prefix_accounting</strong></dt>
+</dl>
+<dl><dt><strong>icao_code</strong></dt>
+</dl>
+<dl><dt><strong>image_url</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x48089b0; Airline&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Airline', MetaData(bind=None), Column('ai...eet_size', Text(), table=&lt;Airline&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Airline'</dl>
+
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Model:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+<dl><dt><strong>query</strong> = &lt;flask_sqlalchemy.BaseQuery object&gt;</dl>
+
+<dl><dt><strong>query_class</strong> = &lt;class 'flask_sqlalchemy.BaseQuery'&gt;<dd><tt>SQLAlchemy&nbsp;:class:`~sqlalchemy.orm.query.Query`&nbsp;subclass&nbsp;with&nbsp;convenience&nbsp;methods&nbsp;for&nbsp;querying&nbsp;in&nbsp;a&nbsp;web&nbsp;application.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;the&nbsp;default&nbsp;:attr:`~Model.query`&nbsp;object&nbsp;used&nbsp;for&nbsp;models,&nbsp;and&nbsp;exposed&nbsp;as&nbsp;:attr:`~SQLAlchemy.Query`.<br>
+Override&nbsp;the&nbsp;query&nbsp;class&nbsp;for&nbsp;an&nbsp;individual&nbsp;model&nbsp;by&nbsp;subclassing&nbsp;this&nbsp;and&nbsp;setting&nbsp;:attr:`~Model.query_class`.</tt></dl>
+
+<hr>
+Methods inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><a name="Airline-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><strong>__weakref__</strong> = &lt;weakref at 0x048250F0; to 'DefaultMeta' at 0x048063E0 (Airline)&gt;</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AirlineSchema">class <strong>AirlineSchema</strong></a>(<a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#AirlineSchema">AirlineSchema</a>(*,&nbsp;only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;None,&nbsp;exclude:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;many:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;context:&nbsp;Dict&nbsp;=&nbsp;None,&nbsp;load_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;dump_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;partial:&nbsp;Union[bool,&nbsp;Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;False,&nbsp;unknown:&nbsp;str&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Base&nbsp;serializer&nbsp;with&nbsp;which&nbsp;to&nbsp;define&nbsp;custom&nbsp;serializers.<br>
+&nbsp;<br>
+See&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;for&nbsp;more&nbsp;details&nbsp;about&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#AirlineSchema">AirlineSchema</a></dd>
+<dd><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>opts</strong> = &lt;marshmallow.schema.SchemaOpts object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="AirlineSchema-jsonify"><strong>jsonify</strong></a>(self, obj, many=&lt;object object at 0x03E05B28&gt;, *args, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;response&nbsp;containing&nbsp;the&nbsp;serialized&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;Object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;bool&nbsp;many:&nbsp;Whether&nbsp;`obj`&nbsp;should&nbsp;be&nbsp;serialized&nbsp;as&nbsp;an&nbsp;instance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;unset,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+:param&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Takes&nbsp;the&nbsp;same&nbsp;arguments&nbsp;as&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`.&nbsp;Additional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;`many`&nbsp;argument&nbsp;for&nbsp;this&nbsp;method&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;the&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.&nbsp;Previously,&nbsp;the&nbsp;`many`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;of&nbsp;this&nbsp;method&nbsp;defaulted&nbsp;to&nbsp;False,&nbsp;regardless&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.many`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="AirlineSchema-__init__"><strong>__init__</strong></a>(self, *, only: Union[Sequence[str], Set[str]] = None, exclude: Union[Sequence[str], Set[str]] = (), many: bool = False, context: Dict = None, load_only: Union[Sequence[str], Set[str]] = (), dump_only: Union[Sequence[str], Set[str]] = (), partial: Union[bool, Sequence[str], Set[str]] = False, unknown: str = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-dump"><strong>dump</strong></a>(self, obj: Any, *, many: bool = None)</dt><dd><tt>Serialize&nbsp;an&nbsp;object&nbsp;to&nbsp;native&nbsp;Python&nbsp;data&nbsp;types&nbsp;according&nbsp;to&nbsp;this<br>
+<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;dict&nbsp;of&nbsp;serialized&nbsp;data<br>
+:rtype:&nbsp;dict<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Validation&nbsp;no&nbsp;longer&nbsp;occurs&nbsp;upon&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-dumps"><strong>dumps</strong></a>(self, obj: Any, *args, many: bool = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`dump`,&nbsp;except&nbsp;return&nbsp;a&nbsp;JSON-encoded&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;``json``&nbsp;string<br>
+:rtype:&nbsp;str<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-get_attribute"><strong>get_attribute</strong></a>(self, obj: Any, attr: str, default: Any)</dt><dd><tt>Defines&nbsp;how&nbsp;to&nbsp;pull&nbsp;values&nbsp;from&nbsp;an&nbsp;object&nbsp;to&nbsp;serialize.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0a1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changed&nbsp;position&nbsp;of&nbsp;``obj``&nbsp;and&nbsp;``attr``.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-handle_error"><strong>handle_error</strong></a>(self, error: marshmallow.exceptions.ValidationError, data: Any, *, many: bool, **kwargs)</dt><dd><tt>Custom&nbsp;error&nbsp;handler&nbsp;function&nbsp;for&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+:param&nbsp;error:&nbsp;The&nbsp;`ValidationError`&nbsp;raised&nbsp;during&nbsp;(de)serialization.<br>
+:param&nbsp;data:&nbsp;The&nbsp;original&nbsp;input&nbsp;data.<br>
+:param&nbsp;many:&nbsp;Value&nbsp;of&nbsp;``many``&nbsp;on&nbsp;dump&nbsp;or&nbsp;load.<br>
+:param&nbsp;partial:&nbsp;Value&nbsp;of&nbsp;``partial``&nbsp;on&nbsp;load.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receives&nbsp;`many`&nbsp;and&nbsp;`partial`&nbsp;(on&nbsp;deserialization)&nbsp;as&nbsp;keyword&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-load"><strong>load</strong></a>(self, data: Union[Mapping[str, Any], Iterable[Mapping[str, Any]]], *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None)</dt><dd><tt>Deserialize&nbsp;a&nbsp;data&nbsp;structure&nbsp;to&nbsp;an&nbsp;object&nbsp;defined&nbsp;by&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-loads"><strong>loads</strong></a>(self, json_data: str, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`load`,&nbsp;except&nbsp;it&nbsp;takes&nbsp;a&nbsp;JSON&nbsp;string&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+:param&nbsp;json_data:&nbsp;A&nbsp;JSON&nbsp;string&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-on_bind_field"><strong>on_bind_field</strong></a>(self, field_name: str, field_obj: marshmallow.fields.Field) -&gt; None</dt><dd><tt>Hook&nbsp;to&nbsp;modify&nbsp;a&nbsp;field&nbsp;when&nbsp;it&nbsp;is&nbsp;bound&nbsp;to&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.<br>
+&nbsp;<br>
+No-op&nbsp;by&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="AirlineSchema-validate"><strong>validate</strong></a>(self, data: Mapping, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None) -&gt; Dict[str, List[str]]</dt><dd><tt>Validate&nbsp;`data`&nbsp;against&nbsp;the&nbsp;schema,&nbsp;returning&nbsp;a&nbsp;dictionary&nbsp;of<br>
+validation&nbsp;errors.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;validate.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;validate&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:return:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;validation&nbsp;errors.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.1.0</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="AirlineSchema-from_dict"><strong>from_dict</strong></a>(fields: Dict[str, Union[marshmallow.fields.Field, type]], *, name: str = 'GeneratedSchema') -&gt; type<font color="#909090"><font face="helvetica, arial"> from <a href="marshmallow.schema.html#SchemaMeta">marshmallow.schema.SchemaMeta</a></font></font></dt><dd><tt>Generate&nbsp;a&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;class&nbsp;given&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;fields.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;marshmallow&nbsp;import&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>,&nbsp;fields<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PersonSchema&nbsp;=&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<a href="#AirlineSchema-from_dict">from_dict</a>({"name":&nbsp;fields.Str()})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(PersonSchema().<a href="#AirlineSchema-load">load</a>({"name":&nbsp;"David"}))&nbsp;&nbsp;#&nbsp;=&gt;&nbsp;{'name':&nbsp;'David'}<br>
+&nbsp;<br>
+Generated&nbsp;schemas&nbsp;are&nbsp;not&nbsp;added&nbsp;to&nbsp;the&nbsp;class&nbsp;registry&nbsp;and&nbsp;therefore&nbsp;cannot<br>
+be&nbsp;referred&nbsp;to&nbsp;by&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;fields:&nbsp;Dictionary&nbsp;mapping&nbsp;field&nbsp;names&nbsp;to&nbsp;field&nbsp;instances.<br>
+:param&nbsp;str&nbsp;name:&nbsp;Optional&nbsp;name&nbsp;for&nbsp;the&nbsp;class,&nbsp;which&nbsp;will&nbsp;appear&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;``repr``&nbsp;for&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;3.0.0</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>dict_class</strong></dt>
+</dl>
+<dl><dt><strong>set_class</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class 'marshmallow.schema.Schema.Meta'&gt;<dd><tt>Options&nbsp;object&nbsp;for&nbsp;a&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+&nbsp;<br>
+Example&nbsp;usage:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;("id",&nbsp;"email",&nbsp;"date_created")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclude&nbsp;=&nbsp;("password",&nbsp;"secret_attribute")<br>
+&nbsp;<br>
+Available&nbsp;options:<br>
+&nbsp;<br>
+-&nbsp;``fields``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+-&nbsp;``additional``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;*in&nbsp;addition*&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;explicitly&nbsp;declared&nbsp;fields.&nbsp;``additional``&nbsp;and&nbsp;``fields``&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mutually-exclusive&nbsp;options.<br>
+-&nbsp;``include``:&nbsp;Dictionary&nbsp;of&nbsp;additional&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;schema.&nbsp;It&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;better&nbsp;to&nbsp;define&nbsp;fields&nbsp;as&nbsp;class&nbsp;variables,&nbsp;but&nbsp;you&nbsp;may&nbsp;need&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;this&nbsp;option,&nbsp;e.g.,&nbsp;if&nbsp;your&nbsp;fields&nbsp;are&nbsp;Python&nbsp;keywords.&nbsp;May&nbsp;be&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`OrderedDict`.<br>
+-&nbsp;``exclude``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nested&nbsp;fields&nbsp;can&nbsp;be&nbsp;represented&nbsp;with&nbsp;dot&nbsp;delimiters.<br>
+-&nbsp;``dateformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`Date&nbsp;&lt;fields.Date&gt;`&nbsp;fields.<br>
+-&nbsp;``datetimeformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`DateTime&nbsp;&lt;fields.DateTime&gt;`&nbsp;fields.<br>
+-&nbsp;``render_module``:&nbsp;Module&nbsp;to&nbsp;use&nbsp;for&nbsp;`loads&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.loads&gt;`&nbsp;and&nbsp;`dumps&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dumps&gt;`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;`json`&nbsp;from&nbsp;the&nbsp;standard&nbsp;library.<br>
+-&nbsp;``ordered``:&nbsp;If&nbsp;`True`,&nbsp;order&nbsp;serialization&nbsp;output&nbsp;according&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order&nbsp;in&nbsp;which&nbsp;fields&nbsp;were&nbsp;declared.&nbsp;Output&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`&nbsp;will&nbsp;be&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`collections.OrderedDict`.<br>
+-&nbsp;``index_errors``:&nbsp;If&nbsp;`True`,&nbsp;errors&nbsp;dictionaries&nbsp;will&nbsp;include&nbsp;the&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;invalid&nbsp;items&nbsp;in&nbsp;a&nbsp;collection.<br>
+-&nbsp;``load_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;serialized&nbsp;results.<br>
+-&nbsp;``dump_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;deserialization<br>
+-&nbsp;``unknown``:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+-&nbsp;``register``:&nbsp;Whether&nbsp;to&nbsp;register&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;with&nbsp;marshmallow's&nbsp;internal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;registry.&nbsp;Must&nbsp;be&nbsp;`True`&nbsp;if&nbsp;you&nbsp;intend&nbsp;to&nbsp;refer&nbsp;to&nbsp;this&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;class&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.&nbsp;Only&nbsp;set&nbsp;this&nbsp;to&nbsp;`False`&nbsp;when&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usage&nbsp;is&nbsp;critical.&nbsp;Defaults&nbsp;to&nbsp;`True`.</tt></dl>
+
+<dl><dt><strong>OPTIONS_CLASS</strong> = &lt;class 'marshmallow.schema.SchemaOpts'&gt;<dd><tt>class&nbsp;Meta&nbsp;options&nbsp;for&nbsp;the&nbsp;:class:`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.&nbsp;Defines&nbsp;defaults.</tt></dl>
+
+<dl><dt><strong>TYPE_MAPPING</strong> = {&lt;class 'str'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'bytes'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'datetime.datetime'&gt;: &lt;class 'marshmallow.fields.DateTime'&gt;, &lt;class 'float'&gt;: &lt;class 'marshmallow.fields.Float'&gt;, &lt;class 'bool'&gt;: &lt;class 'marshmallow.fields.Boolean'&gt;, &lt;class 'tuple'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'list'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'set'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'int'&gt;: &lt;class 'marshmallow.fields.Integer'&gt;, &lt;class 'uuid.UUID'&gt;: &lt;class 'marshmallow.fields.UUID'&gt;, ...}</dl>
+
+<dl><dt><strong>error_messages</strong> = {}</dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Airport">class <strong>Airport</strong></a>(sqlalchemy.ext.declarative.api.Model)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Airport-__tablename__">Airport</a>(**kwargs)<br>
+&nbsp;<br>
+Base&nbsp;class&nbsp;for&nbsp;SQLAlchemy&nbsp;declarative&nbsp;base&nbsp;model.<br>
+&nbsp;<br>
+To&nbsp;define&nbsp;models,&nbsp;subclass&nbsp;:attr:`db.Model&nbsp;&lt;SQLAlchemy.Model&gt;`,&nbsp;not&nbsp;this<br>
+class.&nbsp;To&nbsp;customize&nbsp;``db.Model``,&nbsp;subclass&nbsp;this&nbsp;and&nbsp;pass&nbsp;it&nbsp;as<br>
+``model_class``&nbsp;to&nbsp;:class:`SQLAlchemy`.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Airport">Airport</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Model</dd>
+<dd><a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Airport-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>airport_id</strong></dt>
+</dl>
+<dl><dt><strong>airport_name</strong></dt>
+</dl>
+<dl><dt><strong>city_iata_code</strong></dt>
+</dl>
+<dl><dt><strong>country_image_url</strong></dt>
+</dl>
+<dl><dt><strong>country_iso2</strong></dt>
+</dl>
+<dl><dt><strong>country_name</strong></dt>
+</dl>
+<dl><dt><strong>flights</strong></dt>
+</dl>
+<dl><dt><strong>gmt</strong></dt>
+</dl>
+<dl><dt><strong>iata_code</strong></dt>
+</dl>
+<dl><dt><strong>icao_code</strong></dt>
+</dl>
+<dl><dt><strong>image_url</strong></dt>
+</dl>
+<dl><dt><strong>latitude</strong></dt>
+</dl>
+<dl><dt><strong>longitude</strong></dt>
+</dl>
+<dl><dt><strong>timezone</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x4808ef0; Airport&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Airport', MetaData(bind=None), Column('ai...mage_url', Text(), table=&lt;Airport&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Airport'</dl>
+
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Model:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+<dl><dt><strong>query</strong> = &lt;flask_sqlalchemy.BaseQuery object&gt;</dl>
+
+<dl><dt><strong>query_class</strong> = &lt;class 'flask_sqlalchemy.BaseQuery'&gt;<dd><tt>SQLAlchemy&nbsp;:class:`~sqlalchemy.orm.query.Query`&nbsp;subclass&nbsp;with&nbsp;convenience&nbsp;methods&nbsp;for&nbsp;querying&nbsp;in&nbsp;a&nbsp;web&nbsp;application.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;the&nbsp;default&nbsp;:attr:`~Model.query`&nbsp;object&nbsp;used&nbsp;for&nbsp;models,&nbsp;and&nbsp;exposed&nbsp;as&nbsp;:attr:`~SQLAlchemy.Query`.<br>
+Override&nbsp;the&nbsp;query&nbsp;class&nbsp;for&nbsp;an&nbsp;individual&nbsp;model&nbsp;by&nbsp;subclassing&nbsp;this&nbsp;and&nbsp;setting&nbsp;:attr:`~Model.query_class`.</tt></dl>
+
+<hr>
+Methods inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><a name="Airport-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><strong>__weakref__</strong> = &lt;weakref at 0x0482C2A0; to 'DefaultMeta' at 0x048065B8 (Airport)&gt;</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AirportSchema">class <strong>AirportSchema</strong></a>(<a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#AirportSchema">AirportSchema</a>(*,&nbsp;only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;None,&nbsp;exclude:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;many:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;context:&nbsp;Dict&nbsp;=&nbsp;None,&nbsp;load_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;dump_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;partial:&nbsp;Union[bool,&nbsp;Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;False,&nbsp;unknown:&nbsp;str&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Base&nbsp;serializer&nbsp;with&nbsp;which&nbsp;to&nbsp;define&nbsp;custom&nbsp;serializers.<br>
+&nbsp;<br>
+See&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;for&nbsp;more&nbsp;details&nbsp;about&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#AirportSchema">AirportSchema</a></dd>
+<dd><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>opts</strong> = &lt;marshmallow.schema.SchemaOpts object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="AirportSchema-jsonify"><strong>jsonify</strong></a>(self, obj, many=&lt;object object at 0x03E05B28&gt;, *args, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;response&nbsp;containing&nbsp;the&nbsp;serialized&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;Object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;bool&nbsp;many:&nbsp;Whether&nbsp;`obj`&nbsp;should&nbsp;be&nbsp;serialized&nbsp;as&nbsp;an&nbsp;instance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;unset,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+:param&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Takes&nbsp;the&nbsp;same&nbsp;arguments&nbsp;as&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`.&nbsp;Additional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;`many`&nbsp;argument&nbsp;for&nbsp;this&nbsp;method&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;the&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.&nbsp;Previously,&nbsp;the&nbsp;`many`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;of&nbsp;this&nbsp;method&nbsp;defaulted&nbsp;to&nbsp;False,&nbsp;regardless&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.many`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="AirportSchema-__init__"><strong>__init__</strong></a>(self, *, only: Union[Sequence[str], Set[str]] = None, exclude: Union[Sequence[str], Set[str]] = (), many: bool = False, context: Dict = None, load_only: Union[Sequence[str], Set[str]] = (), dump_only: Union[Sequence[str], Set[str]] = (), partial: Union[bool, Sequence[str], Set[str]] = False, unknown: str = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-dump"><strong>dump</strong></a>(self, obj: Any, *, many: bool = None)</dt><dd><tt>Serialize&nbsp;an&nbsp;object&nbsp;to&nbsp;native&nbsp;Python&nbsp;data&nbsp;types&nbsp;according&nbsp;to&nbsp;this<br>
+<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;dict&nbsp;of&nbsp;serialized&nbsp;data<br>
+:rtype:&nbsp;dict<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Validation&nbsp;no&nbsp;longer&nbsp;occurs&nbsp;upon&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-dumps"><strong>dumps</strong></a>(self, obj: Any, *args, many: bool = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`dump`,&nbsp;except&nbsp;return&nbsp;a&nbsp;JSON-encoded&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;``json``&nbsp;string<br>
+:rtype:&nbsp;str<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-get_attribute"><strong>get_attribute</strong></a>(self, obj: Any, attr: str, default: Any)</dt><dd><tt>Defines&nbsp;how&nbsp;to&nbsp;pull&nbsp;values&nbsp;from&nbsp;an&nbsp;object&nbsp;to&nbsp;serialize.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0a1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changed&nbsp;position&nbsp;of&nbsp;``obj``&nbsp;and&nbsp;``attr``.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-handle_error"><strong>handle_error</strong></a>(self, error: marshmallow.exceptions.ValidationError, data: Any, *, many: bool, **kwargs)</dt><dd><tt>Custom&nbsp;error&nbsp;handler&nbsp;function&nbsp;for&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+:param&nbsp;error:&nbsp;The&nbsp;`ValidationError`&nbsp;raised&nbsp;during&nbsp;(de)serialization.<br>
+:param&nbsp;data:&nbsp;The&nbsp;original&nbsp;input&nbsp;data.<br>
+:param&nbsp;many:&nbsp;Value&nbsp;of&nbsp;``many``&nbsp;on&nbsp;dump&nbsp;or&nbsp;load.<br>
+:param&nbsp;partial:&nbsp;Value&nbsp;of&nbsp;``partial``&nbsp;on&nbsp;load.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receives&nbsp;`many`&nbsp;and&nbsp;`partial`&nbsp;(on&nbsp;deserialization)&nbsp;as&nbsp;keyword&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-load"><strong>load</strong></a>(self, data: Union[Mapping[str, Any], Iterable[Mapping[str, Any]]], *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None)</dt><dd><tt>Deserialize&nbsp;a&nbsp;data&nbsp;structure&nbsp;to&nbsp;an&nbsp;object&nbsp;defined&nbsp;by&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-loads"><strong>loads</strong></a>(self, json_data: str, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`load`,&nbsp;except&nbsp;it&nbsp;takes&nbsp;a&nbsp;JSON&nbsp;string&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+:param&nbsp;json_data:&nbsp;A&nbsp;JSON&nbsp;string&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-on_bind_field"><strong>on_bind_field</strong></a>(self, field_name: str, field_obj: marshmallow.fields.Field) -&gt; None</dt><dd><tt>Hook&nbsp;to&nbsp;modify&nbsp;a&nbsp;field&nbsp;when&nbsp;it&nbsp;is&nbsp;bound&nbsp;to&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.<br>
+&nbsp;<br>
+No-op&nbsp;by&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="AirportSchema-validate"><strong>validate</strong></a>(self, data: Mapping, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None) -&gt; Dict[str, List[str]]</dt><dd><tt>Validate&nbsp;`data`&nbsp;against&nbsp;the&nbsp;schema,&nbsp;returning&nbsp;a&nbsp;dictionary&nbsp;of<br>
+validation&nbsp;errors.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;validate.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;validate&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:return:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;validation&nbsp;errors.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.1.0</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="AirportSchema-from_dict"><strong>from_dict</strong></a>(fields: Dict[str, Union[marshmallow.fields.Field, type]], *, name: str = 'GeneratedSchema') -&gt; type<font color="#909090"><font face="helvetica, arial"> from <a href="marshmallow.schema.html#SchemaMeta">marshmallow.schema.SchemaMeta</a></font></font></dt><dd><tt>Generate&nbsp;a&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;class&nbsp;given&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;fields.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;marshmallow&nbsp;import&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>,&nbsp;fields<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PersonSchema&nbsp;=&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<a href="#AirportSchema-from_dict">from_dict</a>({"name":&nbsp;fields.Str()})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(PersonSchema().<a href="#AirportSchema-load">load</a>({"name":&nbsp;"David"}))&nbsp;&nbsp;#&nbsp;=&gt;&nbsp;{'name':&nbsp;'David'}<br>
+&nbsp;<br>
+Generated&nbsp;schemas&nbsp;are&nbsp;not&nbsp;added&nbsp;to&nbsp;the&nbsp;class&nbsp;registry&nbsp;and&nbsp;therefore&nbsp;cannot<br>
+be&nbsp;referred&nbsp;to&nbsp;by&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;fields:&nbsp;Dictionary&nbsp;mapping&nbsp;field&nbsp;names&nbsp;to&nbsp;field&nbsp;instances.<br>
+:param&nbsp;str&nbsp;name:&nbsp;Optional&nbsp;name&nbsp;for&nbsp;the&nbsp;class,&nbsp;which&nbsp;will&nbsp;appear&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;``repr``&nbsp;for&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;3.0.0</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>dict_class</strong></dt>
+</dl>
+<dl><dt><strong>set_class</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class 'marshmallow.schema.Schema.Meta'&gt;<dd><tt>Options&nbsp;object&nbsp;for&nbsp;a&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+&nbsp;<br>
+Example&nbsp;usage:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;("id",&nbsp;"email",&nbsp;"date_created")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclude&nbsp;=&nbsp;("password",&nbsp;"secret_attribute")<br>
+&nbsp;<br>
+Available&nbsp;options:<br>
+&nbsp;<br>
+-&nbsp;``fields``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+-&nbsp;``additional``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;*in&nbsp;addition*&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;explicitly&nbsp;declared&nbsp;fields.&nbsp;``additional``&nbsp;and&nbsp;``fields``&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mutually-exclusive&nbsp;options.<br>
+-&nbsp;``include``:&nbsp;Dictionary&nbsp;of&nbsp;additional&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;schema.&nbsp;It&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;better&nbsp;to&nbsp;define&nbsp;fields&nbsp;as&nbsp;class&nbsp;variables,&nbsp;but&nbsp;you&nbsp;may&nbsp;need&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;this&nbsp;option,&nbsp;e.g.,&nbsp;if&nbsp;your&nbsp;fields&nbsp;are&nbsp;Python&nbsp;keywords.&nbsp;May&nbsp;be&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`OrderedDict`.<br>
+-&nbsp;``exclude``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nested&nbsp;fields&nbsp;can&nbsp;be&nbsp;represented&nbsp;with&nbsp;dot&nbsp;delimiters.<br>
+-&nbsp;``dateformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`Date&nbsp;&lt;fields.Date&gt;`&nbsp;fields.<br>
+-&nbsp;``datetimeformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`DateTime&nbsp;&lt;fields.DateTime&gt;`&nbsp;fields.<br>
+-&nbsp;``render_module``:&nbsp;Module&nbsp;to&nbsp;use&nbsp;for&nbsp;`loads&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.loads&gt;`&nbsp;and&nbsp;`dumps&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dumps&gt;`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;`json`&nbsp;from&nbsp;the&nbsp;standard&nbsp;library.<br>
+-&nbsp;``ordered``:&nbsp;If&nbsp;`True`,&nbsp;order&nbsp;serialization&nbsp;output&nbsp;according&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order&nbsp;in&nbsp;which&nbsp;fields&nbsp;were&nbsp;declared.&nbsp;Output&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`&nbsp;will&nbsp;be&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`collections.OrderedDict`.<br>
+-&nbsp;``index_errors``:&nbsp;If&nbsp;`True`,&nbsp;errors&nbsp;dictionaries&nbsp;will&nbsp;include&nbsp;the&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;invalid&nbsp;items&nbsp;in&nbsp;a&nbsp;collection.<br>
+-&nbsp;``load_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;serialized&nbsp;results.<br>
+-&nbsp;``dump_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;deserialization<br>
+-&nbsp;``unknown``:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+-&nbsp;``register``:&nbsp;Whether&nbsp;to&nbsp;register&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;with&nbsp;marshmallow's&nbsp;internal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;registry.&nbsp;Must&nbsp;be&nbsp;`True`&nbsp;if&nbsp;you&nbsp;intend&nbsp;to&nbsp;refer&nbsp;to&nbsp;this&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;class&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.&nbsp;Only&nbsp;set&nbsp;this&nbsp;to&nbsp;`False`&nbsp;when&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usage&nbsp;is&nbsp;critical.&nbsp;Defaults&nbsp;to&nbsp;`True`.</tt></dl>
+
+<dl><dt><strong>OPTIONS_CLASS</strong> = &lt;class 'marshmallow.schema.SchemaOpts'&gt;<dd><tt>class&nbsp;Meta&nbsp;options&nbsp;for&nbsp;the&nbsp;:class:`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.&nbsp;Defines&nbsp;defaults.</tt></dl>
+
+<dl><dt><strong>TYPE_MAPPING</strong> = {&lt;class 'str'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'bytes'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'datetime.datetime'&gt;: &lt;class 'marshmallow.fields.DateTime'&gt;, &lt;class 'float'&gt;: &lt;class 'marshmallow.fields.Float'&gt;, &lt;class 'bool'&gt;: &lt;class 'marshmallow.fields.Boolean'&gt;, &lt;class 'tuple'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'list'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'set'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'int'&gt;: &lt;class 'marshmallow.fields.Integer'&gt;, &lt;class 'uuid.UUID'&gt;: &lt;class 'marshmallow.fields.UUID'&gt;, ...}</dl>
+
+<dl><dt><strong>error_messages</strong> = {}</dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Flight">class <strong>Flight</strong></a>(sqlalchemy.ext.declarative.api.Model)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Flight-__tablename__">Flight</a>(**kwargs)<br>
+&nbsp;<br>
+Base&nbsp;class&nbsp;for&nbsp;SQLAlchemy&nbsp;declarative&nbsp;base&nbsp;model.<br>
+&nbsp;<br>
+To&nbsp;define&nbsp;models,&nbsp;subclass&nbsp;:attr:`db.Model&nbsp;&lt;SQLAlchemy.Model&gt;`,&nbsp;not&nbsp;this<br>
+class.&nbsp;To&nbsp;customize&nbsp;``db.Model``,&nbsp;subclass&nbsp;this&nbsp;and&nbsp;pass&nbsp;it&nbsp;as<br>
+``model_class``&nbsp;to&nbsp;:class:`SQLAlchemy`.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Flight">Flight</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Model</dd>
+<dd><a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Flight-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>airline</strong></dt>
+</dl>
+<dl><dt><strong>airline_id</strong></dt>
+</dl>
+<dl><dt><strong>airports</strong></dt>
+</dl>
+<dl><dt><strong>arrival_airport</strong></dt>
+</dl>
+<dl><dt><strong>arrival_estimated</strong></dt>
+</dl>
+<dl><dt><strong>arrival_scheduled</strong></dt>
+</dl>
+<dl><dt><strong>arrival_timezone</strong></dt>
+</dl>
+<dl><dt><strong>departure_airport</strong></dt>
+</dl>
+<dl><dt><strong>departure_estimated</strong></dt>
+</dl>
+<dl><dt><strong>departure_scheduled</strong></dt>
+</dl>
+<dl><dt><strong>departure_timezone</strong></dt>
+</dl>
+<dl><dt><strong>flight_date</strong></dt>
+</dl>
+<dl><dt><strong>flight_iata</strong></dt>
+</dl>
+<dl><dt><strong>flight_icao</strong></dt>
+</dl>
+<dl><dt><strong>flight_id</strong></dt>
+</dl>
+<dl><dt><strong>flight_number</strong></dt>
+</dl>
+<dl><dt><strong>flight_status</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x48083d0; Flight&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('Flight', MetaData(bind=None), Column('fli...ight_icao', Text(), table=&lt;Flight&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'Flight'</dl>
+
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Model:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+<dl><dt><strong>query</strong> = &lt;flask_sqlalchemy.BaseQuery object&gt;</dl>
+
+<dl><dt><strong>query_class</strong> = &lt;class 'flask_sqlalchemy.BaseQuery'&gt;<dd><tt>SQLAlchemy&nbsp;:class:`~sqlalchemy.orm.query.Query`&nbsp;subclass&nbsp;with&nbsp;convenience&nbsp;methods&nbsp;for&nbsp;querying&nbsp;in&nbsp;a&nbsp;web&nbsp;application.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;the&nbsp;default&nbsp;:attr:`~Model.query`&nbsp;object&nbsp;used&nbsp;for&nbsp;models,&nbsp;and&nbsp;exposed&nbsp;as&nbsp;:attr:`~SQLAlchemy.Query`.<br>
+Override&nbsp;the&nbsp;query&nbsp;class&nbsp;for&nbsp;an&nbsp;individual&nbsp;model&nbsp;by&nbsp;subclassing&nbsp;this&nbsp;and&nbsp;setting&nbsp;:attr:`~Model.query_class`.</tt></dl>
+
+<hr>
+Methods inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><a name="Flight-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="flask_sqlalchemy.model.html#Model">flask_sqlalchemy.model.Model</a>:<br>
+<dl><dt><strong>__weakref__</strong> = &lt;weakref at 0x0480B150; to 'DefaultMeta' at 0x04806208 (Flight)&gt;</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FlightSchema">class <strong>FlightSchema</strong></a>(<a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FlightSchema">FlightSchema</a>(*,&nbsp;only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;None,&nbsp;exclude:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;many:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;context:&nbsp;Dict&nbsp;=&nbsp;None,&nbsp;load_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;dump_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;partial:&nbsp;Union[bool,&nbsp;Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;False,&nbsp;unknown:&nbsp;str&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Base&nbsp;serializer&nbsp;with&nbsp;which&nbsp;to&nbsp;define&nbsp;custom&nbsp;serializers.<br>
+&nbsp;<br>
+See&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;for&nbsp;more&nbsp;details&nbsp;about&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#FlightSchema">FlightSchema</a></dd>
+<dd><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>opts</strong> = &lt;marshmallow.schema.SchemaOpts object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="FlightSchema-jsonify"><strong>jsonify</strong></a>(self, obj, many=&lt;object object at 0x03E05B28&gt;, *args, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;response&nbsp;containing&nbsp;the&nbsp;serialized&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;Object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;bool&nbsp;many:&nbsp;Whether&nbsp;`obj`&nbsp;should&nbsp;be&nbsp;serialized&nbsp;as&nbsp;an&nbsp;instance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;unset,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+:param&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Takes&nbsp;the&nbsp;same&nbsp;arguments&nbsp;as&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`.&nbsp;Additional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;`many`&nbsp;argument&nbsp;for&nbsp;this&nbsp;method&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;the&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.&nbsp;Previously,&nbsp;the&nbsp;`many`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;of&nbsp;this&nbsp;method&nbsp;defaulted&nbsp;to&nbsp;False,&nbsp;regardless&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.many`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="FlightSchema-__init__"><strong>__init__</strong></a>(self, *, only: Union[Sequence[str], Set[str]] = None, exclude: Union[Sequence[str], Set[str]] = (), many: bool = False, context: Dict = None, load_only: Union[Sequence[str], Set[str]] = (), dump_only: Union[Sequence[str], Set[str]] = (), partial: Union[bool, Sequence[str], Set[str]] = False, unknown: str = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-dump"><strong>dump</strong></a>(self, obj: Any, *, many: bool = None)</dt><dd><tt>Serialize&nbsp;an&nbsp;object&nbsp;to&nbsp;native&nbsp;Python&nbsp;data&nbsp;types&nbsp;according&nbsp;to&nbsp;this<br>
+<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;dict&nbsp;of&nbsp;serialized&nbsp;data<br>
+:rtype:&nbsp;dict<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Validation&nbsp;no&nbsp;longer&nbsp;occurs&nbsp;upon&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-dumps"><strong>dumps</strong></a>(self, obj: Any, *args, many: bool = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`dump`,&nbsp;except&nbsp;return&nbsp;a&nbsp;JSON-encoded&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;``json``&nbsp;string<br>
+:rtype:&nbsp;str<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-get_attribute"><strong>get_attribute</strong></a>(self, obj: Any, attr: str, default: Any)</dt><dd><tt>Defines&nbsp;how&nbsp;to&nbsp;pull&nbsp;values&nbsp;from&nbsp;an&nbsp;object&nbsp;to&nbsp;serialize.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0a1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changed&nbsp;position&nbsp;of&nbsp;``obj``&nbsp;and&nbsp;``attr``.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-handle_error"><strong>handle_error</strong></a>(self, error: marshmallow.exceptions.ValidationError, data: Any, *, many: bool, **kwargs)</dt><dd><tt>Custom&nbsp;error&nbsp;handler&nbsp;function&nbsp;for&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+:param&nbsp;error:&nbsp;The&nbsp;`ValidationError`&nbsp;raised&nbsp;during&nbsp;(de)serialization.<br>
+:param&nbsp;data:&nbsp;The&nbsp;original&nbsp;input&nbsp;data.<br>
+:param&nbsp;many:&nbsp;Value&nbsp;of&nbsp;``many``&nbsp;on&nbsp;dump&nbsp;or&nbsp;load.<br>
+:param&nbsp;partial:&nbsp;Value&nbsp;of&nbsp;``partial``&nbsp;on&nbsp;load.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receives&nbsp;`many`&nbsp;and&nbsp;`partial`&nbsp;(on&nbsp;deserialization)&nbsp;as&nbsp;keyword&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-load"><strong>load</strong></a>(self, data: Union[Mapping[str, Any], Iterable[Mapping[str, Any]]], *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None)</dt><dd><tt>Deserialize&nbsp;a&nbsp;data&nbsp;structure&nbsp;to&nbsp;an&nbsp;object&nbsp;defined&nbsp;by&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-loads"><strong>loads</strong></a>(self, json_data: str, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`load`,&nbsp;except&nbsp;it&nbsp;takes&nbsp;a&nbsp;JSON&nbsp;string&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+:param&nbsp;json_data:&nbsp;A&nbsp;JSON&nbsp;string&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-on_bind_field"><strong>on_bind_field</strong></a>(self, field_name: str, field_obj: marshmallow.fields.Field) -&gt; None</dt><dd><tt>Hook&nbsp;to&nbsp;modify&nbsp;a&nbsp;field&nbsp;when&nbsp;it&nbsp;is&nbsp;bound&nbsp;to&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.<br>
+&nbsp;<br>
+No-op&nbsp;by&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="FlightSchema-validate"><strong>validate</strong></a>(self, data: Mapping, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None) -&gt; Dict[str, List[str]]</dt><dd><tt>Validate&nbsp;`data`&nbsp;against&nbsp;the&nbsp;schema,&nbsp;returning&nbsp;a&nbsp;dictionary&nbsp;of<br>
+validation&nbsp;errors.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;validate.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;validate&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:return:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;validation&nbsp;errors.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.1.0</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="FlightSchema-from_dict"><strong>from_dict</strong></a>(fields: Dict[str, Union[marshmallow.fields.Field, type]], *, name: str = 'GeneratedSchema') -&gt; type<font color="#909090"><font face="helvetica, arial"> from <a href="marshmallow.schema.html#SchemaMeta">marshmallow.schema.SchemaMeta</a></font></font></dt><dd><tt>Generate&nbsp;a&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;class&nbsp;given&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;fields.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;marshmallow&nbsp;import&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>,&nbsp;fields<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PersonSchema&nbsp;=&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<a href="#FlightSchema-from_dict">from_dict</a>({"name":&nbsp;fields.Str()})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(PersonSchema().<a href="#FlightSchema-load">load</a>({"name":&nbsp;"David"}))&nbsp;&nbsp;#&nbsp;=&gt;&nbsp;{'name':&nbsp;'David'}<br>
+&nbsp;<br>
+Generated&nbsp;schemas&nbsp;are&nbsp;not&nbsp;added&nbsp;to&nbsp;the&nbsp;class&nbsp;registry&nbsp;and&nbsp;therefore&nbsp;cannot<br>
+be&nbsp;referred&nbsp;to&nbsp;by&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;fields:&nbsp;Dictionary&nbsp;mapping&nbsp;field&nbsp;names&nbsp;to&nbsp;field&nbsp;instances.<br>
+:param&nbsp;str&nbsp;name:&nbsp;Optional&nbsp;name&nbsp;for&nbsp;the&nbsp;class,&nbsp;which&nbsp;will&nbsp;appear&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;``repr``&nbsp;for&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;3.0.0</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>dict_class</strong></dt>
+</dl>
+<dl><dt><strong>set_class</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class 'marshmallow.schema.Schema.Meta'&gt;<dd><tt>Options&nbsp;object&nbsp;for&nbsp;a&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+&nbsp;<br>
+Example&nbsp;usage:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;("id",&nbsp;"email",&nbsp;"date_created")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclude&nbsp;=&nbsp;("password",&nbsp;"secret_attribute")<br>
+&nbsp;<br>
+Available&nbsp;options:<br>
+&nbsp;<br>
+-&nbsp;``fields``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+-&nbsp;``additional``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;*in&nbsp;addition*&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;explicitly&nbsp;declared&nbsp;fields.&nbsp;``additional``&nbsp;and&nbsp;``fields``&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mutually-exclusive&nbsp;options.<br>
+-&nbsp;``include``:&nbsp;Dictionary&nbsp;of&nbsp;additional&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;schema.&nbsp;It&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;better&nbsp;to&nbsp;define&nbsp;fields&nbsp;as&nbsp;class&nbsp;variables,&nbsp;but&nbsp;you&nbsp;may&nbsp;need&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;this&nbsp;option,&nbsp;e.g.,&nbsp;if&nbsp;your&nbsp;fields&nbsp;are&nbsp;Python&nbsp;keywords.&nbsp;May&nbsp;be&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`OrderedDict`.<br>
+-&nbsp;``exclude``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nested&nbsp;fields&nbsp;can&nbsp;be&nbsp;represented&nbsp;with&nbsp;dot&nbsp;delimiters.<br>
+-&nbsp;``dateformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`Date&nbsp;&lt;fields.Date&gt;`&nbsp;fields.<br>
+-&nbsp;``datetimeformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`DateTime&nbsp;&lt;fields.DateTime&gt;`&nbsp;fields.<br>
+-&nbsp;``render_module``:&nbsp;Module&nbsp;to&nbsp;use&nbsp;for&nbsp;`loads&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.loads&gt;`&nbsp;and&nbsp;`dumps&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dumps&gt;`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;`json`&nbsp;from&nbsp;the&nbsp;standard&nbsp;library.<br>
+-&nbsp;``ordered``:&nbsp;If&nbsp;`True`,&nbsp;order&nbsp;serialization&nbsp;output&nbsp;according&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order&nbsp;in&nbsp;which&nbsp;fields&nbsp;were&nbsp;declared.&nbsp;Output&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`&nbsp;will&nbsp;be&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`collections.OrderedDict`.<br>
+-&nbsp;``index_errors``:&nbsp;If&nbsp;`True`,&nbsp;errors&nbsp;dictionaries&nbsp;will&nbsp;include&nbsp;the&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;invalid&nbsp;items&nbsp;in&nbsp;a&nbsp;collection.<br>
+-&nbsp;``load_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;serialized&nbsp;results.<br>
+-&nbsp;``dump_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;deserialization<br>
+-&nbsp;``unknown``:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+-&nbsp;``register``:&nbsp;Whether&nbsp;to&nbsp;register&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;with&nbsp;marshmallow's&nbsp;internal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;registry.&nbsp;Must&nbsp;be&nbsp;`True`&nbsp;if&nbsp;you&nbsp;intend&nbsp;to&nbsp;refer&nbsp;to&nbsp;this&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;class&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.&nbsp;Only&nbsp;set&nbsp;this&nbsp;to&nbsp;`False`&nbsp;when&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usage&nbsp;is&nbsp;critical.&nbsp;Defaults&nbsp;to&nbsp;`True`.</tt></dl>
+
+<dl><dt><strong>OPTIONS_CLASS</strong> = &lt;class 'marshmallow.schema.SchemaOpts'&gt;<dd><tt>class&nbsp;Meta&nbsp;options&nbsp;for&nbsp;the&nbsp;:class:`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.&nbsp;Defines&nbsp;defaults.</tt></dl>
+
+<dl><dt><strong>TYPE_MAPPING</strong> = {&lt;class 'str'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'bytes'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'datetime.datetime'&gt;: &lt;class 'marshmallow.fields.DateTime'&gt;, &lt;class 'float'&gt;: &lt;class 'marshmallow.fields.Float'&gt;, &lt;class 'bool'&gt;: &lt;class 'marshmallow.fields.Boolean'&gt;, &lt;class 'tuple'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'list'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'set'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'int'&gt;: &lt;class 'marshmallow.fields.Integer'&gt;, &lt;class 'uuid.UUID'&gt;: &lt;class 'marshmallow.fields.UUID'&gt;, ...}</dl>
+
+<dl><dt><strong>error_messages</strong> = {}</dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="OneAirlineSchema">class <strong>OneAirlineSchema</strong></a>(<a href="main.html#AirlineSchema">AirlineSchema</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#OneAirlineSchema">OneAirlineSchema</a>(*,&nbsp;only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;None,&nbsp;exclude:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;many:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;context:&nbsp;Dict&nbsp;=&nbsp;None,&nbsp;load_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;dump_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;partial:&nbsp;Union[bool,&nbsp;Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;False,&nbsp;unknown:&nbsp;str&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Base&nbsp;serializer&nbsp;with&nbsp;which&nbsp;to&nbsp;define&nbsp;custom&nbsp;serializers.<br>
+&nbsp;<br>
+See&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;for&nbsp;more&nbsp;details&nbsp;about&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#OneAirlineSchema">OneAirlineSchema</a></dd>
+<dd><a href="main.html#AirlineSchema">AirlineSchema</a></dd>
+<dd><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>opts</strong> = &lt;marshmallow.schema.SchemaOpts object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneAirlineSchema-jsonify"><strong>jsonify</strong></a>(self, obj, many=&lt;object object at 0x03E05B28&gt;, *args, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;response&nbsp;containing&nbsp;the&nbsp;serialized&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;Object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;bool&nbsp;many:&nbsp;Whether&nbsp;`obj`&nbsp;should&nbsp;be&nbsp;serialized&nbsp;as&nbsp;an&nbsp;instance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;unset,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+:param&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Takes&nbsp;the&nbsp;same&nbsp;arguments&nbsp;as&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`.&nbsp;Additional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;`many`&nbsp;argument&nbsp;for&nbsp;this&nbsp;method&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;the&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.&nbsp;Previously,&nbsp;the&nbsp;`many`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;of&nbsp;this&nbsp;method&nbsp;defaulted&nbsp;to&nbsp;False,&nbsp;regardless&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.many`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneAirlineSchema-__init__"><strong>__init__</strong></a>(self, *, only: Union[Sequence[str], Set[str]] = None, exclude: Union[Sequence[str], Set[str]] = (), many: bool = False, context: Dict = None, load_only: Union[Sequence[str], Set[str]] = (), dump_only: Union[Sequence[str], Set[str]] = (), partial: Union[bool, Sequence[str], Set[str]] = False, unknown: str = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-dump"><strong>dump</strong></a>(self, obj: Any, *, many: bool = None)</dt><dd><tt>Serialize&nbsp;an&nbsp;object&nbsp;to&nbsp;native&nbsp;Python&nbsp;data&nbsp;types&nbsp;according&nbsp;to&nbsp;this<br>
+<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;dict&nbsp;of&nbsp;serialized&nbsp;data<br>
+:rtype:&nbsp;dict<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Validation&nbsp;no&nbsp;longer&nbsp;occurs&nbsp;upon&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-dumps"><strong>dumps</strong></a>(self, obj: Any, *args, many: bool = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`dump`,&nbsp;except&nbsp;return&nbsp;a&nbsp;JSON-encoded&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;``json``&nbsp;string<br>
+:rtype:&nbsp;str<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-get_attribute"><strong>get_attribute</strong></a>(self, obj: Any, attr: str, default: Any)</dt><dd><tt>Defines&nbsp;how&nbsp;to&nbsp;pull&nbsp;values&nbsp;from&nbsp;an&nbsp;object&nbsp;to&nbsp;serialize.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0a1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changed&nbsp;position&nbsp;of&nbsp;``obj``&nbsp;and&nbsp;``attr``.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-handle_error"><strong>handle_error</strong></a>(self, error: marshmallow.exceptions.ValidationError, data: Any, *, many: bool, **kwargs)</dt><dd><tt>Custom&nbsp;error&nbsp;handler&nbsp;function&nbsp;for&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+:param&nbsp;error:&nbsp;The&nbsp;`ValidationError`&nbsp;raised&nbsp;during&nbsp;(de)serialization.<br>
+:param&nbsp;data:&nbsp;The&nbsp;original&nbsp;input&nbsp;data.<br>
+:param&nbsp;many:&nbsp;Value&nbsp;of&nbsp;``many``&nbsp;on&nbsp;dump&nbsp;or&nbsp;load.<br>
+:param&nbsp;partial:&nbsp;Value&nbsp;of&nbsp;``partial``&nbsp;on&nbsp;load.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receives&nbsp;`many`&nbsp;and&nbsp;`partial`&nbsp;(on&nbsp;deserialization)&nbsp;as&nbsp;keyword&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-load"><strong>load</strong></a>(self, data: Union[Mapping[str, Any], Iterable[Mapping[str, Any]]], *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None)</dt><dd><tt>Deserialize&nbsp;a&nbsp;data&nbsp;structure&nbsp;to&nbsp;an&nbsp;object&nbsp;defined&nbsp;by&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-loads"><strong>loads</strong></a>(self, json_data: str, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`load`,&nbsp;except&nbsp;it&nbsp;takes&nbsp;a&nbsp;JSON&nbsp;string&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+:param&nbsp;json_data:&nbsp;A&nbsp;JSON&nbsp;string&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-on_bind_field"><strong>on_bind_field</strong></a>(self, field_name: str, field_obj: marshmallow.fields.Field) -&gt; None</dt><dd><tt>Hook&nbsp;to&nbsp;modify&nbsp;a&nbsp;field&nbsp;when&nbsp;it&nbsp;is&nbsp;bound&nbsp;to&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.<br>
+&nbsp;<br>
+No-op&nbsp;by&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="OneAirlineSchema-validate"><strong>validate</strong></a>(self, data: Mapping, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None) -&gt; Dict[str, List[str]]</dt><dd><tt>Validate&nbsp;`data`&nbsp;against&nbsp;the&nbsp;schema,&nbsp;returning&nbsp;a&nbsp;dictionary&nbsp;of<br>
+validation&nbsp;errors.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;validate.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;validate&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:return:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;validation&nbsp;errors.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.1.0</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneAirlineSchema-from_dict"><strong>from_dict</strong></a>(fields: Dict[str, Union[marshmallow.fields.Field, type]], *, name: str = 'GeneratedSchema') -&gt; type<font color="#909090"><font face="helvetica, arial"> from <a href="marshmallow.schema.html#SchemaMeta">marshmallow.schema.SchemaMeta</a></font></font></dt><dd><tt>Generate&nbsp;a&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;class&nbsp;given&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;fields.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;marshmallow&nbsp;import&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>,&nbsp;fields<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PersonSchema&nbsp;=&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<a href="#OneAirlineSchema-from_dict">from_dict</a>({"name":&nbsp;fields.Str()})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(PersonSchema().<a href="#OneAirlineSchema-load">load</a>({"name":&nbsp;"David"}))&nbsp;&nbsp;#&nbsp;=&gt;&nbsp;{'name':&nbsp;'David'}<br>
+&nbsp;<br>
+Generated&nbsp;schemas&nbsp;are&nbsp;not&nbsp;added&nbsp;to&nbsp;the&nbsp;class&nbsp;registry&nbsp;and&nbsp;therefore&nbsp;cannot<br>
+be&nbsp;referred&nbsp;to&nbsp;by&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;fields:&nbsp;Dictionary&nbsp;mapping&nbsp;field&nbsp;names&nbsp;to&nbsp;field&nbsp;instances.<br>
+:param&nbsp;str&nbsp;name:&nbsp;Optional&nbsp;name&nbsp;for&nbsp;the&nbsp;class,&nbsp;which&nbsp;will&nbsp;appear&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;``repr``&nbsp;for&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;3.0.0</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>dict_class</strong></dt>
+</dl>
+<dl><dt><strong>set_class</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class 'marshmallow.schema.Schema.Meta'&gt;<dd><tt>Options&nbsp;object&nbsp;for&nbsp;a&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+&nbsp;<br>
+Example&nbsp;usage:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;("id",&nbsp;"email",&nbsp;"date_created")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclude&nbsp;=&nbsp;("password",&nbsp;"secret_attribute")<br>
+&nbsp;<br>
+Available&nbsp;options:<br>
+&nbsp;<br>
+-&nbsp;``fields``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+-&nbsp;``additional``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;*in&nbsp;addition*&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;explicitly&nbsp;declared&nbsp;fields.&nbsp;``additional``&nbsp;and&nbsp;``fields``&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mutually-exclusive&nbsp;options.<br>
+-&nbsp;``include``:&nbsp;Dictionary&nbsp;of&nbsp;additional&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;schema.&nbsp;It&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;better&nbsp;to&nbsp;define&nbsp;fields&nbsp;as&nbsp;class&nbsp;variables,&nbsp;but&nbsp;you&nbsp;may&nbsp;need&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;this&nbsp;option,&nbsp;e.g.,&nbsp;if&nbsp;your&nbsp;fields&nbsp;are&nbsp;Python&nbsp;keywords.&nbsp;May&nbsp;be&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`OrderedDict`.<br>
+-&nbsp;``exclude``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nested&nbsp;fields&nbsp;can&nbsp;be&nbsp;represented&nbsp;with&nbsp;dot&nbsp;delimiters.<br>
+-&nbsp;``dateformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`Date&nbsp;&lt;fields.Date&gt;`&nbsp;fields.<br>
+-&nbsp;``datetimeformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`DateTime&nbsp;&lt;fields.DateTime&gt;`&nbsp;fields.<br>
+-&nbsp;``render_module``:&nbsp;Module&nbsp;to&nbsp;use&nbsp;for&nbsp;`loads&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.loads&gt;`&nbsp;and&nbsp;`dumps&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dumps&gt;`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;`json`&nbsp;from&nbsp;the&nbsp;standard&nbsp;library.<br>
+-&nbsp;``ordered``:&nbsp;If&nbsp;`True`,&nbsp;order&nbsp;serialization&nbsp;output&nbsp;according&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order&nbsp;in&nbsp;which&nbsp;fields&nbsp;were&nbsp;declared.&nbsp;Output&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`&nbsp;will&nbsp;be&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`collections.OrderedDict`.<br>
+-&nbsp;``index_errors``:&nbsp;If&nbsp;`True`,&nbsp;errors&nbsp;dictionaries&nbsp;will&nbsp;include&nbsp;the&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;invalid&nbsp;items&nbsp;in&nbsp;a&nbsp;collection.<br>
+-&nbsp;``load_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;serialized&nbsp;results.<br>
+-&nbsp;``dump_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;deserialization<br>
+-&nbsp;``unknown``:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+-&nbsp;``register``:&nbsp;Whether&nbsp;to&nbsp;register&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;with&nbsp;marshmallow's&nbsp;internal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;registry.&nbsp;Must&nbsp;be&nbsp;`True`&nbsp;if&nbsp;you&nbsp;intend&nbsp;to&nbsp;refer&nbsp;to&nbsp;this&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;class&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.&nbsp;Only&nbsp;set&nbsp;this&nbsp;to&nbsp;`False`&nbsp;when&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usage&nbsp;is&nbsp;critical.&nbsp;Defaults&nbsp;to&nbsp;`True`.</tt></dl>
+
+<dl><dt><strong>OPTIONS_CLASS</strong> = &lt;class 'marshmallow.schema.SchemaOpts'&gt;<dd><tt>class&nbsp;Meta&nbsp;options&nbsp;for&nbsp;the&nbsp;:class:`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.&nbsp;Defines&nbsp;defaults.</tt></dl>
+
+<dl><dt><strong>TYPE_MAPPING</strong> = {&lt;class 'str'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'bytes'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'datetime.datetime'&gt;: &lt;class 'marshmallow.fields.DateTime'&gt;, &lt;class 'float'&gt;: &lt;class 'marshmallow.fields.Float'&gt;, &lt;class 'bool'&gt;: &lt;class 'marshmallow.fields.Boolean'&gt;, &lt;class 'tuple'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'list'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'set'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'int'&gt;: &lt;class 'marshmallow.fields.Integer'&gt;, &lt;class 'uuid.UUID'&gt;: &lt;class 'marshmallow.fields.UUID'&gt;, ...}</dl>
+
+<dl><dt><strong>error_messages</strong> = {}</dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="OneAirportSchema">class <strong>OneAirportSchema</strong></a>(<a href="main.html#AirportSchema">AirportSchema</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#OneAirportSchema">OneAirportSchema</a>(*,&nbsp;only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;None,&nbsp;exclude:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;many:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;context:&nbsp;Dict&nbsp;=&nbsp;None,&nbsp;load_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;dump_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;partial:&nbsp;Union[bool,&nbsp;Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;False,&nbsp;unknown:&nbsp;str&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Base&nbsp;serializer&nbsp;with&nbsp;which&nbsp;to&nbsp;define&nbsp;custom&nbsp;serializers.<br>
+&nbsp;<br>
+See&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;for&nbsp;more&nbsp;details&nbsp;about&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#OneAirportSchema">OneAirportSchema</a></dd>
+<dd><a href="main.html#AirportSchema">AirportSchema</a></dd>
+<dd><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>opts</strong> = &lt;marshmallow.schema.SchemaOpts object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneAirportSchema-jsonify"><strong>jsonify</strong></a>(self, obj, many=&lt;object object at 0x03E05B28&gt;, *args, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;response&nbsp;containing&nbsp;the&nbsp;serialized&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;Object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;bool&nbsp;many:&nbsp;Whether&nbsp;`obj`&nbsp;should&nbsp;be&nbsp;serialized&nbsp;as&nbsp;an&nbsp;instance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;unset,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+:param&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Takes&nbsp;the&nbsp;same&nbsp;arguments&nbsp;as&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`.&nbsp;Additional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;`many`&nbsp;argument&nbsp;for&nbsp;this&nbsp;method&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;the&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.&nbsp;Previously,&nbsp;the&nbsp;`many`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;of&nbsp;this&nbsp;method&nbsp;defaulted&nbsp;to&nbsp;False,&nbsp;regardless&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.many`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneAirportSchema-__init__"><strong>__init__</strong></a>(self, *, only: Union[Sequence[str], Set[str]] = None, exclude: Union[Sequence[str], Set[str]] = (), many: bool = False, context: Dict = None, load_only: Union[Sequence[str], Set[str]] = (), dump_only: Union[Sequence[str], Set[str]] = (), partial: Union[bool, Sequence[str], Set[str]] = False, unknown: str = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-dump"><strong>dump</strong></a>(self, obj: Any, *, many: bool = None)</dt><dd><tt>Serialize&nbsp;an&nbsp;object&nbsp;to&nbsp;native&nbsp;Python&nbsp;data&nbsp;types&nbsp;according&nbsp;to&nbsp;this<br>
+<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;dict&nbsp;of&nbsp;serialized&nbsp;data<br>
+:rtype:&nbsp;dict<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Validation&nbsp;no&nbsp;longer&nbsp;occurs&nbsp;upon&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-dumps"><strong>dumps</strong></a>(self, obj: Any, *args, many: bool = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`dump`,&nbsp;except&nbsp;return&nbsp;a&nbsp;JSON-encoded&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;``json``&nbsp;string<br>
+:rtype:&nbsp;str<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-get_attribute"><strong>get_attribute</strong></a>(self, obj: Any, attr: str, default: Any)</dt><dd><tt>Defines&nbsp;how&nbsp;to&nbsp;pull&nbsp;values&nbsp;from&nbsp;an&nbsp;object&nbsp;to&nbsp;serialize.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0a1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changed&nbsp;position&nbsp;of&nbsp;``obj``&nbsp;and&nbsp;``attr``.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-handle_error"><strong>handle_error</strong></a>(self, error: marshmallow.exceptions.ValidationError, data: Any, *, many: bool, **kwargs)</dt><dd><tt>Custom&nbsp;error&nbsp;handler&nbsp;function&nbsp;for&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+:param&nbsp;error:&nbsp;The&nbsp;`ValidationError`&nbsp;raised&nbsp;during&nbsp;(de)serialization.<br>
+:param&nbsp;data:&nbsp;The&nbsp;original&nbsp;input&nbsp;data.<br>
+:param&nbsp;many:&nbsp;Value&nbsp;of&nbsp;``many``&nbsp;on&nbsp;dump&nbsp;or&nbsp;load.<br>
+:param&nbsp;partial:&nbsp;Value&nbsp;of&nbsp;``partial``&nbsp;on&nbsp;load.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receives&nbsp;`many`&nbsp;and&nbsp;`partial`&nbsp;(on&nbsp;deserialization)&nbsp;as&nbsp;keyword&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-load"><strong>load</strong></a>(self, data: Union[Mapping[str, Any], Iterable[Mapping[str, Any]]], *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None)</dt><dd><tt>Deserialize&nbsp;a&nbsp;data&nbsp;structure&nbsp;to&nbsp;an&nbsp;object&nbsp;defined&nbsp;by&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-loads"><strong>loads</strong></a>(self, json_data: str, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`load`,&nbsp;except&nbsp;it&nbsp;takes&nbsp;a&nbsp;JSON&nbsp;string&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+:param&nbsp;json_data:&nbsp;A&nbsp;JSON&nbsp;string&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-on_bind_field"><strong>on_bind_field</strong></a>(self, field_name: str, field_obj: marshmallow.fields.Field) -&gt; None</dt><dd><tt>Hook&nbsp;to&nbsp;modify&nbsp;a&nbsp;field&nbsp;when&nbsp;it&nbsp;is&nbsp;bound&nbsp;to&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.<br>
+&nbsp;<br>
+No-op&nbsp;by&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="OneAirportSchema-validate"><strong>validate</strong></a>(self, data: Mapping, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None) -&gt; Dict[str, List[str]]</dt><dd><tt>Validate&nbsp;`data`&nbsp;against&nbsp;the&nbsp;schema,&nbsp;returning&nbsp;a&nbsp;dictionary&nbsp;of<br>
+validation&nbsp;errors.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;validate.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;validate&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:return:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;validation&nbsp;errors.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.1.0</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneAirportSchema-from_dict"><strong>from_dict</strong></a>(fields: Dict[str, Union[marshmallow.fields.Field, type]], *, name: str = 'GeneratedSchema') -&gt; type<font color="#909090"><font face="helvetica, arial"> from <a href="marshmallow.schema.html#SchemaMeta">marshmallow.schema.SchemaMeta</a></font></font></dt><dd><tt>Generate&nbsp;a&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;class&nbsp;given&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;fields.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;marshmallow&nbsp;import&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>,&nbsp;fields<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PersonSchema&nbsp;=&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<a href="#OneAirportSchema-from_dict">from_dict</a>({"name":&nbsp;fields.Str()})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(PersonSchema().<a href="#OneAirportSchema-load">load</a>({"name":&nbsp;"David"}))&nbsp;&nbsp;#&nbsp;=&gt;&nbsp;{'name':&nbsp;'David'}<br>
+&nbsp;<br>
+Generated&nbsp;schemas&nbsp;are&nbsp;not&nbsp;added&nbsp;to&nbsp;the&nbsp;class&nbsp;registry&nbsp;and&nbsp;therefore&nbsp;cannot<br>
+be&nbsp;referred&nbsp;to&nbsp;by&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;fields:&nbsp;Dictionary&nbsp;mapping&nbsp;field&nbsp;names&nbsp;to&nbsp;field&nbsp;instances.<br>
+:param&nbsp;str&nbsp;name:&nbsp;Optional&nbsp;name&nbsp;for&nbsp;the&nbsp;class,&nbsp;which&nbsp;will&nbsp;appear&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;``repr``&nbsp;for&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;3.0.0</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>dict_class</strong></dt>
+</dl>
+<dl><dt><strong>set_class</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class 'marshmallow.schema.Schema.Meta'&gt;<dd><tt>Options&nbsp;object&nbsp;for&nbsp;a&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+&nbsp;<br>
+Example&nbsp;usage:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;("id",&nbsp;"email",&nbsp;"date_created")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclude&nbsp;=&nbsp;("password",&nbsp;"secret_attribute")<br>
+&nbsp;<br>
+Available&nbsp;options:<br>
+&nbsp;<br>
+-&nbsp;``fields``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+-&nbsp;``additional``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;*in&nbsp;addition*&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;explicitly&nbsp;declared&nbsp;fields.&nbsp;``additional``&nbsp;and&nbsp;``fields``&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mutually-exclusive&nbsp;options.<br>
+-&nbsp;``include``:&nbsp;Dictionary&nbsp;of&nbsp;additional&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;schema.&nbsp;It&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;better&nbsp;to&nbsp;define&nbsp;fields&nbsp;as&nbsp;class&nbsp;variables,&nbsp;but&nbsp;you&nbsp;may&nbsp;need&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;this&nbsp;option,&nbsp;e.g.,&nbsp;if&nbsp;your&nbsp;fields&nbsp;are&nbsp;Python&nbsp;keywords.&nbsp;May&nbsp;be&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`OrderedDict`.<br>
+-&nbsp;``exclude``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nested&nbsp;fields&nbsp;can&nbsp;be&nbsp;represented&nbsp;with&nbsp;dot&nbsp;delimiters.<br>
+-&nbsp;``dateformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`Date&nbsp;&lt;fields.Date&gt;`&nbsp;fields.<br>
+-&nbsp;``datetimeformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`DateTime&nbsp;&lt;fields.DateTime&gt;`&nbsp;fields.<br>
+-&nbsp;``render_module``:&nbsp;Module&nbsp;to&nbsp;use&nbsp;for&nbsp;`loads&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.loads&gt;`&nbsp;and&nbsp;`dumps&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dumps&gt;`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;`json`&nbsp;from&nbsp;the&nbsp;standard&nbsp;library.<br>
+-&nbsp;``ordered``:&nbsp;If&nbsp;`True`,&nbsp;order&nbsp;serialization&nbsp;output&nbsp;according&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order&nbsp;in&nbsp;which&nbsp;fields&nbsp;were&nbsp;declared.&nbsp;Output&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`&nbsp;will&nbsp;be&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`collections.OrderedDict`.<br>
+-&nbsp;``index_errors``:&nbsp;If&nbsp;`True`,&nbsp;errors&nbsp;dictionaries&nbsp;will&nbsp;include&nbsp;the&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;invalid&nbsp;items&nbsp;in&nbsp;a&nbsp;collection.<br>
+-&nbsp;``load_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;serialized&nbsp;results.<br>
+-&nbsp;``dump_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;deserialization<br>
+-&nbsp;``unknown``:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+-&nbsp;``register``:&nbsp;Whether&nbsp;to&nbsp;register&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;with&nbsp;marshmallow's&nbsp;internal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;registry.&nbsp;Must&nbsp;be&nbsp;`True`&nbsp;if&nbsp;you&nbsp;intend&nbsp;to&nbsp;refer&nbsp;to&nbsp;this&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;class&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.&nbsp;Only&nbsp;set&nbsp;this&nbsp;to&nbsp;`False`&nbsp;when&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usage&nbsp;is&nbsp;critical.&nbsp;Defaults&nbsp;to&nbsp;`True`.</tt></dl>
+
+<dl><dt><strong>OPTIONS_CLASS</strong> = &lt;class 'marshmallow.schema.SchemaOpts'&gt;<dd><tt>class&nbsp;Meta&nbsp;options&nbsp;for&nbsp;the&nbsp;:class:`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.&nbsp;Defines&nbsp;defaults.</tt></dl>
+
+<dl><dt><strong>TYPE_MAPPING</strong> = {&lt;class 'str'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'bytes'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'datetime.datetime'&gt;: &lt;class 'marshmallow.fields.DateTime'&gt;, &lt;class 'float'&gt;: &lt;class 'marshmallow.fields.Float'&gt;, &lt;class 'bool'&gt;: &lt;class 'marshmallow.fields.Boolean'&gt;, &lt;class 'tuple'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'list'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'set'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'int'&gt;: &lt;class 'marshmallow.fields.Integer'&gt;, &lt;class 'uuid.UUID'&gt;: &lt;class 'marshmallow.fields.UUID'&gt;, ...}</dl>
+
+<dl><dt><strong>error_messages</strong> = {}</dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="OneFlightSchema">class <strong>OneFlightSchema</strong></a>(<a href="main.html#FlightSchema">FlightSchema</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#OneFlightSchema">OneFlightSchema</a>(*,&nbsp;only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;None,&nbsp;exclude:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;many:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;context:&nbsp;Dict&nbsp;=&nbsp;None,&nbsp;load_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;dump_only:&nbsp;Union[Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;(),&nbsp;partial:&nbsp;Union[bool,&nbsp;Sequence[str],&nbsp;Set[str]]&nbsp;=&nbsp;False,&nbsp;unknown:&nbsp;str&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+Base&nbsp;serializer&nbsp;with&nbsp;which&nbsp;to&nbsp;define&nbsp;custom&nbsp;serializers.<br>
+&nbsp;<br>
+See&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;for&nbsp;more&nbsp;details&nbsp;about&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#OneFlightSchema">OneFlightSchema</a></dd>
+<dd><a href="main.html#FlightSchema">FlightSchema</a></dd>
+<dd><a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a></dd>
+<dd><a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>opts</strong> = &lt;marshmallow.schema.SchemaOpts object&gt;</dl>
+
+<hr>
+Methods inherited from <a href="flask_marshmallow.schema.html#Schema">flask_marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneFlightSchema-jsonify"><strong>jsonify</strong></a>(self, obj, many=&lt;object object at 0x03E05B28&gt;, *args, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;response&nbsp;containing&nbsp;the&nbsp;serialized&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;Object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;bool&nbsp;many:&nbsp;Whether&nbsp;`obj`&nbsp;should&nbsp;be&nbsp;serialized&nbsp;as&nbsp;an&nbsp;instance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;unset,&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+:param&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Takes&nbsp;the&nbsp;same&nbsp;arguments&nbsp;as&nbsp;`marshmallow.<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`.&nbsp;Additional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;passed&nbsp;to&nbsp;`flask.jsonify`.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.6.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;`many`&nbsp;argument&nbsp;for&nbsp;this&nbsp;method&nbsp;defaults&nbsp;to&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;`many`&nbsp;attribute&nbsp;on&nbsp;the&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.&nbsp;Previously,&nbsp;the&nbsp;`many`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;of&nbsp;this&nbsp;method&nbsp;defaulted&nbsp;to&nbsp;False,&nbsp;regardless&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.many`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneFlightSchema-__init__"><strong>__init__</strong></a>(self, *, only: Union[Sequence[str], Set[str]] = None, exclude: Union[Sequence[str], Set[str]] = (), many: bool = False, context: Dict = None, load_only: Union[Sequence[str], Set[str]] = (), dump_only: Union[Sequence[str], Set[str]] = (), partial: Union[bool, Sequence[str], Set[str]] = False, unknown: str = None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-dump"><strong>dump</strong></a>(self, obj: Any, *, many: bool = None)</dt><dd><tt>Serialize&nbsp;an&nbsp;object&nbsp;to&nbsp;native&nbsp;Python&nbsp;data&nbsp;types&nbsp;according&nbsp;to&nbsp;this<br>
+<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;dict&nbsp;of&nbsp;serialized&nbsp;data<br>
+:rtype:&nbsp;dict<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Validation&nbsp;no&nbsp;longer&nbsp;occurs&nbsp;upon&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-dumps"><strong>dumps</strong></a>(self, obj: Any, *args, many: bool = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`dump`,&nbsp;except&nbsp;return&nbsp;a&nbsp;JSON-encoded&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;serialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;A&nbsp;``json``&nbsp;string<br>
+:rtype:&nbsp;str<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;serialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;``obj``&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-get_attribute"><strong>get_attribute</strong></a>(self, obj: Any, attr: str, default: Any)</dt><dd><tt>Defines&nbsp;how&nbsp;to&nbsp;pull&nbsp;values&nbsp;from&nbsp;an&nbsp;object&nbsp;to&nbsp;serialize.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0a1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changed&nbsp;position&nbsp;of&nbsp;``obj``&nbsp;and&nbsp;``attr``.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-handle_error"><strong>handle_error</strong></a>(self, error: marshmallow.exceptions.ValidationError, data: Any, *, many: bool, **kwargs)</dt><dd><tt>Custom&nbsp;error&nbsp;handler&nbsp;function&nbsp;for&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+:param&nbsp;error:&nbsp;The&nbsp;`ValidationError`&nbsp;raised&nbsp;during&nbsp;(de)serialization.<br>
+:param&nbsp;data:&nbsp;The&nbsp;original&nbsp;input&nbsp;data.<br>
+:param&nbsp;many:&nbsp;Value&nbsp;of&nbsp;``many``&nbsp;on&nbsp;dump&nbsp;or&nbsp;load.<br>
+:param&nbsp;partial:&nbsp;Value&nbsp;of&nbsp;``partial``&nbsp;on&nbsp;load.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;2.0.0<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.0.0rc9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receives&nbsp;`many`&nbsp;and&nbsp;`partial`&nbsp;(on&nbsp;deserialization)&nbsp;as&nbsp;keyword&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-load"><strong>load</strong></a>(self, data: Union[Mapping[str, Any], Iterable[Mapping[str, Any]]], *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None)</dt><dd><tt>Deserialize&nbsp;a&nbsp;data&nbsp;structure&nbsp;to&nbsp;an&nbsp;object&nbsp;defined&nbsp;by&nbsp;this&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>'s&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-loads"><strong>loads</strong></a>(self, json_data: str, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None, unknown: str = None, **kwargs)</dt><dd><tt>Same&nbsp;as&nbsp;:meth:`load`,&nbsp;except&nbsp;it&nbsp;takes&nbsp;a&nbsp;JSON&nbsp;string&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+:param&nbsp;json_data:&nbsp;A&nbsp;JSON&nbsp;string&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;deserialize.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;deserialize&nbsp;`obj`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:param&nbsp;unknown:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;`None`,&nbsp;the&nbsp;value&nbsp;for&nbsp;`self.<strong>unknown</strong>`&nbsp;is&nbsp;used.<br>
+:return:&nbsp;Deserialized&nbsp;data<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.0.0<br>
+..&nbsp;versionchanged::&nbsp;3.0.0b7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;returns&nbsp;the&nbsp;deserialized&nbsp;data&nbsp;rather&nbsp;than&nbsp;a&nbsp;``(data,&nbsp;errors)``&nbsp;duple.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;:exc:`ValidationError&nbsp;&lt;marshmallow.exceptions.ValidationError&gt;`&nbsp;is&nbsp;raised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;invalid&nbsp;data&nbsp;are&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-on_bind_field"><strong>on_bind_field</strong></a>(self, field_name: str, field_obj: marshmallow.fields.Field) -&gt; None</dt><dd><tt>Hook&nbsp;to&nbsp;modify&nbsp;a&nbsp;field&nbsp;when&nbsp;it&nbsp;is&nbsp;bound&nbsp;to&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.<br>
+&nbsp;<br>
+No-op&nbsp;by&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="OneFlightSchema-validate"><strong>validate</strong></a>(self, data: Mapping, *, many: bool = None, partial: Union[bool, Sequence[str], Set[str]] = None) -&gt; Dict[str, List[str]]</dt><dd><tt>Validate&nbsp;`data`&nbsp;against&nbsp;the&nbsp;schema,&nbsp;returning&nbsp;a&nbsp;dictionary&nbsp;of<br>
+validation&nbsp;errors.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;validate.<br>
+:param&nbsp;many:&nbsp;Whether&nbsp;to&nbsp;validate&nbsp;`data`&nbsp;as&nbsp;a&nbsp;collection.&nbsp;If&nbsp;`None`,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;`self.<strong>many</strong>`&nbsp;is&nbsp;used.<br>
+:param&nbsp;partial:&nbsp;Whether&nbsp;to&nbsp;ignore&nbsp;missing&nbsp;fields&nbsp;and&nbsp;not&nbsp;require<br>
+&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;fields&nbsp;declared.&nbsp;Propagates&nbsp;down&nbsp;to&nbsp;``Nested``&nbsp;fields&nbsp;as&nbsp;well.&nbsp;If<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;value&nbsp;is&nbsp;an&nbsp;iterable,&nbsp;only&nbsp;missing&nbsp;fields&nbsp;listed&nbsp;in&nbsp;that&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;will&nbsp;be&nbsp;ignored.&nbsp;Use&nbsp;dot&nbsp;delimiters&nbsp;to&nbsp;specify&nbsp;nested&nbsp;fields.<br>
+:return:&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;validation&nbsp;errors.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;1.1.0</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><a name="OneFlightSchema-from_dict"><strong>from_dict</strong></a>(fields: Dict[str, Union[marshmallow.fields.Field, type]], *, name: str = 'GeneratedSchema') -&gt; type<font color="#909090"><font face="helvetica, arial"> from <a href="marshmallow.schema.html#SchemaMeta">marshmallow.schema.SchemaMeta</a></font></font></dt><dd><tt>Generate&nbsp;a&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;class&nbsp;given&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;fields.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;marshmallow&nbsp;import&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>,&nbsp;fields<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PersonSchema&nbsp;=&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<a href="#OneFlightSchema-from_dict">from_dict</a>({"name":&nbsp;fields.Str()})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(PersonSchema().<a href="#OneFlightSchema-load">load</a>({"name":&nbsp;"David"}))&nbsp;&nbsp;#&nbsp;=&gt;&nbsp;{'name':&nbsp;'David'}<br>
+&nbsp;<br>
+Generated&nbsp;schemas&nbsp;are&nbsp;not&nbsp;added&nbsp;to&nbsp;the&nbsp;class&nbsp;registry&nbsp;and&nbsp;therefore&nbsp;cannot<br>
+be&nbsp;referred&nbsp;to&nbsp;by&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;fields:&nbsp;Dictionary&nbsp;mapping&nbsp;field&nbsp;names&nbsp;to&nbsp;field&nbsp;instances.<br>
+:param&nbsp;str&nbsp;name:&nbsp;Optional&nbsp;name&nbsp;for&nbsp;the&nbsp;class,&nbsp;which&nbsp;will&nbsp;appear&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;``repr``&nbsp;for&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+..&nbsp;versionadded::&nbsp;3.0.0</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>dict_class</strong></dt>
+</dl>
+<dl><dt><strong>set_class</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="marshmallow.schema.html#Schema">marshmallow.schema.Schema</a>:<br>
+<dl><dt><strong>Meta</strong> = &lt;class 'marshmallow.schema.Schema.Meta'&gt;<dd><tt>Options&nbsp;object&nbsp;for&nbsp;a&nbsp;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.<br>
+&nbsp;<br>
+Example&nbsp;usage:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;Meta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;=&nbsp;("id",&nbsp;"email",&nbsp;"date_created")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exclude&nbsp;=&nbsp;("password",&nbsp;"secret_attribute")<br>
+&nbsp;<br>
+Available&nbsp;options:<br>
+&nbsp;<br>
+-&nbsp;``fields``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+-&nbsp;``additional``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;*in&nbsp;addition*&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;explicitly&nbsp;declared&nbsp;fields.&nbsp;``additional``&nbsp;and&nbsp;``fields``&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mutually-exclusive&nbsp;options.<br>
+-&nbsp;``include``:&nbsp;Dictionary&nbsp;of&nbsp;additional&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;schema.&nbsp;It&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;better&nbsp;to&nbsp;define&nbsp;fields&nbsp;as&nbsp;class&nbsp;variables,&nbsp;but&nbsp;you&nbsp;may&nbsp;need&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;this&nbsp;option,&nbsp;e.g.,&nbsp;if&nbsp;your&nbsp;fields&nbsp;are&nbsp;Python&nbsp;keywords.&nbsp;May&nbsp;be&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`OrderedDict`.<br>
+-&nbsp;``exclude``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;serialized&nbsp;result.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nested&nbsp;fields&nbsp;can&nbsp;be&nbsp;represented&nbsp;with&nbsp;dot&nbsp;delimiters.<br>
+-&nbsp;``dateformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`Date&nbsp;&lt;fields.Date&gt;`&nbsp;fields.<br>
+-&nbsp;``datetimeformat``:&nbsp;Default&nbsp;format&nbsp;for&nbsp;`DateTime&nbsp;&lt;fields.DateTime&gt;`&nbsp;fields.<br>
+-&nbsp;``render_module``:&nbsp;Module&nbsp;to&nbsp;use&nbsp;for&nbsp;`loads&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.loads&gt;`&nbsp;and&nbsp;`dumps&nbsp;&lt;<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dumps&gt;`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;`json`&nbsp;from&nbsp;the&nbsp;standard&nbsp;library.<br>
+-&nbsp;``ordered``:&nbsp;If&nbsp;`True`,&nbsp;order&nbsp;serialization&nbsp;output&nbsp;according&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;order&nbsp;in&nbsp;which&nbsp;fields&nbsp;were&nbsp;declared.&nbsp;Output&nbsp;of&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>.dump`&nbsp;will&nbsp;be&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`collections.OrderedDict`.<br>
+-&nbsp;``index_errors``:&nbsp;If&nbsp;`True`,&nbsp;errors&nbsp;dictionaries&nbsp;will&nbsp;include&nbsp;the&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;invalid&nbsp;items&nbsp;in&nbsp;a&nbsp;collection.<br>
+-&nbsp;``load_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;serialized&nbsp;results.<br>
+-&nbsp;``dump_only``:&nbsp;Tuple&nbsp;or&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;deserialization<br>
+-&nbsp;``unknown``:&nbsp;Whether&nbsp;to&nbsp;exclude,&nbsp;include,&nbsp;or&nbsp;raise&nbsp;an&nbsp;error&nbsp;for&nbsp;unknown<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fields&nbsp;in&nbsp;the&nbsp;data.&nbsp;Use&nbsp;`EXCLUDE`,&nbsp;`INCLUDE`&nbsp;or&nbsp;`RAISE`.<br>
+-&nbsp;``register``:&nbsp;Whether&nbsp;to&nbsp;register&nbsp;the&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`&nbsp;with&nbsp;marshmallow's&nbsp;internal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;registry.&nbsp;Must&nbsp;be&nbsp;`True`&nbsp;if&nbsp;you&nbsp;intend&nbsp;to&nbsp;refer&nbsp;to&nbsp;this&nbsp;`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;class&nbsp;name&nbsp;in&nbsp;`Nested`&nbsp;fields.&nbsp;Only&nbsp;set&nbsp;this&nbsp;to&nbsp;`False`&nbsp;when&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usage&nbsp;is&nbsp;critical.&nbsp;Defaults&nbsp;to&nbsp;`True`.</tt></dl>
+
+<dl><dt><strong>OPTIONS_CLASS</strong> = &lt;class 'marshmallow.schema.SchemaOpts'&gt;<dd><tt>class&nbsp;Meta&nbsp;options&nbsp;for&nbsp;the&nbsp;:class:`<a href="flask_marshmallow.schema.html#Schema">Schema</a>`.&nbsp;Defines&nbsp;defaults.</tt></dl>
+
+<dl><dt><strong>TYPE_MAPPING</strong> = {&lt;class 'str'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'bytes'&gt;: &lt;class 'marshmallow.fields.String'&gt;, &lt;class 'datetime.datetime'&gt;: &lt;class 'marshmallow.fields.DateTime'&gt;, &lt;class 'float'&gt;: &lt;class 'marshmallow.fields.Float'&gt;, &lt;class 'bool'&gt;: &lt;class 'marshmallow.fields.Boolean'&gt;, &lt;class 'tuple'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'list'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'set'&gt;: &lt;class 'marshmallow.fields.Raw'&gt;, &lt;class 'int'&gt;: &lt;class 'marshmallow.fields.Integer'&gt;, &lt;class 'uuid.UUID'&gt;: &lt;class 'marshmallow.fields.UUID'&gt;, ...}</dl>
+
+<dl><dt><strong>error_messages</strong> = {}</dl>
+
+<hr>
+Data descriptors inherited from <a href="marshmallow.base.html#SchemaABC">marshmallow.base.SchemaABC</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-airline"><strong>airline</strong></a>(id)</dt></dl>
+ <dl><dt><a name="-airlines"><strong>airlines</strong></a>()</dt></dl>
+ <dl><dt><a name="-airport"><strong>airport</strong></a>(id)</dt></dl>
+ <dl><dt><a name="-airports"><strong>airports</strong></a>()</dt></dl>
+ <dl><dt><a name="-flight"><strong>flight</strong></a>(id)</dt></dl>
+ <dl><dt><a name="-flights"><strong>flights</strong></a>()</dt></dl>
+ <dl><dt><a name="-getAirlines"><strong>getAirlines</strong></a>()</dt></dl>
+ <dl><dt><a name="-getAirports"><strong>getAirports</strong></a>()</dt></dl>
+ <dl><dt><a name="-getFlights"><strong>getFlights</strong></a>()</dt></dl>
+ <dl><dt><a name="-getOneAirline"><strong>getOneAirline</strong></a>(id)</dt></dl>
+ <dl><dt><a name="-getOneAirport"><strong>getOneAirport</strong></a>(id)</dt></dl>
+ <dl><dt><a name="-getOneFlight"><strong>getOneFlight</strong></a>(id)</dt></dl>
+ <dl><dt><a name="-get_all_airlines"><strong>get_all_airlines</strong></a>(url)</dt></dl>
+ <dl><dt><a name="-get_all_airports"><strong>get_all_airports</strong></a>(url)</dt></dl>
+ <dl><dt><a name="-get_all_flights"><strong>get_all_flights</strong></a>(url)</dt></dl>
+ <dl><dt><a name="-get_country_image"><strong>get_country_image</strong></a>(code)</dt></dl>
+ <dl><dt><a name="-get_image"><strong>get_image</strong></a>(code)</dt></dl>
+ <dl><dt><a name="-get_url"><strong>get_url</strong></a>()</dt></dl>
+ <dl><dt><a name="-index"><strong>index</strong></a>()</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>airline_schema</strong> = &lt;AirlineSchema(many=True)&gt;<br>
+<strong>airport_schema</strong> = &lt;AirportSchema(many=True)&gt;<br>
+<strong>app</strong> = &lt;Flask 'main'&gt;<br>
+<strong>application</strong> = &lt;Flask 'main'&gt;<br>
+<strong>base_url</strong> = 'http://api.aviationstack.com/v1/'<br>
+<strong>db</strong> = &lt;SQLAlchemy engine=postgres://postgres:***@localhost:5432/aeroinfo&gt;<br>
+<strong>flight_schema</strong> = &lt;FlightSchema(many=True)&gt;<br>
+<strong>i</strong> = 9<br>
+<strong>link</strong> = Table('link', MetaData(bind=None), Column('fligh...Airport.airport_id'), table=&lt;link&gt;), schema=None)<br>
+<strong>ma</strong> = &lt;flask_marshmallow.Marshmallow object&gt;<br>
+<strong>one_airline_schema</strong> = &lt;OneAirlineSchema(many=False)&gt;<br>
+<strong>one_airport_schema</strong> = &lt;OneAirportSchema(many=False)&gt;<br>
+<strong>one_flight_schema</strong> = &lt;OneFlightSchema(many=False)&gt;<br>
+<strong>parameter</strong> = {'access_key': '825fa4b6e358050087ede9b9b769dc1c', 'limit': 100, 'offset': 900}<br>
+<strong>target</strong> = 'flights?'</td></tr></table>
+</body></html>

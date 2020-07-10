@@ -1,0 +1,16 @@
+{
+    "airport_id": 1,
+    "airport_name": "Anaa",
+    "city_iata_code": "AAA",
+    "country_image_url": "https://www.countryflags.io/PF/shiny/64.png",
+    "country_iso2": "PF",
+    "country_name": "French Polynesia",
+    "flights": [],
+    "gmt": "-10",
+    "iata_code": "AAA",
+    "icao_code": "NTGA",
+    "image_url": null,
+    "latitude": "-17.05",
+    "longitude": "-145.41667",
+    "timezone": "Pacific/Tahiti"
+}

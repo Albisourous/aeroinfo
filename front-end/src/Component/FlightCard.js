@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -13,11 +13,12 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        height:460,
-    },
-    media: {
-        height: 300,
-        width: 330,
+        height: 250,
+        justifyContent: 'center',
+        textAlign: 'center',
+        alignItems: 'center',
+        marginTop: 150,
+        paddingTop: 15
     },
 });
 
@@ -25,31 +26,18 @@ const FlightCard = props => {
     const info = props.info;
     const classes = useStyles();
     return (
-        <Card className={classes.root}>
-            <ButtonBase className="flight"
-                        onClick={event => window.location.href = "/flights/" + info.flight.number}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image={info.image_url}
-                        title="lol"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="h2"><span>Arrival - Departure: </span>
-                            {info.departure.airport}<span> - </span> {info.arrival.airport}
-                        </Typography>
-                        <Typography variant="h6" component="h2"><span>Date:  </span>
-                            {info.flight_date}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </ButtonBase>
-        </Card>
+        <div className="FlightCard">
+            <Card className={classes.root} onClick={event => window.location.href = "/flights/" + info.flight_id}>
+                <ul class="list-group-flush">
+                    <li class="list-group-item">Departure: {info.departure_airport}</li>
+                    <li class="list-group-item">Arrival: {info.arrival_airport}</li>
+                    <li class="list-group-item">Date: {info.flight_date}</li>
+                </ul>
+            </Card>
+        </div>
     );
 };
 
-FlightCard.propTypes = {
-
-};
+FlightCard.propTypes = {};
 
 export default FlightCard;

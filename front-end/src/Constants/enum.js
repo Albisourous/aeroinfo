@@ -1,5 +1,5 @@
 const INFO_TYPES = Object.freeze({
-    "AIRPLANES": "airplanes",
+    "AIRLINES": "airlines",
     "FLIGHTS": "flights",
     "AIRPORTS": "airports"
 });

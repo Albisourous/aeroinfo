@@ -40,7 +40,7 @@ const Airlines = props => {
                 }
             })
             .then(data => setAirlines(data.airlines))
-            .catch(error => this.setState({error, isLoading: false}));
+            .catch(error => setError(true), setLoading(false));
     }, []);
 
 
@@ -130,7 +130,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
                         <button type="button" className="btn btn-outline-light" onClick={() => {
                             let newAirlines = [...airlines];
-                            newAirlines.sort(GetSortOrder("country_name", order));
+                            newAirlines.sort(GetSortOrder("flight_date", order));
                             order = order * -1;
                             setAirlines(newAirlines);
                         }}>Country Name

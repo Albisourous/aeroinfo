@@ -28,12 +28,12 @@ const AirportCard = props => {
     return (
         <div className="AirportCard">
             <Card className={classes.root}>
-                <ButtonBase className="{info.airport_name}"
-                    onClick={event => window.location.href = "/airports/" + info.airport_name}>
+                <ButtonBase className="{info.airport_id}"
+                    onClick={event => window.location.href = "/airports/" + info.airport_id}>
                     <CardActionArea>
                         <CardMedia
                             className={classes.media}
-                            image={info.image_url}
+                            image={info.country_image_url}
                         />
                         <ul class="list-group-flush">
                             <li class="list-group-item">Name: {info.airport_name}</li>

@@ -42,7 +42,7 @@ function App() {
                         <Layout>  <About /></Layout>
                         <Route path="/api"></Route>
                     </Route>
-                    <Route path="/"> <Home />
+                    <Route path="/" exact> <Home />
                     </Route>
                 </Switch>
             </Router>

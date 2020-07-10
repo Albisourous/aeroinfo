@@ -1,0 +1,16 @@
+{
+    "airline_id": 1,
+    "airline_name": "American Airlines",
+    "callsign": "AMERICAN",
+    "country_iso2": "US",
+    "country_name": "United States",
+    "date_founded": "1934",
+    "fleet_average_age": "10.9",
+    "fleet_size": "963",
+    "flights": [],
+    "hub_code": "DFW",
+    "iata_code": "AA",
+    "iata_prefix_accounting": "1",
+    "icao_code": "AAL",
+    "image_url": "https://content.airhex.com/content/logos/airlines_AA_350_100_r.png"
+}

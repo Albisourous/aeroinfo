@@ -1,16 +1,34 @@
+#!/usr/bin/env python3
+
+# ---------------------------
+# projects/IDB3/main.py
+# Fares Fraij
+# ---------------------------
+
+import requests
+import pprint
 from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
 from flask import Flask
+from marshmallow import fields
 import json
 import sys
 from sqlalchemy import create_engine, ForeignKey
+from flask_cors import CORS, cross_origin
 from sqlalchemy.ext.declarative import declarative_base
-import random
 import os
+from flask import jsonify
+from flask import jsonify
+
+from flask_cors import CORS, cross_origin
+
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
+ma = Marshmallow(application)
+CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 link = db.Table('link',
@@ -77,6 +95,36 @@ class Airport(db.Model):
     country_image_url = db.Column(db.Text)
     image_url = db.Column(db.Text)
 
-db.drop_all()
-db.create_all()
- 
+def get_all_flights(url):
+    response = requests.get(url).json().get("data")
+    for flight in response:
+        if(not db.session.query(Flight).filter_by(flight_iata = flight["flight"]["iata"]).scalar()):
+            arrival_airport = flight["arrival"]["airport"]
+            departure_airport = flight["departure"]["airport"]
+            f1 = Flight(
+                    flight_date = flight["flight_date"],
+                    flight_status = flight["flight_status"],
+                    departure_airport = departure_airport,
+                    departure_timezone = flight["departure"]["timezone"],
+                    departure_scheduled = flight["departure"]["scheduled"],
+                    departure_estimated = flight["departure"]["estimated"],
+                    arrival_airport = arrival_airport,
+                    arrival_timezone = flight["arrival"]["timezone"],
+                    arrival_scheduled = flight["arrival"]["scheduled"],
+                    arrival_estimated = flight["arrival"]["estimated"],
+                    flight_number = flight["flight"]["number"],
+                    flight_iata = flight["flight"]["iata"],
+                    flight_icao = flight["flight"]["icao"],
+                    airline = db.session.query(Airline).filter_by(airline_name = flight["airline"]["name"]).first(),
+            )
+            if arrival_airport is not None:
+                f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["arrival"]["airport"]).first())
+            if departure_airport is not None:
+                f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["departure"]["airport"]).first())
+            db.session.add(f1)
+            db.session.commit()
+   
+    
+
+get_all_flights("http://api.aviationstack.com/v1/airports?limit=100&access_key=825fa4b6e358050087ede9b9b769dc1c&")
+

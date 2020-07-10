@@ -1,17 +1,11 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
-import json
-import sys
-from sqlalchemy import create_engine, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
-import random
 import os
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
-app.config['CORS_HEADERS'] = 'Content-Type'
 
 link = db.Table('link',
     db.Column('flight_id', db.Integer, db.ForeignKey('Flight.flight_id')), 
@@ -77,6 +71,5 @@ class Airport(db.Model):
     country_image_url = db.Column(db.Text)
     image_url = db.Column(db.Text)
 
-db.drop_all()
-db.create_all()
- 
+
+print(db.session.query(Flight).filter_by(flight_iata = 'a').scalar())

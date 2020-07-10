@@ -211,6 +211,12 @@ body {
 .AirlineInfo .image .card {
     width: 30rem;
     height: auto;
+
+}
+
+.AirlineInfo .image .card #image{
+    object-fit: cover;
+    padding-top: 315px;
 }
 
 .AirlineInfo .link-1 .card {
@@ -242,6 +248,11 @@ body {
     margin-top: 10px;
     font-family: "Homenaje", sans-serif;
 }
+
+
+
+
+
 
 /*----------------------FlightInfo----------------------*/
 
@@ -361,6 +372,12 @@ body {
 .hvr-glow:focus,
 .hvr-glow:active {
     box-shadow: 0 0 20px rgb(241, 241, 241);
+}
+
+.AirlineCard #image{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 70px;
 }
 
 /*----------------------FlightCard----------------------*/

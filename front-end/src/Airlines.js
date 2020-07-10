@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import data from "./Data/airplanes.json";
 import InfoGrid from "./Component/InfoGrid";
@@ -8,6 +8,8 @@ import Loader from 'react-loader-spinner';
 import './setup.css';
 import './Component/load.scss'
 import './Component/loader.css'
+import Pagination from "./Component/Pagination.js";
+
 
 let order = 1;
 const airplanesData = data["data"];
@@ -20,8 +22,11 @@ const Airlines = props => {
     const [error, setError] = useState(null);
     const [airlines, setAirlines] = useState([])
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(15);
 
-    useState(() => {
+
+    useEffect(() => {
 
         setLoading({isLoading: true});
         timeout();
@@ -29,7 +34,7 @@ const Airlines = props => {
             setLoading(false);
         }, 1500)
 
-        fetch('http://localhost:8080/api/airlines')
+        fetch('http://aeroinfo.me/api/airlines')
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -39,7 +44,9 @@ const Airlines = props => {
             })
             .then(data => setAirlines(data.airlines))
             .catch(error => this.setState({error, isLoading: false}));
-    });
+    }, []);
+
+
     function timeout() {
         if (isLoading) {
             return (
@@ -101,16 +108,16 @@ const Airlines = props => {
         }
     }
 
+//get current post
+const indexOfLastPost = currentPage * postsPerPage;
+const indexOfFirstPost = indexOfLastPost - postsPerPage;
+const currentPosts = airlines.slice(indexOfFirstPost, indexOfLastPost);
+
+//change page
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     return (
         <div>
-            {/* <ul>
-                {airlines.map(airplane =>
-                    <li key={airplane.airline_id}>
-                        {airplane.airline_id}
-                    </li>
-                )}
-            </ul> */}
-
             <div className="Airplanes">
                 <div className="sort">
                     <div className="row justify-content-end">
@@ -133,10 +140,16 @@ const Airlines = props => {
                         </button>
                     </div>
                 </div>
-                <InfoGrid infoData={airlines} infoCardType={INFO_TYPES.AIRLINES}/>
-            </div>
-        </div>
 
+                <InfoGrid infoData={currentPosts} infoCardType={INFO_TYPES.AIRLINES}/>
+                <Pagination postsPerPages={postsPerPage} totalPosts={airlines.length} paginate={paginate}>
+
+                </Pagination>
+
+            </div>
+            
+        </div>
+        
     );
 };
 

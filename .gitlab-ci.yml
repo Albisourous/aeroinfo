@@ -9,7 +9,7 @@ pages:
       - public
   only:
     - master
-    
+
 # Official framework image. Look for the different tagged releases at:
 # https://hub.docker.com/r/library/python
 image: python:3.5
@@ -36,4 +36,4 @@ before_script:
 
 test:
   script:
-  - python test.py
+  - python ./back-end/tests.py

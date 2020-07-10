@@ -167,7 +167,7 @@ db.drop_all()
 db.create_all()
 
 parameter = {}
-parameter["access_key"] = "5999f65c3074fda969b31bfd1d6a9e68"
+parameter["access_key"] = "825fa4b6e358050087ede9b9b769dc1c"
 parameter["limit"] = 6471
 base_url = "http://api.aviationstack.com/v1/"
 target = "airports?"

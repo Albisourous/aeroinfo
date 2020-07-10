@@ -26,7 +26,7 @@ const Airports = props => {
             setLoading(false);
         }, 1500)
 
-        fetch('http://aeroinfo.me/api/airports')
+        fetch('http://127.0.0.1:8080/api/airports')
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -35,7 +35,7 @@ const Airports = props => {
                 }
             })
             .then(data => setAirports(data.airports))
-            .catch(error => this.setState({error, isLoading: false}));
+            .catch(error => setError(true), setLoading(false));
     }, []);
 
      function timeout() {
@@ -142,10 +142,5 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
     );
 };
 
-
-
-
-
-Airports.propTypes = {};
 
 export default Airports;

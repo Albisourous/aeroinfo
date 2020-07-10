@@ -9,121 +9,68 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import InfiniteScroll from "react-infinite-scroll-component";
 import {Link} from "react-router-dom";
 
-const currentLocation = window.location.pathname.substring(10).replace(/%20/gi, " ");
-const info = port.data.filter(data => data.airport_name == currentLocation);
-function refreshPage() {
-    window.location.reload(false);
-  }
-const airData = air.data.map((data) => {
-    return (
-        <InfiniteScroll dataLength={1000}
-                        style={{display: 'inline-flex', maxHeight: '400px', overflow: 'auto', height: 'auto'}}
-                        height={400}>
-            <div>
-                <p onClick={refreshPage} to={"/airlines/" + data.construction_number}
-                      onClick={event => window.location.href = "/airlines/" + data.construction_number}
-                >
-                    {data != null && data.length != 0 ? (
-                        data.construction_number
-                    ) : "No Information found"}
-                </p>
-            </div>
-        </InfiniteScroll>
-    )
-});
+const num = window.location.pathname.substring(10).replace(/%20/gi, " ");
 
-const flightData = flight.data.map((data) => {
-    return (
-        <InfiniteScroll dataLength={1000}
-                        style={{display: 'inline-flex', maxHeight: '400px', overflow: 'auto', height: 'auto'}}
-                        height={400}>
-            <div>
-                <p onClick={refreshPage} to={"/flights/" + data.flight.number}
-                      onClick={event => window.location.href = "/flights/" + data.flight.number}
-                >
-                    {data != null && data.flight != null && data.length != 0 ? (
-                        data.flight.number
-                    ) : "No Information found"}
-                </p>
-            </div>
-        </InfiniteScroll>
-    )
-});
 
-const AirlinesLink =
-    <div className="link-1">
-        <div className="card mb-5 text-center text-white">
-            <h1>Airlines: </h1>
-            <div className="cardLink flex-column">
-                <br></br>
-                {airData}
-            </div>
-        </div>
-    </div>;
+const AirportInfo = () => {
+    const [info, setInfo] = useState([]);
 
-const FlightsLink =
-    <div className="link-2">
-        <div className="card mb-5 text-center text-white">
-            <h1>Flights: </h1>
-            <div className="cardLink flex-column">
-                <br></br>
-                {flightData}
-            </div>
-        </div>
-    </div>;
+    useEffect(() => {
 
-const airportData = info.map((data, allData, index, airport_name) => {
+        fetch('http://127.0.0.1:8080/api/airports/' + num)
+            .then(response => response.json())
+            .then(data => setInfo(data))
+
+    }, []);
+    console.log(num)
+
     return (
         <div className="AirportInfo container">
+
             <div className="row">
 
                 <div className="image">
-                    <div className="card mr-5">
-                        <img className="card-img-top" src={data.image_url} alt="Card image cap"/>
+                    <div className="card">
+                        <img src={info.country_image_url}></img>
                     </div>
                 </div>
 
-                <div>
-                    {AirlinesLink}
+                <div className="link-1 mb-5">
+
+                    <div className="card bg-dark text-center text-white">
+                        <h1>Flights: </h1>
+                    </div>
                 </div>
 
                 <div class="w-100 "></div>
+
                 <div className="description">
                     <div className="card bg-dark text-center text-white">
                         <div className="card-body">
-                            <Card.Title>{data.airport_name}</Card.Title>
-                            <Card.Title>Country of origin: {data.country_name}</Card.Title>
-                            <Card.Title>Timezone: {data.timezone}</Card.Title>
-                            <Card.Title>GMT: {data.gmt}</Card.Title>
-                            <Card.Title>Iata Code: {data.iata_code}</Card.Title>
-                            <Card.Title>GeoName ID: {data.geoname_id}</Card.Title>
-                            <Card.Title>Latitude: {data.latitude}</Card.Title>
-                            <Card.Title>Longitude: {data.longitude}</Card.Title>
+                        <Card.Title>{info.airport_name}</Card.Title>
+                            <Card.Title>Country of origin: {info.country_name}</Card.Title>
+                            <Card.Title>Timezone: {info.timezone}</Card.Title>
+                            <Card.Title>GMT: {info.gmt}</Card.Title>
+                            <Card.Title>Iata Code: {info.iata_code}</Card.Title>
+                            <Card.Title>GeoName ID: {info.geoname_id}</Card.Title>
+                            <Card.Title>Latitude: {info.latitude}</Card.Title>
+                            <Card.Title>Longitude: {info.longitude}</Card.Title>
                         </div>
-
                     </div>
                 </div>
 
-                <div>
-                    {FlightsLink}
+                <div className="link-2">
+                    <div className="card text-center text-white">
+                        <h1>Airports:</h1>
+                    </div>
                 </div>
-
             </div>
-        </div>)
-});
+        </div>
 
-class AirportInfo extends Component {
-
-    render() {
-        return (
-            <div>
-                <div><br/></div>
-                {airportData}
-            </div>
-        )
-    }
+    )
 }
 
-export {AirportInfo};
+export { AirportInfo };
+
 
 

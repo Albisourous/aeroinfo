@@ -33,7 +33,7 @@ const AirportCard = props => {
                     <CardActionArea>
                         <CardMedia
                             className={classes.media}
-                            image={info.image_url}
+                            image={info.country_image_url}
                         />
                         <ul class="list-group-flush">
                             <li class="list-group-item">Name: {info.airport_name}</li>

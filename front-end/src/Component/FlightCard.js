@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-        height: 463,
+        height: 500,
     },
     media: {
         height: 300,
@@ -28,15 +28,15 @@ const FlightCard = props => {
         <div className="FlightCard">
             <Card className={classes.root}>
                 <ButtonBase className="flight"
-                    onClick={event => window.location.href = "/flights/" + info.flight.number}>
+                    onClick={event => window.location.href = "/flights/" + info.flight_id}>
                     <CardActionArea>
                         <CardMedia
                             className={classes.media}
-                            image={info.image_url}
+                            image={"https://www.you-fly.com/aptimg/raw/aid,apt,h,e,hear,ai,1304169445519.jpg"}
                         />
                         <ul class="list-group-flush">
-                            <li class="list-group-item">Departure: {info.departure.airport}</li>
-                            <li class="list-group-item">Arrival: {info.arrival.airport}</li>
+                            <li class="list-group-item">Departure: {info.departure_airport}</li>
+                            <li class="list-group-item">Arrival: {info.arrival_airport}</li>
                             <li class="list-group-item">Date: {info.flight_date}</li>
                         </ul>
                     </CardActionArea>

@@ -28,8 +28,8 @@ const AirportCard = props => {
     return (
         <div className="AirportCard">
             <Card className={classes.root}>
-                <ButtonBase className="{info.airport_name}"
-                    onClick={event => window.location.href = "/airports/" + info.airport_name}>
+                <ButtonBase className="{info.airport_id}"
+                    onClick={event => window.location.href = "/airports/" + info.airport_id}>
                     <CardActionArea>
                         <CardMedia
                             className={classes.media}

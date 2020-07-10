@@ -8,43 +8,55 @@ import './info.css';
 
 
 const num = window.location.pathname.substring(9).replace(/%20/gi, " ");
-const info = port.data.filter(data => data["flight"].number == num);
-const flightData = info.map((data, index, airport_name) => {
-    return (
 
+const FlightInfo = () => {
+    const [info, setInfo] = useState([]);
+
+    useEffect(() => {
+
+        fetch('http://127.0.0.1:8080/api/flights/' + num)
+            .then(response => response.json())
+            .then(data => setInfo(data))
+
+    }, []);
+
+    console.log(info)
+    return (
         <div className="FlightInfo container">
 
             <div className="row">
 
                 <div className="image">
-                    <div className="card mr-5">
-                        <img className="card-img-top" src={data.image_url} alt="Card image cap" />
+                    <div className="card">
+                        <img src={"https://www.you-fly.com/aptimg/raw/aid,apt,h,e,hear,ai,1304169445519.jpg"}></img>
                     </div>
                 </div>
 
                 <div className="link-1 mb-5">
+
                     <div className="card bg-dark text-center text-white">
-                        <h1>Airlines:</h1>
+                        <h1>Flights: </h1>
                     </div>
                 </div>
-                
+
                 <div class="w-100 "></div>
 
                 <div className="description">
                     <div className="card bg-dark text-center text-white">
                         <div className="card-body">
-                                <Card.Title>Flight: {data["flight"].number}</Card.Title>
-                                <Card.Title>Airport: {data["departure"].airport}</Card.Title>
-                                <Card.Title>Date: {data.flight_date}</Card.Title>
-                                <Card.Title>Timezone: {data["departure"].timezone}</Card.Title>
-                                <Card.Title>Status: {data.flight_status}</Card.Title>
-                                <Card.Title>Iata: {data["departure"].iata}</Card.Title>
+                            <Card.Title>Departure: {info.departure_timezone}</Card.Title>
+                            <Card.Title>{info.departure_scheduled}</Card.Title>
+                            <Card.Title>Arrival: {info.arrival_timezone}</Card.Title>
+                            <Card.Title>{info.arrival_scheduled}</Card.Title>
+                            <Card.Title>Flight: {info.flight_number}</Card.Title>
+                            <Card.Title>Date: {info.flight_date}</Card.Title>
+                            <Card.Title>Status: {info.flight_status}</Card.Title>
                         </div>
                     </div>
                 </div>
 
                 <div className="link-2">
-                    <div className="card bg-dark text-center text-white">
+                    <div className="card text-center text-white">
                         <h1>Airports:</h1>
                     </div>
                 </div>
@@ -52,20 +64,6 @@ const flightData = info.map((data, index, airport_name) => {
         </div>
 
     )
-});
-
-class FlightInfo extends Component {
-
-    render() {
-        return (
-            <div>
-                <div><br /></div>
-                {flightData}
-            </div>
-        )
-    }
 }
 
 export { FlightInfo };
-
-

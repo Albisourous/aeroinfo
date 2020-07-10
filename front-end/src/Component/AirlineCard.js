@@ -25,6 +25,9 @@ const useStyles = makeStyles({
         
     },
 
+    button: {
+        justifyContent: 'center',
+    }
 });
 
 
@@ -35,7 +38,7 @@ const AirlineCard = props => {
     return (
         <div className="AirlineCard">
             <Card className={classes.root}>
-                <ButtonBase className="{info.airline_id}"
+                <ButtonBase className={classes.button}
                     onClick={event => window.location.href = "/airlines/" + info.airline_id}>
                 <CardActionArea>
                     

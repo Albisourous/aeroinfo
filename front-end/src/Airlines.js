@@ -12,9 +12,6 @@ import Pagination from "./Component/Pagination.js";
 
 
 let order = 1;
-const airplanesData = data["data"];
-const API = 'https://hn.algolia.com/api/v1/search?query=';
-const DEFAULT_QUERY = 'redux';
 
 
 const Airlines = props => {

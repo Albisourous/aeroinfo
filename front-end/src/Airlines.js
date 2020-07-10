@@ -24,14 +24,13 @@ const Airlines = props => {
 
 
     useEffect(() => {
-
         setLoading({isLoading: true});
         timeout();
         setTimeout(function () {
             setLoading(false);
         }, 1500)
-
         fetch('http://aeroinfo.me/api/airlines')
+
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -40,9 +39,8 @@ const Airlines = props => {
                 }
             })
             .then(data => setAirlines(data.airlines))
-            .catch(error => setError(true), setLoading(false));
+            .catch(error => this.setState({ error, isLoading: false }));
     }, []);
-
 
     function timeout() {
         if (isLoading) {
@@ -106,12 +104,12 @@ const Airlines = props => {
     }
 
 //get current post
-const indexOfLastPost = currentPage * postsPerPage;
-const indexOfFirstPost = indexOfLastPost - postsPerPage;
-const currentPosts = airlines.slice(indexOfFirstPost, indexOfLastPost);
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = airlines.slice(indexOfFirstPost, indexOfLastPost);
 
 //change page
-const paginate = (pageNumber) => setCurrentPage(pageNumber);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <div>
@@ -130,7 +128,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
                         <button type="button" className="btn btn-outline-light" onClick={() => {
                             let newAirlines = [...airlines];
-                            newAirlines.sort(GetSortOrder("flight_date", order));
+                            newAirlines.sort(GetSortOrder("country_name", order));
                             order = order * -1;
                             setAirlines(newAirlines);
                         }}>Country Name
@@ -144,9 +142,9 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
                 </Pagination>
 
             </div>
-            
+
         </div>
-        
+
     );
 };
 

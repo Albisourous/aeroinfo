@@ -1,26 +1,15 @@
-import React, { useState, useEffect, Component } from 'react';
-import port from './Data/flights.json';
-import { Card } from "react-bootstrap";
+import React, {useState, useEffect, Component} from 'react';
+import port from './f.json';
+import {Card} from "react-bootstrap";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import './info.css';
 
 
-const num = window.location.pathname.substring(9).replace(/%20/gi, " ");
-
-const FlightInfo = () => {
-    const [info, setInfo] = useState([]);
-
-    useEffect(() => {
-
-        fetch('http://127.0.0.1:8080/api/flights/' + num)
-            .then(response => response.json())
-            .then(data => setInfo(data))
-
-    }, []);
-
-    console.log(info)
+const id = window.location.pathname.substring(9).replace(/%20/gi, " ");
+const info = port.flights.filter(data => data.flight_id == id);
+const flightData = info.map((data, index, airport_name) => {
     return (
         <div className="FlightInfo container">
 
@@ -39,18 +28,18 @@ const FlightInfo = () => {
                     </div>
                 </div>
 
-                <div class="w-100 "></div>
+                <div className="w-100 "></div>
 
                 <div className="description">
                     <div className="card bg-dark text-center text-white">
                         <div className="card-body">
-                            <Card.Title>Departure: {info.departure_timezone}</Card.Title>
-                            <Card.Title>{info.departure_scheduled}</Card.Title>
-                            <Card.Title>Arrival: {info.arrival_timezone}</Card.Title>
-                            <Card.Title>{info.arrival_scheduled}</Card.Title>
-                            <Card.Title>Flight: {info.flight_number}</Card.Title>
-                            <Card.Title>Date: {info.flight_date}</Card.Title>
-                            <Card.Title>Status: {info.flight_status}</Card.Title>
+                            <Card.Title>Departure: {data.departure_airport}</Card.Title>
+                            <Card.Title>Departure Scheduled: {data.departure_scheduled}</Card.Title>
+                            <Card.Title>Arrival: {data.arrival_airport}</Card.Title>
+                            <Card.Title>Departure Scheduled: {data.arrival_scheduled}</Card.Title>
+                            <Card.Title>Flight Number: {data.flight_number}</Card.Title>
+                            <Card.Title>Date: {data.flight_date}</Card.Title>
+                            <Card.Title>Status: {data.flight_status}</Card.Title>
                         </div>
                     </div>
                 </div>
@@ -63,7 +52,31 @@ const FlightInfo = () => {
             </div>
         </div>
 
+
     )
+});
+
+class FlightInfo extends Component {
+    // const [info, setInfo] = useState([]);
+    //
+    // useEffect(() => {
+    //
+    //     fetch('http://127.0.0.1:8080/api/flights/' + num)
+    //         .then(response => response.json())
+    //         .then(data => setInfo(data))
+    //
+    // }, []);
+    render() {
+        return (
+            <div>
+                <div><br/></div>
+                {flightData}
+            </div>
+
+        )
+    }
+
+
 }
 
-export { FlightInfo };
+export {FlightInfo};

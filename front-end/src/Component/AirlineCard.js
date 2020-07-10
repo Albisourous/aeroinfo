@@ -1,7 +1,6 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -22,7 +21,6 @@ const useStyles = makeStyles({
     media: {
         height: 70,
         width: 160,
-        
     },
 
     button: {
@@ -38,28 +36,33 @@ const AirlineCard = props => {
     return (
         <div className="AirlineCard">
             <Card className={classes.root}>
-                <ButtonBase className={classes.button}
-                    onClick={event => window.location.href = "/airlines/" + info.airline_id}>
-                <CardActionArea>
-                    
+                <ButtonBase className={classes.button} style={{
+                    textAlign: 'center',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    paddingRight: 50,
+                    marginTop: 100,
+                    height: 40
+                }}
+                            onClick={event => window.location.href = "/airlines/" + info.airline_id}>
+                    <CardActionArea>
+
                         <CardMedia
                             className={classes.media} id="image"
                             image={"https://daisycon.io/images/airline/?width=300&height=150&color=ffffff&iata=" + info.iata_code}
                         />
 
-                    <ul class="list-group-flush">
-                        <li class="list-group-item">Airline Name: {info.airline_name}</li>
-                        <li class="list-group-item">Country: {info.country_name}</li>
-                    </ul>
-                </CardActionArea>
+                        <ul class="list-group-flush">
+                            <li class="list-group-item">Airline Name: {info.airline_name}</li>
+                            <li class="list-group-item">Country: {info.country_name}</li>
+                        </ul>
+                    </CardActionArea>
                 </ButtonBase>
             </Card>
         </div>
     );
 };
 
-AirlineCard.propTypes = {
-
-};
+AirlineCard.propTypes = {};
 
 export default AirlineCard;

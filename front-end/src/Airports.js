@@ -19,14 +19,13 @@ const Airports = props => {
     const [postsPerPage] = useState(15);
 
      useEffect(() => {
-
         setLoading({isLoading: true});
         timeout();
         setTimeout(function () {
             setLoading(false);
         }, 1500)
+        fetch('http://aeroinfo.me/api/airports')
 
-        fetch('http://127.0.0.1:8080/api/airports')
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -35,7 +34,7 @@ const Airports = props => {
                 }
             })
             .then(data => setAirports(data.airports))
-            .catch(error => setError(true), setLoading(false));
+            .catch(error => this.setState({ error, isLoading: false }));
     }, []);
 
      function timeout() {

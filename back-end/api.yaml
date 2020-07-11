@@ -2,6 +2,7 @@
 # See https://cloud.google.com/appengine/docs/managed-vms/config for details.
 
 runtime: python
+service: api
 env: flex
 entrypoint: gunicorn -b :$PORT main:app
 

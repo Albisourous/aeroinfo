@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+
+# ---------------------------
+# projects/IDB3/main.py
+# Fares Fraij
+# ---------------------------
+
 import requests
 import pprint
 from flask_sqlalchemy import SQLAlchemy
@@ -18,7 +25,7 @@ from flask_cors import CORS, cross_origin
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
+application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:1024507613@localhost:5432/bookdb')
 db = SQLAlchemy(application)
 ma = Marshmallow(application)
 CORS(app)
@@ -197,7 +204,7 @@ def get_url():
 get_all_airports(get_url())
 
 
-parameter["limit"] = 1887
+parameter["limit"] = 13131
 target = "airlines?"
 
 def get_all_airlines(url):
@@ -235,34 +242,106 @@ target = "flights?"
 def get_all_flights(url):
     response = requests.get(url).json().get("data")
     for flight in response:
-        if(not db.session.query(Flight).filter_by(flight_iata = flight["flight"]["iata"]).scalar()):
-            arrival_airport = flight["arrival"]["airport"]
-            departure_airport = flight["departure"]["airport"]
-            f1 = Flight(
-                    flight_date = flight["flight_date"],
-                    flight_status = flight["flight_status"],
-                    departure_airport = departure_airport,
-                    departure_timezone = flight["departure"]["timezone"],
-                    departure_scheduled = flight["departure"]["scheduled"],
-                    departure_estimated = flight["departure"]["estimated"],
-                    arrival_airport = arrival_airport,
-                    arrival_timezone = flight["arrival"]["timezone"],
-                    arrival_scheduled = flight["arrival"]["scheduled"],
-                    arrival_estimated = flight["arrival"]["estimated"],
-                    flight_number = flight["flight"]["number"],
-                    flight_iata = flight["flight"]["iata"],
-                    flight_icao = flight["flight"]["icao"],
-                    airline = db.session.query(Airline).filter_by(airline_name = flight["airline"]["name"]).first(),
-            )
-            if arrival_airport is not None:
-                f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["arrival"]["airport"]).first())
-            if departure_airport is not None:
-                f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["departure"]["airport"]).first())
-            db.session.add(f1)
-            db.session.commit()
+        arrival_airport = flight["arrival"]["airport"]
+        departure_airport = flight["departure"]["airport"]
+        
+        f1 = Flight(
+                flight_date = flight["flight_date"],
+                flight_status = flight["flight_status"],
+                departure_airport = departure_airport,
+                departure_timezone = flight["departure"]["timezone"],
+                departure_scheduled = flight["departure"]["scheduled"],
+                departure_estimated = flight["departure"]["estimated"],
+                arrival_airport = arrival_airport,
+                arrival_timezone = flight["arrival"]["timezone"],
+                arrival_scheduled = flight["arrival"]["scheduled"],
+                arrival_estimated = flight["arrival"]["estimated"],
+                flight_number = flight["flight"]["number"],
+                flight_iata = flight["flight"]["iata"],
+                flight_icao = flight["flight"]["icao"],
+                airline = db.session.query(Airline).filter_by(airline_name = flight["airline"]["name"]).first(),
+        )
+        if arrival_airport is not None:
+            f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["arrival"]["airport"]).first())
+        if departure_airport is not None:
+            f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["departure"]["airport"]).first())
+        db.session.add(f1)
+        db.session.commit()
 
-for i in range(0, 1):
-#    parameter["offset"] = i * parameter["limit"]
+for i in range(0, 10):
+    parameter["offset"] = i * parameter["limit"]
     get_all_flights(get_url())
     
+
+
+@app.route('/', methods = ["GET"])
+@app.route('/api/', methods = ["GET"])
+@cross_origin()
+def index():
+	return 'hello'
+
+@app.route('/api/airports', methods = ["GET"]) 
+@cross_origin() 
+def airports():
+    return getAirports()
+ 
+@app.route('/api/airports/<int:id>', methods = ["GET"]) 
+@cross_origin() 
+def airport(id):
+    return getOneAirport(id)
+ 
+@app.route('/api/airlines/<int:id>', methods = ["GET"])
+@cross_origin()  
+def airline(id):
+    return getOneAirline(id)
+ 
+@app.route('/api/airlines', methods = ["GET"])
+@cross_origin()  
+def airlines():
+    return getAirlines()
+    
+ 
+@app.route('/api/flights', methods = ["GET"]) 
+@cross_origin()  
+def flights():
+    return getFlights()
+    
+@app.route('/api/flights/<int:id>', methods = ["GET"]) 
+@cross_origin()  
+def flight(id):
+    return getOneFlight(id)
+    
+def getAirports():
+    airports = db.session.query(Airport).all()
+    result = airport_schema.dump(airports)
+    return jsonify({'airports': result})
+
+def getOneAirport(id):
+    airport = db.session.query(Airport).filter_by(airport_id = id).first()
+    return one_airport_schema.jsonify(airport)
+
+
+def getOneFlight(id):
+    flight = db.session.query(Flight).filter_by(flight_id = id).first()
+    return one_flight_schema.jsonify(flight)
+  
+def getOneAirline(id):
+    airline = db.session.query(Airline).filter_by(airline_id = id).first()
+    return one_airline_schema.jsonify(airline)
+  
+def getFlights():
+    flights = db.session.query(Flight).all()
+    result = flight_schema.dump(flights)
+    return jsonify({'flights': result})
+
+def getAirlines():
+    airlines = db.session.query(Airline).all()
+    result = airline_schema.dump(airlines)
+    return jsonify({'airlines': result})
+        
+    
+    
+if __name__ == "__main__":
+	app.run(host='127.0.0.1', port = 8080)
+
 

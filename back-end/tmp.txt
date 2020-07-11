@@ -1,0 +1,2226 @@
+
+1
+H5
+None
+Haiti Aviation
+active
+
+2
+H5
+None
+Haiti Aviation
+active
+
+3
+None
+SSQ
+Sunstate Airlines
+active
+
+4
+None
+RLK
+Air Nelson
+active
+
+5
+None
+AIB
+Airbus Industrie
+active
+
+6
+None
+BLB
+Blue Bird Aviation
+active
+
+7
+None
+SWU
+Swiss Global Air Lines
+active
+
+8
+None
+SVW
+Global Jet Luxembourg
+active
+
+9
+None
+NCB
+North Cariboo Air
+active
+
+10
+None
+GMT
+Magnicharters
+active
+
+11
+None
+NPT
+West Atlantic
+active
+
+12
+None
+CNK
+Sunwest Aviation
+active
+
+13
+None
+AEG
+Airest
+active
+
+14
+None
+MAL
+Morningstar Air Express
+active
+
+15
+None
+RAC
+Ryukyu Air Commuter
+active
+
+16
+None
+EAG
+Eagle Airways
+active
+
+17
+None
+WAL
+World Atlantic Airlines
+active
+
+18
+None
+FAH
+ASL Airlines Hungary
+active
+
+19
+None
+MLP
+Asia Pacific Airlines
+active
+
+20
+None
+PAG
+Perimeter Aviation
+active
+
+21
+None
+WDL
+WDL Aviation
+active
+
+22
+None
+PEA
+Pan Europeenne Air Service
+active
+
+23
+None
+TJS
+Tyrolean Jet Service
+active
+
+24
+None
+TTL
+Total Linhas Aereas
+active
+
+25
+None
+VTM
+Aeronaves TSM
+active
+
+26
+None
+BAY
+Bravo Airways
+active
+
+27
+None
+DCS
+DC Aviation
+active
+
+28
+None
+MTL
+RAF-Avia
+active
+
+29
+None
+NCH
+Chanchangi Airlines
+active
+
+30
+None
+RGN
+Cygnus Air
+active
+
+31
+None
+RSC
+Canarias Airlines
+active
+
+32
+None
+ATV
+Avanti Air
+active
+
+33
+None
+CLJ
+Cello Aviation
+active
+
+34
+None
+EVJ
+Everjets
+active
+
+35
+None
+FYG
+Flying Service
+active
+
+36
+None
+KHH
+Alexandria Airlines
+active
+
+37
+None
+LIM
+Limitless Airways
+active
+
+38
+None
+PTG
+PrivatAir Germany
+active
+
+39
+None
+SOP
+Solinair
+active
+
+40
+None
+AAB
+Abelag Aviation
+active
+
+41
+None
+AAB
+Abelag Aviation
+active
+
+42
+None
+AAI
+Air Aurora
+active
+
+43
+None
+AAI
+Air Aurora
+active
+
+44
+None
+AAZ
+Aeolus Air
+active
+
+45
+None
+AAZ
+Aeolus Air
+active
+
+46
+None
+ACD
+Academy Airlines
+active
+
+47
+None
+ACD
+Academy Airlines
+active
+
+48
+None
+ACK
+Nantucket Airlines
+active
+
+49
+None
+ACK
+Nantucket Airlines
+active
+
+50
+None
+ACO
+Aero Comondu
+active
+
+51
+None
+ACO
+Aero Comondu
+active
+
+52
+None
+ACT
+Flight Line
+active
+
+53
+None
+ACT
+Flight Line
+active
+
+54
+None
+AEG
+Airest
+active
+
+55
+None
+AIB
+Airbus Industrie
+active
+
+56
+None
+ARN
+Aeronexus
+active
+
+57
+None
+ARN
+Aeronexus
+active
+
+58
+None
+ASY
+Royal Australian Air Force
+active
+
+59
+None
+ASY
+Royal Australian Air Force
+active
+
+60
+None
+ATV
+Avanti Air
+active
+
+61
+None
+BAF
+Belgian Air Force
+active
+
+62
+None
+BAF
+Belgian Air Force
+active
+
+63
+None
+BAY
+Bravo Airways
+active
+
+64
+None
+BGN
+Air Inter Transport
+active
+
+65
+None
+BGN
+Air Inter Transport
+active
+
+66
+None
+BGT
+Bergen Air Transport
+active
+
+67
+None
+BGT
+Bergen Air Transport
+active
+
+68
+None
+BHR
+Bighorn Airways
+active
+
+69
+None
+BHR
+Bighorn Airways
+active
+
+70
+None
+BIG
+Big Island Air
+active
+
+71
+None
+BIG
+Big Island Air
+active
+
+72
+None
+BLB
+Blue Bird Aviation
+active
+
+73
+None
+BNC
+Sundance Air
+active
+
+74
+None
+BNC
+Sundance Air
+active
+
+75
+None
+BVN
+Baron Aviation Services
+active
+
+76
+None
+BVN
+Baron Aviation Services
+active
+
+77
+None
+BYA
+Berry Aviation
+active
+
+78
+None
+BYA
+Berry Aviation
+active
+
+79
+None
+CAJ
+Air Caraibes Atlantique
+active
+
+80
+None
+CAJ
+Air Caraibes Atlantique
+active
+
+81
+None
+CAO
+Air China Cargo
+active
+
+82
+None
+CAO
+Air China Cargo
+active
+
+83
+None
+CCY
+Cherry Air
+active
+
+84
+None
+CCY
+Cherry Air
+active
+
+85
+None
+CEP
+Chipola Aviation
+active
+
+86
+None
+CEP
+Chipola Aviation
+active
+
+87
+None
+CFA
+China Flying Dragon Aviation
+active
+
+88
+None
+CFA
+China Flying Dragon Aviation
+active
+
+89
+None
+CGD
+Charlotte, NC Air National Guard
+active
+
+90
+None
+CGD
+Charlotte, NC Air National Guard
+active
+
+91
+None
+CHI
+Cougar Helicopters
+active
+
+92
+None
+CHI
+Cougar Helicopters
+active
+
+93
+None
+CKL
+Aviation Charter Services
+active
+
+94
+None
+CKL
+Aviation Charter Services
+active
+
+95
+None
+CLJ
+Cello Aviation
+active
+
+96
+None
+CLS
+Challenge Air
+active
+
+97
+None
+CLS
+Challenge Air
+active
+
+98
+None
+CNK
+Sunwest Aviation
+active
+
+99
+None
+CPJ
+Corpjet
+active
+
+100
+None
+CPJ
+Corpjet
+active
+
+101
+None
+CPT
+Corporate Air
+active
+
+102
+None
+CPT
+Corporate Air
+active
+
+103
+None
+CSJ
+Castle Aviation
+active
+
+104
+None
+CSJ
+Castle Aviation
+active
+
+105
+None
+CTA
+Aero Charter and Transport
+active
+
+106
+None
+CTA
+Aero Charter and Transport
+active
+
+107
+None
+CTL
+Central Air Southwest
+active
+
+108
+None
+CTL
+Central Air Southwest
+active
+
+109
+None
+CUO
+Aero Cuahonte
+active
+
+110
+None
+CUO
+Aero Cuahonte
+active
+
+111
+None
+CUT
+Court Helicopters
+active
+
+112
+None
+CUT
+Court Helicopters
+active
+
+113
+None
+CWM
+Air Marshall Islands
+active
+
+114
+None
+CWM
+Air Marshall Islands
+active
+
+115
+None
+DCS
+DC Aviation
+active
+
+116
+None
+DCX
+Pentastar Aviation
+active
+
+117
+None
+DCX
+Pentastar Aviation
+active
+
+118
+None
+DGX
+Dasnair
+active
+
+119
+None
+DGX
+Dasnair
+active
+
+120
+None
+DUG
+Aerotecnica
+active
+
+121
+None
+DUG
+Aerotecnica
+active
+
+122
+None
+DVR
+Divi Divi Air
+active
+
+123
+None
+DVR
+Divi Divi Air
+active
+
+124
+None
+DVR
+Divi Divi Air
+active
+
+125
+None
+EAG
+Eagle Airways
+active
+
+126
+None
+EJM
+Executive Jet Management
+active
+
+127
+None
+EJM
+Executive Jet Management
+active
+
+128
+None
+EPR
+Express Airways
+active
+
+129
+None
+EPR
+Express Airways
+active
+
+130
+None
+EPS
+Epps Air Service
+active
+
+131
+None
+EPS
+Epps Air Service
+active
+
+132
+None
+EUW
+EFS European Flight Service
+active
+
+133
+None
+EUW
+EFS European Flight Service
+active
+
+134
+None
+EVJ
+Everjets
+active
+
+135
+None
+EWZ
+East Wing
+active
+
+136
+None
+EWZ
+East Wing
+active
+
+137
+None
+EYC
+Elytra Charter
+active
+
+138
+None
+EYC
+Elytra Charter
+active
+
+139
+None
+FAH
+ASL Airlines Hungary
+active
+
+140
+None
+FCV
+Nav Air Charter
+active
+
+141
+None
+FCV
+Nav Air Charter
+active
+
+142
+None
+FLX
+Flight Express
+active
+
+143
+None
+FLX
+Flight Express
+active
+
+144
+None
+FNA
+Norlandair
+active
+
+145
+None
+FNA
+Norlandair
+active
+
+146
+None
+FRG
+Freight Runners Express
+active
+
+147
+None
+FRG
+Freight Runners Express
+active
+
+148
+None
+FRX
+Fort Aero
+active
+
+149
+None
+FRX
+Fort Aero
+active
+
+150
+None
+FXR
+Foxair
+active
+
+151
+None
+FXR
+Foxair
+active
+
+152
+None
+FYG
+Flying Service
+active
+
+153
+None
+FYN
+Comfort Air
+active
+
+154
+None
+FYN
+Comfort Air
+active
+
+155
+None
+GAF
+Luftwaffe
+active
+
+156
+None
+GAF
+Luftwaffe
+active
+
+157
+None
+GHY
+German Sky Airlines
+active
+
+158
+None
+GHY
+German Sky Airlines
+active
+
+159
+None
+GMA
+Gama Aviation
+active
+
+160
+None
+GMA
+Gama Aviation
+active
+
+161
+None
+GMT
+Magnicharters
+active
+
+162
+None
+GNX
+Genex
+active
+
+163
+None
+GNX
+Genex
+active
+
+164
+None
+GOT
+Waltair Europe
+active
+
+165
+None
+GOT
+Waltair Europe
+active
+
+166
+None
+HKI
+Hawkaire
+active
+
+167
+None
+HKI
+Hawkaire
+active
+
+168
+None
+HKS
+CHC Helikopter Service
+active
+
+169
+None
+HKS
+CHC Helikopter Service
+active
+
+170
+None
+HYR
+Private Sky
+active
+
+171
+None
+HYR
+Private Sky
+active
+
+172
+None
+IBT
+Ibertrans Aerea
+active
+
+173
+None
+IBT
+Ibertrans Aerea
+active
+
+174
+None
+IFL
+IFL Group
+active
+
+175
+None
+IFL
+IFL Group
+active
+
+176
+None
+IFT
+Interflight
+active
+
+177
+None
+IFT
+Interflight
+active
+
+178
+None
+IRO
+CSA Air
+active
+
+179
+None
+IRO
+CSA Air
+active
+
+180
+None
+IRY
+Eram Air
+active
+
+181
+None
+IRY
+Eram Air
+active
+
+182
+None
+JEF
+Jetflite
+active
+
+183
+None
+JEF
+Jetflite
+active
+
+184
+None
+JEX
+JAL Express
+active
+
+185
+None
+JEX
+JAL Express
+active
+
+186
+None
+JKR
+Empire Airways
+active
+
+187
+None
+JKR
+Empire Airways
+active
+
+188
+None
+JNY
+Journey Aviation
+active
+
+189
+None
+JNY
+Journey Aviation
+active
+
+190
+None
+JON
+Jonair
+active
+
+191
+None
+JON
+Jonair
+active
+
+192
+None
+KHH
+Alexandria Airlines
+active
+
+193
+None
+KIR
+Skiva Air
+active
+
+194
+None
+KIR
+Skiva Air
+active
+
+195
+None
+KRL
+Kiwi Regional Airlines
+active
+
+196
+None
+KRL
+Kiwi Regional Airlines
+active
+
+197
+None
+KSM
+Kosmos Airlines
+active
+
+198
+None
+KSM
+Kosmos Airlines
+active
+
+199
+None
+KZH
+Zhezair
+active
+
+200
+None
+KZH
+Zhezair
+active
+
+201
+None
+LAU
+Lineas Aereas Suramericanas
+active
+
+202
+None
+LAU
+Lineas Aereas Suramericanas
+active
+
+203
+None
+LBQ
+Quest Diagnostics
+active
+
+204
+None
+LBQ
+Quest Diagnostics
+active
+
+205
+None
+LCT
+TAR Aerolineas
+active
+
+206
+None
+LCT
+TAR Aerolineas
+active
+
+207
+None
+LET
+Aerolineas Ejecutivas
+active
+
+208
+None
+LET
+Aerolineas Ejecutivas
+active
+
+209
+None
+LIM
+Limitless Airways
+active
+
+210
+None
+LLY
+Let's Fly
+active
+
+211
+None
+LLY
+Let's Fly
+active
+
+212
+None
+LNX
+London Executive Aviation
+active
+
+213
+None
+LNX
+London Executive Aviation
+active
+
+214
+None
+LXA
+Luxaviation
+active
+
+215
+None
+LXA
+Luxaviation
+active
+
+216
+None
+LXJ
+Flexjet
+active
+
+217
+None
+LXJ
+Flexjet
+active
+
+218
+None
+MAL
+Morningstar Air Express
+active
+
+219
+None
+MAV
+Minoan Air
+active
+
+220
+None
+MAV
+Minoan Air
+active
+
+221
+None
+MEI
+Merlin Airways
+active
+
+222
+None
+MEI
+Merlin Airways
+active
+
+223
+None
+MJP
+Air Majoro
+active
+
+224
+None
+MJP
+Air Majoro
+active
+
+225
+None
+MLP
+Asia Pacific Airlines
+active
+
+226
+None
+MNL
+MiniLiner
+active
+
+227
+None
+MNL
+MiniLiner
+active
+
+228
+None
+MRA
+Martinaire
+active
+
+229
+None
+MRA
+Martinaire
+active
+
+230
+None
+MSF
+Minsheng International Jet
+active
+
+231
+None
+MSF
+Minsheng International Jet
+active
+
+232
+None
+MSM
+Aeromas
+active
+
+233
+None
+MSM
+Aeromas
+active
+
+234
+None
+MTL
+RAF-Avia
+active
+
+235
+None
+MTN
+Mountain Air Cargo
+active
+
+236
+None
+MTN
+Mountain Air Cargo
+active
+
+237
+None
+MXM
+Maximus Airlines
+active
+
+238
+None
+MXM
+Maximus Airlines
+active
+
+239
+None
+NCB
+North Cariboo Air
+active
+
+240
+None
+NCH
+Chanchangi Airlines
+active
+
+241
+None
+NPT
+West Atlantic
+active
+
+242
+None
+NSJ
+Nanshan Jet
+active
+
+243
+None
+NSJ
+Nanshan Jet
+active
+
+244
+None
+NWK
+Network Aviation
+active
+
+245
+None
+NWK
+Network Aviation
+active
+
+246
+None
+NYS
+Ulendo Airlink
+active
+
+247
+None
+NYS
+Ulendo Airlink
+active
+
+248
+None
+ORK
+Orca Airways
+active
+
+249
+None
+ORK
+Orca Airways
+active
+
+250
+None
+PAG
+Perimeter Aviation
+active
+
+251
+None
+PBL
+Virgin Samoa
+active
+
+252
+None
+PBL
+Virgin Samoa
+active
+
+253
+None
+PCM
+West Air (USA)
+active
+
+254
+None
+PCM
+West Air (USA)
+active
+
+255
+None
+PEA
+Pan Europeenne Air Service
+active
+
+256
+None
+PER
+Petroleum Air Services
+active
+
+257
+None
+PER
+Petroleum Air Services
+active
+
+258
+None
+PHY
+Phoenix Avia
+active
+
+259
+None
+PHY
+Phoenix Avia
+active
+
+260
+None
+PSW
+Pskovavia
+active
+
+261
+None
+PSW
+Pskovavia
+active
+
+262
+None
+PTG
+PrivatAir Germany
+active
+
+263
+None
+PVO
+Privaira
+active
+
+264
+None
+PVO
+Privaira
+active
+
+265
+None
+PWA
+Priester Aviation
+active
+
+266
+None
+PWA
+Priester Aviation
+active
+
+267
+None
+QGA
+Windrose Air
+active
+
+268
+None
+QGA
+Windrose Air
+active
+
+269
+None
+RAC
+Ryukyu Air Commuter
+active
+
+270
+None
+RFC
+Aero Africa
+active
+
+271
+None
+RFC
+Aero Africa
+active
+
+272
+None
+RGN
+Cygnus Air
+active
+
+273
+None
+RHL
+Air Archipels
+active
+
+274
+None
+RHL
+Air Archipels
+active
+
+275
+None
+RIG
+Riga Airlines
+active
+
+276
+None
+RIG
+Riga Airlines
+active
+
+277
+None
+RLK
+Air Nelson
+active
+
+278
+None
+RSC
+Canarias Airlines
+active
+
+279
+None
+RSE
+SNAS Aviation
+active
+
+280
+None
+RSE
+SNAS Aviation
+active
+
+281
+None
+RWG
+C & M Airways
+active
+
+282
+None
+RWG
+C & M Airways
+active
+
+283
+None
+RXP
+RAM Express
+active
+
+284
+None
+RXP
+RAM Express
+active
+
+285
+None
+SAB
+Sky Way Air
+active
+
+286
+None
+SAB
+Sky Way Air
+active
+
+287
+None
+SBU
+Saint Barth Commuter
+active
+
+288
+None
+SBU
+Saint Barth Commuter
+active
+
+289
+None
+SBW
+Snowbird Airlines
+active
+
+290
+None
+SBW
+Snowbird Airlines
+active
+
+291
+None
+SBX
+North Star Air Cargo
+active
+
+292
+None
+SBX
+North Star Air Cargo
+active
+
+293
+None
+SHE
+Shell Aircraft
+active
+
+294
+None
+SHE
+Shell Aircraft
+active
+
+295
+None
+SHT
+British Airways Shuttle
+active
+
+296
+None
+SHT
+British Airways Shuttle
+active
+
+297
+None
+SIO
+Sirio
+active
+
+298
+None
+SIO
+Sirio
+active
+
+299
+None
+SIR
+Salair
+active
+
+300
+None
+SIR
+Salair
+active
+
+301
+None
+SKL
+Skycharter
+active
+
+302
+None
+SKL
+Skycharter
+active
+
+303
+None
+SLD
+Silver Air
+active
+
+304
+None
+SLD
+Silver Air
+active
+
+305
+None
+SLL
+Skylink Aviation
+active
+
+306
+None
+SLL
+Skylink Aviation
+active
+
+307
+None
+SNA
+Senator Aviation Charter
+active
+
+308
+None
+SNA
+Senator Aviation Charter
+active
+
+309
+None
+SNM
+Servizi Aerei
+active
+
+310
+None
+SNM
+Servizi Aerei
+active
+
+311
+None
+SOP
+Solinair
+active
+
+312
+None
+SPW
+Speedwings
+active
+
+313
+None
+SPW
+Speedwings
+active
+
+314
+None
+SQC
+Singapore Airlines Cargo
+active
+
+315
+None
+SQC
+Singapore Airlines Cargo
+active
+
+316
+None
+SSG
+Slovak Government Flying Service
+active
+
+317
+None
+SSG
+Slovak Government Flying Service
+active
+
+318
+None
+SSQ
+Sunstate Airlines
+active
+
+319
+None
+STH
+South Airlines (Armenia)
+active
+
+320
+None
+STH
+South Airlines (Armenia)
+active
+
+321
+None
+SUA
+Silesia Air
+active
+
+322
+None
+SUA
+Silesia Air
+active
+
+323
+None
+SUB
+Suburban Air Freight
+active
+
+324
+None
+SUB
+Suburban Air Freight
+active
+
+325
+None
+SVF
+Swedish Air Force
+active
+
+326
+None
+SVF
+Swedish Air Force
+active
+
+327
+None
+SVW
+Global Jet Luxembourg
+active
+
+328
+None
+SWU
+Swiss Global Air Lines
+active
+
+329
+None
+TAG
+TAG Aviation USA
+active
+
+330
+None
+TAG
+TAG Aviation USA
+active
+
+331
+None
+TFK
+Transafrik International
+active
+
+332
+None
+TFK
+Transafrik International
+active
+
+333
+None
+TGO
+Transport Canada
+active
+
+334
+None
+TGO
+Transport Canada
+active
+
+335
+None
+THU
+Thunder Airlines
+active
+
+336
+None
+THU
+Thunder Airlines
+active
+
+337
+None
+TJS
+Tyrolean Jet Service
+active
+
+338
+None
+TSR
+TJS San Marino
+active
+
+339
+None
+TSR
+TJS San Marino
+active
+
+340
+None
+TST
+Trast
+active
+
+341
+None
+TST
+Trast
+active
+
+342
+None
+TTL
+Total Linhas Aereas
+active
+
+343
+None
+TYW
+Tyrol Air Ambulance
+active
+
+344
+None
+TYW
+Tyrol Air Ambulance
+active
+
+345
+None
+UAK
+Aviant
+active
+
+346
+None
+UAK
+Aviant
+active
+
+347
+None
+UGP
+Shar Ink
+active
+
+348
+None
+UGP
+Shar Ink
+active
+
+349
+None
+UKL
+Ukraine Air Alliance
+active
+
+350
+None
+UKL
+Ukraine Air Alliance
+active
+
+351
+None
+UNF
+Union Flights
+active
+
+352
+None
+UNF
+Union Flights
+active
+
+353
+None
+UPL
+Ukrainian Pilot School
+active
+
+354
+None
+UPL
+Ukrainian Pilot School
+active
+
+355
+None
+VGI
+Virgin Atlantic International
+active
+
+356
+None
+VGI
+Virgin Atlantic International
+active
+
+357
+None
+VPB
+Veteran Air
+active
+
+358
+None
+VPB
+Veteran Air
+active
+
+359
+None
+VSR
+Aviostart
+active
+
+360
+None
+VSR
+Aviostart
+active
+
+361
+None
+VTK
+Vostok Airlines
+active
+
+362
+None
+VTK
+Vostok Airlines
+active
+
+363
+None
+VTM
+Aeronaves TSM
+active
+
+364
+None
+WAE
+Western Air Express
+active
+
+365
+None
+WAE
+Western Air Express
+active
+
+366
+None
+WAL
+World Atlantic Airlines
+active
+
+367
+None
+WDL
+WDL Aviation
+active
+
+368
+None
+WEW
+Pronto Airways
+active
+
+369
+None
+WEW
+Pronto Airways
+active
+
+370
+None
+WIG
+Wiggins Airways
+active
+
+371
+None
+WIG
+Wiggins Airways
+active

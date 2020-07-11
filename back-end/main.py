@@ -22,10 +22,9 @@ from flask import jsonify
 
 from flask_cors import CORS, cross_origin
 
-
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:1024507613@localhost:5432/bookdb')
+application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
 ma = Marshmallow(application)
 CORS(app)
@@ -162,116 +161,8 @@ airline_schema = AirlineSchema(many = True)
 one_airline_schema = OneAirlineSchema()
 flight_schema = FlightSchema(many = True)
 one_flight_schema =  OneFlightSchema()
-    
-db.drop_all()
-db.create_all()
-
-parameter = {}
-parameter["access_key"] = "825fa4b6e358050087ede9b9b769dc1c"
-parameter["limit"] = 6471
-base_url = "http://api.aviationstack.com/v1/"
-target = "airports?"
 
 
-def get_all_airports(url):
-    response = requests.get(url).json().get("data")
-    for airport in response:
-        db.session.add(
-            Airport(
-                gmt = airport["gmt"],
-                airport_name = airport["airport_name"],
-                iata_code = airport["iata_code"],
-                icao_code = airport["icao_code"],
-                latitude = airport["latitude"],
-                country_image_url = get_country_image(airport["country_iso2"]),
-                longitude = airport["longitude"],
-                timezone = airport["timezone"],
-                country_name = airport["country_name"],
-                country_iso2 = airport["country_iso2"],
-                city_iata_code = airport["city_iata_code"],
-            )
-        )
-        db.session.commit()
-        
-def get_country_image(code):
-    return "https://www.countryflags.io/" + str(code) + "/shiny/64.png"
-
-def get_url():
-    url = base_url + target 
-    for key,value in parameter.items():
-        url = url + key + "=" + str(value) + "&"
-    return url
-get_all_airports(get_url())
-
-
-parameter["limit"] = 13131
-target = "airlines?"
-
-def get_all_airlines(url):
-    response = requests.get(url).json().get("data")
-    for airline in response:
-        image_url = get_image(airline["iata_code"])
-        db.session.add(
-            Airline(
-                fleet_average_age = airline["fleet_average_age"],
-                callsign = airline["callsign"],
-                hub_code = airline["hub_code"],
-                iata_code = airline["iata_code"],
-                icao_code = airline["icao_code"],
-                image_url = get_image(airline["iata_code"]),
-                country_iso2 = airline["country_iso2"],
-                date_founded = airline["date_founded"],
-                iata_prefix_accounting = airline["iata_prefix_accounting"],
-                airline_name = airline["airline_name"],
-                country_name = airline["country_name"],
-                fleet_size = airline["fleet_size"],
-            )
-        )
-        db.session.commit()
-
-def get_image(code):
-    return "https://content.airhex.com/content/logos/airlines_" + str(code) +"_350_100_r.png"
-    
-get_all_airlines(get_url())
-
-
-parameter["limit"] = 100
-parameter["offset"] = 0 
-target = "flights?"
-
-def get_all_flights(url):
-    response = requests.get(url).json().get("data")
-    for flight in response:
-        arrival_airport = flight["arrival"]["airport"]
-        departure_airport = flight["departure"]["airport"]
-        
-        f1 = Flight(
-                flight_date = flight["flight_date"],
-                flight_status = flight["flight_status"],
-                departure_airport = departure_airport,
-                departure_timezone = flight["departure"]["timezone"],
-                departure_scheduled = flight["departure"]["scheduled"],
-                departure_estimated = flight["departure"]["estimated"],
-                arrival_airport = arrival_airport,
-                arrival_timezone = flight["arrival"]["timezone"],
-                arrival_scheduled = flight["arrival"]["scheduled"],
-                arrival_estimated = flight["arrival"]["estimated"],
-                flight_number = flight["flight"]["number"],
-                flight_iata = flight["flight"]["iata"],
-                flight_icao = flight["flight"]["icao"],
-                airline = db.session.query(Airline).filter_by(airline_name = flight["airline"]["name"]).first(),
-        )
-        if arrival_airport is not None:
-            f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["arrival"]["airport"]).first())
-        if departure_airport is not None:
-            f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["departure"]["airport"]).first())
-        db.session.add(f1)
-        db.session.commit()
-
-for i in range(0, 10):
-    parameter["offset"] = i * parameter["limit"]
-    get_all_flights(get_url())
-    
 
 
 @app.route('/', methods = ["GET"])

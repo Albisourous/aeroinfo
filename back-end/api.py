@@ -22,7 +22,7 @@ from flask import jsonify
 
 from flask_cors import CORS, cross_origin
 
-application = app = Flask(__name__)
+application = app = Flask(__name__, static_folder='../front-end/build', static_url_path='/')
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
@@ -163,9 +163,15 @@ flight_schema = FlightSchema(many = True)
 one_flight_schema =  OneFlightSchema()
 
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 
-@app.route('/', methods = ["GET"])
 @app.route('/api/', methods = ["GET"])
 @cross_origin()
 def index():

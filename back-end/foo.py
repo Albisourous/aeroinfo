@@ -1,11 +1,38 @@
+#!/usr/bin/env python3
+
+# ---------------------------
+# projects/IDB3/main.py
+# Fares Fraij
+# ---------------------------
+
+import requests
+import pprint
 from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
 from flask import Flask
+from marshmallow import fields
+import json
+import sys
+from sqlalchemy import create_engine, ForeignKey
+from flask_cors import CORS, cross_origin
+from sqlalchemy.ext.declarative import declarative_base
 import os
+from flask import jsonify
+from flask import jsonify
+from random import seed
+from random import random
+from sqlalchemy.orm.exc import MultipleResultsFound
+
+from flask_cors import CORS, cross_origin
+
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
+ma = Marshmallow(application)
+CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 link = db.Table('link',
     db.Column('flight_id', db.Integer, db.ForeignKey('Flight.flight_id')), 
@@ -71,5 +98,7 @@ class Airport(db.Model):
     country_image_url = db.Column(db.Text)
     image_url = db.Column(db.Text)
 
+db.drop_all()
+db.create_all()
+            
 
-print(db.session.query(Flight).filter_by(flight_iata = 'a').scalar())

@@ -18,23 +18,27 @@ from flask_cors import CORS, cross_origin
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
+application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get(
+    "DB_STRING", 'postgres://postgres:1024507613@localhost:5432/bookdb')
 db = SQLAlchemy(application)
 ma = Marshmallow(application)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 link = db.Table('link',
-    db.Column('flight_id', db.Integer, db.ForeignKey('Flight.flight_id')), 
-    db.Column('airport_id', db.Integer, db.ForeignKey('Airport.airport_id'))
-)    
+                db.Column('flight_id', db.Integer,
+                          db.ForeignKey('Flight.flight_id')),
+                db.Column('airport_id', db.Integer,
+                          db.ForeignKey('Airport.airport_id'))
+                )
 
 
 class Flight(db.Model):
     __tablename__ = 'Flight'
-    
-    airports = db.relationship('Airport', secondary = 'link', back_populates = 'flights')
-    flight_id = db.Column(db.Integer, primary_key = True, autoincrement = True)
+
+    airports = db.relationship(
+        'Airport', secondary='link', back_populates='flights')
+    flight_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     flight_date = db.Column(db.Text)
     flight_status = db.Column(db.Text)
     departure_airport = db.Column(db.Text)
@@ -49,14 +53,13 @@ class Flight(db.Model):
     flight_number = db.Column(db.Text)
     flight_iata = db.Column(db.Text)
     flight_icao = db.Column(db.Text)
-    
-    
+
+
 class Airline(db.Model):
     __tablename__ = 'Airline'
-    
-    
-    airline_id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-    flights = db.relationship('Flight', backref = 'airline', lazy = True)
+
+    airline_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    flights = db.relationship('Flight', backref='airline', lazy=True)
     fleet_average_age = db.Column(db.Text)
     callsign = db.Column(db.Text)
     hub_code = db.Column(db.Text)
@@ -68,13 +71,14 @@ class Airline(db.Model):
     iata_prefix_accounting = db.Column(db.Text)
     airline_name = db.Column(db.Text)
     country_name = db.Column(db.Text)
-    fleet_size = db.Column(db.Text)    
+    fleet_size = db.Column(db.Text)
 
-    
+
 class Airport(db.Model):
     __tablename__ = 'Airport'
-    flights = db.relationship('Flight', secondary = 'link', back_populates = 'airports')
-    airport_id = db.Column(db.Integer, primary_key = True, autoincrement = True)
+    flights = db.relationship(
+        'Flight', secondary='link', back_populates='airports')
+    airport_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     gmt = db.Column(db.Text)
     airport_name = db.Column(db.Text)
     iata_code = db.Column(db.Text)
@@ -87,80 +91,87 @@ class Airport(db.Model):
     city_iata_code = db.Column(db.Text)
     country_image_url = db.Column(db.Text)
     image_url = db.Column(db.Text)
-    
-    
+
+
 class AirportSchema(ma.Schema):
-    airport_id = fields.Int(required = True)
-    gmt = fields.Str(required = False)
-    airport_name = fields.Str(required = False)
-    iata_code = fields.Str(required = False)
-    icao_code = fields.Str(required = False)
-    latitude = fields.Str(required = False)
-    longitude = fields.Str(required = False)
-    timezone = fields.Str(required = False)
-    country_name = fields.Str(required = False)
-    country_iso2 = fields.Str(required = False)
-    country_image_url = fields.URL(required = False)
-    image_url = fields.URL(required = False)
-    
+    airport_id = fields.Int(required=True)
+    gmt = fields.Str(required=False)
+    airport_name = fields.Str(required=False)
+    iata_code = fields.Str(required=False)
+    icao_code = fields.Str(required=False)
+    latitude = fields.Str(required=False)
+    longitude = fields.Str(required=False)
+    timezone = fields.Str(required=False)
+    country_name = fields.Str(required=False)
+    country_iso2 = fields.Str(required=False)
+    country_image_url = fields.URL(required=False)
+    image_url = fields.URL(required=False)
+
 
 class OneAirportSchema(AirportSchema):
-    city_iata_code = fields.Str(required = False)
-    flights = fields.List(fields.Nested(lambda: FlightSchema(only = ('flight_id', 'flight_date', 'flight_iata'))))
-    
-class AirlineSchema(ma.Schema):
-    airline_id = fields.Int(required = True)
-    image_url = fields.URL(required = False)
-    fleet_average_age = fields.Str(required = False)
-    callsign = fields.Str(required = False)
-    hub_code = fields.Str(required = False)
-    iata_code = fields.Str(required = False)
-    icao_code = fields.Str(required = False)
-    country_iso2 = fields.Str(required = False)
-    date_founded = fields.Str(required = False)
-    iata_prefix_accounting = fields.Str(required = False)
-    airline_name = fields.Str(required = False)
-    country_name = fields.Str(required = False)
-    
+    city_iata_code = fields.Str(required=False)
+    flights = fields.List(fields.Nested(lambda: FlightSchema(
+        only=('flight_id', 'flight_date', 'flight_iata'))))
 
-class OneAirlineSchema(AirlineSchema):    
-    fleet_size = fields.Str(required = False)
-    flights = fields.List(fields.Nested(lambda: FlightSchema(only = ('flight_id', 'flight_date', 'flight_iata'))))
-    
-class FlightSchema(ma.Schema):    
-    flight_id = fields.Int(required = True)  
-    flight_date = fields.Str(required = False)
-    flight_status = fields.Str(required = False)
-    departure_airport = fields.Str(required = False)
-    departure_timezone = fields.Str(required = False)
-    departure_scheduled = fields.Str(required = False)
-    departure_estimated = fields.Str(required = False)
-    arrival_airport = fields.Str(required = False)
-    arrival_timezone = fields.Str(required = False)
-    arrival_scheduled = fields.Str(required = False)
-    arrival_estimated = fields.Str(required = False)
-    airline = fields.Str(required = False)
-    flight_number = fields.Str(required = False)
-    flight_iata = fields.Str(required = False)
-    
+
+class AirlineSchema(ma.Schema):
+    airline_id = fields.Int(required=True)
+    image_url = fields.URL(required=False)
+    fleet_average_age = fields.Str(required=False)
+    callsign = fields.Str(required=False)
+    hub_code = fields.Str(required=False)
+    iata_code = fields.Str(required=False)
+    icao_code = fields.Str(required=False)
+    country_iso2 = fields.Str(required=False)
+    date_founded = fields.Str(required=False)
+    iata_prefix_accounting = fields.Str(required=False)
+    airline_name = fields.Str(required=False)
+    country_name = fields.Str(required=False)
+
+
+class OneAirlineSchema(AirlineSchema):
+    fleet_size = fields.Str(required=False)
+    flights = fields.List(fields.Nested(lambda: FlightSchema(
+        only=('flight_id', 'flight_date', 'flight_iata'))))
+
+
+class FlightSchema(ma.Schema):
+    flight_id = fields.Int(required=True)
+    flight_date = fields.Str(required=False)
+    flight_status = fields.Str(required=False)
+    departure_airport = fields.Str(required=False)
+    departure_timezone = fields.Str(required=False)
+    departure_scheduled = fields.Str(required=False)
+    departure_estimated = fields.Str(required=False)
+    arrival_airport = fields.Str(required=False)
+    arrival_timezone = fields.Str(required=False)
+    arrival_scheduled = fields.Str(required=False)
+    arrival_estimated = fields.Str(required=False)
+    airline = fields.Str(required=False)
+    flight_number = fields.Str(required=False)
+    flight_iata = fields.Str(required=False)
+
 
 class OneFlightSchema(FlightSchema):
-    flight_icao = fields.Str(required = False)
-    airline = fields.Nested(AirlineSchema(only = ('airline_id', 'airline_name', 'image_url', 'iata_code')))
-    airports = fields.List(fields.Nested(AirportSchema(only = ('airport_id', 'airport_name', 'iata_code'))))
+    flight_icao = fields.Str(required=False)
+    airline = fields.Nested(AirlineSchema(
+        only=('airline_id', 'airline_name', 'image_url', 'iata_code')))
+    airports = fields.List(fields.Nested(AirportSchema(
+        only=('airport_id', 'airport_name', 'iata_code'))))
 
-airport_schema = AirportSchema(many = True)
+
+airport_schema = AirportSchema(many=True)
 one_airport_schema = OneAirportSchema()
-airline_schema = AirlineSchema(many = True)
+airline_schema = AirlineSchema(many=True)
 one_airline_schema = OneAirlineSchema()
-flight_schema = FlightSchema(many = True)
-one_flight_schema =  OneFlightSchema()
-    
+flight_schema = FlightSchema(many=True)
+one_flight_schema = OneFlightSchema()
+
 db.drop_all()
 db.create_all()
 
 parameter = {}
-parameter["access_key"] = "825fa4b6e358050087ede9b9b769dc1c"
+parameter["access_key"] = "1f8d53a0af0d281dd019a04286925569"
 parameter["limit"] = 6471
 base_url = "http://api.aviationstack.com/v1/"
 target = "airports?"
@@ -171,34 +182,39 @@ def get_all_airports(url):
     for airport in response:
         db.session.add(
             Airport(
-                gmt = airport["gmt"],
-                airport_name = airport["airport_name"],
-                iata_code = airport["iata_code"],
-                icao_code = airport["icao_code"],
-                latitude = airport["latitude"],
-                country_image_url = get_country_image(airport["country_iso2"]),
-                longitude = airport["longitude"],
-                timezone = airport["timezone"],
-                country_name = airport["country_name"],
-                country_iso2 = airport["country_iso2"],
-                city_iata_code = airport["city_iata_code"],
+                gmt=airport["gmt"],
+                airport_name=airport["airport_name"],
+                iata_code=airport["iata_code"],
+                icao_code=airport["icao_code"],
+                latitude=airport["latitude"],
+                country_image_url=get_country_image(airport["country_iso2"]),
+                longitude=airport["longitude"],
+                timezone=airport["timezone"],
+                country_name=airport["country_name"],
+                country_iso2=airport["country_iso2"],
+                city_iata_code=airport["city_iata_code"],
             )
         )
         db.session.commit()
-        
+
+
 def get_country_image(code):
     return "https://www.countryflags.io/" + str(code) + "/shiny/64.png"
 
+
 def get_url():
-    url = base_url + target 
-    for key,value in parameter.items():
+    url = base_url + target
+    for key, value in parameter.items():
         url = url + key + "=" + str(value) + "&"
     return url
+
+
 get_all_airports(get_url())
 
 
 parameter["limit"] = 13131
 target = "airlines?"
+
 
 def get_all_airlines(url):
     response = requests.get(url).json().get("data")
@@ -206,63 +222,68 @@ def get_all_airlines(url):
         image_url = get_image(airline["iata_code"])
         db.session.add(
             Airline(
-                fleet_average_age = airline["fleet_average_age"],
-                callsign = airline["callsign"],
-                hub_code = airline["hub_code"],
-                iata_code = airline["iata_code"],
-                icao_code = airline["icao_code"],
-                image_url = get_image(airline["iata_code"]),
-                country_iso2 = airline["country_iso2"],
-                date_founded = airline["date_founded"],
-                iata_prefix_accounting = airline["iata_prefix_accounting"],
-                airline_name = airline["airline_name"],
-                country_name = airline["country_name"],
-                fleet_size = airline["fleet_size"],
+                fleet_average_age=airline["fleet_average_age"],
+                callsign=airline["callsign"],
+                hub_code=airline["hub_code"],
+                iata_code=airline["iata_code"],
+                icao_code=airline["icao_code"],
+                image_url=get_image(airline["iata_code"]),
+                country_iso2=airline["country_iso2"],
+                date_founded=airline["date_founded"],
+                iata_prefix_accounting=airline["iata_prefix_accounting"],
+                airline_name=airline["airline_name"],
+                country_name=airline["country_name"],
+                fleet_size=airline["fleet_size"],
             )
         )
         db.session.commit()
 
+
 def get_image(code):
-    return "https://content.airhex.com/content/logos/airlines_" + str(code) +"_350_100_r.png"
-    
+    return "https://content.airhex.com/content/logos/airlines_" + str(code) + "_350_100_r.png"
+
+
 get_all_airlines(get_url())
 
 
 parameter["limit"] = 1
-parameter["offset"] = 0 
+parameter["offset"] = 0
 target = "flights?"
+
 
 def get_all_flights(url):
     response = requests.get(url).json().get("data")
     for flight in response:
-        if(not db.session.query(Flight).filter_by(flight_iata = flight["flight"]["iata"]).scalar()):
+        if(not db.session.query(Flight).filter_by(flight_iata=flight["flight"]["iata"]).scalar()):
             arrival_airport = flight["arrival"]["airport"]
             departure_airport = flight["departure"]["airport"]
             f1 = Flight(
-                    flight_date = flight["flight_date"],
-                    flight_status = flight["flight_status"],
-                    departure_airport = departure_airport,
-                    departure_timezone = flight["departure"]["timezone"],
-                    departure_scheduled = flight["departure"]["scheduled"],
-                    departure_estimated = flight["departure"]["estimated"],
-                    arrival_airport = arrival_airport,
-                    arrival_timezone = flight["arrival"]["timezone"],
-                    arrival_scheduled = flight["arrival"]["scheduled"],
-                    arrival_estimated = flight["arrival"]["estimated"],
-                    flight_number = flight["flight"]["number"],
-                    flight_iata = flight["flight"]["iata"],
-                    flight_icao = flight["flight"]["icao"],
-                    airline = db.session.query(Airline).filter_by(airline_name = flight["airline"]["name"]).first(),
+                flight_date=flight["flight_date"],
+                flight_status=flight["flight_status"],
+                departure_airport=departure_airport,
+                departure_timezone=flight["departure"]["timezone"],
+                departure_scheduled=flight["departure"]["scheduled"],
+                departure_estimated=flight["departure"]["estimated"],
+                arrival_airport=arrival_airport,
+                arrival_timezone=flight["arrival"]["timezone"],
+                arrival_scheduled=flight["arrival"]["scheduled"],
+                arrival_estimated=flight["arrival"]["estimated"],
+                flight_number=flight["flight"]["number"],
+                flight_iata=flight["flight"]["iata"],
+                flight_icao=flight["flight"]["icao"],
+                airline=db.session.query(Airline).filter_by(
+                    airline_name=flight["airline"]["name"]).first(),
             )
             if arrival_airport is not None:
-                f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["arrival"]["airport"]).first())
+                f1.airports.append(db.session.query(Airport).filter_by(
+                    airport_name=flight["arrival"]["airport"]).first())
             if departure_airport is not None:
-                f1.airports.append(db.session.query(Airport).filter_by(airport_name = flight["departure"]["airport"]).first())
+                f1.airports.append(db.session.query(Airport).filter_by(
+                    airport_name=flight["departure"]["airport"]).first())
             db.session.add(f1)
             db.session.commit()
 
-for i in range(0, 2):
-#    parameter["offset"] = i * parameter["limit"]
-    get_all_flights(get_url())
-    
 
+for i in range(0, 2):
+    #    parameter["offset"] = i * parameter["limit"]
+    get_all_flights(get_url())

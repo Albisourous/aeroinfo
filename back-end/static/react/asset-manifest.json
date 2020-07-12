@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.4ff75b0e.chunk.css",
+    "main.js": "/static/react/js/main.85b437ee.chunk.js",
+    "main.js.map": "/static/react/js/main.85b437ee.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.d8763b2a.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.d8763b2a.js.map",
+    "js/2.5e135598.chunk.js": "/static/react/js/2.5e135598.chunk.js",
+    "js/2.5e135598.chunk.js.map": "/static/react/js/2.5e135598.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/main.4ff75b0e.chunk.css.map": "/static/react/css/main.4ff75b0e.chunk.css.map",
+    "js/2.5e135598.chunk.js.LICENSE.txt": "/static/react/js/2.5e135598.chunk.js.LICENSE.txt",
+    "media/Video1.mp4": "/static/react/media/Video1.cf8262d8.mp4",
+    "media/albin.jpg": "/static/react/media/albin.6409a7b5.jpg",
+    "media/kevin.jpg": "/static/react/media/kevin.96a5638c.jpg",
+    "media/li.jpg": "/static/react/media/li.b9b63fdc.jpg",
+    "media/loading.gif": "/static/react/media/loading.602cdca7.gif",
+    "media/noah.jpg": "/static/react/media/noah.505002a9.jpg",
+    "media/yijing.jpeg": "/static/react/media/yijing.1cb3cd0e.jpeg",
+    "precache-manifest.ca4f4f6956a84fc885b62495e6120507.js": "/static/react/precache-manifest.ca4f4f6956a84fc885b62495e6120507.js",
+    "service-worker.js": "/static/react/service-worker.js"
+  },
+  "entrypoints": [
+    "js/runtime-main.d8763b2a.js",
+    "js/2.5e135598.chunk.js",
+    "css/main.4ff75b0e.chunk.css",
+    "js/main.85b437ee.chunk.js"
+  ]
+}

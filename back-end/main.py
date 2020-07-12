@@ -161,6 +161,7 @@ airline_schema = AirlineSchema(many = True)
 one_airline_schema = OneAirlineSchema()
 flight_schema = FlightSchema(many = True)
 one_flight_schema =  OneFlightSchema()
+<<<<<<< HEAD
 
 
 @app.route('/')
@@ -187,6 +188,10 @@ def serve_airlines():
 def serve_flights():
     return render_template("index.html")
  
+=======
+
+
+>>>>>>> 9b3b0c69c6a90d14ff7e22b46e39b2de78e7d021
 
 
 @app.route('/api/', methods = ["GET"])

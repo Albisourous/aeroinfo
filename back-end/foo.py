@@ -102,3 +102,17 @@ db.drop_all()
 db.create_all()
             
 
+<<<<<<< HEAD
+=======
+
+def get_image(code):
+    return "https://content.airhex.com/content/logos/airlines_" + str(code) +"_350_100_r.png"
+            
+            
+for i in range(1888, 7656):
+    one = db.session.query(Airline).filter_by(airline_id = str(i)).one()
+    url = get_image(str(one.iata_code))
+    db.session.query(Airline).filter_by(airline_id = str(i)).update({"image_url":url})
+    db.session.commit()
+
+>>>>>>> 9b3b0c69c6a90d14ff7e22b46e39b2de78e7d021

@@ -200,7 +200,7 @@ def get_url():
 get_all_airports(get_url())
 
 
-parameter["limit"] = 13131
+parameter["limit"] = 1887
 target = "airlines?"
 
 def get_all_airlines(url):

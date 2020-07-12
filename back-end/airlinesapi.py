@@ -112,7 +112,10 @@ def get_all_airlines(url):
                         iata_code = airline["iata_code"],
                         icao_code = airline["icao_code"],
                         country_iso2 = airline["country_iso2"],
+<<<<<<< HEAD
                         image_url = image_url,
+=======
+>>>>>>> 9b3b0c69c6a90d14ff7e22b46e39b2de78e7d021
                         date_founded = airline["date_founded"],
                         iata_prefix_accounting = airline["iata_prefix_accounting"],
                         airline_name = airline["airline_name"],

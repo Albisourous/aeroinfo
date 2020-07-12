@@ -163,7 +163,7 @@ flight_schema = FlightSchema(many = True)
 one_flight_schema =  OneFlightSchema()
 
 
-<<<<<<< HEAD
+
 @app.route('/')
 @app.route('/airports')
 @app.route('/airlines')
@@ -188,15 +188,6 @@ def serve_airlines():
 def serve_flights():
     return render_template("index.html")
  
-=======
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def serve(path):
-    if path != "" and os.path.exists(app.static_folder + '/' + path):
-        return send_from_directory(app.static_folder, path)
-    else:
-        return send_from_directory(app.static_folder, 'index.html')
->>>>>>> 9b3b0c69c6a90d14ff7e22b46e39b2de78e7d021
 
 
 @app.route('/api/', methods = ["GET"])

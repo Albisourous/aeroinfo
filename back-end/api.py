@@ -22,7 +22,7 @@ from flask import jsonify
 
 from flask_cors import CORS, cross_origin
 
-application = app = Flask(__name__, static_folder='../front-end/build', static_url_path='/')
+application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
@@ -257,6 +257,6 @@ def getAirlines():
     
     
 if __name__ == "__main__":
-	app.run(host='127.0.0.1', debug = True, port = 8080)
+	app.run(host='127.0.0.1', port = 8080)
 
 

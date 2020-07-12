@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1fa8f2e.chunk.css",
-    "main.js": "/static/js/main.7601b573.chunk.js",
-    "main.js.map": "/static/js/main.7601b573.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
-    "static/js/2.08bdc442.chunk.js": "/static/js/2.08bdc442.chunk.js",
-    "static/js/2.08bdc442.chunk.js.map": "/static/js/2.08bdc442.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1cd03209598a0bbada2fcbbc90610e8d.js": "/precache-manifest.1cd03209598a0bbada2fcbbc90610e8d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f1fa8f2e.chunk.css.map": "/static/css/main.f1fa8f2e.chunk.css.map",
-    "static/js/2.08bdc442.chunk.js.LICENSE.txt": "/static/js/2.08bdc442.chunk.js.LICENSE.txt",
-    "static/media/Video1.mp4": "/static/media/Video1.cf8262d8.mp4",
-    "static/media/albin.jpg": "/static/media/albin.6409a7b5.jpg",
-    "static/media/kevin.jpg": "/static/media/kevin.96a5638c.jpg",
-    "static/media/li.jpg": "/static/media/li.b9b63fdc.jpg",
-    "static/media/loading.gif": "/static/media/loading.602cdca7.gif",
-    "static/media/noah.jpg": "/static/media/noah.505002a9.jpg",
-    "static/media/yijing.jpeg": "/static/media/yijing.1cb3cd0e.jpeg"
+    "main.css": "/static/react/static/css/main.791619fa.chunk.css",
+    "main.js": "/static/react/static/js/main.d993af00.chunk.js",
+    "main.js.map": "/static/react/static/js/main.d993af00.chunk.js.map",
+    "runtime-main.js": "/static/react/static/js/runtime-main.d8763b2a.js",
+    "runtime-main.js.map": "/static/react/static/js/runtime-main.d8763b2a.js.map",
+    "static/js/2.08bdc442.chunk.js": "/static/react/static/js/2.08bdc442.chunk.js",
+    "static/js/2.08bdc442.chunk.js.map": "/static/react/static/js/2.08bdc442.chunk.js.map",
+    "index.html": "/static/react/index.html",
+    "precache-manifest.a88885afdc944061eba4109384e6d777.js": "/static/react/precache-manifest.a88885afdc944061eba4109384e6d777.js",
+    "service-worker.js": "/static/react/service-worker.js",
+    "static/css/main.791619fa.chunk.css.map": "/static/react/static/css/main.791619fa.chunk.css.map",
+    "static/js/2.08bdc442.chunk.js.LICENSE.txt": "/static/react/static/js/2.08bdc442.chunk.js.LICENSE.txt",
+    "static/media/Video1.mp4": "/static/react/static/media/Video1.cf8262d8.mp4",
+    "static/media/albin.jpg": "/static/react/static/media/albin.6409a7b5.jpg",
+    "static/media/kevin.jpg": "/static/react/static/media/kevin.96a5638c.jpg",
+    "static/media/li.jpg": "/static/react/static/media/li.b9b63fdc.jpg",
+    "static/media/loading.gif": "/static/react/static/media/loading.602cdca7.gif",
+    "static/media/noah.jpg": "/static/react/static/media/noah.505002a9.jpg",
+    "static/media/yijing.jpeg": "/static/react/static/media/yijing.1cb3cd0e.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.83c3e0c4.js",
+    "static/js/runtime-main.d8763b2a.js",
     "static/js/2.08bdc442.chunk.js",
-    "static/css/main.f1fa8f2e.chunk.css",
-    "static/js/main.7601b573.chunk.js"
+    "static/css/main.791619fa.chunk.css",
+    "static/js/main.d993af00.chunk.js"
   ]
 }

@@ -4,7 +4,7 @@ import {Card} from "react-bootstrap";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import './info.css';
+
 
 
 const id = window.location.pathname.substring(9).replace(/%20/gi, " ");

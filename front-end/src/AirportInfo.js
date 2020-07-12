@@ -4,7 +4,6 @@ import air from './Data/airplanes.json';
 import flight from './Data/flights.json';
 import {Card} from "react-bootstrap";
 import './setup.css';
-import './info.css';
 import ButtonBase from "@material-ui/core/ButtonBase";
 import InfiniteScroll from "react-infinite-scroll-component";
 import {Link} from "react-router-dom";
@@ -80,7 +79,7 @@ const AirportInfo = () => {
     const [flightData, setFlight] = useState([]);
     useEffect(() => {
 
-        fetch('http://aeroinfo.me/api/airports/' + num)
+        fetch('https://api-dot-naviaero.uc.r.appspot.com/api/airports/' + num)
             .then(response => response.json())
             .then(data => setInfo(data))
         fetch('http://aeroinfo.me/api/airline/' + num)
@@ -88,6 +87,8 @@ const AirportInfo = () => {
             .then(data => setLine(data))
     }, []);
     console.log(num)
+    console.log(info)
+    console.log(info.country_image_url)
 
     return (
         <div className="AirportInfo container">
@@ -95,7 +96,7 @@ const AirportInfo = () => {
             <div className="row">
                 <div className="image center">
                     <div className="card">
-                        <img src={info.country_image_url}  className="center" height="64"></img>
+                        <img src={info.country_image_url}  className="center" width="300px"/>
                     </div>
                 </div>
 
@@ -104,7 +105,7 @@ const AirportInfo = () => {
                 </div>
 
 
-                <div clasNames="w-100 "></div>
+                <div className="w-100 "></div>
 
                 <div className="description">
                     <div className="card bg-dark text-center text-white">

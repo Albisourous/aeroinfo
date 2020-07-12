@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Component } from 'react';
 import port from './Data/airplanes.json';
 import { Card } from "react-bootstrap";
-import './info.css';
+
 import axios from 'axios';
 import CardMedia from '@material-ui/core/CardMedia';
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,7 +14,7 @@ const AirlineInfo = () => {
 
     useEffect(() => {
 
-        fetch('http://aeroinfo.me/api/airlines/' + num)
+        fetch('https://api-dot-naviaero.uc.r.appspot.com/api/airlines/' + num)
             .then(response => response.json())
             .then(data => setInfo(data))
 

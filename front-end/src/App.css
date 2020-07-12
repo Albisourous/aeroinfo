@@ -208,15 +208,9 @@ body {
     height: 20rem;
 }
 
-.AirlineInfo .image .card {
-    width: 30rem;
-    height: auto;
-
-}
-
-.AirlineInfo .image .card #image{
+.AirlineInfo .image .card{
     object-fit: cover;
-    padding-top: 315px;
+    padding-top: 60px;
 }
 
 .AirlineInfo .link-1 .card {
@@ -316,7 +310,7 @@ body {
 
 .AirportInfo .image .card {
     width: 30rem;
-    height: auto;
+    height: 20rem !important;
 }
 
 .AirportInfo .link-1 .card {
@@ -381,6 +375,9 @@ body {
 }
 
 /*----------------------FlightCard----------------------*/
+.FlightCard{
+    padding-top: 10px;
+}
 
 .FlightCard:hover,
 .hvr-glow:focus,

@@ -12,14 +12,10 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
-        height: 250,
-        justifyContent: 'center',
-        textAlign: 'center',
-        alignItems: 'center',
-        marginTop: 150,
-        paddingTop: 15
+        width: 345,
+        height: 225,
     },
+    
 });
 
 const FlightCard = props => {
@@ -27,7 +23,9 @@ const FlightCard = props => {
     const classes = useStyles();
     return (
         <div className="FlightCard">
+            
             <Card className={classes.root} onClick={event => window.location.href = "/flights/" + info.flight_id}>
+                
                 <ul class="list-group-flush">
                     <li class="list-group-item">Departure: {info.departure_airport}</li>
                     <li class="list-group-item">Arrival: {info.arrival_airport}</li>

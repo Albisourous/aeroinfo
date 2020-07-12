@@ -24,7 +24,7 @@ const Airports = props => {
         setTimeout(function () {
             setLoading(false);
         }, 1500)
-        fetch('http://aeroinfo.me/api/airports')
+        fetch('https://api-dot-naviaero.uc.r.appspot.com/api/airports')
 
             .then(response => {
                 if (response.ok) {

@@ -33,7 +33,7 @@ function GetSortOrder(prop, ord) {
 
 const Flights = props => {
     let order = 1;
-    const [m, setM] = useState(flightsData);
+    const [flights, setFlights] = useState([])
     const [isLoading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -42,11 +42,22 @@ const Flights = props => {
 
     useEffect(() => { //TODO change back
         setLoading({isLoading: true});
+        setLoading({isLoading: true});
         timeout();
         setTimeout(function () {
             setLoading(false);
         }, 1500)
-        setLoading({isLoading: false});
+        fetch('https://api-dot-naviaero.uc.r.appspot.com/api/flights')
+
+            .then(response => {
+                if (response.ok) {
+                    return response.json()
+                } else {
+                    throw new Error('Something went wrong...');
+                }
+            })
+            .then(data => setFlights(data.flights))
+            .catch(error => setError(true), setLoading(false));
     }, []);
 
     function timeout() {
@@ -92,7 +103,7 @@ const Flights = props => {
     //get current post
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = flightsData.slice(indexOfFirstPost, indexOfLastPost);
+    const currentPosts = flights.slice(indexOfFirstPost, indexOfLastPost);
 
     //change page
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -103,26 +114,26 @@ const Flights = props => {
                     <i className="fa fa-sort-alpha-asc" aria-hidden="true"></i>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("arrival[x].airport", order)); //TODO
+                        let newFlights = [...flights];
+                        newFlights.sort(GetSortOrder("arrival_airport", order)); //TODO
                         order = order * -1;
-                        setM(newM);
+                        setFlights(newFlights);
                     }}>Departure
                     </button>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("plane_owner", order)); //TODO
+                        let newFlights = [...flights];
+                        newFlights.sort(GetSortOrder("departure_airport", order)); //TODO
                         order = order * -1;
-                        setM(newM);
+                        setFlights(newFlights);
                     }}>Arrival
                     </button>
 
                     <button type="button" className="btn btn-outline-light" onClick={() => {
-                        let newM = [...m];
-                        newM.sort(GetSortOrder("flight_date", order)); //TODO
+                        let newFlights = [...flights];
+                        newFlights.sort(GetSortOrder("flight_date", order)); //TODO
                         order = order * -1;
-                        setM(newM);
+                        setFlights(newFlights);
                     }}>Date
                     </button>
                 </div>

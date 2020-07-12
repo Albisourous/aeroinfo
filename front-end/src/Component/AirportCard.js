@@ -12,7 +12,7 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 
 const useStyles = makeStyles({
     root: {
-        width: 345,
+        width: 317,
         height: 225,
         marginTop: 20,
     },

@@ -7,8 +7,8 @@ td, th {
 table {
     border-collapse: collapse;
     align-self: center;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
 }
 
@@ -72,4 +72,8 @@ button {
     list-style-type: none;
     padding: .5em .5em .5em .5em;
     text-align: left;
+}
+
+p.scroll {
+    overflow: scroll;
 }

@@ -1,5 +1,6 @@
 import React, {useState, useEffect, Component} from 'react';
 import {Card} from "react-bootstrap";
+import './setup.css';
 import ButtonBase from "@material-ui/core/ButtonBase";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -68,7 +69,7 @@ const FlightInfo = () => {
     let airportInfo;
     if (info.airports != null && info.airports.length != 0) {
         airportInfo = info.airports.map((airport) =>
-            <InfiniteScroll dataLength={1000}
+            <InfiniteScroll dataLength={airportInfo != null && airportInfo.length != 0 ? airportInfo.length : 0}
                             style={{
                                 display: 'inline-flex',
                                 maxHeight: '400px',

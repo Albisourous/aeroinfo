@@ -210,7 +210,7 @@ body {
 
 .AirlineInfo .image .card{
     object-fit: cover;
-    padding-top: 60px;
+    padding-top: 0px;
 }
 
 .AirlineInfo .link-1 .card {

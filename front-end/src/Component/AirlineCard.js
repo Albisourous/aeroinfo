@@ -23,9 +23,6 @@ const useStyles = makeStyles({
         width: 160,
     },
 
-    button: {
-        justifyContent: 'center',
-    }
 });
 
 
@@ -35,29 +32,19 @@ const AirlineCard = props => {
 
     return (
         <div className="AirlineCard">
-            <Card className={classes.root}>
-                <ButtonBase className={classes.button} style={{
-                    textAlign: 'center',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    paddingRight: 50,
-                    marginTop: 100,
-                    height: 40
-                }}
-                            onClick={event => window.location.href = "/airlines/" + info.airline_id}>
-                    <CardActionArea>
+            <Card className={classes.root} onClick={event => window.location.href = "/airlines/" + info.airline_id }>
+                <CardActionArea>
 
-                        <CardMedia
-                            className={classes.media} id="image"
-                            image={"https://daisycon.io/images/airline/?width=300&height=150&color=ffffff&iata=" + info.iata_code}
-                        />
+                    <CardMedia
+                        className={classes.media} id="image"
+                        image={"https://daisycon.io/images/airline/?width=300&height=150&color=ffffff&iata=" + info.iata_code}
+                    />
 
-                        <ul class="list-group-flush">
-                            <li class="list-group-item">Airline Name: {info.airline_name}</li>
-                            <li class="list-group-item">Country: {info.country_name}</li>
-                        </ul>
-                    </CardActionArea>
-                </ButtonBase>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Airline Name: {info.airline_name}</li>
+                        <li class="list-group-item">Country: {info.country_name}</li>
+                    </ul>
+                </CardActionArea>
             </Card>
         </div>
     );

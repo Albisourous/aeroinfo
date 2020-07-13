@@ -13,10 +13,6 @@ function refreshPage() {
 
 const AirportInfo = () => {
     const [info, setInfo] = useState([]);
-    const pic = 'https://source.unsplash.com/1600x900/?' + info.country_name + "," + info.airport_name + ",airport";
-
-    // const [lineData, setLine] = useState([]);
-    // const [flightData, setFlight] = useState([]);
 
     const [isLoading, setLoading] = useState(false);
     useEffect(() => {
@@ -103,7 +99,7 @@ const AirportInfo = () => {
                 <div className="image center">
                     <div className="card">
                         <img
-                            src={pic}
+                            src={info.country_image_url}
                             className="center" height="100%"/>
                     </div>
                 </div>

@@ -101,7 +101,7 @@ const AirlineInfo = () => {
                 <div className="image center">
                     <div className="card">
                         <img
-                            src={pic}
+                            src={"https://daisycon.io/images/airline/?width=300&height=150&color=ffffff&iata=" + info.iata_code}
                             className="center" height="100%"/>
                     </div>
                 </div>

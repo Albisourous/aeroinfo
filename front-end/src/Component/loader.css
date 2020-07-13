@@ -11,6 +11,6 @@
 }
 
 .loader.hidden {
-    animation: 10s;
+    animation: 8-100s;
     animation-fill-mode: forwards;
 }

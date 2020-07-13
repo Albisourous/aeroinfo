@@ -28,7 +28,7 @@ const Airlines = props => {
         timeout();
         setTimeout(function () {
             setLoading(false);
-        }, 1500)
+        }, Math.floor(Math.random() * 500) + 1500)
         fetch('https://api-dot-naviaero.uc.r.appspot.com/api/airlines')
 
             .then(response => {
@@ -39,7 +39,7 @@ const Airlines = props => {
                 }
             })
             .then(data => setAirlines(data.airlines))
-            .catch(error => setError(true), setLoading(false));
+            .catch(error => this.setState({ error, isLoading: false }));
     }, []);
 
     function timeout() {

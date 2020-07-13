@@ -42,11 +42,10 @@ const Flights = props => {
 
     useEffect(() => { //TODO change back
         setLoading({isLoading: true});
-        setLoading({isLoading: true});
         timeout();
         setTimeout(function () {
             setLoading(false);
-        }, 1500)
+        }, Math.floor(Math.random() * 500) + 1500)
         fetch('https://api-dot-naviaero.uc.r.appspot.com/api/flights')
 
             .then(response => {
@@ -57,7 +56,7 @@ const Flights = props => {
                 }
             })
             .then(data => setFlights(data.flights))
-            .catch(error => setError(true), setLoading(false));
+            .catch(error => this.setState({ error, isLoading: false }));
     }, []);
 
     function timeout() {

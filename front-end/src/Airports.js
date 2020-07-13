@@ -23,9 +23,8 @@ const Airports = props => {
         timeout();
         setTimeout(function () {
             setLoading(false);
-        }, 1500)
+        }, Math.floor(Math.random() * 500) + 1500)
         fetch('https://api-dot-naviaero.uc.r.appspot.com/api/airports')
-
             .then(response => {
                 if (response.ok) {
                     return response.json()

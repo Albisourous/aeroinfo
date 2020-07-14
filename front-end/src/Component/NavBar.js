@@ -20,12 +20,7 @@ export const NavBar = () => (
                 <Nav.Link className="link" href="/airports">Airports</Nav.Link>
                 <Nav.Link className="link" href="/about">About</Nav.Link>
             </Nav>
-            <div>
-                <Form inline action="https://www.google.com/search" method="GET">
-                    <input type="text" name="q" placeholder="Search" className="mr-sm-2"/>
-                    <Button variant="outline-light" type="submit" value="Google Search">Search</Button>
-                </Form>
-            </div>
+            
         </Navbar.Collapse>
 
     </Navbar>

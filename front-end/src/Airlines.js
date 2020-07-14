@@ -9,7 +9,10 @@ import './setup.css';
 import './Component/load.scss'
 import './Component/loader.css'
 import Pagination from "./Component/Pagination.js";
-import Search from "./Component/Search.js";
+
+
+const Search = require("./Component/Search");
+
 
 
 let order = 1;

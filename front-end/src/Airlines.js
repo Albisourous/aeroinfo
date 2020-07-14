@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Form, FormControl, Button } from "react-bootstrap";
 import data from "./Data/airplanes.json";
 import InfoGrid from "./Component/InfoGrid";
 import INFO_TYPES from './Constants/enum';
@@ -9,6 +9,7 @@ import './setup.css';
 import './Component/load.scss'
 import './Component/loader.css'
 import Pagination from "./Component/Pagination.js";
+import Search from "./Component/Search.js";
 
 
 let order = 1;
@@ -114,6 +115,11 @@ const Airlines = props => {
     return (
         <div>
             <div className="Airplanes">
+
+                <Search />
+                
+                
+                
                 <div className="sort">
                     <div className="row justify-content-end">
                         <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>

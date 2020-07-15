@@ -166,10 +166,58 @@
     /*----------------------Airlines.js----------------------*/
     
     .Airlines .sort {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
+        
+        
+        margin-top: -5%;
         margin-bottom: 3%;
+        
+    }
+
+    .Airlines  .icon{
+        margin-top: 10px;
+        font-size: 32px;
+        color: white;
+    }
+
+
+    .Airlines .sort .btn{
+        color: white;
+        padding: 10px;
+        border: none;
+        background: none;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        font-size: 22px;
+        font-family: "Homenaje", sans-serif;
+    }
+    .Airlines .sort .btn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: white;
+        height: 1px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+
+      .Airlines .sort .btn:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+        right: 0;
+      }
+
+    .Airlines .sort h1{
+        color: white;
     }
     
     .Airlines .sort .fa {
@@ -183,6 +231,11 @@
         margin-left: 37%;
     }
     
+    .Airlines .Search{
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
     #input-with-icon-grid {
         color: white
     }

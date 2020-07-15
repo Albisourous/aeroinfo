@@ -20,16 +20,29 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import SortByAlphaIcon from '@material-ui/icons/SortByAlpha';
 
 const useStyles = makeStyles((theme) => ({
     searchBar: {
         margin: theme.spacing(1),
         color: 'white',
+        size: 'medium',
     },
 
     searchBarText: {
         color: 'primary',
-    }
+        size: 'medium',
+    },
+
+    root: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        '& > *': {
+            margin: theme.spacing(1),
+        },
+    },
 }));
 
 
@@ -70,12 +83,12 @@ const Airlines = props => {
                     throw new Error('Something went wrong...');
                 }
             })
-            
-            .then(data => {setAirlines(data.airlines); setTemp(data.airlines)})
+
+            .then(data => { setAirlines(data.airlines); setTemp(data.airlines) })
             .catch(error => this.setState({ error, isLoading: false }));
 
     }, []);
-    
+
 
     function timeout() {
         if (isLoading) {
@@ -215,48 +228,37 @@ const Airlines = props => {
         <div>
             <div className="Airlines" >
 
-                { /*Search Input*/}
-                {
-                    /* <input
-                                            type="text"
-                                            id="search"
-                                            placeholder="Searching..."
-        
-                                        />
-                                        <i class="fa fa-times" aria-hidden="true" onClick={() => {
-                                            setAirlines(temp)
-                                        }}></i> */
-                }
-                { /*Result*/}
-                <div className="Search">
+                <div className="Search ">
                     <div className={classes.searchBar}>
                         <Grid container spacing={1} alignItems="flex-end">
                             <Grid item>
-                                <SearchIcon />
+                                <SearchIcon className="icon"/>
                             </Grid>
                             <Grid item>
                                 <TextField
                                     TextField color='primary'
                                     id="input-with-icon-grid"
-                                    label="Searching..." 
+                                    label="Searching..."
                                     onChange={handleOnInputChange}
-                                    />
+                                    
+                                />
                             </Grid>
                             <Grid item>
-                                <CloseIcon onClick={() => {setAirlines(temp)}}/>
+                                <CloseIcon className="icon" onClick={() => { setAirlines(temp) }} />
                             </Grid>
+
+
                         </Grid>
                     </div>
                 </div>
 
 
-
-
                 <div className="sort" >
                     <div className="row justify-content-end" >
-                        <i class="fa fa-sort-alpha-asc" aria-hidden="true" />
 
-                        <button type="button" className="btn btn-outline-light"
+                        <SortByAlphaIcon className="icon"/>
+
+                        <button type="button" className="btn"
                             onClick={
                                 () => {
                                     let newAirlines = [...airlines];
@@ -264,10 +266,11 @@ const Airlines = props => {
                                     order = order * -1;
                                     setAirlines(newAirlines);
                                 }
-                            } > Airplane Name </button>
+                            } > Airplane Name</button>
 
+                           <h1>|</h1> 
                         <button type="button"
-                            className="btn btn-outline-light"
+                            className="btn"
                             onClick={
                                 () => {
                                     let newAirlines = [...airlines];
@@ -275,7 +278,9 @@ const Airlines = props => {
                                     order = order * -1;
                                     setAirlines(newAirlines);
                                 }
-                            }> Country Name </button> </div> </div>
+                            }> Country Name </button>
+                    </div>
+                </div>
 
                 <InfoGrid infoData={currentPosts} infoCardType={INFO_TYPES.AIRLINES} />
                 <Pagination postsPerPages={postsPerPage} totalPosts={airlines.length} paginate={paginate} >

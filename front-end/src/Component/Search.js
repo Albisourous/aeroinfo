@@ -58,6 +58,7 @@ function Search() {
                     type="text"
                     id="search"
                     placeholder="Searching..."
+                    onChange={handleOnInputChange}
                 />
                 <i className="fa fa-search search-icon" onClick={() => {
                     handleOnInputChange()

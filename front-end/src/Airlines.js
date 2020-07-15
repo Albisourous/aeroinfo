@@ -9,18 +9,15 @@ import './setup.css';
 import './Component/load.scss'
 import './Component/loader.css'
 import Pagination from "./Component/Pagination.js";
+
 import axios from 'axios';
 import './Component/Search.css';
 
 import { makeStyles } from '@material-ui/core/styles';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import SortByAlphaIcon from '@material-ui/icons/SortByAlpha';
 
 const useStyles = makeStyles((theme) => ({
@@ -32,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     searchBarText: {
         color: 'primary',
         size: 'medium',
-        
+
     },
 
     root: {
@@ -47,11 +44,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-
-
-
 let order = 1;
-
 
 const Airlines = props => {
     const [isLoading, setLoading] = useState(false);
@@ -60,11 +53,10 @@ const Airlines = props => {
 
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(15);
+
     const [query, setQuery] = useState('');
     const [message, setMessage] = useState('');
-    const [results, setResults] = useState([]);
     const [temp, setTemp] = useState([]);
-
     const classes = useStyles();
 
 
@@ -85,7 +77,7 @@ const Airlines = props => {
             })
 
             .then(data => { setAirlines(data.airlines); setTemp(data.airlines) })
-            .catch(error => this.setState({ error, isLoading: false }));
+            .catch(error => { setError(true); setLoading(false) });
 
     }, []);
 
@@ -189,7 +181,7 @@ const Airlines = props => {
      *
      */
     function fetchSearchResults(query) {
-        // By default the limit of results is 20
+        
         const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/airlines/${query}`;
 
         axios.get(searchUrl)
@@ -198,13 +190,14 @@ const Airlines = props => {
                     'There are no more search results. Please try a new search.' :
                     '';
                 setMessage(resultNotFoundMsg);
-                setAirlines(info.data.airlines);;
+                setAirlines(info.data.airlines);
                 console.log(airlines)
             })
             .catch((error) => {
                 if (axios.isCancel(error) || error) {
                     setMessage('Failed to fetch results.Please check network')
                 }
+                console.log(error)
             });
 
     };
@@ -228,23 +221,26 @@ const Airlines = props => {
         <div>
             <div className="Airlines" >
 
-                <div className="Search ">
+                <div className="Search">
                     <div className={classes.searchBar}>
                         <Grid container spacing={1} alignItems="flex-end">
                             <Grid item>
-                                <SearchIcon className="icon"/>
+                                <SearchIcon className="icon" />
                             </Grid>
                             <Grid item>
+
                                 <TextField
                                     TextField color='primary'
                                     id="input-with-icon-grid"
-                                    label="Searching..."
+                                    label="Enter a airline's name or country..."
                                     onChange={handleOnInputChange}
-                                    
+
                                 />
                             </Grid>
+
                             <Grid item>
-                                <CloseIcon className="icon" onClick={() => { setAirlines(temp) }} />
+                                <CloseIcon className="icon" onClick={() => { setAirlines(temp) 
+                                document.getElementById("input-with-icon-grid").value = null}} />
                             </Grid>
 
 
@@ -256,7 +252,7 @@ const Airlines = props => {
                 <div className="sort" >
                     <div className="row justify-content-end" >
 
-                        <SortByAlphaIcon className="icon"/>
+                        <SortByAlphaIcon className="icon" />
 
                         <button type="button" className="btn"
                             onClick={
@@ -266,9 +262,9 @@ const Airlines = props => {
                                     order = order * -1;
                                     setAirlines(newAirlines);
                                 }
-                            } > Airplane Name</button>
+                            } > Airline Name</button>
 
-                           <h1>|</h1> 
+                        <h1>|</h1>
                         <button type="button"
                             className="btn"
                             onClick={
@@ -278,7 +274,7 @@ const Airlines = props => {
                                     order = order * -1;
                                     setAirlines(newAirlines);
                                 }
-                            }> Country Name </button>
+                            }> Country </button>
                     </div>
                 </div>
 

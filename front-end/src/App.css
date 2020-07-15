@@ -163,14 +163,13 @@
         color: rgba(255, 255, 255, 0.918);
         text-align: center;
     }
+
+
     /*----------------------Airlines.js----------------------*/
     
     .Airlines .sort {
-        
-        
-        margin-top: -5%;
+        margin-top: -6%;
         margin-bottom: 3%;
-        
     }
 
     .Airlines  .icon{
@@ -212,9 +211,9 @@
         transition-timing-function: ease-out;
       }
 
-      .Airlines .sort .btn:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    .Airlines .sort .btn:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
         right: 0;
-      }
+    }
 
     .Airlines .sort h1{
         color: white;
@@ -236,13 +235,178 @@
         padding-left: 50px;
     }
 
-    #input-with-icon-grid {
-        color: white
+    .Airlines .Search #input-with-icon-grid {
+        color: white;
+        width: 400px;
+        
     }
     
-    #input-with-icon-grid-label {
-        color: white
+    .Airlines .Search #input-with-icon-grid-label {
+        color: white;
+        font-family: "Homenaje", sans-serif;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-left: 5%;
     }
+
+/*----------------------Flights.js----------------------*/
+    .Flights .sort {
+        margin-top: -6%;
+        margin-bottom: 3%;
+    }
+
+    .Flights  .icon{
+        margin-top: 10px;
+        font-size: 32px;
+        color: white;
+    }
+
+
+    .Flights .sort .btn{
+        color: white;
+        padding: 10px;
+        border: none;
+        background: none;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        font-size: 22px;
+        font-family: "Homenaje", sans-serif;
+    }
+    .Flights .sort .btn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: white;
+        height: 1px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .Flights .sort .btn:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+        right: 0;
+    }
+
+    .Flights .sort h1{
+        color: white;
+    }
+
+    .Flights .sort .fa {
+        color: white;
+        font-size: 35px;
+        padding-left: 30%;
+    }
+    .Flights .Search{
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
+
+
+    .Flights .Search #input-with-icon-grid {
+        color: white;
+        width: 400px;
+        
+    }
+
+    .Flights .Search #input-with-icon-grid-label {
+        color: white;
+        font-family: "Homenaje", sans-serif;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    /*----------------------Airports.js----------------------*/
+    .Airports .sort {
+        margin-top: -6%;
+        margin-bottom: 3%;
+    }
+
+    .Airports  .icon{
+        margin-top: 10px;
+        font-size: 32px;
+        color: white;
+    }
+
+
+    .Airports .sort .btn{
+        color: white;
+        padding: 10px;
+        border: none;
+        background: none;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        font-size: 22px;
+        font-family: "Homenaje", sans-serif;
+    }
+    .Airports .sort .btn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: white;
+        height: 1px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .Airports .sort .btn:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+        right: 0;
+    }
+
+    .Airports .sort h1{
+        color: white;
+    }
+
+    .Airports .sort .fa {
+        color: white;
+        font-size: 35px;
+        padding-left: 30%;
+    }
+    .Airports .Search{
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
+
+
+    .Airports .Search #input-with-icon-grid {
+        color: white;
+        width: 400px;
+        
+    }
+
+    .Airports .Search #input-with-icon-grid-label {
+        color: white;
+        font-family: "Homenaje", sans-serif;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
     /*----------------------AirlineInfo----------------------*/
     
     .AirlineInfo {

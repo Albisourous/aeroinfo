@@ -593,3 +593,20 @@
     .hvr-glow:active {
         box-shadow: 0 0 20px rgb(241, 241, 241);
     }
+
+    /*----------------------Pagination----------------------*/
+    .pagination{
+        color:white;
+        margin-top: 50px;
+        margin-left: 19%;
+        margin-bottom: 100px;
+    }
+
+    .pagination .MuiButtonBase-root{
+        color: white;
+        size: 50px;
+    }
+
+    .pagination .MuiPaginationItem-root{
+        color: white;
+    }

@@ -206,11 +206,6 @@ const Airlines = props => {
 
     function handleOnInputChange() {
         setQuery(document.getElementById("input-with-icon-grid").value);
-
-
-        console.log(document.getElementById("input-with-icon-grid").value);
-
-
         fetchSearchResults(query);
 
     };

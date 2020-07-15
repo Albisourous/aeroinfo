@@ -27,12 +27,12 @@ const useStyles = makeStyles((theme) => ({
     searchBar: {
         margin: theme.spacing(1),
         color: 'white',
-        size: 'medium',
     },
 
     searchBarText: {
         color: 'primary',
         size: 'medium',
+        
     },
 
     root: {

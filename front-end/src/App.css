@@ -1,394 +1,378 @@
-body {
-    padding-top: 200px;
-    background-color: rgb(30, 49, 73);
-    font-family: "Homenaje", sans-serif;
-}
-
-
-/*----------------------NavBar----------------------*/
-
-.navbar {
-    top: 0;
-    margin-bottom: -15px;
-    border-bottom: 3px solid white;
-    background: rgb(30, 49, 73);
-    color: #fff;
-    width: 100%;
-    z-index: 2;
-    flex-direction: column;
-}
-
-.navbar .fa-plane {
-    font-size: 60px;
-    color: #fff;
-}
-
-.navbar .title {
-    font-family: "Homenaje", sans-serif;
-    color: white;
-}
-
-.navbar .link {
-    margin-right: 45px;
-    font-family: "Homenaje", sans-serif;
-    font-size: 40px;
-    color: #fff !important;
-}
-
-.navbar .Form {
-    margin-right: 45px;
-}
-
-
-
-/*----------------------Grids----------------------*/
-
-.SpacingGrid {
-    padding-top: 1000px;
-}
-
-
-/*----------------------Home Page----------------------*/
-
-.Home {
-    padding-left: 0;
-    padding-right: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-/*Video*/
-.Home .video {
-    position: absolute;
-    background-size: 100% 100%;
-    top: 0px;
-    left: 0px;
-    /* fixed to left. Replace it by right if you want.*/
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    overflow: hidden;
-    object-fit: fill;
-    background-color: rgb(30, 49, 73);
-    color: rgb(30, 49, 73);
-    zoom: 115%;
-}
-
-#background-video {
-    position: fixed;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100vh;
-    z-index: -99;
-    filter: brightness(100%);
-
-}
-
-/*Welcome text*/
-.Home .text .square {
-    background-color: rgba(255, 255, 255, 0.287);
-    margin-top: 5%;
-    margin-bottom: 15%;
-    width: 930px;
-    height: 475px;
-    display: inline-block;
-}
-
-
-.Home .text {
-    font-family: "Homenaje", sans-serif;
-    color: rgba(255, 255, 255, 0.849);
-}
-
-.Home .text h1 {
-    font-size: 70px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.Home .text p {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 25px;
-}
-
-/*Scroll button*/
-.Home .scroll-button {
-    margin-top: -10%;
-    margin-bottom: 10%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid rgba(255, 255, 255, 0.945);
-    padding: 10px 10px 20px;
-    border-radius: 30px;
-}
-
-.scroll-bar {
-    animation: mover 1s infinite alternate;
-}
-
-@keyframes mover {
-    0% {
-        transform: translateY(0);
+    body {
+        padding-top: 200px;
+        background-color: rgb(30, 49, 73);
+        font-family: "Homenaje", sans-serif;
     }
-
-    100% {
-        transform: translateY(10px);
+    /*----------------------NavBar----------------------*/
+    
+    .navbar {
+        top: 0;
+        margin-bottom: -15px;
+        border-bottom: 3px solid white;
+        background: rgb(30, 49, 73);
+        color: #fff;
+        width: 100%;
+        z-index: 2;
+        flex-direction: column;
     }
-}
-
-.Home .scroll-bar span {
-    border: 2px solid rgba(255, 255, 255, 0.945);
-    font-size: 10px;
-    border-radius: 30px;
-}
-
-/*three links*/
-.Home .link {
-    margin-top: 27%;
-    margin-bottom: 30%;
-}
-
-.Home .roundedCorner {
-    border: 3px solid rgba(255, 255, 255, 0.739);
-    border-radius: 10px 90px;
-    padding: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-}
-
-.Home .roundedCorner:hover {
-    background: rgba(20, 19, 19, 0.555);
-    border-radius: 90px 10px;
-    transition: 0.75s;
-}
-
-.Home .roundedCorner p {
-    font-family: "Homenaje", sans-serif;
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.918);
-    text-align: center;
-}
-
-
-/*----------------------Airplane.js----------------------*/
-.Airplanes .sort {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
-
-.Airplanes .sort .fa {
-    color: white;
-    font-size: 35px;
-    padding-left: 30%;
-}
-
-.gif {
-    margin-top: 10%;
-    margin-left: 37%;
-}
-
-/*----------------------AirlineInfo----------------------*/
-
-.AirlineInfo {
-    margin-bottom: 10%;
-    margin-left: -16%;
-}
-
-.AirlineInfo .card {
-    margin-right: 50px;
-    width: 30rem;
-    height: 20rem;
-}
-
-.AirlineInfo .image .card{
-    object-fit: cover;
-    padding-top: 0px;
-}
-
-.AirlineInfo .link-1 .card {
-    background-image: url('./Images/giphy3.gif');
-    background-size: cover;
-}
-
-.AirlineInfo .link-2 .card {
-    height: 26rem;
-    background-image: url('./Images/giphy3.gif');
-    background-size: cover;
-
-}
-
-.AirlineInfo .description .card {
-    height: 26rem;
-    padding-top: 14%;
-    background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
-    background-size: cover;
-    font-family: "Homenaje", sans-serif;
-}
-
-.AirlineInfo .link-1 .card h1{
-    margin-top: 10px;
-    font-family: "Homenaje", sans-serif;
-}
-
-.AirlineInfo .link-2 .card h1{
-    margin-top: 10px;
-    font-family: "Homenaje", sans-serif;
-}
-
-
-
-
-
-
-/*----------------------FlightInfo----------------------*/
-
-.FlightInfo {
-    margin-bottom: 10%;
-    margin-left: -16%;
-}
-
-.FlightInfo .card {
-    margin-right: 50px;
-    width: 30rem;
-    height: 20rem;
-}
-
-.FlightInfo .image .card {
-    width: 30rem;
-    height: 20rem;
-}
-
-.FlightInfo .link-1 .card {
-    background-image: url('./Images/giphy3.gif');
-    background-size: cover;
-}
-
-.FlightInfo .link-2 .card {
-    height: 26rem;
-    background-image: url('./Images/giphy3.gif');
-    background-size: cover;
-}
-
-.FlightInfo .description .card {
-    height: 26rem;
-    background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
-    background-size: cover;
-    font-family: "Homenaje", sans-serif;
-    padding-top: 14%;
-}
-
-.FlightInfo .link-1 .card h1{
-    margin-top: 10px;
-    font-family: "Homenaje", sans-serif;
-}
-
-.FlightInfo .link-2 .card h1{
-    margin-top: 10px;
-    font-family: "Homenaje", sans-serif;
-}
-
-/*----------------------AirportInfo----------------------*/
-
-.AirportInfo {
-    margin-bottom: 10%;
-    margin-left: -16%;
-}
-
-.AirportInfo .card {
-    margin-right: 50px;
-    width: 30rem;
-    height: 20rem;
-}
-
-.AirportInfo .image .card {
-    width: 30rem;
-    height: 20rem !important;
-}
-
-.AirportInfo .link-1 .card {
-    background-image: url('./Images/giphy3.gif');
-    background-size: cover;
-    font-family: "Homenaje", sans-serif;
-}
-
-.AirportInfo .link-2 .card {
-    height: 26rem;
-    background-image: url('./Images/giphy3.gif');
-    background-size: cover;
-    font-family: "Homenaje", sans-serif;
-}
-
-.AirportInfo .description .card {
-    height: 26rem;
-    background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
-    background-size: cover;
-    font-family: "Homenaje", sans-serif;
-    padding-top: 10%;
-}
-
-.AirportInfo .link-1 .card h1{
-    margin-top: 10px;
-}
-
-.AirportInfo .link-2 .card h1{
-    margin-top: 10px;
-}
-
-
-/*----------------------listInCard----------------------*/
-/*AirlineCard FlightCard AirportCard use this*/
-.list-group-flush {
-    display: flex;
-    flex-direction: column;
-    font-family: "Homenaje", sans-serif;
-    font-size: 20px;
-    padding-left: 15%;
-    padding-right: 12%;
-    margin-bottom: 0;
-}
-
-.list-group-flush .list-group-item {
-    position: relative;
-    display: block;
-}
-
-/*----------------------AirlineCard----------------------*/
-
-.AirlineCard:hover,
-.hvr-glow:focus,
-.hvr-glow:active {
-    box-shadow: 0 0 20px rgb(241, 241, 241);
-}
-
-.AirlineCard #image{
-    position: relative;
-    margin-top: 40px;
-    margin-left: 70px;
-}
-
-/*----------------------FlightCard----------------------*/
-.FlightCard .list-group-flush{
-    padding-top: 10px;
-}
-
-.FlightCard:hover,
-.hvr-glow:focus,
-.hvr-glow:active {
-    box-shadow: 0 0 20px rgb(241, 241, 241);
-}
-
-/*----------------------AirportCard----------------------*/
-
-.AirportCard:hover,
-.hvr-glow:focus,
-.hvr-glow:active {
-    box-shadow: 0 0 20px rgb(241, 241, 241);
-}
+    
+    .navbar .fa-plane {
+        font-size: 60px;
+        color: #fff;
+    }
+    
+    .navbar .title {
+        font-family: "Homenaje", sans-serif;
+        color: white;
+    }
+    
+    .navbar .link {
+        margin-right: 45px;
+        font-family: "Homenaje", sans-serif;
+        font-size: 40px;
+        color: #fff !important;
+    }
+    
+    .navbar .Form {
+        margin-right: 45px;
+    }
+    /*----------------------Grids----------------------*/
+    
+    .SpacingGrid {
+        padding-top: 1000px;
+    }
+    /*----------------------Home Page----------------------*/
+    
+    .Home {
+        padding-left: 0;
+        padding-right: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    /*Video*/
+    
+    .Home .video {
+        position: absolute;
+        background-size: 100% 100%;
+        top: 0px;
+        left: 0px;
+        /* fixed to left. Replace it by right if you want.*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        overflow: hidden;
+        object-fit: fill;
+        background-color: rgb(30, 49, 73);
+        color: rgb(30, 49, 73);
+        zoom: 115%;
+    }
+    
+    #background-video {
+        position: fixed;
+        background-size: cover;
+        min-width: 100%;
+        min-height: 100vh;
+        z-index: -99;
+        filter: brightness(100%);
+    }
+    /*Welcome text*/
+    
+    .Home .text .square {
+        background-color: rgba(255, 255, 255, 0.287);
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 930px;
+        height: 475px;
+        display: inline-block;
+    }
+    
+    .Home .text {
+        font-family: "Homenaje", sans-serif;
+        color: rgba(255, 255, 255, 0.849);
+    }
+    
+    .Home .text h1 {
+        font-size: 70px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    
+    .Home .text p {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 25px;
+    }
+    /*Scroll button*/
+    
+    .Home .scroll-button {
+        margin-top: -10%;
+        margin-bottom: 10%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid rgba(255, 255, 255, 0.945);
+        padding: 10px 10px 20px;
+        border-radius: 30px;
+    }
+    
+    .scroll-bar {
+        animation: mover 1s infinite alternate;
+    }
+    
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(10px);
+        }
+    }
+    
+    .Home .scroll-bar span {
+        border: 2px solid rgba(255, 255, 255, 0.945);
+        font-size: 10px;
+        border-radius: 30px;
+    }
+    /*three links*/
+    
+    .Home .link {
+        margin-top: 27%;
+        margin-bottom: 30%;
+    }
+    
+    .Home .roundedCorner {
+        border: 3px solid rgba(255, 255, 255, 0.739);
+        border-radius: 10px 90px;
+        padding: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .Home .roundedCorner:hover {
+        background: rgba(20, 19, 19, 0.555);
+        border-radius: 90px 10px;
+        transition: 0.75s;
+    }
+    
+    .Home .roundedCorner p {
+        font-family: "Homenaje", sans-serif;
+        font-size: 50px;
+        color: rgba(255, 255, 255, 0.918);
+        text-align: center;
+    }
+    /*----------------------Airlines.js----------------------*/
+    
+    .Airlines .sort {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    
+    .Airlines .sort .fa {
+        color: white;
+        font-size: 35px;
+        padding-left: 30%;
+    }
+    
+    .Airlines .gif {
+        margin-top: 10%;
+        margin-left: 37%;
+    }
+    
+    #input-with-icon-grid {
+        color: white
+    }
+    
+    #input-with-icon-grid-label {
+        color: white
+    }
+    /*----------------------AirlineInfo----------------------*/
+    
+    .AirlineInfo {
+        margin-bottom: 10%;
+        margin-left: -16%;
+    }
+    
+    .AirlineInfo .card {
+        margin-right: 50px;
+        width: 30rem;
+        height: 20rem;
+    }
+    
+    .AirlineInfo .image .card {
+        object-fit: cover;
+        padding-top: 0px;
+    }
+    
+    .AirlineInfo .link-1 .card {
+        background-image: url('./Images/giphy3.gif');
+        background-size: cover;
+    }
+    
+    .AirlineInfo .link-2 .card {
+        height: 26rem;
+        background-image: url('./Images/giphy3.gif');
+        background-size: cover;
+    }
+    
+    .AirlineInfo .description .card {
+        height: 26rem;
+        padding-top: 14%;
+        background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
+        background-size: cover;
+        font-family: "Homenaje", sans-serif;
+    }
+    
+    .AirlineInfo .link-1 .card h1 {
+        margin-top: 10px;
+        font-family: "Homenaje", sans-serif;
+    }
+    
+    .AirlineInfo .link-2 .card h1 {
+        margin-top: 10px;
+        font-family: "Homenaje", sans-serif;
+    }
+    /*----------------------FlightInfo----------------------*/
+    
+    .FlightInfo {
+        margin-bottom: 10%;
+        margin-left: -16%;
+    }
+    
+    .FlightInfo .card {
+        margin-right: 50px;
+        width: 30rem;
+        height: 20rem;
+    }
+    
+    .FlightInfo .image .card {
+        width: 30rem;
+        height: 20rem;
+    }
+    
+    .FlightInfo .link-1 .card {
+        background-image: url('./Images/giphy3.gif');
+        background-size: cover;
+    }
+    
+    .FlightInfo .link-2 .card {
+        height: 26rem;
+        background-image: url('./Images/giphy3.gif');
+        background-size: cover;
+    }
+    
+    .FlightInfo .description .card {
+        height: 26rem;
+        background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
+        background-size: cover;
+        font-family: "Homenaje", sans-serif;
+        padding-top: 14%;
+    }
+    
+    .FlightInfo .link-1 .card h1 {
+        margin-top: 10px;
+        font-family: "Homenaje", sans-serif;
+    }
+    
+    .FlightInfo .link-2 .card h1 {
+        margin-top: 10px;
+        font-family: "Homenaje", sans-serif;
+    }
+    /*----------------------AirportInfo----------------------*/
+    
+    .AirportInfo {
+        margin-bottom: 10%;
+        margin-left: -16%;
+    }
+    
+    .AirportInfo .card {
+        margin-right: 50px;
+        width: 30rem;
+        height: 20rem;
+    }
+    
+    .AirportInfo .image .card {
+        width: 30rem;
+        height: 20rem !important;
+    }
+    
+    .AirportInfo .link-1 .card {
+        background-image: url('./Images/giphy3.gif');
+        background-size: cover;
+        font-family: "Homenaje", sans-serif;
+    }
+    
+    .AirportInfo .link-2 .card {
+        height: 26rem;
+        background-image: url('./Images/giphy3.gif');
+        background-size: cover;
+        font-family: "Homenaje", sans-serif;
+    }
+    
+    .AirportInfo .description .card {
+        height: 26rem;
+        background: Linear-gradient(rgba(66, 65, 65, 0.246), rgba(0, 0, 0, 0.5)), url('./Images/loading.gif');
+        background-size: cover;
+        font-family: "Homenaje", sans-serif;
+        padding-top: 10%;
+    }
+    
+    .AirportInfo .link-1 .card h1 {
+        margin-top: 10px;
+    }
+    
+    .AirportInfo .link-2 .card h1 {
+        margin-top: 10px;
+    }
+    /*----------------------listInCard----------------------*/
+    /*AirlineCard FlightCard AirportCard use this*/
+    
+    .list-group-flush {
+        display: flex;
+        flex-direction: column;
+        font-family: "Homenaje", sans-serif;
+        font-size: 20px;
+        padding-left: 15%;
+        padding-right: 12%;
+        margin-bottom: 0;
+    }
+    
+    .list-group-flush .list-group-item {
+        position: relative;
+        display: block;
+    }
+    /*----------------------AirlineCard----------------------*/
+    
+    .AirlineCard:hover,
+    .hvr-glow:focus,
+    .hvr-glow:active {
+        box-shadow: 0 0 20px rgb(241, 241, 241);
+    }
+    
+    .AirlineCard #image {
+        position: relative;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+    /*----------------------FlightCard----------------------*/
+    
+    .FlightCard .list-group-flush {
+        padding-top: 10px;
+    }
+    
+    .FlightCard:hover,
+    .hvr-glow:focus,
+    .hvr-glow:active {
+        box-shadow: 0 0 20px rgb(241, 241, 241);
+    }
+    /*----------------------AirportCard----------------------*/
+    
+    .AirportCard:hover,
+    .hvr-glow:focus,
+    .hvr-glow:active {
+        box-shadow: 0 0 20px rgb(241, 241, 241);
+    }

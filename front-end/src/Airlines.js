@@ -88,12 +88,12 @@ const Airlines = props => {
             if (ord === 1) {
                 if (a[prop] > b[prop]) {
                     return 1;
-                } else if (a[prop] < b[prop]) {
+                } else if (a[prop] <= b[prop]) {
                     return -1;
                 }
                 return 0;
             } else {
-                if (a[prop] < b[prop]) {
+                if (a[prop] <= b[prop]) {
                     return 1;
                 } else if (a[prop] > b[prop]) {
                     return -1;
@@ -120,7 +120,7 @@ const Airlines = props => {
 
                         <button type="button" className="btn btn-outline-light" onClick={() => {
                             let newAirlines = [...airlines];
-                            newAirlines.sort(GetSortOrder("airline_name", order));
+                            newAirlines.sort(GetSortOrder("airline_name".toLowerCase(), order));
                             order = order * -1;
                             setAirlines(newAirlines);
                         }}>Airplane Name
@@ -128,7 +128,7 @@ const Airlines = props => {
 
                         <button type="button" className="btn btn-outline-light" onClick={() => {
                             let newAirlines = [...airlines];
-                            newAirlines.sort(GetSortOrder("country_name", order));
+                            newAirlines.sort(GetSortOrder("country_name".toLowerCase(), order));
                             order = order * -1;
                             setAirlines(newAirlines);
                         }}>Country Name

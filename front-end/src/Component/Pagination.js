@@ -1,36 +1,58 @@
 import React from 'react'
+import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
+import Pag from '@material-ui/lab/Pagination';
+import PaginationItem from '@material-ui/lab/PaginationItem';
 
 
-const Pagination = ({postsPerPages, totalPosts, paginate}) => {
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            marginTop: theme.spacing(2),
+        },
+    },
+}));
+
+
+const Pagination = ({ postsPerPages, totalPosts, paginate }) => {
 
     const PageNumbers = [];
-    const numPages = Math.ceil(totalPosts/postsPerPages)
+    const numPages = Math.ceil(totalPosts / postsPerPages)
     const currPage = 1;
-    for(let i = currPage; i <= Math.min(currPage + 27, Math.max(numPages, currPage+27)); i++){
+
+    const classes = useStyles();
+    const [page, setPage] = React.useState(1);
+    const handleChange = (event, value) => {
+        setPage(value);
+        paginate(page);
+    };
+
+
+    for (let i = currPage; i <= Math.min(currPage + 27, Math.max(numPages, currPage + 27)); i++) {
         PageNumbers.push(i);
     }
+
+    console.log(page);
+
     return (
-        <nav>
-            <ul className="pagination">
-                <li className="prev page-item">
-                    <a href="#" aria-label="Prev" className="page-link">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                {PageNumbers.map(number => (
-                    <li key={number} className="page-item">
-                        <a onClick={() => paginate(number)}  className="page-link">
-                            {number}
-                        </a>
-                    </li>
-                ))}
-                <li className="next page-item">
-                    <a href="#" aria-label="Next" className="page-link">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div className="pagination">
+
+            <div className={classes.root}>
+
+                <Pag
+                    count={numPages}
+                    color="primary"
+                    size="large"
+                    page={page}
+                    onChange={handleChange}
+                    boundaryCount={3}
+                    showFirstButton
+                    showLastButton
+                />
+
+            </div>
+        </div>
+
     );
 }
 

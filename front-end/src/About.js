@@ -43,7 +43,7 @@ export const About = () => (
                 <h5>GitLab Wiki: <a href="https://docs.gitlab.com/ee/user/project/wiki/">GitLab Wiki</a></h5>
                 <div><br/></div>
                 <h5>Other Sources: <a href="https://aviationstack.com/">AviationStack</a></h5>
-                <h5><a href="">Test Case</a></h5>
+                <h5><a href="http://aeroinfo.me/api/test">Test Case</a></h5>
                 <h5>About Source: The Aviation stack API was built to provide a simple way of using information from
                     global aviation data for real-time data.</h5>
                 <div><br/></div>

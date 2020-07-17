@@ -604,7 +604,9 @@
 
     .pagination .MuiButtonBase-root{
         color: white;
-        size: 50px;
+        font-size: 22px;
+        font-family: "Homenaje", sans-serif
+
     }
 
     .pagination .MuiPaginationItem-root{

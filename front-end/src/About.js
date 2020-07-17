@@ -69,7 +69,7 @@ export const About = () => (
                     currently pursuing a degree in Computer Science in hopes of working in business management or game
                     design.</p>
                 <p>shrestha_albin@yahoo.com</p>
-                <p>Number of commits: 60</p>
+                <p>Number of commits: 63</p>
                 <p>Number of issues: 7</p>
                 <p>Number of Unit tests: 0</p>
                 <p>
@@ -90,8 +90,8 @@ export const About = () => (
                 <p>I have 3 cats. I am a college student in the Department of Computer Science at the University of
                     Texas at Austin. I am interested in web design.</p>
                 <p>a1024507613@gmail.com</p>
-                <p>Number of commits: 110</p>
-                <p>Number of issues: 15</p>
+                <p>Number of commits: 150</p>
+                <p>Number of issues: 23</p>
                 <p>Number of Unit tests: 0</p>
                 <p>
                     <button className="contact"><a href="www.cs.utexas.edu/~yijing">Contact</a></button>

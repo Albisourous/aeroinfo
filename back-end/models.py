@@ -9,7 +9,7 @@ import os
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:1024507613@localhost:5432/bookdb')
+application.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_STRING", 'postgres://postgres:78731@localhost:5432/bookdb')
 db = SQLAlchemy(application)
 app.config['CORS_HEADERS'] = 'Content-Type'
 

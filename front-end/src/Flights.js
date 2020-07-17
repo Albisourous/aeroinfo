@@ -124,9 +124,9 @@ const Flights = props => {
          * @param {String} query Search Query.
          *
          */
-    function fetchSearchResults(query) {
+    function fetchSearchResults(searchQuery) {
         // By default the limit of results is 20
-        const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/flights/${query}`;
+        const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/flights/${searchQuery}`;
         console.log(searchUrl);
 
         axios.get(searchUrl)
@@ -149,9 +149,9 @@ const Flights = props => {
 
 
     function handleOnInputChange() {
-        setQuery(document.getElementById("input-with-icon-grid").value);
-
-        fetchSearchResults(query);
+        const input = document.getElementById("input-with-icon-grid").value;
+        setQuery(input);
+        fetchSearchResults(input);
 
     };
 
@@ -172,7 +172,7 @@ const Flights = props => {
                                 TextField color='primary'
                                 id="input-with-icon-grid"
                                 label="Enter a flight's departure or arrival..."
-                                onChange={handleOnInputChange}
+                                onChange={() => {handleOnInputChange()}}
                             />
                         </Grid>
 

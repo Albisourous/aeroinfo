@@ -32,8 +32,6 @@ const Pagination = ({ postsPerPages, totalPosts, paginate }) => {
         PageNumbers.push(i);
     }
 
-    console.log(page);
-
     return (
         <div className="pagination">
 

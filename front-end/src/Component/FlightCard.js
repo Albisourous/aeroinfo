@@ -12,7 +12,7 @@ import "./Highlight.css";
 const useStyles = makeStyles({
     root: {
         width: 317,
-        height: 400,
+        height: 490,
 
     },
     media: {
@@ -40,14 +40,17 @@ const FlightCard = props => {
                                 highlightClassName="highlight"
                                 searchWords={[props.query]}
                                 autoEscape={true}
-                                textToHighlight={info.departure_airport} />
+                                textToHighlight={info.departure_airport} /><br></br>
+                                <span>TimeZone: {info.departure_timezone}</span>
                         </li>
+    
                         <li class="list-group-item">Arrival: <span> </span>
                             <Highlighter
                                 highlightClassName="highlight"
                                 searchWords={[props.query]}
                                 autoEscape={true}
-                                textToHighlight={info.arrival_airport} />
+                                textToHighlight={info.arrival_airport} /><br></br>
+                                <span>TimeZone: {info.arrival_timezone}</span>
                         </li>
                         <li class="list-group-item">Date: <span> </span>{info.flight_date}</li>
                     </ul>

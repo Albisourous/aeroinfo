@@ -61,13 +61,12 @@ const Airlines = props => {
 
 
     useEffect(() => {
-        setLoading({ isLoading: true });
+        setLoading(true);
         timeout();
         setTimeout(function () {
             setLoading(false);
         }, Math.floor(Math.random() * 500) + 1500)
         fetch('https://api-dot-naviaero.uc.r.appspot.com/api/airlines')
-
             .then(response => {
                 if (response.ok) {
                     return response.json()
@@ -75,7 +74,6 @@ const Airlines = props => {
                     throw new Error('Something went wrong...');
                 }
             })
-
             .then(data => { setAirlines(data.airlines); setTemp(data.airlines) })
             .catch(error => { setError(true); setLoading(false) });
 
@@ -180,10 +178,10 @@ const Airlines = props => {
      * @param {String} query Search Query.
      *
      */
-    function fetchSearchResults(query) {
+    function fetchSearchResults(searchQuery) {
         
-        const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/airlines/${query}`;
-        
+        const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/airlines/${searchQuery}`;
+        //console.log(searchUrl)
         axios.get(searchUrl)
             .then((info) => {
                 const resultNotFoundMsg = !info.data.airlines.length ?
@@ -191,13 +189,11 @@ const Airlines = props => {
                     '';
                 setMessage(resultNotFoundMsg);
                 setAirlines(info.data.airlines);
-                console.log(airlines)
+                
+                //console.log(airlines)
                 
             })
             .catch((error) => {
-                if (axios.isCancel(error) || error) {
-                    setMessage('Failed to fetch results.Please check network')
-                }
                 console.log(error)
             });
 
@@ -206,17 +202,15 @@ const Airlines = props => {
 
 
     function handleOnInputChange() {
-        setQuery(document.getElementById("input-with-icon-grid").value);
-        fetchSearchResults(query);
-
+        const input = document.getElementById("input-with-icon-grid").value;
+        setQuery(input);
+        fetchSearchResults(input);
     };
-
 
 
     return (
         <div>
             <div className="Airlines" >
-
                 <div className="Search">
                     <div className={classes.searchBar}>
                         <Grid container spacing={1} alignItems="flex-end">
@@ -229,8 +223,7 @@ const Airlines = props => {
                                     TextField color='primary'
                                     id="input-with-icon-grid"
                                     label="Enter a airline's name or country..."
-                                    onChange={handleOnInputChange}
-
+                                    onChange={() => {handleOnInputChange()}}
                                 />
                             </Grid>
 

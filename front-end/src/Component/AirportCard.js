@@ -10,7 +10,7 @@ import "./Highlight.css";
 const useStyles = makeStyles({
     root: {
         width: 317,
-        height: 225,
+        height: 250,
         marginTop: 20,
     },
     media: {

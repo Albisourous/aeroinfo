@@ -10,6 +10,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from "@material-ui/core/ButtonBase";
 import {AirlineInfo} from "../AirlineInfo";
+import Highlighter from "react-highlight-words";
+import "./Highlight.css";
 
 
 const useStyles = makeStyles({
@@ -41,8 +43,22 @@ const AirlineCard = props => {
                     />
 
                     <ul class="list-group-flush">
-                        <li class="list-group-item">Airline Name: {info.airline_name}</li>
-                        <li class="list-group-item">Country: {info.country_name}</li>
+                    <li class="list-group-item">Airline Name: <span> </span>
+                            <Highlighter
+                                highlightClassName="highlight"
+                                searchWords={[props.query]}
+                                autoEscape={true}
+                                textToHighlight={info.airline_name} />
+                        </li>
+
+                        <li class="list-group-item">Country: <span> </span>
+                            <Highlighter
+                                highlightClassName="highlight"
+                                searchWords={[props.query]}
+                                autoEscape={true}
+                                textToHighlight={info.country_name} />
+                        </li>
+
                     </ul>
                 </CardActionArea>
             </Card>

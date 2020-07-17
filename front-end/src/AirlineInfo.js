@@ -6,7 +6,7 @@ import axios from 'axios';
 import CardMedia from '@material-ui/core/CardMedia';
 import {makeStyles} from '@material-ui/core/styles';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import InfiniteScroll from "react-infinite-scroll-component";
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const num = window.location.pathname.substring(10).replace(/%20/gi, " ");
 
@@ -68,7 +68,7 @@ const AirlineInfo = () => {
     let flightInfo;
     if (info.flights != null && info.flights.length != 0) {
         flightInfo = info.flights.map((flight) =>
-            <InfiniteScroll dataLength={1000}
+            <InfiniteScroll dataLength={info != null && info.length != 0 ? info.length : 0}
                             style={{
                                 display: 'inline-flex',
                                 maxHeight: '400px',

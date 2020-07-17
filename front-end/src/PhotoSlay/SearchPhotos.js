@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Carousel, {Modal, ModalGateway} from 'react-images';
 import './photoslay.css';
 
@@ -70,7 +70,7 @@ class SearchPhotos extends React.Component {
                     <h3 style={{color: 'white'}}>Enter a search item: </h3>
                     <form action="/search" onSubmit={this.handleSubmit} id="imgSearch" className="form-inline">
                         <label>
-                            <input type="text" name="search" value={this.state.value} onChange={this.handleChange}/>
+                            <input type="text" name="search" value={this.state.value} onChange={this.handleChange} placeholder="Airport"/>
                             <input type="submit" onClick={getSearch}/>
                         </label>
 

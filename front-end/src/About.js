@@ -4,6 +4,7 @@ import yijing from './Images/yijing.jpeg'
 import noah from './Images/noah.jpg'
 import li from './Images/li.jpg'
 import kevin from './Images/kevin.jpg'
+import airplane from './Images/airplane.png'
 import './about.css'
 
 
@@ -162,6 +163,16 @@ export const About = () => (
                 <div><br/></div>
             </div>
 
+            <plane class="a"><img src={airplane}></img></plane>
+            <plane class="b"><img src={airplane}></img></plane>
+            <plane class="c"><img src={airplane}></img></plane>
+            <plane class="d"><img src={airplane}></img></plane>
+
+            {/* Should comment out this bottom part if you think it is too much*/}
+            {/*<plane class="e flipped"><img src={airplane}></img></plane>*/}
+            {/*<plane class="f flipped"><img src={airplane}></img></plane>*/}
+            {/*<plane class="g flipped"><img src={airplane}></img></plane>*/}
+            {/*<plane class="h flipped"><img src={airplane}></img></plane>*/}
 
         </div>
     </div>

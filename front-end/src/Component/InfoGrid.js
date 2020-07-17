@@ -17,18 +17,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const _getInfoCard = (type, info) => {
+const _getInfoCard = (type, info, query) => {
   switch (type) {
     case INFO_TYPES.AIRLINES:
       return (
-        <AirlineCard info={info}></AirlineCard>);
+        <AirlineCard info={info} query={query}></AirlineCard>);
     case INFO_TYPES.FLIGHTS:
       return (
-        <FlightCard info={info}></FlightCard>
+        <FlightCard info={info} query={query}></FlightCard>
       );
     case INFO_TYPES.AIRPORTS:
       return (
-        <AirportCard info={info}></AirportCard>
+        <AirportCard info={info} query={query}></AirportCard>
       );
     default:
       return (<div></div>);
@@ -46,7 +46,7 @@ const InfoGrid = props => {
         <Grid container justify="center" spacing={spacing}>
           {infoData.map((info, index) => (
             <Grid key={index} item xs={4}>
-            {_getInfoCard(props.infoCardType, info)}
+            {_getInfoCard(props.infoCardType, info, props.query)}
             </Grid>
           ))}
         </Grid>

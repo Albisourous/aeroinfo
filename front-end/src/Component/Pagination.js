@@ -41,7 +41,7 @@ const Pagination = ({ postsPerPages, totalPosts, paginate }) => {
 
                 <Pag
                     count={numPages}
-                    color="primary"
+                    color="secondary"
                     size="large"
                     page={page}
                     onChange={handleChange}

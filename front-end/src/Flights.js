@@ -219,7 +219,7 @@ const Flights = props => {
                 </div>
             </div>
             <div><br /></div>
-            <InfoGrid infoData={currentPosts} infoCardType={INFO_TYPES.FLIGHTS} />
+            <InfoGrid infoData={currentPosts} infoCardType={INFO_TYPES.FLIGHTS} query={query}/>
             <Pagination postsPerPages={postsPerPage} totalPosts={flights.length} paginate={paginate}>
 
             </Pagination>

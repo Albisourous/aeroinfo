@@ -25,9 +25,9 @@ export const About = () => (
                     world.</h4>
                 <div><br/></div>
                 <div><br/></div>
-                <h5>Total number of commits: 185</h5>
+                <h5>Total number of commits: 227</h5>
                 <div><br/></div>
-                <h5>Total number of issues: 35</h5>
+                <h5>Total number of issues: 43</h5>
                 <div><br/></div>
                 <h5>Total number of Unit tests: 10</h5>
                 <div><br/></div>
@@ -44,7 +44,7 @@ export const About = () => (
                 <div><br/></div>
                 <h5>Other Sources: <a href="https://aviationstack.com/">AviationStack</a></h5>
                 <h5><a href="http://aeroinfo.me/api/test">Test Case</a></h5>
-                <h5><a href="">Speak Deck</a></h5>
+                <h5><a href="https://speakerdeck.com/appleooo/cs373-swe">Speak Deck</a></h5>
                 <h5>About Source: The Aviation stack API was built to provide a simple way of using information from
                     global aviation data for real-time data.</h5>
                 <div><br/></div>
@@ -69,7 +69,7 @@ export const About = () => (
                     currently pursuing a degree in Computer Science in hopes of working in business management or game
                     design.</p>
                 <p>shrestha_albin@yahoo.com</p>
-                <p>Number of commits: 60</p>
+                <p>Number of commits: 62</p>
                 <p>Number of issues: 7</p>
                 <p>Number of Unit tests: 0</p>
                 <p>
@@ -90,8 +90,8 @@ export const About = () => (
                 <p>I have 3 cats. I am a college student in the Department of Computer Science at the University of
                     Texas at Austin. I am interested in web design.</p>
                 <p>a1024507613@gmail.com</p>
-                <p>Number of commits: 110</p>
-                <p>Number of issues: 15</p>
+                <p>Number of commits: 148</p>
+                <p>Number of issues: 23</p>
                 <p>Number of Unit tests: 0</p>
                 <p>
                     <button className="contact"><a href="www.cs.utexas.edu/~yijing">Contact</a></button>
@@ -114,7 +114,7 @@ export const About = () => (
                     the fun Austin has to offer such as drinking new local brews.</p>
                 <p>lindleywnoah@gmail.com</p>
                 <p>Number of commits: 1</p>
-                <p>Number of issues: 2</p>
+                <p>Number of issues: 3</p>
                 <p>Number of Unit tests: 0</p>
                 <p>
                     <button className="contact"><a href="mailto: lindleywnoah@gmail.com">Contact</a></button>
@@ -133,7 +133,7 @@ export const About = () => (
                 <p>I am a third year computer science student at UT Austin. I am interested in machine learning.</p>
                 <p>luluwen2000@gmail.com</p>
                 <p>Number of commits: 2</p>
-                <p>Number of issues: 0</p>
+                <p>Number of issues: 1</p>
                 <p>Number of Unit tests: 10</p>
                 <p>
                     <button className="contact"><a href="mainto: a1024507613@gmail.com">Contact</a></button>
@@ -152,7 +152,7 @@ export const About = () => (
                 <p>I am a UTCS senior student. Having interests in programming, I transfered to CS in my junior year. I
                     am trying to catch up with my peers, honing my skills to become a professional programmer.</p>
                 <p>xiaofeili@utexas.edu</p>
-                <p>Number of commits: 11</p>
+                <p>Number of commits: 13</p>
                 <p>Number of issues: 11</p>
                 <p>Number of Unit tests: 0</p>
                 <p>

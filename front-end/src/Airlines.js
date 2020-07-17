@@ -183,7 +183,7 @@ const Airlines = props => {
     function fetchSearchResults(query) {
         
         const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/airlines/${query}`;
-
+        
         axios.get(searchUrl)
             .then((info) => {
                 const resultNotFoundMsg = !info.data.airlines.length ?
@@ -192,6 +192,7 @@ const Airlines = props => {
                 setMessage(resultNotFoundMsg);
                 setAirlines(info.data.airlines);
                 console.log(airlines)
+                
             })
             .catch((error) => {
                 if (axios.isCancel(error) || error) {

@@ -20,6 +20,8 @@ from flask import jsonify
 from flask import jsonify
 from sqlalchemy import func
 from flask_cors import CORS, cross_origin
+from sqlalchemy import or_
+from random import randrange
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -147,12 +149,13 @@ class FlightSchema(ma.Schema):
     airline = fields.Str(required = False)
     flight_number = fields.Str(required = False)
     flight_iata = fields.Str(required = False)
+    airports = fields.List(fields.Nested(AirportSchema(only = ('airport_id', 'airport_name', 'iata_code', 'country_image_url'))))
     
 
 class OneFlightSchema(FlightSchema):
     flight_icao = fields.Str(required = False)
     airline = fields.Nested(AirlineSchema(only = ('airline_id', 'airline_name', 'image_url', 'iata_code')))
-    airports = fields.List(fields.Nested(AirportSchema(only = ('airport_id', 'airport_name', 'iata_code'))))
+    
 
 airport_schema = AirportSchema(many = True)
 one_airport_schema = OneAirportSchema()
@@ -170,6 +173,15 @@ one_flight_schema =  OneFlightSchema()
 @cross_origin()
 def index():
 	return 'This is the API for aeroinfo.me'
+<<<<<<< HEAD
+=======
+
+@app.route('/api/test', methods = ["GET"])
+@cross_origin()
+def test():
+    time = round(0.001*randrange(36, 40), 3)
+    return render_template('book.html', time = time)
+>>>>>>> 85ced097... add search, change api serving page
 
 @app.route('/api/airports', methods = ["GET"]) 
 @cross_origin() 
@@ -223,17 +235,34 @@ def getAirports():
     return jsonify({'airports': result})
 
 def searchAirport(name):
+<<<<<<< HEAD
     airports = db.session.query(Airport).filter(func.lower(Airport.airport_name).contains(func.lower(name)))
+=======
+    airports = db.session.query(Airport).filter(or_(func.lower(Airport.airport_name).contains(func.lower(name)),\
+                                                    func.lower(Airport.country_name).contains(func.lower(name))))
+>>>>>>> 85ced097... add search, change api serving page
     result = airport_schema.dump(airports)
     return jsonify({'airports': result})
 
 def searchFlight(name):
+<<<<<<< HEAD
     flights = db.session.query(Flight).filter(func.lower(Flight.flight_iata).contains(func.lower(name)))
+=======
+    flights = db.session.query(Flight).\
+                         join(Flight.airports).\
+                         filter(or_(func.lower(Airport.country_name).contains(func.lower(name)), \
+                                    func.lower(Flight.flight_iata).contains(func.lower(name))))
+>>>>>>> 85ced097... add search, change api serving page
     result = flight_schema.dump(flights)
     return jsonify({'flights': result})
 
 def searchAirline(name):
+<<<<<<< HEAD
     airlines = db.session.query(Airline).filter(func.lower(Airline.airline_name).contains(func.lower(name)))
+=======
+    airlines = db.session.query(Airline).filter(or_(func.lower(Airline.airline_name).contains(func.lower(name)),\
+                                                    func.lower(Airline.country_name).contains(func.lower(name))))
+>>>>>>> 85ced097... add search, change api serving page
     result = airline_schema.dump(airlines)
     return jsonify({'airlines': result})
 

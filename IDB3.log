@@ -1,0 +1,1538 @@
+commit 195333536009cd6e322809cfaf5f4cbfb06edca7
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 20:30:38 2020 -0700
+
+    add Speak Deck on About page
+
+commit 8645928ec67e221853d508e4644edb826ac33c04
+Merge: 707e80db e2cf8b33
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 16 00:05:15 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Add new material design pagination, add search bar,  add new sort buttons
+    
+    See merge request Albisourous/cs373-idb!51
+
+commit e2cf8b3315736818aff60bb55598a847686268c1
+Merge: 93c981de b333f264
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 17:03:01 2020 -0700
+
+    conclude merge
+
+commit 93c981ded991547789a077086e6acdda91487de8
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:35:30 2020 -0700
+
+    App.css
+
+commit bf281f99ec8ea5bfa6d1a00150b95e2c40d0a7fe
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:28:16 2020 -0700
+
+    delete temporary json file
+
+commit 8a3aaa32d15a1d6451e3b8069c2dd40e71878d1b
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:22:16 2020 -0700
+
+    change pagination
+
+commit ac8834fe6d80a4edc6e8858783b49444b990d185
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 15:16:35 2020 -0700
+
+    finish search and modify style of sort for flights and airports
+
+commit 06d431d3c27ad12f366924bcaa4ce5301ddcdd34
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 10:51:14 2020 -0700
+
+    update test case's link
+
+commit 1746b6618b18231d5229fcc2e8080a268862d094
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jul 14 22:51:21 2020 -0700
+
+    update api
+
+commit 51dcf45a7c46d3ed7cf36be15df8e776bc594fce
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:38:25 2020 -0700
+
+    rebase
+
+commit 0b678f8755f4c395ef6305d14472e0d7bb715428
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jul 14 18:37:54 2020 -0700
+
+    finish search on airlines.js
+
+commit 6d062f83dca4507c875403d9f1553e102ff9c213
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 13 23:45:41 2020 -0700
+
+    change class to funtion
+
+commit 6b8f0dd7c1522000bb38ea9a0a5164fd75d1c246
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 13 22:32:43 2020 -0700
+
+    build a 'Search' component which enable seaching by keyword
+
+commit b333f264a566ccd56484564a62574872787a919f
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:35:30 2020 -0700
+
+    App.css
+
+commit e979af4efe91f42bf0d12ca0d10a54b0bf48033f
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:28:16 2020 -0700
+
+    delete temporary json file
+
+commit 950f29fce6b506eb56e0128759641b7ca5353ef6
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 16:22:16 2020 -0700
+
+    change pagination
+
+commit f5ba6e2a1af90fd3fa4a15cc05f01b373ef16647
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 15:16:35 2020 -0700
+
+    finish search and modify style of sort for flights and airports
+
+commit 707e80dbc42e971738f072dabefcd6459622b14f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jul 15 15:16:49 2020 -0500
+
+    small change in fligths time
+
+commit 4b9ca8d936dd648863596b5af47c754311cbb637
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 15 10:51:14 2020 -0700
+
+    update test case's link
+
+commit 5b701f937afc2d1a407f9253c338c57b4e903fd4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jul 14 22:51:21 2020 -0700
+
+    update api
+
+commit 2a6a12c8d0460a751b96ad7471b3a9400aabdfc3
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jul 14 19:20:03 2020 -0700
+
+    fix style of search bar and sort
+
+commit d132492360977dd43c2e734fbbe823d12d5225b7
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jul 14 18:37:54 2020 -0700
+
+    finish search on airlines.js
+
+commit f53938263dadc282cef4d3ac2de72148cd3fa21f
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 13 23:45:41 2020 -0700
+
+    change class to funtion
+
+commit 7971c3d692e8f0f9342d05b4da8c5d02ae608f73
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 13 22:32:43 2020 -0700
+
+    build a 'Search' component which enable seaching by keyword
+
+commit 7cc5d0034f85c75c7c0842239fceae74db621ab2
+Merge: 9106c976 a7930e7b
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 13 21:58:38 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change pic on detail pages(Albin)
+    
+    See merge request Albisourous/cs373-idb!50
+
+commit a7930e7b58d3b65493145c13d06516dd26ae0ec3
+Author: Yijing Chen <yijing@YijingdeMacBook-Pro.local>
+Date:   Mon Jul 13 14:33:01 2020 -0700
+
+    change pic on detail pages(Albin)
+
+commit 9106c976aeb5e775a36b16def188490f334d668f
+Merge: 14b12708 685ab6db
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 13 16:35:15 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    fix package.json and update .gitignore
+    
+    See merge request Albisourous/cs373-idb!49
+
+commit 685ab6db2f650f4769eda0c4d97f162a31fea345
+Author: Yijing Chen <yijing@YijingdeMacBook-Pro.local>
+Date:   Mon Jul 13 09:30:52 2020 -0700
+
+    modify .gitignore
+
+commit a4031a3149f000eb4c8514bcc6fb4106fa6e0f7f
+Author: Yijing Chen <yijing@YijingdeMacBook-Pro.local>
+Date:   Mon Jul 13 09:27:29 2020 -0700
+
+    fix package.json
+
+commit 14b127089a0e99e4751636876b25258c9b1659ea
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Mon Jul 13 00:30:52 2020 -0500
+
+    made major changes which allow us to have links to other pages on out info page's
+
+commit 3831e7bc28f8a2f25b4a75a278238ef377f40a7d
+Merge: 8441a652 4dbc5ae2
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sun Jul 12 05:53:21 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    update
+    
+    See merge request Albisourous/cs373-idb!48
+
+commit 4dbc5ae287a5939accab363367fcce1770a01818
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 11 22:20:17 2020 -0500
+
+    status
+
+commit c81ced193f3cd6589adf31e8e7a628bce791f0d3
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 11 22:18:36 2020 -0500
+
+    update
+
+commit eedc1f5c741ae8942916071c2f19a138fbeb7975
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 11 22:09:44 2020 -0500
+
+    “updupdate
+
+commit 8c5b406a31ed09eb0cefd63e775f64130bc84c88
+Merge: 209131bc 9b3b0c69
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 11 21:56:38 2020 -0500
+
+    update
+
+commit 209131bc39509c2c65643149e7562200ce4431fe
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 11 08:29:13 2020 -0500
+
+    update
+
+commit 8441a652a25b8040e8b25c1349137fd8751c4f7e
+Merge: d2201065 fef77854
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sun Jul 12 02:22:17 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    fix card size
+    
+    See merge request Albisourous/cs373-idb!47
+
+commit fef778542ba35821a8ca49491a305c8c5e8c8a0f
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 19:18:18 2020 -0700
+
+    fix card size
+
+commit d220106532e2a90573b5f65c0e3b51b8ba4fac07
+Merge: 7bcb31bb 126373c7
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sun Jul 12 02:02:27 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!46
+
+commit 126373c75c5cdc2eeeac2154bc099b2988527861
+Merge: 0408d342 45de8c25
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 18:57:49 2020 -0700
+
+    Merge branch 'master' of gitlab.com:YijingChen/cs373-idb
+
+commit 0408d342b05376febdb4ae15f6e065509cef1462
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 18:55:54 2020 -0700
+
+    update links for fetching data
+
+commit c5ea4034f45b5c04f87905ea8adb35e15ae9cef2
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 17:52:11 2020 -0700
+
+    modify fetch link
+
+commit 45de8c25a4c6c5e8a6ffe2b25494c32a7fd88a62
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 17:52:11 2020 -0700
+
+    modify fetch link
+
+commit 7bcb31bba96e936dbb99c514a41a03a3bc10cd74
+Merge: 4fc222c1 d6366f3d
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sat Jul 11 19:44:20 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    update .yml
+    
+    See merge request Albisourous/cs373-idb!45
+
+commit d6366f3d66079e0b98d5db10aed272de5748a8c1
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 12:41:36 2020 -0700
+
+    update .yml
+
+commit 4fc222c163a67c7054da84a509407b3c85028cd2
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sat Jul 11 18:49:20 2020 +0000
+
+    Update dispatch.yaml
+
+commit 00b60ae3569097562227f7bc3935f9a089541e57
+Merge: abc64ca9 5c5326bc
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sat Jul 11 18:17:18 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    update api.yaml
+    
+    See merge request Albisourous/cs373-idb!44
+
+commit 5c5326bcb0ec1104e9bdf3a30a1a36abd31304eb
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 11:13:08 2020 -0700
+
+    update api.yaml
+
+commit abc64ca92674e57bffb7e8d6997c09502a5b9c4f
+Merge: 6c2be801 491362ba
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sat Jul 11 17:47:34 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change app.yml on front end and backend folder
+    
+    See merge request Albisourous/cs373-idb!43
+
+commit 491362ba793078f257a84146e6a76229d6afd39e
+Author: Yijing <yijing@YijingdeMacBook-Pro.local>
+Date:   Sat Jul 11 10:42:05 2020 -0700
+
+    change app.yml on front end and backend folder
+
+commit 9b3b0c69c6a90d14ff7e22b46e39b2de78e7d021
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 11 08:29:13 2020 -0500
+
+    update
+
+commit 6c2be801c9c2034f2a4493171b9e5bf313e66d8e
+Merge: 49cb0169 b0d063c9
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 10 21:16:12 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    update
+    
+    See merge request Albisourous/cs373-idb!42
+
+commit b0d063c98a1fc5cf734a7c7546b122bb9873067c
+Merge: e6970fd5 6a249f74
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Fri Jul 10 15:52:12 2020 -0500
+
+    update
+
+commit e6970fd5096bdca61214a68fd7de0201c6a82cdb
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Fri Jul 10 15:41:32 2020 -0500
+
+    seperate fetch and api serving
+
+commit 49cb016914d894e7975ec488615feeaf81270452
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jul 10 15:37:47 2020 -0500
+
+    deployable
+
+commit 6a249f74d27e893abe96e8a73913e1ef6f9f6af0
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jul 10 15:32:15 2020 -0500
+
+    made page deployable
+
+commit 37eb0c494ec9b6b4d2d3f9b78f64f9e908fe2137
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jul 10 09:55:39 2020 -0500
+
+    changed layout of pages/ added nav linker
+
+commit 7978e28d56931743dde113b0e464483330551898
+Merge: 324da859 43c83cb0
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 10 04:26:22 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    update tests.py, models.py, UML.pdf and gitlab-ci.yaml
+    
+    See merge request Albisourous/cs373-idb!41
+
+commit 43c83cb0e8b8c84131ec3553fcfce996609b05f8
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 21:05:10 2020 -0700
+
+    update requirement.yxy
+
+commit 4a96b9072b8bb30d78168bc71bbd925784cbd610
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:59:47 2020 -0700
+
+    update requirement.txt
+
+commit e4464f6a7afb0556344cd0cd023f556ecd76cf4d
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:54:22 2020 -0700
+
+    update gitlab-ci.yml
+
+commit 26bd766f219885d153678e91d218d9648b98a9fa
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:49:24 2020 -0700
+
+    update UML.pdf
+
+commit ddbd1e0996e53c7165a83137260f55b21f409a34
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:46:03 2020 -0700
+
+    add test.py
+
+commit 324da859fd647903fc5c2d0308ce630cab861ed4
+Merge: 08471b30 8b0c5372
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 10 03:12:45 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    add uml.pdf and models.html
+    
+    See merge request Albisourous/cs373-idb!39
+
+commit 8b0c53723b0c8bd2ded5bcb3cf5acf3ec4147b5a
+Merge: 76af6cfe 36ab7c0c
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:10:25 2020 -0700
+
+    Merge branch 'master' of gitlab.com:YijingChen/cs373-idb
+
+commit 76af6cfe42eee304cdad039c55d150e849f0dc72
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:09:12 2020 -0700
+
+    add uml.pdf
+
+commit a0bdf8ab9e8e0e3ae105f76e0691f3bf7e8bcd74
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:04:14 2020 -0700
+
+    create models.html
+
+commit 36ab7c0c5e128c5f424cb90e026f6a06842be915
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 20:04:14 2020 -0700
+
+    create models.html
+
+commit 08471b3058565f82c6c647a49f8d2f6f2baed8c3
+Merge: 4fe48373 ee7a1797
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 10 02:44:18 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Change image and fetch data for flights and airport
+    
+    See merge request Albisourous/cs373-idb!37
+
+commit ee7a17976569af7017852ba411630c48ac68a0cd
+Merge: b8380efe 0b75e2e6
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 19:42:42 2020 -0700
+
+    Conclude merge on a.json
+
+commit b8380efef2657f8945cc5c4628ce72e45fb1e19b
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 19:24:45 2020 -0700
+
+    change image
+
+commit ac04d006dbb73a921dc02cae4d1e64fbd271f266
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 19:21:09 2020 -0700
+
+    fetch data for flight and airport
+
+commit 0b75e2e6700006aa3731504e06e5f9791f2898a9
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 19:24:45 2020 -0700
+
+    change image
+
+commit ba5bc67e08252d79f2da25825c23435185f1e2dd
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 19:21:09 2020 -0700
+
+    fetch data for flight and airport
+
+commit 4fe48373ecddf9c7c1fff4ea31c9eaee2c9bf0d9
+Author: Noah Lindley <lindleynoah@gmail.com>
+Date:   Fri Jul 10 01:55:50 2020 +0000
+
+    Update Postman.yaml
+
+commit 855a8ac0947968dc0449323c0526151a4e09e2b1
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jul 9 20:16:36 2020 -0500
+
+    got airport data from api
+
+commit 46e99d778c3dd525e739f8a806bc953f58893ab8
+Merge: 99e5c297 8b5d7c2e
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 10 00:49:18 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!35
+
+commit 8b5d7c2ef0e34b95f064b21b623626f671378578
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 17:48:15 2020 -0700
+
+    change main.py
+
+commit c683985c24979303cbdfbfea1cb239bf6eaaf510
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 17:47:45 2020 -0700
+
+    fetch data for detail page
+
+commit 99e5c297429ceb3b6b3e17bf7cfe2e3ae1456fb9
+Merge: ec4eaf3b 4d98ae94
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 19:13:27 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!34
+
+commit 4d98ae9409d938ce6f7f8754a92bb0ac24d6fe92
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 11:48:06 2020 -0700
+
+    change main.py
+
+commit 9253f5f29352a5d680adbf1ba2a3d61ac054033f
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 11:46:58 2020 -0700
+
+    fetch airlines' data and create a temporary json file
+
+commit ec4eaf3b9082f9fea3a77bd7839e5a946fcedf9d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jul 9 10:10:53 2020 -0500
+
+    fixed linker to work when back is pressed
+
+commit 321f3121a8314ade3988a25b88aea3c1e51290f4
+Merge: d67c02f0 110b0e4a
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jul 9 09:31:11 2020 -0500
+
+    added google search bar and better display of info on info card's
+
+commit d67c02f09fe974f35a30de652e854948bba3f381
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jul 9 09:28:26 2020 -0500
+
+    added google search bar and better display of info on info card's
+
+commit 110b0e4a9dd89ede07285c66dede0671282e7bed
+Merge: ee299910 252298ac
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 07:26:15 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!33
+
+commit 252298ac3503113ff71d7573bdf1fdf2688eb414
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 9 00:07:57 2020 -0700
+
+    add new loading pic
+
+commit 120b1a196c29387ed6a8ddd2eef5325c0c24e1c4
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 22:23:01 2020 -0700
+
+    add hover to card
+
+commit ee2999103eb8de493f155161f91325bc8ad17a5b
+Merge: a88975c0 1fee9837
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 04:01:34 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!32
+
+commit 1fee9837c5a70cacc9bb9f4c4b31d5142ba1d55f
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 20:59:37 2020 -0700
+
+    make bg of gif darker on detail page
+
+commit fc289a9747cbc05f49c989b08cf9f5fae18658b6
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 20:35:29 2020 -0700
+
+    add list group for card's description
+
+commit a88975c01130cfc07c2e9a999aeaf3d28030b15d
+Merge: fc91c5d0 e4888f47
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 02:41:56 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    use loading only when fetching data
+    
+    See merge request Albisourous/cs373-idb!31
+
+commit e4888f470202bd1301666dc5b652bcec2a03d404
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 19:39:34 2020 -0700
+
+    use loading only when fetching data
+
+commit fc91c5d09cae63a416747909b1fa7db421f69a2d
+Merge: 8bc126a7 03ae1225
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 02:33:14 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!30
+
+commit 03ae12250858179c58de09edc136936033436cf4
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 19:30:09 2020 -0700
+
+    fix button which redirect to detail page on airline page
+
+commit 0c2a55f7c139ba2d1f78880d15114b353b74b745
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 19:16:46 2020 -0700
+
+    change the loading animation(Albin)
+
+commit 8bc126a73f8f2fa22bb34cf50aafd5e3b37e2cf0
+Merge: 2c31a315 dd61927f
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 00:19:59 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change Airplanes to Airlines
+    
+    See merge request Albisourous/cs373-idb!29
+
+commit dd61927f0a94ddc3f6b769746f809abb0df1a8cd
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 17:17:27 2020 -0700
+
+    change Airplanes to Airlines on nav bar and change related files' names
+
+commit 2c31a3152fd138d681e32742e36ec6742fea69a6
+Merge: 0230ec80 de4a9946
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 9 00:16:50 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!28
+
+commit de4a9946d14404529a3a7b260f149386c072d4c6
+Merge: d6babbd9 0230ec80
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 17:01:14 2020 -0700
+
+    change variable name
+
+commit d6babbd9b9e99e20251d408c3975bcb46289e746
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 16:37:32 2020 -0700
+
+    fix syntax
+
+commit 48e4b8a4abfc5e44d9718a927cfc36edf75222bc
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jul 8 16:15:22 2020 -0700
+
+    change variable name
+
+commit 43705cda3c10cb90f47ace7f59e22a3e260dbaa5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jul 8 18:16:45 2020 -0500
+
+    fixed size of video
+
+commit 990a54b5a7d26aefb9b4d6bf740d7423b0b4391c
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jul 8 09:29:47 2020 -0500
+
+    updated sort features on cards
+
+commit c4d7bc1d0de17fa01a2a2fdbd9268598273c5542
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Wed Jul 8 03:08:52 2020 -0500
+
+    api
+
+commit 0230ec8032a120e12c0907f557d4c4ed189f8dd6
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jul 8 18:16:45 2020 -0500
+
+    fixed size of video
+
+commit fded87d2021ac9b4ee014862e562577956eee604
+Merge: 1f8a41f6 9c90c54d
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 8 21:17:58 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    api
+    
+    See merge request Albisourous/cs373-idb!25
+
+commit 1f8a41f64be5facbe89890fb636e5b68de60d074
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jul 8 09:29:47 2020 -0500
+
+    updated sort features on cards
+
+commit 9c90c54d3d3f9e1dee95726a76a5186ba163055a
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Wed Jul 8 03:08:52 2020 -0500
+
+    api
+
+commit 880e4466f7c8c9a0c48ddfa2d94352f7c50c731e
+Merge: 402f8ca3 7f8add59
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 8 06:23:01 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    sort
+    
+    See merge request Albisourous/cs373-idb!24
+
+commit 7f8add592f976d63999d5438007560a71c5f37e7
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 23:20:01 2020 -0700
+
+    implement sorting for card ascending and descrending
+
+commit 77bc9985d13a4ceef377c2ca504ee029b13e3fc1
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 22:42:24 2020 -0700
+
+    implement sorting for test case
+
+commit 402f8ca352226b231df8d5cad3dd2aa5d3b02ab1
+Merge: 36b9fe27 84a8e9cd
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jul 8 01:00:15 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request Albisourous/cs373-idb!23
+
+commit 84a8e9cd340b6392057feb51a13bc0b55970e8b6
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 17:57:49 2020 -0700
+
+    add one more grid and add bg for detail page
+
+commit e494292f1abafac2698cb8aef4689af12ee40dd2
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 16:22:13 2020 -0700
+
+    change bg color and add gif as bg for description
+
+commit 36b9fe278d25ea6ad58cf77ccef68de05280b0d5
+Merge: e7e61e5a a709a4f9
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jul 7 22:24:16 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change grids and styles of detail page
+    
+    See merge request Albisourous/cs373-idb!22
+
+commit a709a4f9d2eae2994406d4c6a58b620281d62615
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 15:19:01 2020 -0700
+
+    change style and add grid on Flight's detail page
+
+commit c5a7fb5ef58d49c068310049e62f029f6a04cda3
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 15:11:43 2020 -0700
+
+    change style and add grid on Airport's detail page
+
+commit fa7e571da97968780bf1ee2687567391171f8bc0
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 15:02:54 2020 -0700
+
+    change style and add gridon Airplane's detail page
+
+commit 8017612ef0eafec78337c070fac262a25e9ce2d3
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 01:24:17 2020 -0700
+
+    make gif to center of page
+
+commit 322c336b99d7517ff14ce26be516564948849a30
+Author: Yijing <a1024507613@gmail.com>
+Date:   Tue Jul 7 01:00:50 2020 -0700
+
+    build basic structure for loading and fetch data
+
+commit a7e506ad716a986556d80b430bfcbe6c8127ab74
+Author: Yijing <a1024507613@gmail.com>
+Date:   Mon Jul 6 01:26:38 2020 -0700
+
+    add sort icon and button on airplane.js
+
+commit 68f0290de7650186c5834ab5a8ad39ae113d9d05
+Author: Yijing <a1024507613@gmail.com>
+Date:   Mon Jul 6 00:59:49 2020 -0700
+
+    change App.js from a class to a function
+
+commit e7e61e5a89dfb98d8394fe617e14227d3292ea42
+Merge: c2c19957 03f5a51a
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Mon Jul 6 07:51:38 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    use grid from Bootstrap instead of styling by css
+    
+    See merge request Albisourous/cs373-idb!21
+
+commit 03f5a51aa0f98013f314b8fa0f6738fd269cb741
+Author: Yijing <a1024507613@gmail.com>
+Date:   Mon Jul 6 00:36:33 2020 -0700
+
+    use grid from Bootstrap instead of styling by css
+
+commit c2c19957757d627ded6f315daf6c15f846ae3095
+Merge: 52c2273c 260c54f6
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sun Jul 5 23:10:31 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Fix the style of homepage
+    
+    See merge request Albisourous/cs373-idb!20
+
+commit 260c54f6839f35cc6a125aeda2ca66cad0264d9d
+Merge: 73ba72dd eeb84462
+Author: Yijing <a1024507613@gmail.com>
+Date:   Sun Jul 5 15:55:50 2020 -0700
+
+    Merge branch 'master' of gitlab.com:YijingChen/cs373-idb
+
+commit 73ba72ddf6700775eaac499462864e9c6aa6f7b4
+Author: Yijing <a1024507613@gmail.com>
+Date:   Sun Jul 5 15:37:25 2020 -0700
+
+    change the style of homepage
+
+commit 29b8f0a315cfc5ff0f691432a9b8445bea7bc7fb
+Author: Yijing <a1024507613@gmail.com>
+Date:   Sun Jul 5 13:26:16 2020 -0700
+
+    fix error which square doesn't show up
+
+commit 52c2273c1a16692f2982f1f1722e1d56a1bf4501
+Merge: 1dd800f2 bc1a97a5
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sun Jul 5 22:40:12 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    rough models , extracting data from api
+    
+    See merge request Albisourous/cs373-idb!18
+
+commit eeb8446299d74fce9425ac697b206260a3ec54cf
+Author: Yijing <a1024507613@gmail.com>
+Date:   Sun Jul 5 15:37:25 2020 -0700
+
+    change the style of homepage
+
+commit 7392422779660594cce850dcba0a63eae84571ca
+Author: Yijing <a1024507613@gmail.com>
+Date:   Sun Jul 5 13:26:16 2020 -0700
+
+    fix error which square doesn't show up
+
+commit bc1a97a510b665905d3eb24e05d4187918e3eb0c
+Author: Xiaofei Li <xiaofeili@utexas.edu>
+Date:   Sat Jul 4 17:57:05 2020 -0500
+
+    rough models , extracting data from api
+
+commit 1dd800f2afa7970168f15acec65813e3d8f4d381
+Merge: 546e0761 1719a56b
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Sat Jul 4 04:03:37 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    finish home page
+    
+    See merge request Albisourous/cs373-idb!16
+
+commit 1719a56bab4c3601e7ff604e5e325a3acf070989
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 19:04:07 2020 -0700
+
+    fix the error bacause of git rebase
+
+commit 511a57f64990719ff176cd2bfa03f9d6403fd92f
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 19:02:22 2020 -0700
+
+    add square to home page
+
+commit b763119845a2f82afa0673e07e6ebfabd25d646d
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 18:59:55 2020 -0700
+
+    embed video and change style of text
+
+commit 26a8987a3c53778d4a4ceb6fc3c4c002181e76a6
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jul 3 20:20:19 2020 -0700
+
+    add a scroll button on homepage
+
+commit 4501670aea23c67c384493273f3852c9768f4654
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jul 3 20:08:20 2020 -0700
+
+    add hover to 3 boxes on homepage.
+
+commit 6f9545e2b277398589fed29bf6020a5f5ab974d8
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jul 3 19:52:47 2020 -0700
+
+    redirect to other page only when clicking the box on homepage
+
+commit f38a514271a68535ee3cadcc36648cb0c0f2433a
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jul 3 19:32:57 2020 -0700
+
+    make 3 boxes on the homepage link to correct page
+
+commit 546e0761cf4093f62bd45c6c86396b3ac758646c
+Author: Luwen Lu <luluwen2000@gmail.com>
+Date:   Fri Jul 3 18:21:17 2020 -0500
+
+    commit test completed; deleted the test files
+
+commit 705ef3290525227e434e3419c81380280ceffb1a
+Author: Luwen Lu <luluwen2000@gmail.com>
+Date:   Fri Jul 3 18:19:49 2020 -0500
+
+    testing commit
+
+commit 885f9cbe5e79fb3b4bb8c2c87d35067f9dfef9fb
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jul 3 15:45:50 2020 -0700
+
+    add three box for display 3 pillars
+
+commit f768a9a01e97cc4575e6df86f3405d7335b15404
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jul 3 14:51:01 2020 -0700
+
+    delete ColorLind.js and add a border at the bottom of nav bar
+
+commit 94de69ca0a7c3539c19adadd6156d49f8a076bd4
+Merge: f4537995 4effa927
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 3 05:08:10 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    make text show on center and make video full screen
+    
+    See merge request Albisourous/cs373-idb!15
+
+commit 4effa9276ee4535ca9654c05fd2a4c05f6a5fa02
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 22:07:28 2020 -0700
+
+    make text show on center and make video full screen
+
+commit f453799538e37553a304df6065c4b53f5c9b574c
+Merge: 0f19c4dd 7caec006
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jul 3 03:04:12 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change styles and embed video on homepage
+    
+    See merge request Albisourous/cs373-idb!14
+
+commit 7caec0066eaefba3e3e427f979596d0e3d96bd94
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 19:04:07 2020 -0700
+
+    modify .gitignore
+
+commit 2741bf28c860f0f35bdfdbb0e27c860062899333
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 19:02:22 2020 -0700
+
+    add square to home page
+
+commit b76bdd028fd5b8400d9f1906adb7a09068cc303f
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 18:59:55 2020 -0700
+
+    embed video and change style of text
+
+commit 91a5a5d4f6d70871d939991deb15e484d875e1c8
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jul 2 11:24:13 2020 -0700
+
+    delete src folder under cs373-idb folder
+
+commit 0f19c4ddc42f35119b14690a05145a45430f5b94
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jul 2 18:22:38 2020 +0000
+
+    Delete src(only 2 files) folder under cs373-idb
+
+commit 96ad4536e8e64545a838be6626689e891ef976d2
+Merge: c8fb078b 4a649688
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jun 30 07:01:03 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Create 2 folders for frontend and backend
+    
+    See merge request Albisourous/cs373-idb!13
+
+commit 4a6496880d921f9b4796294c17842ace26798724
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Tue Jun 30 06:58:20 2020 +0000
+
+    Delete node_modules in front-end folder
+
+commit 73573210910cf70e8307fbd946d9a6b7cd20a9bd
+Author: Yijing <a1024507613@gmail.com>
+Date:   Mon Jun 29 23:51:09 2020 -0700
+
+    add file to backend folder
+
+commit bd2fd5e7fda6874de0eae3c0432eb2665053984d
+Author: Yijing <a1024507613@gmail.com>
+Date:   Mon Jun 29 23:39:25 2020 -0700
+
+    create two folders for frontend and backend
+
+commit c8fb078b7b7c07e48dd87432effb49126fe592d9
+Merge: d5f0ac33 997e9780
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jun 26 23:46:33 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    add image to airport, format grid, and make link from flights to airplanes
+    
+    See merge request Albisourous/cs373-idb!12
+
+commit 997e9780d151476f5c09ef9a8726ab94c3911d35
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jun 26 16:33:31 2020 -0700
+
+    get IDB1.log file
+
+commit 49f1c596117847f799dd93d0825d420ba4a2bda5
+Author: Yijing <a1024507613@gmail.com>
+Date:   Fri Jun 26 15:48:41 2020 -0700
+
+    make link between flights and airlane
+
+commit d5f0ac3302d4f6f51ac682ea94e21e2c05ad085c
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:42:21 2020 -0500
+
+    change log in makefile
+
+commit 0851b312e8115908d2e31081d2287d34ff70cfbf
+Merge: 5a52eacd d8f5b52e
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:30:51 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit 5a52eacd3fad0de06b3a28b364183db461e9f801
+Merge: 11cbc732 5fbcc524
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:30:29 2020 -0500
+
+    final
+
+commit d8f5b52ed35fb2504679877c42362a195223da33
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 19:29:27 2020 +0000
+
+    Update app.yaml
+
+commit 11cbc732ea5e65691528c8c99c2723b4595300e3
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Fri Jun 26 14:28:27 2020 -0500
+
+    added app.yml
+
+commit 5fbcc524215022ee3538fa89713f801204dd47be
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Fri Jun 26 02:36:45 2020 +0000
+
+    Update app.yaml
+
+commit 0e5bac3c13a5d81dc91f877a01e9cab54b8a26e2
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 20:10:50 2020 -0500
+
+    final commit for phase 1 (hopefully) with updated page links
+
+commit f940bc44f336327ab0821c2c8a119b3e08edca6f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 18:37:14 2020 -0500
+
+    updated cards
+
+commit 4edf190f4c310ab33a7138d6d22034c407251cee
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 18:22:32 2020 -0500
+
+    about.css hotpink
+
+commit 204f529d2522efb5815aa33496a832173eaca6c6
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 17:54:46 2020 -0500
+
+    fixed links on about
+
+commit 74287cd25fbe8f887f8c394a8f1161914f734d4d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 17:34:23 2020 -0500
+
+    added more formating to about page
+
+commit ded95123c8794e0e4367c0f42b6407486c623673
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 17:01:46 2020 -0500
+
+    add main.py and requirements
+
+commit 26e1bf26ca171f81ee89db74b2d296720422813d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:57:43 2020 -0500
+
+    added pics to cards
+
+commit fcfc6960ccb2439f8ced9043cfa4e006674504bf
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:43:47 2020 -0500
+
+    added sort
+
+commit 6f3b953f1505977b47002888b7512ce57b06597a
+Merge: 6221f938 1a1321af
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:14:18 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit 6221f9380d46067b0cee95594e41e7c921a8b3b3
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:14:00 2020 -0500
+
+    more updates to about page
+
+commit 1a1321afc4192db1837273ff8bb8525d486339a7
+Merge: 205c67ce 4b903e54
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jun 25 21:12:29 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    add grid for airplane and flight
+    
+    See merge request Albisourous/naviaero!10
+
+commit 4b903e5423f4b70f95d48fbd74cfcd78bd33e726
+Author: Yijing <a1024507613@gmail.com>
+Date:   Thu Jun 25 14:05:21 2020 -0700
+
+    add necessary files for airplane and flights
+
+commit 205c67ceacce294884f15d76d4129a7225b6a1d5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 16:04:42 2020 -0500
+
+    made changed to look of website
+
+commit 35be64745cda13bfa87a6578ed12aed61eeb0b1b
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 15:44:43 2020 -0500
+
+    added pics to about page
+
+commit 5832c89fbeaaf18c9eb86c23d45816b9af84d105
+Merge: e14a8d89 dcbc2f4d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 14:11:11 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit e14a8d89ce26edbb0c8b2d2e2c87a7692ddda4cd
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 14:10:54 2020 -0500
+
+    changed fount on homepage
+
+commit dcbc2f4d12e760b5c2950710d6fd01b773dc098f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 19:03:36 2020 +0000
+
+    Add CHANGELOG
+
+commit 8b56720d32e8498e820ad6b305ed85109e9c6d38
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 13:49:25 2020 -0500
+
+    fixed a few buggs
+
+commit b04f5321c3793ea1a684f860a56b7508e2c219c7
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 12:24:58 2020 -0500
+
+    removed gmt from airport
+
+commit fd219fd21558e13847f8a5ff670040aedf88d4d0
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 12:01:24 2020 -0500
+
+    added working pages to sub pages for airports
+
+commit bc664bf25ccfe7aa6ae1edf9c9fdf141c09289a5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 10:23:31 2020 -0500
+
+    updated to add cards on airport
+
+commit 19c61d61463a9899e055e9969dea9ca82e3ef456
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 02:12:17 2020 -0500
+
+    added detain/cards to individual pages on airportinfo
+
+commit 08164893bd91eb48e19dd39fb958d3b676eba334
+Merge: fb0d32a7 9294a9bb
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 00:43:00 2020 -0500
+
+    Added linking pages on airports
+
+commit fb0d32a7cc60af6114096182486f1772a9b97368
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 00:27:25 2020 -0500
+
+    added linking pages on airports
+
+commit 9294a9bbc9d7051f5efaf8824a9a792165878b1d
+Merge: 59795ddf e5632f31
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jun 25 05:24:11 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Add 3 .json files
+    
+    See merge request Albisourous/naviaero!9
+
+commit e5632f313f4fa7dafe2de18d778b559c7b322997
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jun 24 22:22:19 2020 -0700
+
+    Add 3 json files
+
+commit 59795ddf08929c803a780650bb3a9e54ae9ed847
+Merge: 8e930fbb 672d4ba4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Thu Jun 25 05:20:20 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    build info card
+    
+    See merge request Albisourous/naviaero!8
+
+commit 672d4ba446ba6fac2b8953d2f8caefee361395a9
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jun 24 22:02:48 2020 -0700
+
+    update airports info on data.json
+
+commit b4e0f5443b8f57d42de9cc8a673c24f47140bb03
+Author: Yijing <a1024507613@gmail.com>
+Date:   Wed Jun 24 21:50:46 2020 -0700
+
+    build info card
+
+commit 8e930fbbde835c4be0c275a303e79710ac24ca89
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 03:29:33 2020 +0000
+
+    Update .gitignore
+
+commit cc1626fd78af96510c3c66e83d17179676576d10
+Merge: 4fc30683 9285d92a
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 22:27:00 2020 -0500
+
+    Merge branch 'master' of gitlab.com:Albisourous/naviaero
+
+commit 4fc30683a3322da6e297cb6c10432ac2d544a913
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 22:26:51 2020 -0500
+
+    fixed error with airports page window.onload
+
+commit 9285d92a69c12cbc4243ccafa7c5698261619f8c
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 03:25:59 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit df8c142f8d0c77b4a01a4e06514653db9e5927de
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 03:25:49 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit db2b596e821d3479979530e88940bc58cca62ce7
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 22:01:11 2020 -0500
+
+    updated airports to have a table of information and a css to work with it
+
+commit 0fcc8462184d5c452d721d2d1bbbdc9e9f2ccc22
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 01:56:42 2020 +0000
+
+    Update .gitignore spelling
+
+commit ad4ba848685ef9fecb398f0f9dd825615f5200e5
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Thu Jun 25 01:50:55 2020 +0000
+
+    Added ignore for node_modules
+
+commit 401449b37ec5bfb0576cbd1e7c9aab478c9cb1ab
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 19:30:40 2020 -0500
+
+    added a temp file which allows for tables  to be sorted
+
+commit e2d34cadea52e96390f8b498f72ce962807dd279
+Merge: f49f56f6 1a9bba73
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 18:35:38 2020 -0500
+
+    new update: fixed founts
+
+commit f49f56f6fcd9a596527c547a3ac50c1b66142d1e
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 18:33:26 2020 -0500
+
+    added noah's information in the about
+
+commit 1a9bba73dcac404f4e76d4fc6ef5973dfc80876b
+Merge: 770a4ed8 e3cb0e5a
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 21:17:39 2020 +0000
+
+    Merge branch 'master' into 'master'
+    
+    change font family
+    
+    See merge request Albisourous/naviaero!2
+
+commit e3cb0e5ac3a3f0cb00e68633582e00ee7833a9c4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 14:13:54 2020 -0700
+
+    change font family
+
+commit 770a4ed8f96d1d103f44ea3bffe6925bd3aaa047
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 18:07:16 2020 +0000
+
+    Update app.yaml
+
+commit 8628c299b98574238054427cd19af93c05c36b4d
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 17:54:11 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit ebd9a10a32b18605733eae612381867d3c0949a4
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 17:42:15 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit dbecd4e5869622e828a37b3ef3fc8a7abc66794e
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 00:20:13 2020 -0500
+
+    added a better about page with an example of myself with a css to fomat it. Also added some tester files in temp and update which can be used to run tests on code
+
+commit a116f01e7438b598483a5d16ce8e95214bd29fab
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 21:11:59 2020 -0500
+
+    Update to readme
+
+commit 782a006a93adccef3d0445962096e9e46e028eff
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Wed Jun 24 01:42:06 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit b0ed20be1e99d73c065d772e7d82039bff8c3ec7
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 20:33:34 2020 -0500
+
+    first commit adding website template that Yijing made most of
+
+commit 5a1ec7f05b4f5492cd9adff80c0d88453a64f3fb
+Author: Yijing Chen <a1024507613@gmail.com>
+Date:   Wed Jun 24 01:01:44 2020 +0000
+
+    Update .gitlab-ci.yml
+
+commit 443583e5f682f7e22da8a7760fef87dede623c26
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 23:21:25 2020 +0000
+
+    Delete index.html
+
+commit 550018928c88d00a22d16ce20010879d84cb1e54
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:38:22 2020 +0000
+
+    added config.yml file
+
+commit 3c0016a75eb1ac0c1828ab93d7c00d05c002b73d
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:32:51 2020 +0000
+
+    Added CNAME to domain
+
+commit bc824fb819e5edcf396e69b21ab4a0355cd8d55f
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:32:18 2020 +0000
+
+    Added index.html as temp
+
+commit 2498f7219acc94d155e8a6a8f759a81ea51d39ea
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:27:12 2020 +0000
+
+    Add .gitlab-ci.yml
+
+commit 2074a1c68fd155a94e2768b56de8b400ed9cdc78
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:25:30 2020 +0000
+
+    Update README.md - added caps
+
+commit 7ca7a8b641005e08c1550c11f12194591e8a3115
+Author: Albin Shrestha <shrestha_albin@yahoo.com>
+Date:   Tue Jun 23 22:25:08 2020 +0000
+
+    Initial commit

@@ -19,10 +19,8 @@ from sqlalchemy.ext.declarative import declarative_base
 import os
 from flask import jsonify
 from flask import jsonify
-from sqlalchemy import func
+
 from flask_cors import CORS, cross_origin
-from sqlalchemy import or_
-from random import randrange
 
 application = app = Flask(__name__)
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -150,13 +148,12 @@ class FlightSchema(ma.Schema):
     airline = fields.Str(required = False)
     flight_number = fields.Str(required = False)
     flight_iata = fields.Str(required = False)
-    airports = fields.List(fields.Nested(AirportSchema(only = ('airport_id', 'airport_name', 'iata_code', 'country_image_url'))))
     
 
 class OneFlightSchema(FlightSchema):
     flight_icao = fields.Str(required = False)
     airline = fields.Nested(AirlineSchema(only = ('airline_id', 'airline_name', 'image_url', 'iata_code')))
-    
+    airports = fields.List(fields.Nested(AirportSchema(only = ('airport_id', 'airport_name', 'iata_code'))))
 
 airport_schema = AirportSchema(many = True)
 one_airport_schema = OneAirportSchema()
@@ -167,19 +164,36 @@ one_flight_schema =  OneFlightSchema()
 
 
 
+@app.route('/')
+@app.route('/airports')
+@app.route('/airlines')
+@app.route('/flights')
+@app.route('/about')
+def serve():
+    return render_template("index.html")
+
+
+@app.route('/airports/')
+@cross_origin()
+def serve_airports():
+    return render_template("index.html")
+
+
+@app.route('/airlines/')
+def serve_airlines():
+    return render_template("index.html")
+
+
+@app.route('/flights/')
+def serve_flights():
+    return render_template("index.html")
  
 
 
 @app.route('/api/', methods = ["GET"])
 @cross_origin()
 def index():
-	return 'This is the API for aeroinfo.me'
-
-@app.route('/api/test', methods = ["GET"])
-@cross_origin()
-def test():
-    time = round(0.001*randrange(36, 40), 3)
-    return render_template('book.html', time = time)
+	return 'hello'
 
 @app.route('/api/airports', methods = ["GET"]) 
 @cross_origin() 
@@ -191,20 +205,10 @@ def airports():
 def airport(id):
     return getOneAirport(id)
  
-@app.route('/api/airports/<string:name>', methods = ["GET"]) 
-@cross_origin() 
-def searchAirport(name):
-    return searchAirport(name) 
- 
 @app.route('/api/airlines/<int:id>', methods = ["GET"])
 @cross_origin()  
 def airline(id):
     return getOneAirline(id)
- 
-@app.route('/api/airlines/<string:name>', methods = ["GET"])
-@cross_origin()  
-def searchAirline(name):
-    return searchAirline(name) 
  
 @app.route('/api/airlines', methods = ["GET"])
 @cross_origin()  
@@ -222,35 +226,10 @@ def flights():
 def flight(id):
     return getOneFlight(id)
     
-@app.route('/api/flights/<string:name>', methods = ["GET"]) 
-@cross_origin()  
-def searchFlight(name):
-    return searchFlight(name)
-    
 def getAirports():
     airports = db.session.query(Airport).all()
     result = airport_schema.dump(airports)
     return jsonify({'airports': result})
-
-def searchAirport(name):
-    airports = db.session.query(Airport).filter(or_(func.lower(Airport.airport_name).contains(func.lower(name)),\
-                                                    func.lower(Airport.country_name).contains(func.lower(name))))
-    result = airport_schema.dump(airports)
-    return jsonify({'airports': result})
-
-def searchFlight(name):
-    flights = db.session.query(Flight).\
-                         join(Flight.airports).\
-                         filter(or_(func.lower(Airport.country_name).contains(func.lower(name)), \
-                                    func.lower(Flight.flight_iata).contains(func.lower(name))))
-    result = flight_schema.dump(flights)
-    return jsonify({'flights': result})
-
-def searchAirline(name):
-    airlines = db.session.query(Airline).filter(or_(func.lower(Airline.airline_name).contains(func.lower(name)),\
-                                                    func.lower(Airline.country_name).contains(func.lower(name))))
-    result = airline_schema.dump(airlines)
-    return jsonify({'airlines': result})
 
 def getOneAirport(id):
     airport = db.session.query(Airport).filter_by(airport_id = id).first()

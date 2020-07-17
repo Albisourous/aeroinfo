@@ -32,6 +32,8 @@ const Pagination = ({ postsPerPages, totalPosts, paginate }) => {
         PageNumbers.push(i);
     }
 
+    console.log(page);
+
     return (
         <div className="pagination">
 
@@ -39,7 +41,7 @@ const Pagination = ({ postsPerPages, totalPosts, paginate }) => {
 
                 <Pag
                     count={numPages}
-                    color="secondary"
+                    color="primary"
                     size="large"
                     page={page}
                     onChange={handleChange}

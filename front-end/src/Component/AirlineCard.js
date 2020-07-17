@@ -1,12 +1,15 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-
-import Highlighter from "react-highlight-words";
-import "./Highlight.css";
-
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import ButtonBase from "@material-ui/core/ButtonBase";
+import {AirlineInfo} from "../AirlineInfo";
 
 
 const useStyles = makeStyles({
@@ -26,15 +29,10 @@ const useStyles = makeStyles({
 const AirlineCard = props => {
     const info = props.info;
     const classes = useStyles();
-    const nameHighlight = <Highlighter searchQuery={"united"} word={info.airline_name} />
-    const countryHighlight = <Highlighter searchQuery={"united"} word={info.airline_name} />
 
     return (
-
         <div className="AirlineCard">
-
-
-            <Card className={classes.root} onClick={event => window.location.href = "/airlines/" + info.airline_id}>
+            <Card className={classes.root} onClick={event => window.location.href = "/airlines/" + info.airline_id }>
                 <CardActionArea>
 
                     <CardMedia
@@ -43,21 +41,8 @@ const AirlineCard = props => {
                     />
 
                     <ul class="list-group-flush">
-                        <li class="list-group-item">Airline Name: <span> </span>
-                            <Highlighter
-                                highlightClassName="highlight"
-                                searchWords={[props.query]}
-                                autoEscape={true}
-                                textToHighlight={info.airline_name} />
-                        </li>
-
-                        <li class="list-group-item">Country: <span> </span>
-                            <Highlighter
-                                highlightClassName="highlight"
-                                searchWords={[props.query]}
-                                autoEscape={true}
-                                textToHighlight={info.country_name} />
-                        </li>
+                        <li class="list-group-item">Airline Name: {info.airline_name}</li>
+                        <li class="list-group-item">Country: {info.country_name}</li>
                     </ul>
                 </CardActionArea>
             </Card>

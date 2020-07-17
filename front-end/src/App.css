@@ -604,10 +604,110 @@
 
     .pagination .MuiButtonBase-root{
         color: white;
-        font-size: 22px;
-        font-family: "Homenaje", sans-serif;
+        size: 50px;
     }
 
     .pagination .MuiPaginationItem-root{
         color: white;
+    }
+
+    /*----------------------PhotoSlay----------------------*/
+    .PhotoSlay {
+        padding-left: 0;
+        padding-right: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    /*Video*/
+
+    .PhotoSlay .video {
+        position: absolute;
+        background-size: 100% 100%;
+        top: 0px;
+        left: 0px;
+        /* fixed to left. Replace it by right if you want.*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        overflow: hidden;
+        object-fit: fill;
+        background-color: rgb(30, 49, 73);
+        color: rgb(30, 49, 73);
+        zoom: 115%;
+    }
+
+    /*Welcome text*/
+
+    .PhotoSlay .text .square {
+        background-color: rgba(255, 255, 255, 0.287);
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 930px;
+        height: 475px;
+        display: inline-block;
+    }
+
+    .PhotoSlay .text {
+        font-family: "Homenaje", sans-serif;
+        color: rgba(255, 255, 255, 0.849);
+    }
+
+    .PhotoSlay .text h1 {
+        font-size: 70px;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    .PhotoSlay .text p {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 25px;
+    }
+    /*Scroll button*/
+
+    .PhotoSlay .scroll-button {
+        margin-top: -10%;
+        margin-bottom: 10%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid rgba(255, 255, 255, 0.945);
+        padding: 10px 10px 20px;
+        border-radius: 30px;
+    }
+
+    .PhotoSlay .scroll-bar span {
+        border: 2px solid rgba(255, 255, 255, 0.945);
+        font-size: 10px;
+        border-radius: 30px;
+    }
+    /*three links*/
+
+    .PhotoSlay .link {
+        margin-top: 27%;
+        margin-bottom: 30%;
+    }
+
+    .PhotoSlay .roundedCorner {
+        border: 3px solid rgba(255, 255, 255, 0.739);
+        border-radius: 10px 90px;
+        padding: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .PhotoSlay .roundedCorner:hover {
+        background: rgba(20, 19, 19, 0.555);
+        border-radius: 90px 10px;
+        transition: 0.75s;
+    }
+
+    .PhotoSlay .roundedCorner p {
+        font-family: "Homenaje", sans-serif;
+        font-size: 50px;
+        color: rgba(255, 255, 255, 0.918);
+        text-align: center;
     }

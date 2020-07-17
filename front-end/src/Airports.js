@@ -150,10 +150,10 @@ const Airports = props => {
      * @param {String} query Search Query.
      *
      */
-    function fetchSearchResults(searchQuery) {
+    function fetchSearchResults(query) {
 
-        const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/airports/${searchQuery}`;
-        console.log(searchUrl)
+        const searchUrl = `https://api-dot-naviaero.uc.r.appspot.com/api/airports/${query}`;
+
         axios.get(searchUrl)
             .then((info) => {
                 const resultNotFoundMsg = !info.data.airports.length ?
@@ -175,10 +175,13 @@ const Airports = props => {
 
 
     function handleOnInputChange() {
-        const input = document.getElementById("input-with-icon-grid").value;
-        setQuery(input);
-        console.log(input)
-        fetchSearchResults(input);
+        setQuery(document.getElementById("input-with-icon-grid").value);
+
+
+        console.log(query);
+
+
+        fetchSearchResults(query);
 
     };
 
@@ -236,7 +239,7 @@ const Airports = props => {
                     </div>
                 </div>
 
-                <InfoGrid infoData={currentPosts} infoCardType={INFO_TYPES.AIRPORTS} query={query}/>
+                <InfoGrid infoData={currentPosts} infoCardType={INFO_TYPES.AIRPORTS} />
                 <Pagination postsPerPages={postsPerPage} totalPosts={airports.length} paginate={paginate}>
 
                 </Pagination>

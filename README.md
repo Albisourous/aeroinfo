@@ -4,7 +4,7 @@ A React based website that provides users with information about Airport, Airlin
 
 ## Team Members
 
-Albin Shrestha, Yijing Chen, Noah Lindley, Kevin Lu, Xiaofei Li
+Albin Shrestha, Yijing Chen, Noah Lindley, Kevin Lu, and Xiaofei Li
 
 ## Presentation
 
@@ -143,6 +143,27 @@ Another frontend element we implemented is adding an infinite scroll theme to ou
 
 After the user clicks on an information card and enters its page, more user elements are presented. Here, the various attribute information are displayed in a white information card. For example, an airport information card will display information like the location, the country in which it is located, etc. Alongside the text information, the user can check out the image of the object in interest, so they have a visual idea of that object. On the side of the text information, we make the connection between the categories. For example, on the airport's information card, we display related information about flights originating from that airport and airlines that are in the same country as that airport. This information is displayed in a scroll box, so the user doesn't have to scroll the entire page down to look at this information. This allows them to not lose track of the main information card.
 
+## Self Critique
+
+### What did we do well?
+On the Home page, we have an animation showing various airlines. This is not something that every website has. It quickly conveys the theme and topic of our website, namely, airlines, airports, and flights. It conveys these themes in a visually appealing and professional-looking style. With this animation, the user is able to quickly get an idea of the theme of our website and decide whether it is something that they are looking for, saving their time.
+
+We have several of these visual elements on our website. They are with every aspect of the user experience. Some examples of these visual elements include the plane loading animation when the information cards are being loaded, the sky-blue colored background, the white modern text front invoking the idea of cloud, and the plane going around globe animation alongside with every information card. The visual elements of the website are also professional looking and match our theme and topic well. These visual elements enhance user experiences and define our mission well.
+
+Alongside the information card, the user can see how the current category relates to the other two categories. To help organize this information, a scroll box containing this relational information is added to the website. This scroll box helps to enhance the user experience because now the user doesn't have to scroll down to look at this information. Instead, with this scroll box feature, the user can view all the information all in one page. 
+
+### What did we learn?
+Git is the primary tool our group used to synchronize our code across group members and make progress together. Through this project, we utilized many features of git. We first have to fork the project from the project leader. Then we learned to clone these projects to local machines. After we made changes to the code, we learned to push these changes to our forked repository on GitLab. Then, after discussing with other group members, when we feel that the change we have made counts as progress, we learned to merge our code into the main project repository that our project leader manages. This is the trickiest part in our experience of using git, and we have made many mistakes. But these mistakes helped us to gain a better understanding of how git worked, including its trickiest part: merging conflicts. We also learned the importance of updating our local repository with pull and fetch commands before making any changes to them.
+
+In this project, we also get to use a lot of the tools and techniques talked about in class. Some of these tools include SQLAlchemy and PostgresSQL to implement our database and Flask for routing different webpages to their corresponding URL link.
+
+We also learned how to deploy the website to the cloud using the Google Cloud Platform. We learned how to configure our app.yaml file to enable the cloud app engine to read our files. We learned how to set up a database on the cloud. These experiences would be indispensable in the future when we create a web project of our own and need to deploy it to the internet.
+
+### What can we do better?
+It is hard to find images for airports and flights. If we have more time, we could spend more effort to look for ways to find better image sources for these categories.
+
+### What puzzles us?
+Some aspects of the deployment give us some trouble. Some of these things that we have to figure out include how exactly are we going to communicate with the GCP driver, what exactly to put in the configuration file, what configuration files are required, what do these extensions like .yaml mean, etc. 
 
 ## Contributing
 
